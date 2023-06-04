@@ -376,4 +376,170 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   .section-slide .carousel-inner .carousel-item .carousel-caption .container p {
     width: 100%;
   }
+}
+.section-check {
+  background-color: transparent;
+  padding: 100px 0;
+}
+.section-check .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-check .container form {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 25px;
+  box-shadow: 0px 20px 60px 0px rgba(21, 21, 21, 0.2);
+}
+.section-check .container form .row .left .check-in-date {
+  display: flex;
+  flex-direction: column;
+}
+.section-check .container form .row .left .check-in-date label {
+  margin: 20px 0;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #101010;
+}
+.section-check .container form .row .left .check-in-date label i {
+  padding-right: 5px;
+}
+.section-check .container form .row .left .check-in-date #checkin {
+  border-radius: 0;
+  padding: 10px;
+  border-color: rgba(100, 66, 34, 0.2784313725);
+}
+.section-check .container form .row .left .adults {
+  display: flex;
+  flex-direction: column;
+}
+.section-check .container form .row .left .adults label {
+  margin: 20px 0;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #101010;
+}
+.section-check .container form .row .left .adults label i {
+  padding-right: 5px;
+}
+.section-check .container form .row .left .adults #adults {
+  border-radius: 0;
+  padding: 10px;
+  border-color: rgba(100, 66, 34, 0.2784313725);
+}
+.section-check .container form .row .left .room {
+  display: flex;
+  flex-direction: column;
+}
+.section-check .container form .row .left .room label {
+  margin: 20px 0;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #101010;
+}
+.section-check .container form .row .left .room label i {
+  padding-right: 5px;
+}
+.section-check .container form .row .left .room #room {
+  border-radius: 0;
+  padding: 10px;
+  border-color: rgba(100, 66, 34, 0.2784313725);
+}
+.section-check .container form .row .right .check-out-date {
+  display: flex;
+  flex-direction: column;
+}
+.section-check .container form .row .right .check-out-date label {
+  margin: 20px 0;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #101010;
+}
+.section-check .container form .row .right .check-out-date label i {
+  padding-right: 5px;
+}
+.section-check .container form .row .right .check-out-date #checkout {
+  border-radius: 0;
+  padding: 10px;
+  border-color: rgba(100, 66, 34, 0.2784313725);
+}
+.section-check .container form .row .right .child {
+  display: flex;
+  flex-direction: column;
+}
+.section-check .container form .row .right .child label {
+  margin: 20px 0;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #101010;
+}
+.section-check .container form .row .right .child label i {
+  padding-right: 5px;
+}
+.section-check .container form .row .right .child #child {
+  border-radius: 0;
+  padding: 10px;
+  border-color: rgba(100, 66, 34, 0.2784313725);
+}
+.section-check .container form .row .right .calendar {
+  display: flex;
+  flex-direction: column;
+}
+.section-check .container form .row .right .calendar label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #101010;
+}
+.section-check .container form .row .right .calendar label i {
+  font-size: 30px;
+  color: #be9874;
+}
+.section-check .container form .row .right .calendar .check-btn {
+  width: 200px;
+  padding: 12px 25px;
+  font-size: 15px;
+  background-color: #977a5e;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.section-check .container form .row .right .calendar .check-btn:hover {
+  background-color: #614a37;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 991px) {
+  .section-check {
+    background-color: transparent;
+    padding: 100px 0;
+  }
+  .section-check .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-check .container form {
+    width: 80%;
+  }
+  .section-check .container form .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-check .container form .row .left {
+    width: 100%;
+  }
+  .section-check .container form .row .right {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
