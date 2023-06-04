@@ -1,0 +1,167 @@
+.section-slide {
+  .carousel-inner {
+    .carousel-item {
+      .carousel-caption {
+        position: absolute;
+        top: 30%;
+        .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          h1 {
+            font-family: "Jost", sans-serif;
+            font-weight: 600;
+            font-size: 80px;
+          }
+          p {
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: #ffffffbf;
+            width: 70%;
+          }
+          .discover-video {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .btn-more {
+              padding: 15px 20px;
+              border: 2px solid $secondary-color;
+              color: $secondary-color;
+              font-family: "Roboto", sans-serif;
+              font-weight: 400;
+              font-size: 16px;
+            }
+            .intro {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              p {
+                font-family: "Jost", sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                color: $secondary-color;
+                margin: 0;
+              }
+              .fa-circle-play {
+                margin: 0 10px;
+                font-size: 60px;
+                background-color: $primary-color;
+                border-radius: 50%;
+              }
+            }
+            .modal {
+              .modal-content {
+                .close1 {
+                  color: #aaaaaa;
+                  float: right;
+                  font-size: 50px;
+                  font-weight: bold;
+                  &:hover {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                  }
+                  &:focus {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+            .modal {
+              display: none;
+              position: fixed;
+              z-index: 20;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              overflow: auto;
+              background-color: rgb(0, 0, 0);
+              background-color: rgba(0, 0, 0, 0.7);
+              .modal-content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                margin: auto;
+                width: 80%;
+                height: 90%;
+                .close {
+                  color: #aaaaaa;
+                  float: right;
+                  font-size: 50px;
+                  font-weight: bold;
+                  &:hover {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                  }
+                  &:focus {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .section-slide {
+    .carousel-inner {
+      .carousel-item {
+        .carousel-caption {
+          .container {
+            h1 {
+              font-size: 32px;
+            }
+            p {
+              width: 500px;
+            }
+            .discover-video {
+              .intro {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .carousel-control-next-icon{
+        display: none;
+    }
+    .carousel-control-prev-icon{
+        display: none;
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .section-slide {
+    .carousel-inner {
+      .carousel-item {
+        .carousel-caption {
+          .container {
+            h1 {
+              font-size: 32px;
+            }
+            p {
+              width: 100%;
+            }
+           
+          }
+        }
+      }
+    }
+    
+  }
+}

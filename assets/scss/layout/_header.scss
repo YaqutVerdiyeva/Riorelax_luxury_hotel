@@ -1,0 +1,265 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 15;
+  .top-header {
+    padding: 10px;
+    background-color: $primary-color;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $secondary-color;
+      .top-header-left {
+        ul {
+          padding: 0;
+          margin: 0;
+          display: flex;
+          gap: 25px;
+          li {
+            i {
+              margin-right: 8px;
+              font-size: 14px;
+            }
+            .clock {
+              font-family: "Roboto", sans-serif;
+              font-weight: 400;
+              font-size: 15px;
+            }
+          }
+          .mobile {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .top-header-right {
+      .icons {
+        display: flex;
+        gap: 20px;
+        a {
+          i {
+            color: $secondary-color;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+  .bottom-header {
+    background-color: rgba(9, 9, 9, 0.5);
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        img {
+          width: 174px;
+          height: 52px;
+        }
+      }
+      .nav {
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 40px;
+          margin: 0;
+          padding: 0;
+          li {
+            a {
+              font-family: "Jost", sans-serif;
+              font-weight: 400;
+              font-size: 16px;
+              color: $secondary-color;
+              letter-spacing: 1.5px;
+              &:hover {
+                color: #a48360;
+                transition: 0.5s;
+              }
+            }
+            font-family: "Jost", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: $secondary-color;
+            .dropdown {
+              position: relative;
+              display: inline-block;
+
+              .dropbtn {
+                font-family: "Jost", sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                color: $secondary-color;
+                font-size: 16px;
+                border: none;
+                background-color: transparent;
+                letter-spacing: 1.5px;
+                margin: 25px 0;
+              }
+              .dropdown-content {
+                margin-top: -5px;
+                border-top: 5px solid $primary-color;
+                display: none;
+                position: absolute;
+                background-color: $secondary-color;
+                min-width: 260px;
+                z-index: 1;
+                a {
+                  border-bottom: 1px solid rgb(226, 221, 221);
+                  color: #000;
+                  padding: 12px 16px;
+                  text-decoration: none;
+                  display: block;
+                  &:hover {
+                    color: $primary-color;
+                    transition: 0.5s;
+                  }
+                }
+              }
+              &:hover {
+                .dropdown-content {
+                  display: block;
+                }
+                .dropbtn {
+                  color: #a48360;
+                  transition: 0.5s;
+                }
+              }
+            }
+          }
+        }
+      }
+      .reservation-btn {
+        .btn-reserv {
+          padding: 20px 35px;
+          font-size: 15px;
+          background-color: #be9874;
+          color: $secondary-color;
+          font-family: "Roboto", sans-serif;
+          font-weight: 400;
+        }
+      }
+      .menuicon {
+        display: none;
+        .fa-bars {
+          margin: 8px;
+        }
+      }
+      .menuicon1 {
+        display: none;
+        .fa-x {
+          margin: 8px;
+        }
+      }
+    }
+  }
+  .nav-mobile {
+    display: none;
+    hr {
+      color: $secondary-color;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      .accordion {
+        width: 80%;
+        .accordion-item {
+          h2 {
+            .accordion-button {
+              p {
+                margin: 0;
+                font-size: 18px;
+                font-weight: 700;
+                color: #333333;
+                font-family: "Roboto", sans-serif;
+                text-transform: uppercase;
+              }
+              &::after {
+                display: none;
+              }
+              .fa-minus {
+                visibility: hidden;
+              }
+            }
+          }
+          .accordion-collapse {
+            .accordion-body {
+              ul {
+                display: flex;
+                flex-direction: column;
+                li {
+                  a {
+                    color: #000;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: $text-color;
+                    font-family: "Roboto", sans-serif;
+                    text-transform: uppercase;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+    .top-header {
+      display: none !important;
+    }
+    .bottom-header {
+      padding: 15px;
+      background-color: rgba(9, 9, 9, 0.5);
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .logo {
+          img {
+            width: 174px;
+            height: 52px;
+          }
+        }
+        .nav {
+          display: none;
+        }
+        .reservation-btn {
+          display: none;
+        }
+        .menuicon {
+          margin: 0;
+          display: block;
+          color: $secondary-color;
+          border: 1px solid $secondary-color;
+          padding: 3px 07px;
+          .fa-bars {
+            margin: 8px;
+          }
+        }
+        .menuicon1 {
+          margin: 0;
+          color: $secondary-color;
+          border: 1px solid $secondary-color;
+          padding: 3px 07px;
+          .fa-x {
+            margin: 8px;
+          }
+        }
+      }
+    }
+    .nav-mobile.show {
+      display: block;
+    }
+  }
+}
