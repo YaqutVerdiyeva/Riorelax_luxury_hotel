@@ -1,5 +1,164 @@
 .section-pricing-cards {
   padding: 100px 0;
   .container {
+    .row {
+      .cards {
+        .card-service {
+          position: relative;
+          background-color: $secondary-color;
+          box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
+          padding: 40px;
+          h3 {
+            font-family: "Jost", sans-serif;
+            color: $text_dark;
+            font-size: 26px;
+            font-weight: 700;
+          }
+          p {
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+            font-weight: normal;
+            color: $text_color;
+            line-height: 26px;
+          }
+          h2 {
+            font-family: "Jost", sans-serif;
+            font-size: 50px;
+            font-weight: 700;
+            color: $primary_color;
+          }
+          .list {
+            ul {
+              margin: 0;
+              padding: 0;
+              li {
+                display: flex;
+                align-items: center;
+                font-family: "Roboto", sans-serif;
+                font-size: 15px;
+                font-weight: normal;
+                color: $text_color;
+                line-height: 46px;
+                i {
+                  color: $primary_color;
+                  font-size: 25px;
+                  margin-right: 5px;
+                }
+              }
+            }
+          }
+          .button-get-started {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            button {
+              width: 100%;
+              margin-top: 10px;
+              padding: 20px 35px;
+              font-size: 15px;
+              background-color: $primary_color;
+              color: $secondary-color;
+              font-family: "Roboto", sans-serif;
+              font-weight: 400;
+              border: none;
+              &:hover {
+                background-color: #614a37;
+                transition: 0.5s;
+              }
+            }
+          }
+          .monthly {
+            position: absolute;
+            right: 15px;
+            top: 60px;
+            border-radius: 4px;
+            background-color: rgb(225, 225, 225);
+            padding: 3px 10px;
+            transform: rotate(90deg);
+            color: $text_color;
+            font-family: "Roboto", sans-serif;
+          }
+        }
+      }
+      .cards-middle {
+        .card-service {
+          position: relative;
+          background-color: $primary-color;
+          color: $secondary_color;
+          box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
+          padding: 40px;
+          h3 {
+            font-family: "Jost", sans-serif;
+            color: $secondary-color;
+            font-size: 26px;
+            font-weight: 700;
+          }
+          p {
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+            font-weight: normal;
+            color: $secondary-color;
+            line-height: 26px;
+          }
+          h2 {
+            font-family: "Jost", sans-serif;
+            font-size: 50px;
+            font-weight: 700;
+            color: $secondary-color;
+          }
+          .list {
+            ul {
+              margin: 0;
+              padding: 0;
+              li {
+                display: flex;
+                align-items: center;
+                font-family: "Roboto", sans-serif;
+                font-size: 15px;
+                font-weight: normal;
+                color: $secondary-color;
+                line-height: 46px;
+                i {
+                  color: $secondary-color;
+                  font-size: 25px;
+                  margin-right: 5px;
+                }
+              }
+            }
+          }
+          .button-get-started {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            button {
+              width: 100%;
+              margin-top: 10px;
+              padding: 20px 35px;
+              font-size: 15px;
+              background-color: $secondary-color;
+              color: $primary-color;
+              font-family: "Roboto", sans-serif;
+              font-weight: 400;
+              border: none;
+              &:hover {
+                background-color: #614a37;
+                transition: 0.5s;
+              }
+            }
+          }
+          .monthly {
+            position: absolute;
+            right: 15px;
+            top: 60px;
+            border-radius: 4px;
+            background-color: rgba(225, 225, 225, 0.5);
+            padding: 3px 10px;
+            transform: rotate(90deg);
+            color: $secondary-color;
+            font-family: "Roboto", sans-serif;
+          }
+        }
+      }
+    }
   }
 }
