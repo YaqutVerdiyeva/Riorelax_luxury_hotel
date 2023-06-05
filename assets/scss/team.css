@@ -295,6 +295,65 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
     display: none;
   }
 }
+.section-teams {
+  padding: 100px 0;
+}
+.section-teams .container .row .team .card {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-teams .container .row .team .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-teams .container .row .team .card .card-body h4 {
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #101010;
+}
+.section-teams .container .row .team .card .card-body p {
+  color: #977a5e;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 26px;
+}
+.section-teams .container .row .team .card .layout {
+  text-align: center;
+  width: 100%;
+  transform: translateY(-50px);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.section-teams .container .row .team .card .layout i {
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 16px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: #977a5e;
+  line-height: 40px;
+}
+.section-teams .container .row .team .card:hover h4 {
+  color: #977a5e;
+  transition: 0.5s;
+}
+.section-teams .container .row .team .card:hover .layout {
+  transform: translateY(-60px);
+  transition: 0.5s;
+  opacity: 1;
+}
+
 .section-newsletter {
   padding: 100px 0;
   background-color: #f7f5f1;

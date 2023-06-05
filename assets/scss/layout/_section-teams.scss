@@ -1,0 +1,66 @@
+.section-teams {
+  padding: 100px 0;
+  .container {
+    .row {
+      .team {
+        .card {
+          padding: 20px;
+          .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h4 {
+              font-family: "Jost", sans-serif;
+              font-size: 24px;
+              font-weight: 600;
+              color: $text_dark;
+            }
+            p {
+              color: $primary_color;
+              font-family: "Roboto", sans-serif;
+              font-size: 15px;
+              font-weight: normal;
+              line-height: 26px;
+            }
+          }
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .layout {
+            text-align: center;
+            width: 100%;
+            transform: translateY(-50px);
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            i {
+              text-align: center;
+              color: #fff;
+              border-radius: 50%;
+              font-size: 16px;
+              position: relative;
+              width: 40px;
+              height: 40px;
+              background: $primary_color;
+              line-height: 40px;
+            }
+          }
+          &:hover {
+            h4 {
+              color: $primary_color;
+              transition: 0.5s;
+            }
+            .layout {
+              transform: translateY(-60px);
+              transition: 0.5s;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
