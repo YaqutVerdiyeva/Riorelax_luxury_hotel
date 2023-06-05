@@ -117,34 +117,8 @@
 
 @media only screen and (max-width: 767px) {
   .section-explore {
-    padding: 100px 0;
-    padding-top: 200px;
-    background-color: #f7f5f1;
     .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      h5 {
-        text-align: center;
-        color: $primary_color;
-        font-size: 18px;
-        font-family: "Jost", sans-serif;
-        font-weight: 600;
-      }
-      h2 {
-        text-align: center;
-        color: $text_dark;
-        font-size: 60px;
-        font-family: "Jost", sans-serif;
-        font-weight: 600;
-      }
       .explore-text {
-        text-align: center;
-        color: $text_color;
-        font-size: 15px;
-        font-family: "Jost", sans-serif;
-        font-weight: normal;
         width: 100%;
       }
     }

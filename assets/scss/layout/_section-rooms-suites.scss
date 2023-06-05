@@ -1,0 +1,312 @@
+.section-rooms-suites {
+  padding: 100px 0;
+  background-color: $secondary_color;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h5 {
+      text-align: center;
+      color: $primary_color;
+      font-size: 18px;
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+    }
+    h2 {
+      text-align: center;
+      color: $text_dark;
+      font-size: 60px;
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+    }
+    .explore-text {
+      text-align: center;
+      color: $text_color;
+      font-size: 15px;
+      font-family: "Jost", sans-serif;
+      font-weight: normal;
+      width: 650px;
+    }
+    .rooms {
+      .room-card {
+        margin-top: 200px;
+        position: relative;
+        .room {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 30px;
+          background-color: $secondary_color;
+          box-shadow: 7px 7px 50px 10px rgba(175, 175, 175, 0.25);
+          .room-photo {
+            position: absolute;
+            top: -40%;
+            overflow: hidden;
+            border-radius: 50%;
+
+            .background-img1 {
+              border-radius: 50%;
+              border: 4px solid rgba(116, 96, 85, 0.53);
+              height: 250px;
+              width: 250px;
+              background-image: url(../image/about_img_03.png);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              h2 {
+                display: none;
+                color: $secondary_color;
+                font-family: "Jost", sans-serif;
+                font-weight: 600;
+                font-size: 30px;
+              }
+            }
+            .background-img2 {
+              border-radius: 50%;
+              border: 4px solid rgba(116, 96, 85, 0.53);
+              height: 250px;
+              width: 250px;
+              background-image: url(../image/room-img02.png);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              h2 {
+                display: none;
+                color: $secondary_color;
+                font-family: "Jost", sans-serif;
+                font-weight: 600;
+                font-size: 30px;
+              }
+            }
+            .background-img3 {
+              border-radius: 50%;
+              border: 4px solid rgba(116, 96, 85, 0.53);
+              height: 250px;
+              width: 250px;
+              background-image: url(../image/room-img03.png);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              h2 {
+                display: none;
+                color: $secondary_color;
+                font-family: "Jost", sans-serif;
+                font-weight: 600;
+                font-size: 30px;
+              }
+            }
+            .background-img4 {
+              border-radius: 50%;
+              border: 4px solid rgba(116, 96, 85, 0.53);
+              height: 250px;
+              width: 250px;
+              background-image: url(../image/room-img04.png);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              h2 {
+                display: none;
+                color: $secondary_color;
+                font-family: "Jost", sans-serif;
+                font-weight: 600;
+                font-size: 30px;
+              }
+            }
+            .background-img5 {
+              border-radius: 50%;
+              border: 4px solid rgba(116, 96, 85, 0.53);
+              height: 250px;
+              width: 250px;
+              background-image: url(../image/room-img01.png);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              h2 {
+                display: none;
+                color: $secondary_color;
+                font-family: "Jost", sans-serif;
+                font-weight: 600;
+                font-size: 30px;
+              }
+            }
+            .background-img6 {
+              border-radius: 50%;
+              border: 4px solid rgba(116, 96, 85, 0.53);
+              height: 250px;
+              width: 250px;
+              background-image: url(../image/room-img02.png);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              h2 {
+                display: none;
+                color: $secondary_color;
+                font-family: "Jost", sans-serif;
+                font-weight: 600;
+                font-size: 30px;
+              }
+            }
+            &:hover {
+              .background-img1 {
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url(../image/about_img_03.png);
+                width: 250px;
+                height: 250px;
+                transform: scale(1.05);
+                transition: 0.5s;
+                h2 {
+                  display: block;
+                }
+              }
+              .background-img2 {
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url(../image/room-img02.png);
+                width: 250px;
+                height: 250px;
+                transform: scale(1.05);
+                transition: 0.5s;
+                h2 {
+                  display: block;
+                }
+              }
+              .background-img3 {
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url(../image/room-img03.png);
+                width: 250px;
+                height: 250px;
+                transform: scale(1.05);
+                transition: 0.5s;
+                h2 {
+                  display: block;
+                }
+              }
+              .background-img4 {
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url(../image/room-img04.png);
+                width: 250px;
+                height: 250px;
+                transform: scale(1.05);
+                transition: 0.5s;
+                h2 {
+                  display: block;
+                }
+              }
+              .background-img5 {
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url(../image/room-img01.png);
+                width: 250px;
+                height: 250px;
+                transform: scale(1.05);
+                transition: 0.5s;
+                h2 {
+                  display: block;
+                }
+              }
+              .background-img6 {
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                  ),
+                  url(../image/room-img02.png);
+                width: 250px;
+                height: 250px;
+                transform: scale(1.05);
+                transition: 0.5s;
+                h2 {
+                  display: block;
+                }
+              }
+            }
+          }
+          .room-content {
+            padding-top: 80px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            h4 {
+              font-family: "Jost", sans-serif;
+              font-weight: 600;
+              font-size: 24px;
+              &:hover {
+                color: $primary_color;
+                transition: 0.5s;
+              }
+            }
+            p {
+              margin: 15px 0;
+              text-align: center;
+              color: $text_color;
+              font-family: "Roboto", sans-serif;
+              font-weight: 400;
+              font-size: 15px;
+            }
+            .room-icons {
+              margin: 15px 0;
+              img {
+                height: 20px;
+                width: 20px;
+                margin-right: 17px;
+              }
+            }
+            span {
+              text-align: center;
+              color: $primary_color;
+              font-family: "Roboto", sans-serif;
+              font-weight: 400;
+              font-size: 15px;
+              &:hover {
+                color: #b49e8a;
+                transition: 0.5s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section-rooms-suites {
+    .container {
+      .explore-text {
+        width: 100%;
+      }
+    }
+  }
+}
