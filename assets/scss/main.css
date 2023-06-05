@@ -1410,4 +1410,165 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   .section-brands .container {
     flex-direction: column;
   }
+}
+footer .top-footer {
+  padding: 80px 0;
+  background-image: url(../image/footer-bg.png);
+}
+footer .top-footer .container .row .first-foot .footer-contact ul {
+  margin: 0;
+  padding: 0;
+}
+footer .top-footer .container .row .first-foot .footer-contact ul li {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+footer .top-footer .container .row .first-foot .footer-contact ul li i {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+footer .top-footer .container .row .first-foot .footer-contact ul li span {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: normal;
+  line-height: 26px;
+}
+footer .top-footer .container .row .first-foot .footer-contact ul li span a {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: normal;
+  line-height: 26px;
+}
+footer .top-footer .container .row .second-foot .our-links h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  padding-bottom: 30px;
+  color: #ffffff;
+}
+footer .top-footer .container .row .second-foot .footer-link ul {
+  margin: 0;
+  padding: 0;
+}
+footer .top-footer .container .row .second-foot .footer-link ul li {
+  margin-bottom: 10px;
+}
+footer .top-footer .container .row .second-foot .footer-link ul li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 26px;
+}
+footer .top-footer .container .row .thirth-foot .our-services h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  padding-bottom: 30px;
+  color: #ffffff;
+}
+footer .top-footer .container .row .thirth-foot .footer-services ul {
+  margin: 0;
+  padding: 0;
+}
+footer .top-footer .container .row .thirth-foot .footer-services ul li {
+  margin-bottom: 10px;
+}
+footer .top-footer .container .row .thirth-foot .footer-services ul li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 26px;
+}
+footer .top-footer .container .row .fourth-foot .subscribe h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  padding-bottom: 30px;
+  color: #ffffff;
+}
+footer .top-footer .container .row .fourth-foot .footer-subscribe form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+footer .top-footer .container .row .fourth-foot .footer-subscribe form .email-input {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #f8f8f8;
+  background: #f8f8f8;
+  border-radius: 0;
+}
+footer .top-footer .container .row .fourth-foot .footer-subscribe form .subscribe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  bottom: 15px;
+  border-radius: 0;
+  background: #977a5e;
+  border: none;
+  color: #fff;
+  padding: 20px 10px;
+}
+footer .top-footer .container .row .fourth-foot .footer-subscribe form .subscribe-btn i {
+  font-size: 20px;
+}
+footer .top-footer .container .row .fourth-foot .footer-subscribe form .subscribe-btn:hover {
+  background-color: #5f4329;
+  transition: 0.5s;
+}
+footer .bottom-footer {
+  background-color: #282828;
+  padding: 35px 0;
+}
+footer .bottom-footer .container .row .left {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+footer .bottom-footer .container .row .left p {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+footer .bottom-footer .container .row .right .footer-icons {
+  text-align: right;
+}
+footer .bottom-footer .container .row .right .footer-icons a i {
+  font-size: 16px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #101010;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+}
+footer .bottom-footer .container .row .right .footer-icons a i:hover {
+  background-color: #977a5e;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 767px) {
+  footer .bottom-footer .container .row .left {
+    justify-content: center;
+  }
+  footer .bottom-footer .container .row .right .footer-icons {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
