@@ -1,0 +1,131 @@
+.section-book-room {
+  padding: 100px 0;
+  .container {
+    .row {
+      .left-book {
+        h5 {
+          color: $primary_color;
+          font-size: 18px;
+          margin-bottom: 10px;
+          font-family: "Jost", sans-serif;
+          font-weight: 600;
+        }
+        h2 {
+          font-family: "Jost", sans-serif;
+          color: $text_dark;
+          font-weight: 600;
+          font-size: 48px;
+        }
+        .check-row {
+          .left {
+            .check-in-date {
+              display: flex;
+              flex-direction: column;
+              label {
+                margin: 20px 0;
+                font-family: "Jost", sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                color: $text_dark;
+                i {
+                  padding-right: 5px;
+                  color: #be9874;
+                }
+              }
+              #checkin[type="date"] {
+                border-radius: 0;
+                padding: 10px;
+                border-color: #64422247;
+                color: #be9874;
+              }
+            }
+
+            .adults {
+              display: flex;
+              flex-direction: column;
+              label {
+                margin: 20px 0;
+                font-family: "Jost", sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                color: $text_dark;
+                i {
+                  padding-right: 5px;
+                  color: #be9874;
+                }
+              }
+              #adults[type="number"] {
+                border-radius: 0;
+                padding: 10px;
+                border-color: #64422247;
+                color: #be9874;
+              }
+            }
+          }
+          .right {
+            .check-out-date {
+              display: flex;
+              flex-direction: column;
+              label {
+                margin: 20px 0;
+                font-family: "Jost", sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                color: $text_dark;
+                i {
+                  padding-right: 5px;
+                  color: #be9874;
+                }
+              }
+              #checkout[type="date"] {
+                border-radius: 0;
+                padding: 10px;
+                border-color: #64422247;
+                color: #be9874;
+              }
+            }
+            .room {
+              display: flex;
+              flex-direction: column;
+              label {
+                margin: 20px 0;
+                font-family: "Jost", sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                color: $text_dark;
+                i {
+                  padding-right: 5px;
+                  color: #be9874;
+                }
+              }
+              #room[type="number"] {
+                border-radius: 0;
+                padding: 10px;
+                border-color: #64422247;
+                color: #be9874;
+              }
+            }
+          }
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .book-button {
+            border: none;
+            width: 97%;
+            padding: 12px 25px;
+            font-size: 15px;
+            background-color: $primary_color;
+            color: $secondary-color;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+          }
+        }
+      }
+      .right-book{
+        img{
+            width: 100%;
+        }
+      }
+    }
+  }
+}

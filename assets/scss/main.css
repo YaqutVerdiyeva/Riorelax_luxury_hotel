@@ -1080,6 +1080,37 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   font-family: "Roboto", sans-serif;
 }
 
+@media only screen and (max-width: 767px) {
+  .section-extra-services {
+    padding: 100px 0;
+  }
+  .section-extra-services .container .row .services {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-extra-services .container .row .services h5 {
+    color: #977a5e;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .section-extra-services .container .row .services h2 {
+    font-family: "Jost", sans-serif;
+    color: #101010;
+    margin-top: 0px;
+    font-weight: 600;
+    font-size: 60px;
+  }
+  .section-extra-services .container .row .services p {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #777777;
+    line-height: 26px;
+  }
+}
 .section-testimonial {
   padding: 100px 0;
   background-image: url(../image/testimonial-bg.png);
@@ -1158,4 +1189,122 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   .section-testimonial .container .explore-text {
     width: 100%;
   }
+}
+.section-book-room {
+  padding: 100px 0;
+}
+.section-book-room .container .row .left-book h5 {
+  color: #977a5e;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+}
+.section-book-room .container .row .left-book h2 {
+  font-family: "Jost", sans-serif;
+  color: #101010;
+  font-weight: 600;
+  font-size: 48px;
+}
+.section-book-room .container .row .left-book .check-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-book-room .container .row .left-book .check-row .left .check-in-date {
+  display: flex;
+  flex-direction: column;
+}
+.section-book-room .container .row .left-book .check-row .left .check-in-date label {
+  margin: 20px 0;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #101010;
+}
+.section-book-room .container .row .left-book .check-row .left .check-in-date label i {
+  padding-right: 5px;
+  color: #be9874;
+}
+.section-book-room .container .row .left-book .check-row .left .check-in-date #checkin[type=date] {
+  border-radius: 0;
+  padding: 10px;
+  border-color: rgba(100, 66, 34, 0.2784313725);
+  color: #be9874;
+}
+.section-book-room .container .row .left-book .check-row .left .adults {
+  display: flex;
+  flex-direction: column;
+}
+.section-book-room .container .row .left-book .check-row .left .adults label {
+  margin: 20px 0;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #101010;
+}
+.section-book-room .container .row .left-book .check-row .left .adults label i {
+  padding-right: 5px;
+  color: #be9874;
+}
+.section-book-room .container .row .left-book .check-row .left .adults #adults[type=number] {
+  border-radius: 0;
+  padding: 10px;
+  border-color: rgba(100, 66, 34, 0.2784313725);
+  color: #be9874;
+}
+.section-book-room .container .row .left-book .check-row .right .check-out-date {
+  display: flex;
+  flex-direction: column;
+}
+.section-book-room .container .row .left-book .check-row .right .check-out-date label {
+  margin: 20px 0;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #101010;
+}
+.section-book-room .container .row .left-book .check-row .right .check-out-date label i {
+  padding-right: 5px;
+  color: #be9874;
+}
+.section-book-room .container .row .left-book .check-row .right .check-out-date #checkout[type=date] {
+  border-radius: 0;
+  padding: 10px;
+  border-color: rgba(100, 66, 34, 0.2784313725);
+  color: #be9874;
+}
+.section-book-room .container .row .left-book .check-row .right .room {
+  display: flex;
+  flex-direction: column;
+}
+.section-book-room .container .row .left-book .check-row .right .room label {
+  margin: 20px 0;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #101010;
+}
+.section-book-room .container .row .left-book .check-row .right .room label i {
+  padding-right: 5px;
+  color: #be9874;
+}
+.section-book-room .container .row .left-book .check-row .right .room #room[type=number] {
+  border-radius: 0;
+  padding: 10px;
+  border-color: rgba(100, 66, 34, 0.2784313725);
+  color: #be9874;
+}
+.section-book-room .container .row .left-book .check-row .book-button {
+  border: none;
+  width: 97%;
+  padding: 12px 25px;
+  font-size: 15px;
+  background-color: #977a5e;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.section-book-room .container .row .right-book img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

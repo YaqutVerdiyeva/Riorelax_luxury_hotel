@@ -1142,6 +1142,68 @@
         </div>
       </div>
     </section>
+
+    <section class="section-book-room">
+      <div class="container">
+        <div class="row">
+          <div class="col col-12 col-lg-6 col-md left-book">
+            <h5 class="mt-5">Make Appointment</h5>
+            <h2>Book A Room</h2>
+            <div class="row check-row">
+              <div class="col col-6 left">
+                <div class="check-in-date">
+                  <label
+                    ><i class="fa-regular fa-circle-check"></i> Check In
+                    Date</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="checkin"
+                    name="date"
+                  />
+                </div>
+                <div class="adults">
+                  <label><i class="fa-solid fa-people-line"></i> Adults</label>
+                  <select type="number" name="adults" id="adults">
+                    <option value="adults">Adults</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col col-6 right">
+                <div class="check-out-date">
+                  <label
+                    ><i class="fa-regular fa-circle-xmark"></i> Check Out
+                    Date</label
+                  >
+                  <input type="date" class="form-control" id="checkout" />
+                </div>
+                <div class="room">
+                  <label><i class="fa-solid fa-bell-concierge"></i> Room</label>
+                  <select type="number" name="room" id="room">
+                    <option value="room">Room</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+              <button class="book-button mt-5 m-3">BOOK TABLE NOW</button>
+            </div>
+          </div>
+          <div class="col col-12 col-lg-6 col-md-6 right-book">
+            <img src="./assets/image/booking-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
       integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
