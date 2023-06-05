@@ -209,7 +209,17 @@ header {
     }
   }
 }
-
+.scrollup {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  background: $primary_color;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+}
 @media only screen and (max-width: 991px) {
   header {
     position: fixed;

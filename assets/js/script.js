@@ -7,6 +7,7 @@ let span1 = document.getElementsByClassName("close1")[0];
 let menuicon = document.querySelector(".menuicon");
 let menuicon1 = document.querySelector(".menuicon1");
 let nav = document.querySelector(".nav-mobile");
+let scrollUpBtn = document.querySelector(".scrollup");
 
 //Modal video
 btn.onclick = function () {
@@ -41,10 +42,12 @@ function scrollFunction() {
     document.querySelector(".top-header").style.display = "none";
     document.querySelector(".bottom-header").style.background = "#977a5e";
     document.querySelector(".bottom-header").style.transition = "0.2s";
+    scrollUpBtn.style.display = "block";
   } else {
     document.querySelector(".top-header").style.display = "block";
     document.querySelector(".bottom-header").style.background =
       " rgba(9, 9, 9, 0.5)";
+    scrollUpBtn.style.display = "none";
   }
 }
 window.addEventListener("scroll", function () {
@@ -93,4 +96,9 @@ document.querySelector(".plus4").addEventListener("click", function () {
 document.querySelector(".minus4").addEventListener("click", function () {
   document.querySelector(".plus4").style.visibility = "visible";
   document.querySelector(".minus4").style.visibility = "hidden";
+});
+//scrollUpBtn
+scrollUpBtn.addEventListener("click", function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 });

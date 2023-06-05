@@ -193,6 +193,18 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   text-transform: uppercase;
 }
 
+.scrollup {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  background: #977a5e;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+}
+
 @media only screen and (max-width: 991px) {
   header {
     position: fixed;
