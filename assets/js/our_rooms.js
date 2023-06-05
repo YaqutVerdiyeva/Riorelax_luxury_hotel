@@ -1,7 +1,25 @@
+let modal = document.getElementById("myModal");
+let btn = document.getElementById("myBtn");
+let span = document.getElementsByClassName("close")[0];
 let menuicon = document.querySelector(".menuicon");
 let menuicon1 = document.querySelector(".menuicon1");
 let nav = document.querySelector(".nav-mobile");
 let scrollUpBtn = document.querySelector(".scrollup");
+
+//Modal video
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
 
 //header scroll
 function scrollFunction() {

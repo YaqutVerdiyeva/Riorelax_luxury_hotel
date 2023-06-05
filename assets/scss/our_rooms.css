@@ -203,6 +203,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   border-radius: 50%;
   border: none;
   color: white;
+  z-index: 25;
 }
 
 @media only screen and (max-width: 991px) {
@@ -289,6 +290,11 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   color: #ffffff;
 }
 
+@media only screen and (max-width: 767px) {
+  .section-our-rooms .container p {
+    display: none;
+  }
+}
 .section-rooms-suites {
   padding: 100px 0;
   background-color: #ffffff;
@@ -727,6 +733,72 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
 }
 .section-book-room .container .row .right-book img {
   width: 100%;
+}
+
+.section-our-rooms-video {
+  background-image: url(../image/video-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+.section-our-rooms-video .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 150px;
+}
+.section-our-rooms-video .container h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  margin-bottom: 25px;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.section-our-rooms-video .container .discover-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-our-rooms-video .container .discover-video .modal {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.section-our-rooms-video .container .discover-video .modal .modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin: auto;
+  width: 80%;
+  height: 90%;
+}
+.section-our-rooms-video .container .discover-video .modal .modal-content .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+.section-our-rooms-video .container .discover-video .modal .modal-content .close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.section-our-rooms-video .container .discover-video .modal .modal-content .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 footer .top-footer {
