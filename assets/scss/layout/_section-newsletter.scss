@@ -1,0 +1,65 @@
+.section-newsletter {
+  padding: 100px 0;
+  background-color: #f7f5f1;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h5 {
+      text-align: center;
+      color: $primary_color;
+      font-size: 18px;
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+    }
+    h2 {
+      text-align: center;
+      color: $text_dark;
+      font-size: 60px;
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+    }
+    .explore-text {
+      text-align: center;
+      color: $text_color;
+      font-size: 15px;
+      font-family: "Jost", sans-serif;
+      font-weight: normal;
+      width: 40%;
+    }
+    .input-letter {
+      input {
+        background: $secondary_color;
+        border: 1px solid $secondary_color;
+        padding: 15px 20px;
+        border-radius: 10px;
+        width: 500px;
+      }
+      position: relative;
+      button {
+        background: $primary_color;
+        color: $secondary_color;
+        text-align: center;
+        font-size: 15px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        padding: 17px 20px;
+        border-radius: 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section-newsletter {
+    .container {
+      .input-letter {
+        input {
+          width: 320px;
+        }
+      }
+    }
+  }
+}

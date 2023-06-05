@@ -495,6 +495,66 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
     width: 100%;
   }
 }
+.section-newsletter {
+  padding: 100px 0;
+  background-color: #f7f5f1;
+}
+.section-newsletter .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-newsletter .container h5 {
+  text-align: center;
+  color: #977a5e;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+}
+.section-newsletter .container h2 {
+  text-align: center;
+  color: #101010;
+  font-size: 60px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+}
+.section-newsletter .container .explore-text {
+  text-align: center;
+  color: #777777;
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  width: 40%;
+}
+.section-newsletter .container .input-letter {
+  position: relative;
+}
+.section-newsletter .container .input-letter input {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 500px;
+}
+.section-newsletter .container .input-letter button {
+  background: #977a5e;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  padding: 17px 20px;
+  border-radius: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .section-newsletter .container .input-letter input {
+    width: 320px;
+  }
+}
 footer .top-footer {
   padding: 80px 0;
   background-image: url(../image/footer-bg.png);
