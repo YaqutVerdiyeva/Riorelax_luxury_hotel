@@ -295,6 +295,78 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
     display: none;
   }
 }
+.section-about-us {
+  padding: 100px 0;
+}
+.section-about-us .container .row .left .photo-about {
+  position: relative;
+}
+.section-about-us .container .row .left .photo-about .about-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.section-about-us .container .row .right h5 {
+  color: #977a5e;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+}
+.section-about-us .container .row .right h2 {
+  font-family: "Jost", sans-serif;
+  color: #101010;
+  margin-top: 0px;
+  font-weight: 600;
+  font-size: 60px;
+}
+.section-about-us .container .row .right p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #777777;
+  line-height: 26px;
+}
+.section-about-us .container .row .right .about-texts {
+  margin-bottom: 10px;
+  color: #977a5e;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 26px;
+}
+.section-about-us .container .row .right .about-texts i {
+  margin-right: 10px;
+}
+.section-about-us .container .row .right .signature {
+  margin: 15px 0;
+}
+.section-about-us .container .row .right h3 {
+  margin-top: 20px;
+  font-family: "Jost", sans-serif;
+  color: #101010;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+@media only screen and (max-width: 811px) {
+  .section-about-us .container .row .right h3 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .section-about-us .container .row .left .photo-about {
+    position: relative;
+  }
+  .section-about-us .container .row .left .photo-about img {
+    width: 100%;
+  }
+  .section-about-us .container .row .left .photo-about .about-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
 .section-resort {
   background-color: #F7F5F1;
 }
