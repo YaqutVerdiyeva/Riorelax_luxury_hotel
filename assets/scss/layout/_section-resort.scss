@@ -39,6 +39,10 @@
           font-family: "Roboto", sans-serif;
           font-weight: 400;
           border: none;
+          &:hover {
+            background-color: #614a37;
+            transition: 0.5s;
+          }
         }
       }
     }
