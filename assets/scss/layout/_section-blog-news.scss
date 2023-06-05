@@ -92,3 +92,12 @@
     }
   }
 }
+@media only screen and (max-width: 767px) {
+  .section-blog-news {
+    .container {
+      .explore-text {
+        width: 100%;
+      }
+    }
+  }
+}

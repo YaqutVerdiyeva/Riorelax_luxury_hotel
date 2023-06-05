@@ -1389,4 +1389,25 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
 .section-blog-news .container .blogs .col .blog:hover img {
   transform: scale(1.1);
   transition: 0.5s;
+}
+
+@media only screen and (max-width: 767px) {
+  .section-blog-news .container .explore-text {
+    width: 100%;
+  }
+}
+.section-brands {
+  background-color: #f7f5f1;
+  padding: 50px 0;
+}
+.section-brands .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .section-brands .container {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=main.css.map */
