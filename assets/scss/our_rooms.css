@@ -262,14 +262,14 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 70vh;
 }
 .section-our-rooms .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 250px;
+  padding-top: 200px;
 }
 .section-our-rooms .container h2 {
   font-family: "Jost", sans-serif;

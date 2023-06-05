@@ -3,13 +3,13 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 70vh;
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 250px;
+    padding-top: 200px;
     h2 {
       font-family: "Jost", sans-serif;
       font-weight: 600;
@@ -31,7 +31,7 @@
   }
 }
 @media only screen and (max-width: 767px) {
-  .section-our-rooms {
+  .section-services {
     .container {
       p {
         display: none;
