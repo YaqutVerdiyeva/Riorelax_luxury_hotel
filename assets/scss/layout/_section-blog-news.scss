@@ -1,0 +1,94 @@
+.section-blog-news {
+  padding: 100px 0;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h5 {
+      text-align: center;
+      color: $primary_color;
+      font-size: 18px;
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+    }
+    h2 {
+      text-align: center;
+      color: $text_dark;
+      font-size: 60px;
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+    }
+    .explore-text {
+      text-align: center;
+      color: $text_color;
+      font-size: 15px;
+      font-family: "Jost", sans-serif;
+      font-weight: normal;
+      width: 650px;
+    }
+    .blogs {
+      .col {
+        .blog {
+          .blog-img {
+            overflow: hidden;
+            a {
+              img {
+                width: 100%;
+              }
+            }
+          }
+          .blog-text {
+            border: 1px solid #b7b7b7;
+
+            padding: 25px;
+            span {
+              font-family: "Roboto", sans-serif;
+              font-size: 15px;
+              font-weight: 700;
+              color: $primary_color;
+            }
+            h4 {
+              a {
+                font-family: "Jost", sans-serif;
+                font-size: 26px;
+                font-weight: 600;
+                color: $text_dark;
+                &:hover {
+                  color: $primary_color;
+                  transition: 0.5s;
+                }
+              }
+            }
+            p {
+              font-family: "Roboto", sans-serif;
+              font-size: 15px;
+              font-weight: normal;
+              color: $text_color;
+              line-height: 26px;
+            }
+            .read-blog {
+              font-family: "Roboto", sans-serif;
+              color: $primary_color;
+              text-align: center;
+              font-size: 15px;
+              border-bottom: 3px solid $primary_color;
+              font-weight: 500;
+              &:hover {
+                color: $text_dark;
+                transition: 0.5s;
+                border-bottom: 3px solid $text_dark;
+              }
+            }
+          }
+          &:hover {
+            img {
+              transform: scale(1.1);
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
