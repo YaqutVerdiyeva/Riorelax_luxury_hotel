@@ -1,0 +1,96 @@
+.section-get-in-touch {
+  padding: 100px 0;
+  .container {
+    .row {
+      .contact-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contact-cards {
+          .contact-card {
+            border-bottom: 1px solid #ccc;
+            padding: 0px 55px 30px 0; 
+            margin: 30px 0;
+            display: flex;
+            align-items: center;
+            .contact-icon {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-right: 30px;
+              padding: 25px 20px;
+              background: $primary_color;
+              border-radius: 50%;
+              color: $secondary_color;
+              font-size: 28px;
+            }
+            .contact-text {
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              h5 {
+                font-family: "Jost", sans-serif;
+                color: $text_dark;
+                font-weight: 600;
+              }
+              p {
+                font-family: "Roboto", sans-serif;
+                font-size: 15px;
+                font-weight: normal;
+                color: $text_color;
+                margin: 0;
+              }
+            }
+          }
+          .contact-card-last {
+            border: none;
+          }
+        }
+      }
+      .contact-right {
+        background-color: #f7f5f1;
+        padding: 100px;
+        h2 {
+          font-family: "Jost", sans-serif;
+          color: #101010;
+          font-weight: 600;
+          font-size: 48px;
+          text-align: center;
+        }
+        form {
+          .row {
+            .form-input {
+              .form-control,
+              textarea {
+                border: 1px solid $text_color;
+                border-radius: 0;
+                &::placeholder {
+                  color: #9b9595;
+                  font-family: "Roboto", sans-serif;
+                  font-size: 15px;
+                }
+              }
+              textarea {
+                height: 100px;
+              }
+              button {
+                background: $primary_color;
+                color: $secondary_color;
+                text-align: center;
+                font-size: 15px;
+                border: none;
+                padding: 17px 20px;
+                border-radius: 0;
+                width: 100%;
+                &:hover {
+                  background-color: #614a37;
+                  transition: 0.5s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

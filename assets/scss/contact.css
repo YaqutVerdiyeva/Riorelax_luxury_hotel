@@ -295,6 +295,97 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
     display: none;
   }
 }
+.section-get-in-touch {
+  padding: 100px 0;
+}
+.section-get-in-touch .container .row .contact-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-get-in-touch .container .row .contact-left .contact-cards .contact-card {
+  border-bottom: 1px solid #ccc;
+  padding: 0px 55px 30px 0;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+}
+.section-get-in-touch .container .row .contact-left .contact-cards .contact-card .contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  padding: 25px 20px;
+  background: #977a5e;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 28px;
+}
+.section-get-in-touch .container .row .contact-left .contact-cards .contact-card .contact-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.section-get-in-touch .container .row .contact-left .contact-cards .contact-card .contact-text h5 {
+  font-family: "Jost", sans-serif;
+  color: #101010;
+  font-weight: 600;
+}
+.section-get-in-touch .container .row .contact-left .contact-cards .contact-card .contact-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #777777;
+  margin: 0;
+}
+.section-get-in-touch .container .row .contact-left .contact-cards .contact-card-last {
+  border: none;
+}
+.section-get-in-touch .container .row .contact-right {
+  background-color: #f7f5f1;
+  padding: 100px;
+}
+.section-get-in-touch .container .row .contact-right h2 {
+  font-family: "Jost", sans-serif;
+  color: #101010;
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+}
+.section-get-in-touch .container .row .contact-right form .row .form-input .form-control,
+.section-get-in-touch .container .row .contact-right form .row .form-input textarea {
+  border: 1px solid #777777;
+  border-radius: 0;
+}
+.section-get-in-touch .container .row .contact-right form .row .form-input .form-control::-moz-placeholder, .section-get-in-touch .container .row .contact-right form .row .form-input textarea::-moz-placeholder {
+  color: #9b9595;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.section-get-in-touch .container .row .contact-right form .row .form-input .form-control::placeholder,
+.section-get-in-touch .container .row .contact-right form .row .form-input textarea::placeholder {
+  color: #9b9595;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.section-get-in-touch .container .row .contact-right form .row .form-input textarea {
+  height: 100px;
+}
+.section-get-in-touch .container .row .contact-right form .row .form-input button {
+  background: #977a5e;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  border: none;
+  padding: 17px 20px;
+  border-radius: 0;
+  width: 100%;
+}
+.section-get-in-touch .container .row .contact-right form .row .form-input button:hover {
+  background-color: #614a37;
+  transition: 0.5s;
+}
+
 .section-newsletter {
   padding: 100px 0;
   background-color: #f7f5f1;
