@@ -327,6 +327,21 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   font-weight: normal;
   width: 650px;
 }
+.section-rooms-suites .container .search-sort {
+  display: flex;
+}
+.section-rooms-suites .container .search-sort .left input {
+  border: 1px solid #101010;
+  border-radius: 0;
+}
+.section-rooms-suites .container .search-sort .right {
+  width: 50%;
+  text-align: right;
+}
+.section-rooms-suites .container .search-sort .right select {
+  border: 1px solid #101010;
+  padding: 8px;
+}
 .section-rooms-suites .container .rooms .room-card {
   margin-top: 200px;
   position: relative;
