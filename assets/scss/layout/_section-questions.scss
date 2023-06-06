@@ -1,0 +1,46 @@
+.section-questions {
+  padding: 100px 0;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+      font-size: 60px;
+      margin-bottom: 25px;
+      line-height: 1;
+      letter-spacing: 1px;
+      color: $primary_color;
+      text-align: center;
+    }
+    .row {
+      .faq {
+        .accordion {
+          .accordion-item {
+            border: 1px solid $primary_color;
+
+            .accordion-header {
+              .accordion-button {
+                background-color: $secondary_color;
+                width: 100%;
+                color: $text_dark;
+                border-bottom: 1px solid $primary_color;
+                font-family: "Jost", sans-serif;
+                font-weight: 600;
+              }
+            }
+            .collapse {
+              .accordion-body {
+                font-family: "Jost", sans-serif;
+                font-weight: 400;
+                color: $primary_color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
