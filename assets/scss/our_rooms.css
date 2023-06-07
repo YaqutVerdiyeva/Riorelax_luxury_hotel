@@ -140,6 +140,13 @@ header .bottom-header .container .reservation-btn .btn-reserv {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  transition: all 0.4s ease 0s;
+}
+header .bottom-header .container .reservation-btn .btn-reserv:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header .container .menuicon {
   display: none;
@@ -165,6 +172,8 @@ header .nav-mobile ul {
 }
 header .nav-mobile ul .accordion {
   width: 80%;
+  --bs-accordion-active-bg: white;
+  --bs-accordion-btn-focus-box-shadow: white;
 }
 header .nav-mobile ul .accordion .accordion-item h2 .accordion-button p {
   margin: 0;
@@ -204,6 +213,13 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   border: none;
   color: white;
   z-index: 25;
+  transition: all 0.4s ease 0s;
+}
+.scrollup:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 
 @media only screen and (max-width: 991px) {
@@ -601,7 +617,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   }
 }
 .section-resort {
-  background-color: #F7F5F1;
+  background-color: #f7f5f1;
 }
 .section-resort .container .row .left-resort .background-img-resort img {
   max-width: 100%;
@@ -630,15 +646,60 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   margin-top: 10px;
   padding: 20px 35px;
   font-size: 15px;
-  background-color: #977a5e;
-  color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   border: none;
+  position: relative;
+  border-radius: 30px;
+  color: #292929;
+  background-color: #977a5e;
+  transition: 1s all ease-in-out;
+  overflow: hidden;
+}
+.section-resort .container .row .right-resort .discover::before {
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 400px;
+  background-color: #ffffff;
+  top: -370px;
+  left: -120px;
+  border-radius: 45%;
+  transition: 1s all ease-in-out;
+  animation: wave 5s infinite linear;
+}
+.section-resort .container .row .right-resort .discover::after {
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 400px;
+  background-color: rgba(236, 236, 236, 0.5019607843);
+  top: -360px;
+  left: -125px;
+  border-radius: 45%;
+  transition: 1s all ease-in-out;
+  animation: wave 5s infinite linear;
+}
+.section-resort .container .row .right-resort .discover span {
+  position: relative;
+  z-index: 1;
 }
 .section-resort .container .row .right-resort .discover:hover {
-  background-color: #614a37;
-  transition: 0.5s;
+  color: #fff;
+}
+.section-resort .container .row .right-resort .discover:hover::before {
+  top: -450px;
+}
+.section-resort .container .row .right-resort .discover:hover::after {
+  top: -440px;
+}
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .section-book-room {

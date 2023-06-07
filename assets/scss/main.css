@@ -140,6 +140,13 @@ header .bottom-header .container .reservation-btn .btn-reserv {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  transition: all 0.4s ease 0s;
+}
+header .bottom-header .container .reservation-btn .btn-reserv:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header .container .menuicon {
   display: none;
@@ -165,6 +172,8 @@ header .nav-mobile ul {
 }
 header .nav-mobile ul .accordion {
   width: 80%;
+  --bs-accordion-active-bg: white;
+  --bs-accordion-btn-focus-box-shadow: white;
 }
 header .nav-mobile ul .accordion .accordion-item h2 .accordion-button p {
   margin: 0;
@@ -204,6 +213,13 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   border: none;
   color: white;
   z-index: 25;
+  transition: all 0.4s ease 0s;
+}
+.scrollup:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 
 @media only screen and (max-width: 991px) {
@@ -292,6 +308,23 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  -webkit-border-radius: 60px;
+  cursor: pointer;
+  animation: glowing 1300ms infinite;
+}
+@keyframes glowing {
+  0% {
+    background-color: transparent;
+    box-shadow: 0 0 5px #fff;
+  }
+  50% {
+    background-color: transparent;
+    box-shadow: 0 0 25px #fff;
+  }
+  100% {
+    background-color: transparent;
+    box-shadow: 0 0 5px #fff;
+  }
 }
 .section-slide .carousel-inner .carousel-item .carousel-caption .container .discover-video .intro {
   display: flex;
@@ -524,14 +557,38 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   width: 200px;
   padding: 12px 25px;
   font-size: 15px;
-  background-color: #977a5e;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  background: #977a5e;
+  position: relative;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
 }
 .section-check .container form .row .right .calendar .check-btn:hover {
-  background-color: #614a37;
-  transition: 0.5s;
+  background: #ffffff;
+  color: #977a5e;
+}
+.section-check .container form .row .right .calendar .check-btn:before, .section-check .container form .row .right .calendar .check-btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #977a5e;
+  transition: 400ms ease all;
+}
+.section-check .container form .row .right .calendar .check-btn:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.section-check .container form .row .right .calendar .check-btn:hover:before, .section-check .container form .row .right .calendar .check-btn:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
 }
 
 @media only screen and (max-width: 991px) {
@@ -976,7 +1033,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   }
 }
 .section-resort {
-  background-color: #F7F5F1;
+  background-color: #f7f5f1;
 }
 .section-resort .container .row .left-resort .background-img-resort img {
   max-width: 100%;
@@ -1005,15 +1062,60 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   margin-top: 10px;
   padding: 20px 35px;
   font-size: 15px;
-  background-color: #977a5e;
-  color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   border: none;
+  position: relative;
+  border-radius: 30px;
+  color: #292929;
+  background-color: #977a5e;
+  transition: 1s all ease-in-out;
+  overflow: hidden;
+}
+.section-resort .container .row .right-resort .discover::before {
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 400px;
+  background-color: #ffffff;
+  top: -370px;
+  left: -120px;
+  border-radius: 45%;
+  transition: 1s all ease-in-out;
+  animation: wave 5s infinite linear;
+}
+.section-resort .container .row .right-resort .discover::after {
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 400px;
+  background-color: rgba(236, 236, 236, 0.5019607843);
+  top: -360px;
+  left: -125px;
+  border-radius: 45%;
+  transition: 1s all ease-in-out;
+  animation: wave 5s infinite linear;
+}
+.section-resort .container .row .right-resort .discover span {
+  position: relative;
+  z-index: 1;
 }
 .section-resort .container .row .right-resort .discover:hover {
-  background-color: #614a37;
-  transition: 0.5s;
+  color: #fff;
+}
+.section-resort .container .row .right-resort .discover:hover::before {
+  top: -450px;
+}
+.section-resort .container .row .right-resort .discover:hover::after {
+  top: -440px;
+}
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .section-extra-services {
@@ -1092,15 +1194,23 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   margin-top: 10px;
   padding: 20px 35px;
   font-size: 15px;
-  background-color: #977a5e;
-  color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   border: none;
+  flex: 1 auto;
+  text-align: center;
+  transition: all 0.5s ease-out;
+  background: #977a5e;
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
+  background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
 .section-extra-services .container .row .card-services .card-service .button-get-started button:hover {
-  background-color: #614a37;
-  transition: 0.5s;
+  border-color: transparent;
+  color: #161616;
+  background-position: 99% 50%;
 }
 .section-extra-services .container .row .card-services .card-service .monthly {
   position: absolute;
@@ -1177,20 +1287,37 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   font-weight: normal;
   width: 650px;
 }
-.section-testimonial .container .row .col .clients {
+.section-testimonial .container .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.section-testimonial .container .swiper .swiper-wrapper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.section-testimonial .container .swiper .swiper-wrapper .swiper-slide .swiper-slide-shadow-right {
+  background-image: none;
+}
+.section-testimonial .container .swiper .swiper-wrapper .swiper-slide .swiper-slide-shadow-left {
+  background-image: none;
+}
+.section-testimonial .container .swiper .swiper-wrapper .swiper-slide .clients {
   background-color: #ffffff;
   padding: 30px;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
   position: relative;
 }
-.section-testimonial .container .row .col .clients .client {
+.section-testimonial .container .swiper .swiper-wrapper .swiper-slide .clients .client {
   display: flex;
   align-items: center;
 }
-.section-testimonial .container .row .col .clients .client .text-client {
+.section-testimonial .container .swiper .swiper-wrapper .swiper-slide .clients .client .text-client {
   margin-left: 15px;
 }
-.section-testimonial .container .row .col .clients .client .text-client h6 {
+.section-testimonial .container .swiper .swiper-wrapper .swiper-slide .clients .client .text-client h6 {
   font-family: "Jost", sans-serif;
   font-size: 26px;
   margin-top: 5px;
@@ -1198,27 +1325,26 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   color: #977a5e;
   font-weight: 700;
 }
-.section-testimonial .container .row .col .clients .client .text-client span {
+.section-testimonial .container .swiper .swiper-wrapper .swiper-slide .clients .client .text-client span {
   color: #977a5e;
   font-size: 16px;
   font-family: "Jost", sans-serif;
 }
-.section-testimonial .container .row .col .clients .review-icon {
+.section-testimonial .container .swiper .swiper-wrapper .swiper-slide .clients .review-icon {
   margin: 30px 0;
 }
-.section-testimonial .container .row .col .clients p {
+.section-testimonial .container .swiper .swiper-wrapper .swiper-slide .clients p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: normal;
   color: #777777;
   line-height: 26px;
 }
-.section-testimonial .container .row .col .clients .qt-img {
+.section-testimonial .container .swiper .swiper-wrapper .swiper-slide .clients .qt-img {
   position: absolute;
   right: 30px;
   top: 30px;
 }
-
 @media only screen and (max-width: 767px) {
   .section-testimonial .container .explore-text {
     width: 100%;

@@ -42,7 +42,26 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+//swiper2
 
+var swiper = new Swiper(".mySwiperr", {
+  effect: 'coverflow',
+    grabCursor: true,
+    initialSlide:2,   
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 300,
+      modifier: 1,
+      slideShadows : false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+});
 //header scroll
 function scrollFunction() {
   if (

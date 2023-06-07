@@ -1,5 +1,5 @@
 .section-resort {
-    background-color: #F7F5F1;
+  background-color: #f7f5f1;
   .container {
     .row {
       .left-resort {
@@ -31,17 +31,63 @@
           margin: 0;
         }
         .discover {
-            margin-top: 10px;
+          margin-top: 10px;
           padding: 20px 35px;
           font-size: 15px;
-          background-color: $primary_color;
-          color: $secondary-color;
           font-family: "Roboto", sans-serif;
           font-weight: 400;
           border: none;
+          position: relative;
+          border-radius: 30px;
+          color: #292929;
+          background-color: $primary_color;
+          transition: 1s all ease-in-out;
+          overflow: hidden;
+          &::before {
+            position: absolute;
+            content: "";
+            width: 400px;
+            height: 400px;
+            background-color: $secondary_color;
+            top: -370px;
+            left: -120px;
+            border-radius: 45%;
+            transition: 1s all ease-in-out;
+            animation: wave 5s infinite linear;
+          }
+          &::after {
+            position: absolute;
+            content: "";
+            width: 400px;
+            height: 400px;
+            background-color: #ececec80;
+            top: -360px;
+            left: -125px;
+            border-radius: 45%;
+            transition: 1s all ease-in-out;
+            animation: wave 5s infinite linear;
+          }
+          span {
+            position: relative;
+            z-index: 1;
+          }
           &:hover {
-            background-color: #614a37;
-            transition: 0.5s;
+            color: #fff;
+          }
+          &:hover::before {
+            top: -450px;
+          }
+          &:hover::after {
+            top: -440px;
+          }
+        }
+        @keyframes wave {
+          0% {
+            transform: rotate(0deg);
+          }
+
+          100% {
+            transform: rotate(360deg);
           }
         }
       }

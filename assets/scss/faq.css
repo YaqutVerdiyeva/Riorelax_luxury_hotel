@@ -140,6 +140,13 @@ header .bottom-header .container .reservation-btn .btn-reserv {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  transition: all 0.4s ease 0s;
+}
+header .bottom-header .container .reservation-btn .btn-reserv:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header .container .menuicon {
   display: none;
@@ -165,6 +172,8 @@ header .nav-mobile ul {
 }
 header .nav-mobile ul .accordion {
   width: 80%;
+  --bs-accordion-active-bg: white;
+  --bs-accordion-btn-focus-box-shadow: white;
 }
 header .nav-mobile ul .accordion .accordion-item h2 .accordion-button p {
   margin: 0;
@@ -204,6 +213,13 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   border: none;
   color: white;
   z-index: 25;
+  transition: all 0.4s ease 0s;
+}
+.scrollup:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 
 @media only screen and (max-width: 991px) {
