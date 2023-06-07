@@ -5,7 +5,9 @@
       display: flex;
       .left {
         input {
-          border: 1px solid $text_dark;
+          border: 1px solid $primary_color;
+          color: $primary_color;
+          box-shadow: 2px 2px 9px $primary_color;
           border-radius: 0;
         }
       }
@@ -13,7 +15,9 @@
         width: 50%;
         text-align: right;
         select {
-          border: 1px solid $text_dark;
+          border: 1px solid $primary_color;
+          box-shadow: 2px 2px 9px $primary_color;
+          color: $primary_color;
           padding: 8px;
         }
       }

@@ -258,7 +258,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   }
 }
 .section-shop {
-  background-image: url(../image/bdrc-bg.jpg);
+  background-image: url(../image/otel3.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -278,16 +278,16 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   margin-bottom: 25px;
   line-height: 1;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: #101010;
 }
 .section-shop .container p {
-  color: #ffffff;
+  color: #101010;
 }
 .section-shop .container p a {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color: #ffffff;
+  color: #101010;
 }
 
 @media only screen and (max-width: 767px) {
@@ -302,7 +302,9 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   display: flex;
 }
 .section-products .container .search-sort .left input {
-  border: 1px solid #101010;
+  border: 1px solid #977a5e;
+  color: #977a5e;
+  box-shadow: 2px 2px 9px #977a5e;
   border-radius: 0;
 }
 .section-products .container .search-sort .right {
@@ -310,7 +312,9 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   text-align: right;
 }
 .section-products .container .search-sort .right select {
-  border: 1px solid #101010;
+  border: 1px solid #977a5e;
+  box-shadow: 2px 2px 9px #977a5e;
+  color: #977a5e;
   padding: 8px;
 }
 .section-products .container .row .products .product .product-text {
