@@ -1,4 +1,4 @@
-.section-rooms-suites {
+.section-rooms {
   padding: 100px 0;
   background-color: $secondary_color;
   .container {
@@ -325,7 +325,7 @@
   }
 }
 @media only screen and (max-width: 767px) {
-  .section-rooms-suites {
+  .section-rooms {
     .container {
       .explore-text {
         width: 100%;

@@ -258,7 +258,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   }
 }
 .section-services {
-  background-image: url(../image/bdrc-bg.jpg);
+  background-image: url(../image/otel4.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -295,18 +295,18 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
     display: none;
   }
 }
-.section-explore {
+.section-explore-service {
   padding: 100px 0;
   padding-top: 200px;
   background-color: #f7f5f1;
 }
-.section-explore .container {
+.section-explore-service .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.section-explore .container h5 {
+.section-explore-service .container h5 {
   margin-top: 100px;
   text-align: center;
   color: #977a5e;
@@ -314,14 +314,14 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-explore .container h2 {
+.section-explore-service .container h2 {
   text-align: center;
   color: #101010;
   font-size: 60px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-explore .container .explore-text {
+.section-explore-service .container .explore-text {
   text-align: center;
   color: #777777;
   font-size: 15px;
@@ -329,17 +329,17 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   font-weight: normal;
   width: 650px;
 }
-.section-explore .container .row {
+.section-explore-service .container .row {
   padding: 50px;
 }
-.section-explore .container .row .col-lg-4 .services {
+.section-explore-service .container .row .col-lg-4 .services {
   padding: 40px;
   border-radius: 0;
-  background-color: #ffffff;
+  background-color: #e4d6c9;
   box-shadow: 1px 1.732px 60px 0px rgba(0, 0, 0, 0.1);
   position: relative;
 }
-.section-explore .container .row .col-lg-4 .services .first-img {
+.section-explore-service .container .row .col-lg-4 .services .first-img {
   z-index: 5;
   position: absolute;
   right: 5%;
@@ -347,57 +347,57 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   z-index: 1;
   opacity: 0.05;
 }
-.section-explore .container .row .col-lg-4 .services .first-img img {
+.section-explore-service .container .row .col-lg-4 .services .first-img img {
   max-width: 100%;
   transition: all 0.3s ease-out 0s;
 }
-.section-explore .container .row .col-lg-4 .services .second-img {
+.section-explore-service .container .row .col-lg-4 .services .second-img {
   position: relative;
   z-index: 5;
   max-width: 100%;
   transition: all 0.3s ease-out 0s;
 }
-.section-explore .container .row .col-lg-4 .services .second-img img {
+.section-explore-service .container .row .col-lg-4 .services .second-img img {
   height: 80px;
   margin-bottom: 20px;
   max-width: 100%;
   transition: all 0.3s ease-out 0s;
 }
-.section-explore .container .row .col-lg-4 .services .content {
+.section-explore-service .container .row .col-lg-4 .services .content {
   position: relative;
   z-index: 5;
 }
-.section-explore .container .row .col-lg-4 .services .content h3 a {
+.section-explore-service .container .row .col-lg-4 .services .content h3 a {
   color: #101010;
   font-size: 26px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-explore .container .row .col-lg-4 .services .content h3 a:hover {
+.section-explore-service .container .row .col-lg-4 .services .content h3 a:hover {
   color: #977a5e;
   transition: 0.5s;
 }
-.section-explore .container .row .col-lg-4 .services .content p {
+.section-explore-service .container .row .col-lg-4 .services .content p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: normal;
   color: #777;
 }
-.section-explore .container .row .col-lg-4 .services .content a {
+.section-explore-service .container .row .col-lg-4 .services .content a {
   color: #101010;
 }
-.section-explore .container .row .col-lg-4 .services .content a:hover {
+.section-explore-service .container .row .col-lg-4 .services .content a:hover {
   color: #977a5e;
   transition: 0.5s;
 }
-.section-explore .container .row .col-lg-4 .services:hover::before {
-  background-color: #fff;
+.section-explore-service .container .row .col-lg-4 .services:hover::before {
+  background-color: #e4d6c9;
   width: 105%;
   height: 105%;
   top: -10px;
   left: -10px;
 }
-.section-explore .container .row .col-lg-4 .services::before {
+.section-explore-service .container .row .col-lg-4 .services::before {
   position: absolute;
   content: "";
   left: 0px;
@@ -409,170 +409,10 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
 }
 
 @media only screen and (max-width: 767px) {
-  .section-explore .container .explore-text {
+  .section-explore-service .container .explore-text {
     width: 100%;
   }
 }
-.section-resort {
-  background-color: #F7F5F1;
-}
-.section-resort .container .row .left-resort .background-img-resort img {
-  max-width: 100%;
-}
-.section-resort .container .row .right-resort h5 {
-  font-family: "Jost", sans-serif;
-  color: #101010;
-  font-weight: 600;
-  font-size: 18px;
-}
-.section-resort .container .row .right-resort h2 {
-  font-family: "Jost", sans-serif;
-  color: #101010;
-  font-weight: 600;
-  font-size: 70px;
-  margin: 0;
-}
-.section-resort .container .row .right-resort p {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-  color: #777;
-  margin: 0;
-}
-.section-resort .container .row .right-resort .discover {
-  margin-top: 10px;
-  padding: 20px 35px;
-  font-size: 15px;
-  background-color: #977a5e;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  border: none;
-}
-.section-resort .container .row .right-resort .discover:hover {
-  background-color: #614a37;
-  transition: 0.5s;
-}
-
-.section-book-room {
-  padding: 100px 0;
-}
-.section-book-room .container .row .left-book h5 {
-  color: #977a5e;
-  font-size: 18px;
-  margin-bottom: 10px;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-}
-.section-book-room .container .row .left-book h2 {
-  font-family: "Jost", sans-serif;
-  color: #101010;
-  font-weight: 600;
-  font-size: 48px;
-}
-.section-book-room .container .row .left-book .check-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section-book-room .container .row .left-book .check-row .left .check-in-date {
-  display: flex;
-  flex-direction: column;
-}
-.section-book-room .container .row .left-book .check-row .left .check-in-date label {
-  margin: 20px 0;
-  font-family: "Jost", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: #101010;
-}
-.section-book-room .container .row .left-book .check-row .left .check-in-date label i {
-  padding-right: 5px;
-  color: #be9874;
-}
-.section-book-room .container .row .left-book .check-row .left .check-in-date #checkin[type=date] {
-  border-radius: 0;
-  padding: 10px;
-  border-color: rgba(100, 66, 34, 0.2784313725);
-  color: #be9874;
-}
-.section-book-room .container .row .left-book .check-row .left .adults {
-  display: flex;
-  flex-direction: column;
-}
-.section-book-room .container .row .left-book .check-row .left .adults label {
-  margin: 20px 0;
-  font-family: "Jost", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: #101010;
-}
-.section-book-room .container .row .left-book .check-row .left .adults label i {
-  padding-right: 5px;
-  color: #be9874;
-}
-.section-book-room .container .row .left-book .check-row .left .adults #adults[type=number] {
-  border-radius: 0;
-  padding: 10px;
-  border-color: rgba(100, 66, 34, 0.2784313725);
-  color: #be9874;
-}
-.section-book-room .container .row .left-book .check-row .right .check-out-date {
-  display: flex;
-  flex-direction: column;
-}
-.section-book-room .container .row .left-book .check-row .right .check-out-date label {
-  margin: 20px 0;
-  font-family: "Jost", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: #101010;
-}
-.section-book-room .container .row .left-book .check-row .right .check-out-date label i {
-  padding-right: 5px;
-  color: #be9874;
-}
-.section-book-room .container .row .left-book .check-row .right .check-out-date #checkout[type=date] {
-  border-radius: 0;
-  padding: 10px;
-  border-color: rgba(100, 66, 34, 0.2784313725);
-  color: #be9874;
-}
-.section-book-room .container .row .left-book .check-row .right .room {
-  display: flex;
-  flex-direction: column;
-}
-.section-book-room .container .row .left-book .check-row .right .room label {
-  margin: 20px 0;
-  font-family: "Jost", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: #101010;
-}
-.section-book-room .container .row .left-book .check-row .right .room label i {
-  padding-right: 5px;
-  color: #be9874;
-}
-.section-book-room .container .row .left-book .check-row .right .room #room[type=number] {
-  border-radius: 0;
-  padding: 10px;
-  border-color: rgba(100, 66, 34, 0.2784313725);
-  color: #be9874;
-}
-.section-book-room .container .row .left-book .check-row .book-button {
-  border: none;
-  width: 97%;
-  padding: 12px 25px;
-  font-size: 15px;
-  background-color: #977a5e;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-}
-.section-book-room .container .row .right-book img {
-  width: 100%;
-}
-
 .section-testimonial {
   padding: 100px 0;
   background-image: url(../image/testimonial-bg.png);
