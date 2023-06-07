@@ -258,7 +258,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   }
 }
 .section-about {
-  background-image: url(../image/bdrc-bg.jpg);
+  background-image: url(../image/otel3.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -278,16 +278,16 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   margin-bottom: 25px;
   line-height: 1;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: #101010;
 }
 .section-about .container p {
-  color: #ffffff;
+  color: #101010;
 }
 .section-about .container p a {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color: #ffffff;
+  color: #101010;
 }
 
 @media only screen and (max-width: 767px) {
@@ -367,47 +367,6 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
     right: 0;
   }
 }
-.section-resort {
-  background-color: #F7F5F1;
-}
-.section-resort .container .row .left-resort .background-img-resort img {
-  max-width: 100%;
-}
-.section-resort .container .row .right-resort h5 {
-  font-family: "Jost", sans-serif;
-  color: #101010;
-  font-weight: 600;
-  font-size: 18px;
-}
-.section-resort .container .row .right-resort h2 {
-  font-family: "Jost", sans-serif;
-  color: #101010;
-  font-weight: 600;
-  font-size: 70px;
-  margin: 0;
-}
-.section-resort .container .row .right-resort p {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-  color: #777;
-  margin: 0;
-}
-.section-resort .container .row .right-resort .discover {
-  margin-top: 10px;
-  padding: 20px 35px;
-  font-size: 15px;
-  background-color: #977a5e;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  border: none;
-}
-.section-resort .container .row .right-resort .discover:hover {
-  background-color: #614a37;
-  transition: 0.5s;
-}
-
 .section-blog-news {
   padding: 100px 0;
 }

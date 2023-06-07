@@ -1,5 +1,5 @@
 .section-about {
-  background-image: url(../image/bdrc-bg.jpg);
+  background-image: url(../image/otel3.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,15 +17,15 @@
       margin-bottom: 25px;
       line-height: 1;
       letter-spacing: 1px;
-      color: $secondary_color;
+      color: $text_dark;
     }
     p {
-      color: $secondary_color;
+      color: $text_dark;
       a {
         font-family: "Roboto", sans-serif;
         font-size: 16px;
         font-weight: 500;
-        color: $secondary_color;
+        color: $text_dark;
       }
     }
   }
