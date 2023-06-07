@@ -258,7 +258,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   }
 }
 .section-gallery {
-  background-image: url(../image/bdrc-bg.jpg);
+  background-image: url(../image/otel1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -317,11 +317,115 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
 .section-photos .container .tab button.active {
   color: #030c26;
 }
-.section-photos .container img {
+.section-photos .container .tabcontent .row .col-lg-6 {
+  position: relative;
+}
+.section-photos .container .tabcontent .row .col-lg-6 .image {
   margin: 15px;
 }
-.section-photos .container img:hover {
+.section-photos .container .tabcontent .row .col-lg-6 .intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-photos .container .tabcontent .row .col-lg-6 .intro:hover {
+  cursor: pointer;
+}
+.section-photos .container .tabcontent .row .col-lg-6 .modal {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close2,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close1,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close11,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close3,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close33,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close4,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close44,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close5,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close55,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close6,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close66,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close7,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close77,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close8,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close88,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close9,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close99,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close100,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close10 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close2:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close1:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close11:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close3:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close33:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close4:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close44:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close5:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close55:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close6:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close66:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close7:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close77:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close8:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close88:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close9:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close99:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close100:hover,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close10:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close2:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close1:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close11:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close3:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close33:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close4:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close44:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close5:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close55:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close6:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close66:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close7:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close77:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close8:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close88:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close9:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close99:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close100:focus,
+.section-photos .container .tabcontent .row .col-lg-6 .modal .modal-content .close10:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.section-photos .container .tabcontent .row .col-lg-6 .plus {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  font-size: 60px;
+  display: none;
+}
+.section-photos .container .tabcontent .row .col-lg-6:hover .image {
   opacity: 0.5;
+}
+.section-photos .container .tabcontent .row .col-lg-6:hover .plus {
+  display: block;
 }
 
 footer .top-footer {

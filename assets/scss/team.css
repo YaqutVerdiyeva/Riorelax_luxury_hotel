@@ -258,18 +258,18 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   }
 }
 .section-team {
-  background-image: url(../image/bdrc-bg.jpg);
+  background-image: url(../image/otel5.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 80vh;
 }
 .section-team .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 200px;
+  padding-top: 250px;
 }
 .section-team .container h2 {
   font-family: "Jost", sans-serif;
@@ -278,16 +278,16 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   margin-bottom: 25px;
   line-height: 1;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: #101010;
 }
 .section-team .container p {
-  color: #ffffff;
+  color: #101010;
 }
 .section-team .container p a {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color: #ffffff;
+  color: #101010;
 }
 
 @media only screen and (max-width: 767px) {
