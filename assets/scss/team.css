@@ -258,18 +258,18 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   }
 }
 .section-team {
-  background-image: url(../image/otel5.jpg);
+  background-image: url(../image/otel6.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 100vh;
 }
 .section-team .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 250px;
+  padding-top: 300px;
 }
 .section-team .container h2 {
   font-family: "Jost", sans-serif;
