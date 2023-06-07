@@ -602,6 +602,21 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   justify-content: space-between;
   align-items: center;
 }
+.section-brands .container .swiper {
+  width: 100%;
+  height: 100%;
+}
+.section-brands .container .swiper .swiper-wrapper .swiper-slide {
+  padding: 100px 0;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-brands .container .swiper .swiper-pagination span {
+  background-color: #977a5e;
+}
 
 @media only screen and (max-width: 992px) {
   .section-brands .container {

@@ -35,6 +35,9 @@
               font-size: 16px;
             }
             .intro {
+              &:hover {
+                cursor: pointer;
+              }
               display: flex;
               justify-content: center;
               align-items: center;
@@ -137,11 +140,11 @@
         }
       }
     }
-    .carousel-control-next-icon{
-        display: none;
+    .carousel-control-next-icon {
+      display: none;
     }
-    .carousel-control-prev-icon{
-        display: none;
+    .carousel-control-prev-icon {
+      display: none;
     }
   }
 }
@@ -157,11 +160,9 @@
             p {
               width: 100%;
             }
-           
           }
         }
       }
     }
-    
   }
 }

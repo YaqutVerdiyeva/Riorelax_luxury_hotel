@@ -5,6 +5,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .swiper {
+      width: 100%;
+      height: 100%;
+      .swiper-wrapper {
+        .swiper-slide {
+          padding: 100px 0;
+          text-align: center;
+          font-size: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         
+        }
+      }
+      .swiper-pagination {
+        span {
+          background-color: $primary-color;
+          
+        }
+      }
+    }
   }
 }
 

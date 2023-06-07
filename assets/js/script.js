@@ -32,6 +32,16 @@ window.onclick = function (event) {
     modal1.style.display = "none";
   }
 };
+//swiper
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 //header scroll
 function scrollFunction() {
