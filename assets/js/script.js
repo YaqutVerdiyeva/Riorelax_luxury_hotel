@@ -45,23 +45,36 @@ var swiper = new Swiper(".mySwiper", {
 //swiper2
 
 var swiper = new Swiper(".mySwiperr", {
-  effect: 'coverflow',
-    grabCursor: true,
-    initialSlide:2,   
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 300,
-      modifier: 1,
-      slideShadows : false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
+  effect: "coverflow",
+  grabCursor: true,
+  initialSlide: 2,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 300,
+    modifier: 1,
+    slideShadows: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
 });
+
+//side page
+function openNav() {
+  document.getElementById("mySidebar").style.width = "300px";
+  document.getElementsByClassName("reservation-btn").style.marginLeft = "300px";
+
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementsByClassName("reservation-btn").style.marginLeft = "0";
+
+}
+
 //header scroll
 function scrollFunction() {
   if (
