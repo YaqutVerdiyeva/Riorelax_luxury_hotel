@@ -6,6 +6,16 @@ let menuicon1 = document.querySelector(".menuicon1");
 let nav = document.querySelector(".nav-mobile");
 let scrollUpBtn = document.querySelector(".scrollup");
 
+//side page
+function openNav() {
+  document.getElementById("mySidebar").style.width = "300px";
+  document.getElementsByClassName("reservation-btn").style.marginLeft = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementsByClassName("reservation-btn").style.marginLeft = "0";
+}
 
 //Modal video
 btn.onclick = function () {

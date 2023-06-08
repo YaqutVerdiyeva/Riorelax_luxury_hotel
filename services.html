@@ -27,6 +27,32 @@
     <title>Document</title>
   </head>
   <body>
+    <div id="mySidebar" class="sidebar">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#"
+        >Sign Up<i style="margin-right: 8px" class="fa-solid fa-user"></i
+      ></a>
+      <a href="#"
+        >Login<i style="margin-right: 8px" class="fa-solid fa-user"></i
+      ></a>
+      <a href="#"
+        >Wishlist<i class="fa-solid fa-heart" style="color: #ffffff"></i
+      ></a>
+      <a href="#">Admin</a>
+    </div>
+
     <header>
       <div class="top-header">
         <div class="container">
@@ -110,7 +136,7 @@
             </ul>
           </div>
           <div class="reservation-btn">
-            <a href="./contact.html" class="btn-reserv">RESERVATION</a>
+            <a onclick="openNav()" class="btn-reserv openbtn">SETTINGS</a>
           </div>
           <p class="menuicon"><i class="fa-solid fa-bars"></i></p>
           <p class="menuicon1"><i class="fa-solid fa-x"></i></p>

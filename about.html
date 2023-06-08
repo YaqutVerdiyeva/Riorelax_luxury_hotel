@@ -27,6 +27,32 @@
     <title>Document</title>
   </head>
   <body>
+    <div id="mySidebar" class="sidebar">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#"
+        >Sign Up<i style="margin-right: 8px" class="fa-solid fa-user"></i
+      ></a>
+      <a href="#"
+        >Login<i style="margin-right: 8px" class="fa-solid fa-user"></i
+      ></a>
+      <a href="#"
+        >Wishlist<i class="fa-solid fa-heart" style="color: #ffffff"></i
+      ></a>
+      <a href="#">Admin</a>
+    </div>
+
     <header>
       <div class="top-header">
         <div class="container">
@@ -110,7 +136,7 @@
             </ul>
           </div>
           <div class="reservation-btn">
-            <a href="./contact.html" class="btn-reserv">RESERVATION</a>
+            <a onclick="openNav()" class="btn-reserv openbtn">SETTINGS</a>
           </div>
           <p class="menuicon"><i class="fa-solid fa-bars"></i></p>
           <p class="menuicon1"><i class="fa-solid fa-x"></i></p>
@@ -370,7 +396,6 @@
         </ul>
       </div>
     </header>
-
     <section class="section-about">
       <div class="container">
         <h2>About</h2>
@@ -439,7 +464,7 @@
       <div class="container">
         <video width="100%" height="70%" controls autoplay name="media">
           <source
-          src="https://download-video.akamaized.net/2/playback/fa441e36-9d73-4747-a754-fdfbc5df52ba/5552ba62-831c112c?__token__=st=1686169235~exp=1686183635~acl=%2F2%2Fplayback%2Ffa441e36-9d73-4747-a754-fdfbc5df52ba%2F5552ba62-831c112c%2A~hmac=f39aec8b4d1bc40d760f3532594935623810d701c8073f1a27fef6746a6c840b&r=dXMtZWFzdDE%3D"
+            src="https://download-video.akamaized.net/2/playback/fa441e36-9d73-4747-a754-fdfbc5df52ba/5552ba62-831c112c?__token__=st=1686169235~exp=1686183635~acl=%2F2%2Fplayback%2Ffa441e36-9d73-4747-a754-fdfbc5df52ba%2F5552ba62-831c112c%2A~hmac=f39aec8b4d1bc40d760f3532594935623810d701c8073f1a27fef6746a6c840b&r=dXMtZWFzdDE%3D"
           />
         </video>
       </div>

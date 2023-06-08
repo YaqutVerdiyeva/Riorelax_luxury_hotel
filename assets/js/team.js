@@ -72,4 +72,13 @@ scrollUpBtn.addEventListener("click", function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
-x;
+//side page
+function openNav() {
+  document.getElementById("mySidebar").style.width = "300px";
+  document.getElementsByClassName("reservation-btn").style.marginLeft = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementsByClassName("reservation-btn").style.marginLeft = "0";
+}

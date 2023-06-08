@@ -41,6 +41,16 @@ function scrollFunction() {
 window.addEventListener("scroll", function () {
   scrollFunction();
 });
+//side page
+function openNav() {
+  document.getElementById("mySidebar").style.width = "300px";
+  document.getElementsByClassName("reservation-btn").style.marginLeft = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementsByClassName("reservation-btn").style.marginLeft = "0";
+}
 
 //menu
 menuicon.addEventListener("click", function () {
