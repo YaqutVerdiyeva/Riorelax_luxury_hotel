@@ -133,7 +133,7 @@ header .bottom-header .container .nav ul li .dropdown:hover .dropbtn {
   color: #a48360;
   transition: 0.5s;
 }
-header .bottom-header .container .reservation-btn .btn-reserv {
+header .bottom-header .container .setting-btn .btn-setting {
   padding: 20px 35px;
   font-size: 15px;
   background-color: #be9874;
@@ -142,7 +142,7 @@ header .bottom-header .container .reservation-btn .btn-reserv {
   font-weight: 400;
   transition: all 0.4s ease 0s;
 }
-header .bottom-header .container .reservation-btn .btn-reserv:hover {
+header .bottom-header .container .setting-btn .btn-setting:hover {
   text-shadow: 0px 0px 6px rgb(255, 255, 255);
   -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
   -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
@@ -188,6 +188,13 @@ header .nav-mobile ul .accordion .accordion-item h2 .accordion-button::after {
 }
 header .nav-mobile ul .accordion .accordion-item h2 .accordion-button .fa-minus {
   visibility: hidden;
+}
+header .nav-mobile ul .accordion .accordion-item h2 .accordion-button .setting-btn a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
 }
 header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-body ul {
   display: flex;
@@ -398,7 +405,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   header .bottom-header .container .nav {
     display: none;
   }
-  header .bottom-header .container .reservation-btn {
+  header .bottom-header .container .setting-btn {
     display: none;
   }
   header .bottom-header .container .menuicon {
@@ -669,6 +676,10 @@ footer .top-footer .container .row .second-foot .footer-link ul li a {
   color: rgba(255, 255, 255, 0.8);
   line-height: 26px;
 }
+footer .top-footer .container .row .second-foot .footer-link ul li a:hover {
+  color: #977a5e;
+  transition: 0.5s;
+}
 footer .top-footer .container .row .thirth-foot .our-services h2 {
   font-family: "Jost", sans-serif;
   font-weight: 600;
@@ -689,6 +700,10 @@ footer .top-footer .container .row .thirth-foot .footer-services ul li a {
   font-weight: normal;
   color: rgba(255, 255, 255, 0.8);
   line-height: 26px;
+}
+footer .top-footer .container .row .thirth-foot .footer-services ul li a:hover {
+  color: #977a5e;
+  transition: 0.5s;
 }
 footer .top-footer .container .row .fourth-foot .subscribe h2 {
   font-family: "Jost", sans-serif;

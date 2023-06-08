@@ -133,8 +133,8 @@ header {
           }
         }
       }
-      .reservation-btn {
-        .btn-reserv {
+      .setting-btn {
+        .btn-setting {
           padding: 20px 35px;
           font-size: 15px;
           background-color: #be9874;
@@ -192,6 +192,15 @@ header {
               }
               .fa-minus {
                 visibility: hidden;
+              }
+              .setting-btn {
+                a {
+                  font-size: 18px;
+                  font-weight: 700;
+                  color: #333333;
+                  font-family: "Roboto", sans-serif;
+                  text-transform: uppercase;
+                }
               }
             }
           }
@@ -416,7 +425,7 @@ header {
         .nav {
           display: none;
         }
-        .reservation-btn {
+        .setting-btn {
           display: none;
         }
         .menuicon {
