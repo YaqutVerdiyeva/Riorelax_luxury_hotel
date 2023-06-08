@@ -48,7 +48,11 @@
         >Login<i style="margin-right: 8px" class="fa-solid fa-user"></i
       ></a>
       <a href="./wishlist.html"
-        >Wishlist<i style="margin-right: 3px" class="fa-solid fa-heart" style="color: #ffffff"></i
+        >Wishlist<i
+          style="margin-right: 3px"
+          class="fa-solid fa-heart"
+          style="color: #ffffff"
+        ></i
       ></a>
       <a href="#">Admin</a>
     </div>
@@ -135,8 +139,8 @@
               <li><a href="./contact.html">Contact</a></li>
             </ul>
           </div>
-          <div class="reservation-btn">
-            <a onclick="openNav()" class="btn-reserv openbtn">SETTINGS</a>
+          <div class="setting-btn">
+            <a onclick="openNav()" class="btn-setting openbtn">SETTINGS</a>
           </div>
           <p class="menuicon"><i class="fa-solid fa-bars"></i></p>
           <p class="menuicon1"><i class="fa-solid fa-x"></i></p>
@@ -392,11 +396,25 @@
                 </button>
               </h2>
             </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button accordion-button1 collapsed"
+                  type="button"
+                >
+                  <div class="setting-btn">
+                    <a onclick="openNav()" class="btn-setting openbtn"
+                      >SETTINGS</a
+                    >
+                  </div>
+                </button>
+              </h2>
+            </div>
           </div>
         </ul>
       </div>
     </header>
-    
+
     <section class="section-about">
       <div class="container">
         <h2>About</h2>
@@ -462,12 +480,13 @@
     </section>
 
     <section class="section-about-video">
-      <div class="container">
-        <video width="100%" height="70%" controls autoplay name="media">
-          <source
-            src="https://download-video.akamaized.net/2/playback/fa441e36-9d73-4747-a754-fdfbc5df52ba/5552ba62-831c112c?__token__=st=1686169235~exp=1686183635~acl=%2F2%2Fplayback%2Ffa441e36-9d73-4747-a754-fdfbc5df52ba%2F5552ba62-831c112c%2A~hmac=f39aec8b4d1bc40d760f3532594935623810d701c8073f1a27fef6746a6c840b&r=dXMtZWFzdDE%3D"
-          />
-        </video>
+      <div class="container" style="height: 80vh;">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/WJThNmE_ehE"
+        >
+        </iframe>
       </div>
     </section>
 
