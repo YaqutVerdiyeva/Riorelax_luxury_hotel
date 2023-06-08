@@ -1,0 +1,42 @@
+.section-login-bg {
+    background-image: url(../image/otel1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 200px;
+      h2 {
+        font-family: "Jost", sans-serif;
+        font-weight: 600;
+        font-size: 60px;
+        margin-bottom: 25px;
+        line-height: 1;
+        letter-spacing: 1px;
+        color: $secondary_color;
+      }
+      p {
+        color: $secondary_color;
+        a {
+          font-family: "Roboto", sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          color: $secondary_color;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .section-login-bg {
+      .container {
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+  

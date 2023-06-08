@@ -1,0 +1,47 @@
+.section-login {
+    .container {
+      .row {
+        .signup {
+          padding: 100px;
+          h2 {
+            font-family: "Jost", sans-serif;
+            color: #101010;
+            font-weight: 600;
+            font-size: 48px;
+            text-align: center;
+          }
+          form {
+            .row {
+              .form-input {
+                .form-control {
+                  border: 1px solid $text_color;
+                  border-radius: 0;
+                  &::placeholder {
+                    color: #9b9595;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 15px;
+                  }
+                }
+                .get-submit {
+                  background: $primary_color;
+                  color: $secondary_color;
+                  text-align: center;
+                  font-size: 15px;
+                  border: none;
+                  padding: 17px 20px;
+                  border-radius: 0;
+                  width: 100%;
+                  &:hover {
+                    background-color: #614a37;
+                    transition: 0.5s;
+                  }
+                }
+              }
+             
+            }
+          }
+        }
+      }
+    }
+  }
+  
