@@ -424,6 +424,44 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
     display: block;
   }
 }
+.section-wishlist {
+  background-image: url(../image/otel2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+.section-wishlist .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 200px;
+}
+.section-wishlist .container h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  margin-bottom: 25px;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.section-wishlist .container p {
+  color: #ffffff;
+}
+.section-wishlist .container p a {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 767px) {
+  .section-wishlist .container p {
+    display: none;
+  }
+}
 footer .top-footer {
   padding: 80px 0;
   background-image: url(../image/footer-bg.png);
