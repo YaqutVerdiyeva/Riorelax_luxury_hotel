@@ -424,6 +424,95 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
     display: block;
   }
 }
+.section-signup-bg {
+  background-image: url(../image/otel1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+.section-signup-bg .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 200px;
+}
+.section-signup-bg .container h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  margin-bottom: 25px;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.section-signup-bg .container p {
+  color: #ffffff;
+}
+.section-signup-bg .container p a {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 767px) {
+  .section-signup-bg .container p {
+    display: none;
+  }
+}
+.section-signup .container .row .signup {
+  padding: 100px;
+}
+.section-signup .container .row .signup h2 {
+  font-family: "Jost", sans-serif;
+  color: #101010;
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+}
+.section-signup .container .row .signup form .row .form-input .form-control {
+  border: 1px solid #777777;
+  border-radius: 0;
+}
+.section-signup .container .row .signup form .row .form-input .form-control::-moz-placeholder {
+  color: #9b9595;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.section-signup .container .row .signup form .row .form-input .form-control::placeholder {
+  color: #9b9595;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.section-signup .container .row .signup form .row .form-input .get-submit {
+  background: #977a5e;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  border: none;
+  padding: 17px 20px;
+  border-radius: 0;
+  width: 100%;
+}
+.section-signup .container .row .signup form .row .form-input .get-submit:hover {
+  background-color: #614a37;
+  transition: 0.5s;
+}
+.section-signup .container .row .signup form .row p {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  color: #101010;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+.section-signup .container .row .signup form .row p a {
+  color: #977a5e;
+}
+
 footer .top-footer {
   padding: 80px 0;
   background-image: url(../image/footer-bg.png);
