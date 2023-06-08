@@ -1,15 +1,29 @@
 .section-about {
-  background-image: url(../image/otel3.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 70vh;
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 200px;
+  width: 100%;
+  overflow: hidden;
+  .image {
+    background-image: url(../image/otel3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100vw;
+    background-size: 100%;
+    animation: grow infinite alternate ease-in-out 8s;
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 200px;
+    }
+  }
+  position: relative;
+  .text {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    z-index: 10;
+    text-align: center;
     h2 {
       font-family: "Jost", sans-serif;
       font-weight: 600;
@@ -30,11 +44,21 @@
     }
   }
 }
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2.5);
+  }
+}
 @media only screen and (max-width: 767px) {
   .section-about {
-    .container {
-      p {
-        display: none;
+    .image {
+      .container {
+        p {
+          display: none;
+        }
       }
     }
   }

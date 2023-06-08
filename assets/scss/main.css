@@ -1517,13 +1517,6 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   align-items: center;
   flex-direction: column;
 }
-.section-blog-news .container h5 {
-  text-align: center;
-  color: #977a5e;
-  font-size: 18px;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-}
 .section-blog-news .container h2 {
   text-align: center;
   color: #101010;
@@ -1539,14 +1532,18 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   font-weight: normal;
   width: 650px;
 }
+.section-blog-news .container .blogs .col .blog {
+  text-align: center;
+}
 .section-blog-news .container .blogs .col .blog .blog-img {
   overflow: hidden;
 }
 .section-blog-news .container .blogs .col .blog .blog-img a img {
   width: 100%;
+  height: 250px;
 }
 .section-blog-news .container .blogs .col .blog .blog-text {
-  border: 1px solid #b7b7b7;
+  border: none;
   padding: 25px;
 }
 .section-blog-news .container .blogs .col .blog .blog-text span {
@@ -1586,8 +1583,8 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   border-bottom: 3px solid #101010;
 }
 .section-blog-news .container .blogs .col .blog:hover img {
-  transform: scale(1.1);
-  transition: 0.5s;
+  transform: scale(1.8);
+  transition: 2s;
 }
 
 @media only screen and (max-width: 767px) {

@@ -432,20 +432,34 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   }
 }
 .section-about {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.section-about .image {
   background-image: url(../image/otel3.jpg);
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   height: 70vh;
+  width: 100vw;
+  background-size: 100%;
+  animation: grow infinite alternate ease-in-out 8s;
 }
-.section-about .container {
+.section-about .image .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding-top: 200px;
 }
-.section-about .container h2 {
+.section-about .text {
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  z-index: 10;
+  text-align: center;
+}
+.section-about .text h2 {
   font-family: "Jost", sans-serif;
   font-weight: 600;
   font-size: 60px;
@@ -454,18 +468,26 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   letter-spacing: 1px;
   color: #101010;
 }
-.section-about .container p {
+.section-about .text p {
   color: #101010;
 }
-.section-about .container p a {
+.section-about .text p a {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #101010;
 }
 
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2.5);
+  }
+}
 @media only screen and (max-width: 767px) {
-  .section-about .container p {
+  .section-about .image .container p {
     display: none;
   }
 }
@@ -550,13 +572,6 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   align-items: center;
   flex-direction: column;
 }
-.section-blog-news .container h5 {
-  text-align: center;
-  color: #977a5e;
-  font-size: 18px;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-}
 .section-blog-news .container h2 {
   text-align: center;
   color: #101010;
@@ -572,14 +587,18 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   font-weight: normal;
   width: 650px;
 }
+.section-blog-news .container .blogs .col .blog {
+  text-align: center;
+}
 .section-blog-news .container .blogs .col .blog .blog-img {
   overflow: hidden;
 }
 .section-blog-news .container .blogs .col .blog .blog-img a img {
   width: 100%;
+  height: 250px;
 }
 .section-blog-news .container .blogs .col .blog .blog-text {
-  border: 1px solid #b7b7b7;
+  border: none;
   padding: 25px;
 }
 .section-blog-news .container .blogs .col .blog .blog-text span {
@@ -619,8 +638,8 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   border-bottom: 3px solid #101010;
 }
 .section-blog-news .container .blogs .col .blog:hover img {
-  transform: scale(1.1);
-  transition: 0.5s;
+  transform: scale(1.8);
+  transition: 2s;
 }
 
 @media only screen and (max-width: 767px) {
