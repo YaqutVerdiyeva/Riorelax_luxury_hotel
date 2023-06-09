@@ -479,28 +479,6 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   align-items: center;
   flex-direction: column;
 }
-.section-rooms .container h5 {
-  text-align: center;
-  color: #977a5e;
-  font-size: 18px;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-}
-.section-rooms .container h2 {
-  text-align: center;
-  color: #101010;
-  font-size: 60px;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-}
-.section-rooms .container .explore-text {
-  text-align: center;
-  color: #777777;
-  font-size: 15px;
-  font-family: "Jost", sans-serif;
-  font-weight: normal;
-  width: 650px;
-}
 .section-rooms .container .search-sort {
   display: flex;
 }
@@ -526,247 +504,84 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   color: #977a5e;
 }
 .section-rooms .container .room-card {
-  margin-top: 200px;
-  margin-bottom: 100px;
   position: relative;
 }
 .section-rooms .container .room-card .room {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  background-color: #ffffff;
-  box-shadow: 7px 7px 50px 10px rgba(175, 175, 175, 0.25);
-}
-.section-rooms .container .room-card .room .room-photo {
-  position: absolute;
-  top: -40%;
-  overflow: hidden;
-  border-radius: 50%;
-}
-.section-rooms .container .room-card .room .room-photo .background-img1 {
-  border-radius: 50%;
-  border: 4px solid rgba(116, 96, 85, 0.53);
-  height: 250px;
-  width: 250px;
-  background-image: url(../image/about_img_03.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section-rooms .container .room-card .room .room-photo .background-img1 h2 {
-  display: none;
-  color: #ffffff;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-}
-.section-rooms .container .room-card .room .room-photo .background-img2 {
-  border-radius: 50%;
-  border: 4px solid rgba(116, 96, 85, 0.53);
-  height: 250px;
-  width: 250px;
-  background-image: url(../image/room-img02.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section-rooms .container .room-card .room .room-photo .background-img2 h2 {
-  display: none;
-  color: #ffffff;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-}
-.section-rooms .container .room-card .room .room-photo .background-img3 {
-  border-radius: 50%;
-  border: 4px solid rgba(116, 96, 85, 0.53);
-  height: 250px;
-  width: 250px;
-  background-image: url(../image/room-img03.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section-rooms .container .room-card .room .room-photo .background-img3 h2 {
-  display: none;
-  color: #ffffff;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-}
-.section-rooms .container .room-card .room .room-photo .background-img4 {
-  border-radius: 50%;
-  border: 4px solid rgba(116, 96, 85, 0.53);
-  height: 250px;
-  width: 250px;
-  background-image: url(../image/room-img04.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section-rooms .container .room-card .room .room-photo .background-img4 h2 {
-  display: none;
-  color: #ffffff;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-}
-.section-rooms .container .room-card .room .room-photo .background-img5 {
-  border-radius: 50%;
-  border: 4px solid rgba(116, 96, 85, 0.53);
-  height: 250px;
-  width: 250px;
-  background-image: url(../image/room-img01.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section-rooms .container .room-card .room .room-photo .background-img5 h2 {
-  display: none;
-  color: #ffffff;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-}
-.section-rooms .container .room-card .room .room-photo .background-img6 {
-  border-radius: 50%;
-  border: 4px solid rgba(116, 96, 85, 0.53);
-  height: 250px;
-  width: 250px;
-  background-image: url(../image/room-img02.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section-rooms .container .room-card .room .room-photo .background-img6 h2 {
-  display: none;
-  color: #ffffff;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-}
-.section-rooms .container .room-card .room .room-photo:hover .background-img1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/about_img_03.png);
-  width: 250px;
-  height: 250px;
-  transform: scale(1.05);
-  transition: 0.5s;
-}
-.section-rooms .container .room-card .room .room-photo:hover .background-img1 h2 {
-  display: block;
-}
-.section-rooms .container .room-card .room .room-photo:hover .background-img2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/room-img02.png);
-  width: 250px;
-  height: 250px;
-  transform: scale(1.05);
-  transition: 0.5s;
-}
-.section-rooms .container .room-card .room .room-photo:hover .background-img2 h2 {
-  display: block;
-}
-.section-rooms .container .room-card .room .room-photo:hover .background-img3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/room-img03.png);
-  width: 250px;
-  height: 250px;
-  transform: scale(1.05);
-  transition: 0.5s;
-}
-.section-rooms .container .room-card .room .room-photo:hover .background-img3 h2 {
-  display: block;
-}
-.section-rooms .container .room-card .room .room-photo:hover .background-img4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/room-img04.png);
-  width: 250px;
-  height: 250px;
-  transform: scale(1.05);
-  transition: 0.5s;
-}
-.section-rooms .container .room-card .room .room-photo:hover .background-img4 h2 {
-  display: block;
-}
-.section-rooms .container .room-card .room .room-photo:hover .background-img5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/room-img01.png);
-  width: 250px;
-  height: 250px;
-  transform: scale(1.05);
-  transition: 0.5s;
-}
-.section-rooms .container .room-card .room .room-photo:hover .background-img5 h2 {
-  display: block;
-}
-.section-rooms .container .room-card .room .room-photo:hover .background-img6 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/room-img02.png);
-  width: 250px;
-  height: 250px;
-  transform: scale(1.05);
-  transition: 0.5s;
-}
-.section-rooms .container .room-card .room .room-photo:hover .background-img6 h2 {
-  display: block;
-}
-.section-rooms .container .room-card .room .room-content {
-  padding-top: 80px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
 }
-.section-rooms .container .room-card .room .room-content h4 {
+.section-rooms .container .room-card .room .card {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #000;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+}
+.section-rooms .container .room-card .room .card img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+}
+.section-rooms .container .room-card .room .card h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  text-transform: uppercase;
   font-family: "Jost", sans-serif;
   font-weight: 600;
-  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-size: 25px;
 }
-.section-rooms .container .room-card .room .room-content h4:hover {
-  color: #977a5e;
-  transition: 0.5s;
+.section-rooms .container .room-card .room .card p,
+.section-rooms .container .room-card .room .card a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 1px;
 }
-.section-rooms .container .room-card .room .room-content p {
-  margin: 15px 0;
-  text-align: center;
-  color: #777777;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
+.section-rooms .container .room-card .room .card p {
+  inset: auto auto 70px 30px;
+  font-size: 30px;
 }
-.section-rooms .container .room-card .room .room-content .room-icons {
-  margin: 15px 0;
+.section-rooms .container .room-card .room .card a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+  font-size: 25px;
 }
-.section-rooms .container .room-card .room .room-content .room-icons img {
-  height: 20px;
-  width: 20px;
-  margin-right: 17px;
+.section-rooms .container .room-card .room .card:hover h2 {
+  inset: auto auto 130px 30px;
+  transition: inset 0.3s ease-out;
 }
-.section-rooms .container .room-card .room .room-content a {
-  text-align: center;
-  color: #977a5e;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
+.section-rooms .container .room-card .room .card:hover p, .section-rooms .container .room-card .room .card:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
 }
-.section-rooms .container .room-card .room .room-content a:hover {
-  color: #b49e8a;
-  transition: 0.5s;
+.section-rooms .container .room-card .room .card:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+.section-rooms .container .room-card .room .material-symbols-outlined {
+  vertical-align: middle;
 }
 
 @media only screen and (max-width: 767px) {
