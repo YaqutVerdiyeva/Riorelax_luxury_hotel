@@ -1,8 +1,13 @@
+let BASE_URL = `http://localhost:3000/users`;
 let menuicon = document.querySelector(".menuicon");
 let menuicon1 = document.querySelector(".menuicon1");
 let nav = document.querySelector(".nav-mobile");
 let scrollUpBtn = document.querySelector(".scrollup");
-
+let firstName = document.querySelector(".firstname");
+let lastName = document.querySelector(".lastname");
+let email = document.querySelector(".email");
+let password = document.querySelector(".password");
+let signUpBtn = document.querySelector(".get-submit");
 //header scroll
 function scrollFunction() {
   if (
@@ -82,3 +87,13 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementsByClassName("reservation-btn").style.marginLeft = "0";
 }
+
+//post
+signUpBtn.addEventListener("click", function () {
+  axios.post(`${BASE_URL}`, {
+    firstname: firstName.value,
+    lastname: lastName.value,
+    email: email.value,
+    password: password.value,
+  });
+});

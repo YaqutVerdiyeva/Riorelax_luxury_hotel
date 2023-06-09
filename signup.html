@@ -48,9 +48,13 @@
         >Login<i style="margin-right: 8px" class="fa-solid fa-user"></i
       ></a>
       <a href="./wishlist.html"
-        >Wishlist<i style="margin-right: 3px" class="fa-solid fa-heart" style="color: #ffffff"></i
+        >Wishlist<i
+          style="margin-right: 3px"
+          class="fa-solid fa-heart"
+          style="color: #ffffff"
+        ></i
       ></a>
-      <a href="#">Admin</a>
+      <a href="#">Admin <img width="35px" height="35px" src="./assets/image/admin.png" alt=""> </a>
     </div>
 
     <header>
@@ -432,26 +436,38 @@
                 <div class="col-lg-6 col-md-6 mt-3 form-input">
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control firstname"
                     placeholder="First Name"
+                    required
                   />
                 </div>
                 <div class="col-lg-6 col-md-6 mt-3 form-input">
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control lastname"
                     placeholder="Last Name"
+                    required
                   />
                 </div>
                 <div class="col-lg-12 col-md-12 mt-3 form-input">
-                  <input type="email" class="form-control" placeholder="Email" />
+                  <input
+                    required
+                    type="email"
+                    class="form-control email"
+                    placeholder="Email"
+                  />
                 </div>
                 <div class="col-lg-12 col-md-12 mt-3 form-input">
-                  <input type="password" class="form-control" placeholder="Password" />
+                  <input
+                    required
+                    type="password"
+                    class="form-control password"
+                    placeholder="Password"
+                  />
                 </div>
 
                 <div class="col-lg-12 mt-3 form-input">
-                  <button class="get-submit mt-4">Sign Up</button>
+                  <button type="submit" class="get-submit mt-4">Sign Up</button>
                 </div>
                 <p>Already a member? <a href="login.html">Log in</a></p>
               </div>

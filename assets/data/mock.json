@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Yaqut",
+      "lastname": "Verdiyeva",
+      "email": "yaqut@gmail.com",
+      "password": 213256879
+    },
+    {
+      "id": 2,
+      "firstname": "Charly",
+      "lastname": "Piorier",
+      "email": "charly@gmail.com",
+      "password": 785256879
+    },
+    {
+      "firstname": "Ut veniam omnis ali",
+      "lastname": "Maxime architecto di",
+      "email": "bymuv@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 3
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "password": "",
+      "id": 5
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1,
+      "title": "Classic Balcony Room",
+      "about": "Aenean vehicula ligula eu rhoncus porttitor. Duis vel lacinia quam. Nunc rutrum porta place ullam ipsum. Morbi imperdiet, orci et dapibus."
+    }
+  ],
+  "reserv": [
+    {
+      "id": 1,
+      "checkindate": "15/05/2023",
+      "checkoutdate": "22/5/2023",
+      "adults": 5,
+      "room": 2
+    }
+  ]
+}
