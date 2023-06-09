@@ -956,6 +956,9 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
 .section-resort .container .row .left-resort .background-img-resort img {
   max-width: 100%;
 }
+.section-resort .container .row .right-resort {
+  position: relative;
+}
 .section-resort .container .row .right-resort h5 {
   font-family: "Jost", sans-serif;
   color: #101010;
@@ -1026,6 +1029,67 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
 }
 .section-resort .container .row .right-resort .discover:hover::after {
   top: -440px;
+}
+.section-resort .container .row .right-resort .discoverr {
+  top: 90%;
+  left: 20%;
+  border: none;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  padding: 20px 30px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #977a5e;
+  transition: box-shadow 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+  box-shadow: 0 0 2px 0 rgba(75, 59, 32, 0.2), 0 0 4px 0 rgba(75, 59, 32, 0.2), 0 0 6px 0 rgba(75, 59, 32, 0.3), 0 0 8px 0 rgba(75, 59, 32, 0.4), 0 0 12px 0 rgba(75, 59, 32, 0.5), 0 0 18px 0 rgba(75, 59, 32, 0.6);
+}
+.section-resort .container .row .right-resort .discoverr span {
+  color: #fff;
+  letter-spacing: 3px;
+}
+.section-resort .container .row .right-resort .discoverr i {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 200px;
+  background-color: inherit;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s linear, top 1s linear;
+  overflow: hidden;
+}
+.section-resort .container .row .right-resort .discoverr i:after,
+.section-resort .container .row .right-resort .discoverr i:before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+.section-resort .container .row .right-resort .discoverr i:before {
+  border-radius: 46%;
+  background-color: rgba(20, 20, 20, 0.2);
+  animation: animate 5s linear infinite;
+}
+.section-resort .container .row .right-resort .discoverr i:after {
+  border-radius: 40%;
+  background-color: rgba(20, 20, 20, 0.5);
+  animation: animate 10s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
 }
 @keyframes wave {
   0% {
