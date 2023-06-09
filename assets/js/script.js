@@ -1,3 +1,4 @@
+let BASE_URL = `http://localhost:3000/reserv`;
 let modal = document.getElementById("myModal");
 let modal1 = document.getElementById("myModal1");
 let btn = document.getElementById("myBtn");
@@ -5,6 +6,23 @@ let btn1 = document.getElementById("myBtn1");
 let span = document.getElementsByClassName("close")[0];
 let span1 = document.getElementsByClassName("close1")[0];
 
+let checkIn = document.querySelector("#checkin");
+let adults = document.querySelector("#adults");
+let room = document.querySelector("#room");
+let checkOut = document.querySelector("#checkout");
+let child = document.querySelector("#child");
+let reservBtn = document.querySelector(".check-btn");
+
+//post
+reservBtn.addEventListener("click", function () {
+  axios.post(`${BASE_URL}`, {
+    checkin: checkIn.value,
+    checkout: checkOut.value,
+    adults: adults.value,
+    room: room.value,
+    child: child.value,
+  });
+});
 
 //Modal video
 btn.onclick = function () {
@@ -58,5 +76,3 @@ var swiper = new Swiper(".mySwiperr", {
     el: ".swiper-pagination",
   },
 });
-
-

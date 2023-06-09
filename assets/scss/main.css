@@ -712,6 +712,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   color: #be9874;
 }
 .section-check .container form .row .right .calendar .check-btn {
+  border: none;
   width: 200px;
   padding: 12px 25px;
   font-size: 15px;
@@ -723,6 +724,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   cursor: pointer;
   transition: 800ms ease all;
   outline: none;
+  text-align: center;
 }
 .section-check .container form .row .right .calendar .check-btn:hover {
   background: #ffffff;

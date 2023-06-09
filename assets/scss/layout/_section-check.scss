@@ -127,6 +127,7 @@
               }
             }
             .check-btn {
+              border: none;
               width: 200px;
               padding: 12px 25px;
               font-size: 15px;
@@ -138,6 +139,7 @@
               cursor: pointer;
               transition: 800ms ease all;
               outline: none;
+              text-align: center;
               &:hover {
                 background: $secondary-color;
                 color: $primary_color;
