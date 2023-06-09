@@ -481,6 +481,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
 }
 .section-rooms .container .search-sort {
   display: flex;
+  justify-content: space-between;
 }
 .section-rooms .container .search-sort .left input {
   border: 1px solid #977a5e;
@@ -494,14 +495,29 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   color: #977a5e;
 }
 .section-rooms .container .search-sort .right {
-  width: 50%;
-  text-align: right;
+  width: 300px;
 }
-.section-rooms .container .search-sort .right select {
-  box-shadow: 2px 2px 9px #977a5e;
-  border: 1px solid #977a5e;
-  padding: 8px;
+.section-rooms .container .search-sort .right .sort {
+  width: 100%;
+  padding: 8px 35px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  border: none;
+  flex: 1 auto;
+  text-align: center;
+  transition: all 0.5s ease-out;
+  background: #977a5e;
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
+  background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+}
+.section-rooms .container .search-sort .right .sort:hover {
+  border-color: transparent;
   color: #977a5e;
+  background-position: 99% 50%;
 }
 .section-rooms .container .room-card {
   position: relative;
@@ -582,6 +598,44 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
 }
 .section-rooms .container .room-card .room .material-symbols-outlined {
   vertical-align: middle;
+}
+.section-rooms .container .loadmore {
+  border: none;
+  width: 200px;
+  padding: 12px 25px;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background: #977a5e;
+  position: relative;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+.section-rooms .container .loadmore:hover {
+  background: #ffffff;
+  color: #977a5e;
+}
+.section-rooms .container .loadmore:before, .section-rooms .container .loadmore:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #977a5e;
+  transition: 400ms ease all;
+}
+.section-rooms .container .loadmore:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.section-rooms .container .loadmore:hover:before, .section-rooms .container .loadmore:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
 }
 
 @media only screen and (max-width: 767px) {

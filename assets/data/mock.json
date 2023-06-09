@@ -39,8 +39,39 @@
   "rooms": [
     {
       "id": 1,
+      "photo": "./assets/image/room-img01.png",
       "title": "Classic Balcony Room",
-      "about": "Aenean vehicula ligula eu rhoncus porttitor. Duis vel lacinia quam. Nunc rutrum porta place ullam ipsum. Morbi imperdiet, orci et dapibus."
+      "price": 600
+    },
+    {
+      "id": 2,
+      "photo": "./assets/image/room-img02.png",
+      "title": "Superior Double Room",
+      "price": 400
+    },
+    {
+      "id": 3,
+      "photo": "./assets/image/room-img03.png",
+      "title": "Super Balcony Double Room",
+      "price": 100
+    },
+    {
+      "id": 4,
+      "photo": "./assets/image/room-img04.png",
+      "title": "Delux Double Room",
+      "price": 300
+    },
+    {
+      "id": 5,
+      "photo": "./assets/image/room-img02.png",
+      "title": "Superior Double Room",
+      "price": 400
+    },
+    {
+      "id": 6,
+      "photo": "./assets/image/room-img03.png",
+      "title": "Super Balcony Double Room",
+      "price": 100
     }
   ],
   "reserv": [
