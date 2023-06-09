@@ -10,6 +10,7 @@
             font-size: 48px;
             text-align: center;
           }
+          
           form {
             .row {
               .form-input {
@@ -35,6 +36,18 @@
                     background-color: #614a37;
                     transition: 0.5s;
                   }
+                }
+              }
+              p {
+                margin-top: 20px;
+                text-align: center;
+                font-family: "Jost", sans-serif;
+                color: $text_dark;
+                font-weight: 600;
+                font-size: 20px;
+                text-align: center;
+                a {
+                  color: $primary_color;
                 }
               }
              

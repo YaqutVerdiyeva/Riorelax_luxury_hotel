@@ -2,7 +2,13 @@ let modal = document.getElementById("myModal");
 let btn = document.getElementById("myBtn");
 let span = document.getElementsByClassName("close")[0];
 let BASE_URL = `http://localhost:3000/rooms`;
+let MOCK_API=`http://localhost:3000/reservRoom`
 
+let checkIn = document.querySelector("#checkin");
+let adults = document.querySelector("#adults");
+let room = document.querySelector("#room");
+let checkOut = document.querySelector("#checkout");
+let bookBtn = document.querySelector(".book-button");
 let roomCard = document.querySelector(".rooms");
 let searchInput = document.querySelector(".search");
 let sortBtn = document.querySelector(".sort");
@@ -67,6 +73,18 @@ loadMore.addEventListener("click", function () {
   getAllCards(filteredArr);
 });
 
+
+
+
+//post
+bookBtn.addEventListener("click", function () {
+  axios.post(`${MOCK_API}`, {
+    checkin: checkIn.value,
+    checkout: checkOut.value,
+    adults: adults.value,
+    room: room.value,
+  });
+});
 //Modal video
 btn.onclick = function () {
   modal.style.display = "block";

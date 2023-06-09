@@ -69,5 +69,14 @@
       "child": "1",
       "id": 1
     }
+  ],
+  "reservRoom": [
+    {
+      "checkin": "1994-05-16",
+      "checkout": "2013-08-19",
+      "adults": "4",
+      "room": "5",
+      "id": 1
+    }
   ]
 }
