@@ -643,7 +643,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
 }
 .section-testimonial .container .row .col .flip-card .flip-card-inner .flip-card-back {
   padding: 5px;
-  background-color: #fff;
+  background-color: #E4D6C9;
   color: #000;
   transform: rotateY(180deg);
   display: flex;
