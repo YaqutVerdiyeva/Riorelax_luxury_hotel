@@ -769,14 +769,14 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
 .section-resort .container .row .right-resort .discoverr i:before {
   border-radius: 46%;
   background-color: rgba(20, 20, 20, 0.2);
-  animation: animate 5s linear infinite;
+  animation: animatee 5s linear infinite;
 }
 .section-resort .container .row .right-resort .discoverr i:after {
   border-radius: 40%;
   background-color: rgba(20, 20, 20, 0.5);
-  animation: animate 10s linear infinite;
+  animation: animatee 10s linear infinite;
 }
-@keyframes animate {
+@keyframes animatee {
   0% {
     transform: translate(-50%, -75%) rotate(0deg);
   }

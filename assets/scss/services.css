@@ -619,46 +619,40 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   font-weight: normal;
   width: 650px;
 }
-.section-testimonial .container .row .col .clients {
-  background-color: #e4d6c9;
-  padding: 30px;
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
-  position: relative;
+.section-testimonial .container .row .col .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 350px;
+  perspective: 1000px;
 }
-.section-testimonial .container .row .col .clients .client {
+.section-testimonial .container .row .col .flip-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.section-testimonial .container .row .col .flip-card .flip-card-inner .flip-card-front,
+.section-testimonial .container .row .col .flip-card .flip-card-inner .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.section-testimonial .container .row .col .flip-card .flip-card-inner .flip-card-back {
+  padding: 5px;
+  background-color: #fff;
+  color: #000;
+  transform: rotateY(180deg);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-.section-testimonial .container .row .col .clients .client .text-client {
-  margin-left: 15px;
-}
-.section-testimonial .container .row .col .clients .client .text-client h6 {
-  font-family: "Jost", sans-serif;
-  font-size: 26px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  color: #977a5e;
-  font-weight: 700;
-}
-.section-testimonial .container .row .col .clients .client .text-client span {
-  color: #977a5e;
-  font-size: 16px;
-  font-family: "Jost", sans-serif;
-}
-.section-testimonial .container .row .col .clients .review-icon {
-  margin: 30px 0;
-}
-.section-testimonial .container .row .col .clients p {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-  color: #777777;
-  line-height: 26px;
-}
-.section-testimonial .container .row .col .clients .qt-img {
-  position: absolute;
-  right: 30px;
-  top: 30px;
+.section-testimonial .container .row .col .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
 @media only screen and (max-width: 767px) {

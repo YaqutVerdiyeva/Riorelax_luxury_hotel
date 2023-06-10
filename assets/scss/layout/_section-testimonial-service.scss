@@ -1,88 +1,83 @@
 .section-testimonial {
-    padding: 100px 0;
-    background-image: url(../image/testimonial-bg.png);
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      h5 {
-        text-align: center;
-        color: $primary_color;
-        font-size: 18px;
-        font-family: "Jost", sans-serif;
-        font-weight: 600;
-      }
-      h2 {
-        text-align: center;
-        color: $text_dark;
-        font-size: 60px;
-        font-family: "Jost", sans-serif;
-        font-weight: 600;
-      }
-      .explore-text {
-        text-align: center;
-        color: $text_color;
-        font-size: 15px;
-        font-family: "Jost", sans-serif;
-        font-weight: normal;
-        width: 650px;
-      }
-      .row {
-        .col {
-          
-          .clients {
-            background-color: #e4d6c9;
-            padding: 30px;
-            box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
-            .client {
-              display: flex;
-              align-items: center;
-              .text-client {
-                margin-left: 15px;
-                h6 {
-                  font-family: "Jost", sans-serif;
-                  font-size: 26px;
-                  margin-top: 5px;
-                  margin-bottom: 5px;
-                  color: $primary_color;
-                  font-weight: 700;
-                }
-                span {
-                  color: $primary_color;
-                  font-size: 16px;
-                  font-family: "Jost", sans-serif;
-                }
-              }
-            }
-            .review-icon {
-              margin: 30px 0;
-            }
-            p {
-              font-family: "Roboto", sans-serif;
-              font-size: 15px;
-              font-weight: normal;
-              color: $text_color;
-              line-height: 26px;
-            }
+  padding: 100px 0;
+  background-image: url(../image/testimonial-bg.png);
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h5 {
+      text-align: center;
+      color: $primary_color;
+      font-size: 18px;
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+    }
+    h2 {
+      text-align: center;
+      color: $text_dark;
+      font-size: 60px;
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+    }
+    .explore-text {
+      text-align: center;
+      color: $text_color;
+      font-size: 15px;
+      font-family: "Jost", sans-serif;
+      font-weight: normal;
+      width: 650px;
+    }
+    .row {
+      .col {
+        .flip-card {
+          background-color: transparent;
+          width: 300px;
+          height: 350px;
+          perspective: 1000px;
+          .flip-card-inner {
             position: relative;
-            .qt-img {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            .flip-card-front,
+            .flip-card-back {
               position: absolute;
-              right: 30px;
-              top: 30px;
+              width: 100%;
+              height: 100%;
+              -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
             }
+          
+            .flip-card-back {
+              padding: 5px;
+              background-color: #fff;
+              color: #000;
+              transform: rotateY(180deg);
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+            }
+          }
+          &:hover .flip-card-inner {
+            transform: rotateY(180deg);
           }
         }
       }
     }
   }
-  @media only screen and (max-width: 767px) {
-    .section-testimonial {
-      .container {
-        .explore-text {
-          width: 100%;
-        }
+}
+@media only screen and (max-width: 767px) {
+  .section-testimonial {
+    .container {
+      .explore-text {
+        width: 100%;
       }
     }
   }
-  
+}
