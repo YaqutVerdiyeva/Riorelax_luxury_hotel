@@ -11,27 +11,27 @@
   max-width: 1200px;
 }
 
-.section-admin-room .containerr .row {
+.section-admin-shop .containerr .row {
   margin: 0;
 }
-.section-admin-room .containerr .row .left {
+.section-admin-shop .containerr .row .left {
   background-color: #977a5e;
   box-shadow: 5px 5px 10px #977a5e;
 }
-.section-admin-room .containerr .row .left ul {
+.section-admin-shop .containerr .row .left ul {
   margin: 0;
   padding: 0;
 }
-.section-admin-room .containerr .row .left ul li {
+.section-admin-shop .containerr .row .left ul li {
   padding: 10px 20px;
 }
-.section-admin-room .containerr .row .left ul li a {
+.section-admin-shop .containerr .row .left ul li a {
   color: #101010;
   font-size: 18px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-admin-room .containerr .row .left ul li .card {
+.section-admin-shop .containerr .row .left ul li .card {
   border: none;
   background-color: transparent;
   display: flex;
@@ -39,18 +39,18 @@
   align-items: center;
   justify-content: center;
 }
-.section-admin-room .containerr .row .left ul li .card img {
+.section-admin-shop .containerr .row .left ul li .card img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
-.section-admin-room .containerr .row .left ul li .card .text {
+.section-admin-shop .containerr .row .left ul li .card .text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.section-admin-room .containerr .row .left ul li .card .text h2 {
+.section-admin-shop .containerr .row .left ul li .card .text h2 {
   margin-top: 10px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
@@ -58,22 +58,22 @@
   letter-spacing: 1px;
   color: #101010;
 }
-.section-admin-room .containerr .row .left ul li .card .text span {
+.section-admin-shop .containerr .row .left ul li .card .text span {
   text-align: center;
   color: #101010;
   font-size: 20px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-admin-room .containerr .row .left ul li .card .text .icons {
+.section-admin-shop .containerr .row .left ul li .card .text .icons {
   display: flex;
   gap: 30px;
 }
-.section-admin-room .containerr .row .left ul li .card .text .icons a i {
+.section-admin-shop .containerr .row .left ul li .card .text .icons a i {
   font-size: 20px;
   color: #101010;
 }
-.section-admin-room .containerr .row .right .container h1 {
+.section-admin-shop .containerr .row .right .container h1 {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 600;
@@ -81,30 +81,30 @@
   text-align: center;
   letter-spacing: 5px;
 }
-.section-admin-room .containerr .row .right .container .reserv h2 {
+.section-admin-shop .containerr .row .right .container .reserv h2 {
   font-family: "Jost", sans-serif;
   color: #101010;
   font-weight: 600;
   font-size: 48px;
   text-align: center;
 }
-.section-admin-room .containerr .row .right .container .reserv form {
+.section-admin-shop .containerr .row .right .container .reserv form {
   margin-bottom: 100px;
   background-color: #ffffff;
   padding: 25px;
   box-shadow: 0px 20px 60px 0px rgba(21, 21, 21, 0.2);
 }
-.section-admin-room .containerr .row .right .container .reserv form label {
+.section-admin-shop .containerr .row .right .container .reserv form label {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 400;
   font-size: 24px;
   text-align: center;
 }
-.section-admin-room .containerr .row .right .container .reserv form input {
+.section-admin-shop .containerr .row .right .container .reserv form input {
   border: 1px solid #977a5e;
 }
-.section-admin-room .containerr .row .right .container .reserv form .add-room {
+.section-admin-shop .containerr .row .right .container .reserv form .add-product {
   border: none;
   width: 100%;
   padding: 12px 25px;
@@ -119,11 +119,11 @@
   outline: none;
   text-align: center;
 }
-.section-admin-room .containerr .row .right .container .reserv form .add-room:hover {
+.section-admin-shop .containerr .row .right .container .reserv form .add-product:hover {
   background: #ffffff;
   color: #977a5e;
 }
-.section-admin-room .containerr .row .right .container .reserv form .add-room:before, .section-admin-room .containerr .row .right .container .reserv form .add-room:after {
+.section-admin-shop .containerr .row .right .container .reserv form .add-product:before, .section-admin-shop .containerr .row .right .container .reserv form .add-product:after {
   content: "";
   position: absolute;
   top: 0;
@@ -133,35 +133,35 @@
   background: #977a5e;
   transition: 400ms ease all;
 }
-.section-admin-room .containerr .row .right .container .reserv form .add-room:after {
+.section-admin-shop .containerr .row .right .container .reserv form .add-product:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.section-admin-room .containerr .row .right .container .reserv form .add-room:hover:before, .section-admin-room .containerr .row .right .container .reserv form .add-room:hover:after {
+.section-admin-shop .containerr .row .right .container .reserv form .add-product:hover:before, .section-admin-shop .containerr .row .right .container .reserv form .add-product:hover:after {
   width: 100%;
   transition: 800ms ease all;
 }
-.section-admin-room .containerr .row .right .container .search-sort {
+.section-admin-shop .containerr .row .right .container .search-sort {
   display: flex;
   justify-content: space-between;
 }
-.section-admin-room .containerr .row .right .container .search-sort .leftt input {
+.section-admin-shop .containerr .row .right .container .search-sort .leftt input {
   border: 1px solid #977a5e;
   border-radius: 0;
   box-shadow: 2px 2px 9px #977a5e;
 }
-.section-admin-room .containerr .row .right .container .search-sort .leftt input::-moz-placeholder {
+.section-admin-shop .containerr .row .right .container .search-sort .leftt input::-moz-placeholder {
   color: #977a5e;
 }
-.section-admin-room .containerr .row .right .container .search-sort .leftt input::placeholder {
+.section-admin-shop .containerr .row .right .container .search-sort .leftt input::placeholder {
   color: #977a5e;
 }
-.section-admin-room .containerr .row .right .container .search-sort .rightt {
+.section-admin-shop .containerr .row .right .container .search-sort .rightt {
   width: 250px;
 }
-.section-admin-room .containerr .row .right .container .search-sort .rightt .sort {
+.section-admin-shop .containerr .row .right .container .search-sort .rightt .sort {
   width: 100%;
   padding: 8px 35px;
   font-size: 15px;
@@ -178,8 +178,8 @@
   color: rgba(255, 255, 255, 0.8);
   background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
-.section-admin-room .containerr .row .right .container .search-sort .rightt .sort:hover {
+.section-admin-shop .containerr .row .right .container .search-sort .rightt .sort:hover {
   border-color: transparent;
   color: #977a5e;
   background-position: 99% 50%;
-}/*# sourceMappingURL=admin_room.css.map */
+}/*# sourceMappingURL=admin-shop.css.map */

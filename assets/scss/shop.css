@@ -474,6 +474,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
 }
 .section-products .container .search-sort {
   display: flex;
+  justify-content: space-between;
 }
 .section-products .container .search-sort .left input {
   border: 1px solid #977a5e;
@@ -482,43 +483,58 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   border-radius: 0;
 }
 .section-products .container .search-sort .right {
-  width: 50%;
-  text-align: right;
+  width: 300px;
 }
-.section-products .container .search-sort .right select {
-  border: 1px solid #977a5e;
-  box-shadow: 2px 2px 9px #977a5e;
+.section-products .container .search-sort .right .sort {
+  width: 100%;
+  padding: 8px 35px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  border: none;
+  flex: 1 auto;
+  text-align: center;
+  transition: all 0.5s ease-out;
+  background: #977a5e;
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
+  background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+}
+.section-products .container .search-sort .right .sort:hover {
+  border-color: transparent;
   color: #977a5e;
-  padding: 8px;
+  background-position: 99% 50%;
 }
-.section-products .container .row .products .product .product-text {
+.section-products .container .product-section .products .product .product-text {
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.section-products .container .row .products .product .product-text span {
+.section-products .container .product-section .products .product .product-text span {
   margin-bottom: 15px;
   color: #977a5e;
   font-size: 14px;
   letter-spacing: 2px;
   font-family: "Roboto", sans-serif;
 }
-.section-products .container .row .products .product .product-text h4 {
+.section-products .container .product-section .products .product .product-text h4 {
   font-family: "Jost", sans-serif;
   color: #101010;
   font-weight: 600;
   font-size: 22px;
 }
-.section-products .container .row .products .product .product-text .price .new-price {
+.section-products .container .product-section .products .product .product-text .price .new-price {
   color: #595b6b;
   font-size: 22px;
   margin-right: 5px;
   font-weight: 700;
   font-family: "Jost", sans-serif;
 }
-.section-products .container .row .products .product .product-text .price .back-price {
+.section-products .container .product-section .products .product .product-text .price .back-price {
   font-size: 22px;
   margin-right: 5px;
   font-weight: 700;

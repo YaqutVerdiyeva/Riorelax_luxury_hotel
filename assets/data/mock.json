@@ -258,5 +258,79 @@
       "room": "1",
       "id": 12
     }
+  ],
+  "shop": [
+    {
+      "id": 1,
+      "photo": "./assets/image/img4.jpg",
+      "title": "CHAIR",
+      "about": "Bakari Product",
+      "priceold": 130,
+      "pricenew": 25
+    },
+    {
+      "id": 2,
+      "photo": "./assets/image/img5.jpg",
+      "title": "CLOTHS",
+      "about": "Classic Balcony Room",
+      "priceold": 150,
+      "pricenew": 95
+    },
+    {
+      "id": 3,
+      "photo": "./assets/image/img6.jpg",
+      "title": "LIGHT",
+      "about": "Sikkar Product",
+      "priceold": 90,
+      "pricenew": 75
+    },
+    {
+      "id": 4,
+      "photo": "./assets/image/img7.jpg",
+      "title": "HEADPHONE",
+      "about": "Minners Product",
+      "priceold": 130,
+      "pricenew": 95
+    },
+    {
+      "id": 5,
+      "photo": "./assets/image/img8.jpg",
+      "title": "TABLE",
+      "about": "Dolando Product",
+      "priceold": 100,
+      "pricenew": 55
+    },
+    {
+      "id": 6,
+      "photo": "./assets/image/img9.jpg",
+      "title": "CLOTHS",
+      "about": "Romada Product",
+      "priceold": 180,
+      "pricenew": 95
+    },
+    {
+      "id": 7,
+      "photo": "./assets/image/img2.jpg",
+      "title": "CLOTHS",
+      "about": "Medidove Product",
+      "priceold": 170,
+      "pricenew": 95
+    },
+    {
+      "id": 8,
+      "photo": "./assets/image/img1.jpg",
+      "title": "CLOTHS",
+      "about": "Legend Product",
+      "priceold": 900,
+      "pricenew": 85
+    },
+    {
+      "id": 9,
+      "photo": "./assets/image/img3.jpg",
+      "title": "TABLE",
+      "about": "Akari Product",
+      "priceold": 10,
+      "pricenew": 95
+    }
   ]
 }
