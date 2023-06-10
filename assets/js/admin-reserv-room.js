@@ -96,5 +96,5 @@ function editUser(id) {
     room.value = res.data.room;
   });
   document.querySelector(".title").innerHTML = "Edit Reservations";
-  bookBtn.innerHTML = "Edit Reservations";
+  bookBtn.innerHTML = "EDIT RESERVATIONS";
 }

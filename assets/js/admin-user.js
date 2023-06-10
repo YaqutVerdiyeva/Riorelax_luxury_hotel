@@ -97,5 +97,5 @@ function editUser(id) {
     password.value = res.data.password;
   });
   document.querySelector(".title").innerHTML="Edit User"
-  signUpBtn.innerHTML="Edit User"
+  signUpBtn.innerHTML="EDIT USER"
 }

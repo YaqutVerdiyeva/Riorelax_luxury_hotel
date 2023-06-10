@@ -121,6 +121,12 @@
       "photo": "./assets/image/room-img03.png",
       "title": "Super Balcony Double Room",
       "price": 100
+    },
+    {
+      "photo": "./assets/image/feature.png",
+      "title": "Super Room",
+      "price": "386",
+      "id": 7
     }
   ],
   "reserv": [
@@ -197,11 +203,60 @@
       "id": 3
     },
     {
-      "checkin": "1977-12-24",
-      "checkout": "1993-07-02",
-      "adults": "3",
+      "checkin": "2019-03-08",
+      "checkout": "1995-05-23",
+      "adults": "4",
       "room": "5",
       "id": 4
+    },
+    {
+      "checkin": "1988-06-09",
+      "checkout": "2007-03-21",
+      "adults": "5",
+      "room": "5",
+      "id": 5
+    },
+    {
+      "checkin": "2019-03-16",
+      "checkout": "2011-03-20",
+      "adults": "3",
+      "room": "1",
+      "id": 7
+    },
+    {
+      "checkin": "2016-06-20",
+      "checkout": "1977-08-05",
+      "adults": "4",
+      "room": "4",
+      "id": 8
+    },
+    {
+      "checkin": "1976-05-21",
+      "checkout": "1986-10-26",
+      "adults": "2",
+      "room": "4",
+      "id": 9
+    },
+    {
+      "checkin": "2013-05-20",
+      "checkout": "1992-11-25",
+      "adults": "4",
+      "room": "2",
+      "id": 10
+    },
+    {
+      "checkin": "2020-04-20",
+      "checkout": "2000-03-07",
+      "adults": "5",
+      "room": "1",
+      "id": 11
+    },
+    {
+      "checkin": "1995-09-21",
+      "checkout": "1988-04-06",
+      "adults": "1",
+      "room": "1",
+      "id": 12
     }
   ]
 }

@@ -101,5 +101,5 @@ function editUser(id) {
     child.value = res.data.child;
   });
   document.querySelector(".title").innerHTML = "Edit Reservations";
-  reservBtn.innerHTML = "Edit Reservations";
+  reservBtn.innerHTML = "EDIT RESERVATIONS";
 }

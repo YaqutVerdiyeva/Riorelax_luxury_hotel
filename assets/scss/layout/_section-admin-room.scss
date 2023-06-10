@@ -1,8 +1,7 @@
-.section-admin-user {
+.section-admin-room {
   .containerr {
     .row {
       margin: 0;
-
       .left {
         background-color: $primary_color;
         box-shadow: 5px 5px 10px $primary_color;
@@ -74,8 +73,7 @@
             text-align: center;
             letter-spacing: 5px;
           }
-          .signup {
-            padding: 100px;
+          .reserv {
             h2 {
               font-family: "Jost", sans-serif;
               color: #101010;
@@ -84,34 +82,59 @@
               text-align: center;
             }
             form {
-              margin-bottom: 50px;
-              box-shadow: 0px 20px 60px 0px rgba(21, 21, 21, 0.2);
+              margin-bottom: 100px;
+              background-color: $secondary-color;
               padding: 25px;
-              .row {
-                .form-input {
-                  .form-control {
-                    border: 1px solid $text_color;
-                    border-radius: 0;
-                    &::placeholder {
-                      color: #9b9595;
-                      font-family: "Roboto", sans-serif;
-                      font-size: 15px;
-                    }
-                  }
-                  .get-submit {
-                    background: $primary_color;
-                    color: $secondary_color;
-                    text-align: center;
-                    font-size: 15px;
-                    border: none;
-                    padding: 17px 20px;
-                    border-radius: 0;
-                    width: 100%;
-                    &:hover {
-                      background-color: #614a37;
-                      transition: 0.5s;
-                    }
-                  }
+              box-shadow: 0px 20px 60px 0px rgba(21, 21, 21, 0.2);
+              label{
+                font-family: "Jost", sans-serif;
+                color: $primary_color;
+                font-weight: 400;
+                font-size: 24px;
+                text-align: center;
+              }
+              input{
+                border: 1px solid $primary_color;
+              }
+              .add-room {
+                border: none;
+                width: 100%;
+                padding: 12px 25px;
+                font-size: 15px;
+                color: $secondary-color;
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                background: $primary_color;
+                position: relative;
+                cursor: pointer;
+                transition: 800ms ease all;
+                outline: none;
+                text-align: center;
+                &:hover {
+                  background: $secondary-color;
+                  color: $primary_color;
+                }
+                &:before,
+                &:after {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  height: 2px;
+                  width: 0;
+                  background: $primary_color;
+                  transition: 400ms ease all;
+                }
+                &:after {
+                  right: inherit;
+                  top: inherit;
+                  left: 0;
+                  bottom: 0;
+                }
+                &:hover:before,
+                &:hover:after {
+                  width: 100%;
+                  transition: 800ms ease all;
                 }
               }
             }
