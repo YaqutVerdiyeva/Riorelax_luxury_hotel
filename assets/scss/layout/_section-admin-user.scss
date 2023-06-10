@@ -1,8 +1,11 @@
 .section-admin-user {
   .containerr {
     .row {
+      margin: 0;
+
       .left {
         background-color: $primary_color;
+        box-shadow: 5px 5px 10px $primary_color;
         ul {
           margin: 0;
           padding: 0;

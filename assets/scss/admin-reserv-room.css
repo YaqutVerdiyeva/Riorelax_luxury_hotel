@@ -501,43 +501,111 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   text-align: center;
   letter-spacing: 5px;
 }
-.section-admin-user .containerr .row .right .container .signup {
-  padding: 100px;
-}
-.section-admin-user .containerr .row .right .container .signup h2 {
+.section-admin-user .containerr .row .right .container .reserv h2 {
   font-family: "Jost", sans-serif;
   color: #101010;
   font-weight: 600;
   font-size: 48px;
   text-align: center;
 }
-.section-admin-user .containerr .row .right .container .signup form .row .form-input .form-control {
-  border: 1px solid #777777;
+.section-admin-user .containerr .row .right .container .reserv .check-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-admin-user .containerr .row .right .container .reserv .check-row .leftt .check-in-date {
+  display: flex;
+  flex-direction: column;
+}
+.section-admin-user .containerr .row .right .container .reserv .check-row .leftt .check-in-date label {
+  margin: 20px 0;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #101010;
+}
+.section-admin-user .containerr .row .right .container .reserv .check-row .leftt .check-in-date label i {
+  padding-right: 5px;
+  color: #be9874;
+}
+.section-admin-user .containerr .row .right .container .reserv .check-row .leftt .check-in-date #checkin[type=date] {
   border-radius: 0;
+  padding: 10px;
+  border-color: rgba(100, 66, 34, 0.2784313725);
+  color: #be9874;
 }
-.section-admin-user .containerr .row .right .container .signup form .row .form-input .form-control::-moz-placeholder {
-  color: #9b9595;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
+.section-admin-user .containerr .row .right .container .reserv .check-row .leftt .adults {
+  display: flex;
+  flex-direction: column;
 }
-.section-admin-user .containerr .row .right .container .signup form .row .form-input .form-control::placeholder {
-  color: #9b9595;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
+.section-admin-user .containerr .row .right .container .reserv .check-row .leftt .adults label {
+  margin: 20px 0;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #101010;
 }
-.section-admin-user .containerr .row .right .container .signup form .row .form-input .get-submit {
-  background: #977a5e;
-  color: #ffffff;
-  text-align: center;
-  font-size: 15px;
+.section-admin-user .containerr .row .right .container .reserv .check-row .leftt .adults label i {
+  padding-right: 5px;
+  color: #be9874;
+}
+.section-admin-user .containerr .row .right .container .reserv .check-row .leftt .adults #adults[type=number] {
+  border-radius: 0;
+  padding: 10px;
+  border-color: rgba(100, 66, 34, 0.2784313725);
+  color: #be9874;
+}
+.section-admin-user .containerr .row .right .container .reserv .check-row .rightt .check-out-date {
+  display: flex;
+  flex-direction: column;
+}
+.section-admin-user .containerr .row .right .container .reserv .check-row .rightt .check-out-date label {
+  margin: 20px 0;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #101010;
+}
+.section-admin-user .containerr .row .right .container .reserv .check-row .rightt .check-out-date label i {
+  padding-right: 5px;
+  color: #be9874;
+}
+.section-admin-user .containerr .row .right .container .reserv .check-row .rightt .check-out-date #checkout[type=date] {
+  border-radius: 0;
+  padding: 10px;
+  border-color: rgba(100, 66, 34, 0.2784313725);
+  color: #be9874;
+}
+.section-admin-user .containerr .row .right .container .reserv .check-row .rightt .room {
+  display: flex;
+  flex-direction: column;
+}
+.section-admin-user .containerr .row .right .container .reserv .check-row .rightt .room label {
+  margin: 20px 0;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #101010;
+}
+.section-admin-user .containerr .row .right .container .reserv .check-row .rightt .room label i {
+  padding-right: 5px;
+  color: #be9874;
+}
+.section-admin-user .containerr .row .right .container .reserv .check-row .rightt .room #room[type=number] {
+  border-radius: 0;
+  padding: 10px;
+  border-color: rgba(100, 66, 34, 0.2784313725);
+  color: #be9874;
+}
+.section-admin-user .containerr .row .right .container .reserv .check-row .book-button {
   border: none;
-  padding: 17px 20px;
-  border-radius: 0;
-  width: 100%;
-}
-.section-admin-user .containerr .row .right .container .signup form .row .form-input .get-submit:hover {
-  background-color: #614a37;
-  transition: 0.5s;
+  width: 97%;
+  padding: 12px 25px;
+  font-size: 15px;
+  background-color: #977a5e;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 .section-admin-user .containerr .row .right .container .search-sort {
   display: flex;
@@ -748,4 +816,4 @@ footer .bottom-footer .container .row .right .footer-icons a i:hover {
   footer .bottom-footer .container .row .right .footer-icons {
     text-align: center;
   }
-}/*# sourceMappingURL=admin_user.css.map */
+}/*# sourceMappingURL=admin-reserv-room.css.map */

@@ -431,9 +431,12 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
     display: block;
   }
 }
+.section-admin .containerr .row {
+  margin: 0;
+}
 .section-admin .containerr .row .left {
   background-color: #977a5e;
-  height: 100vh;
+  box-shadow: 5px 5px 10px #977a5e;
 }
 .section-admin .containerr .row .left ul {
   margin: 0;
@@ -489,6 +492,10 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
 .section-admin .containerr .row .left ul li .card .text .icons a i {
   font-size: 20px;
   color: #101010;
+}
+.section-admin .containerr .row .right {
+  margin: 0;
+  padding: 0;
 }
 
 footer .top-footer {

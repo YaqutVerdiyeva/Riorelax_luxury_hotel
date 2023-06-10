@@ -23,11 +23,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./assets/scss/admin.css" />
-    <title>Wishlist</title>
+    <link rel="stylesheet" href="./assets/scss/admin-reservation.css" />
+    <title>Admin Reservation</title>
   </head>
   <body>
-    <section class="section-admin">
+    <section class="section-admin-user">
       <div class="containerr">
         <div class="row">
           <div class="col col-2 left">
@@ -39,7 +39,9 @@
                     <h2>John Doe</h2>
                     <span>Admin</span>
                     <div class="icons mt-3">
-                      <a href="#"><i class="fa-solid fa-user"></i></a>
+                      <a href="./admin.html"
+                        ><i class="fa-solid fa-user"></i
+                      ></a>
                       <a href="#"><i class="fa-solid fa-envelope"></i></a>
                       <a href="#"><i class="fa-solid fa-message"></i></a>
                       <a href="./index.html"
@@ -56,7 +58,105 @@
               <li><a href="./admin_shop.html">Shop</a></li>
             </ul>
           </div>
-          <div class="col col-10 right"></div>
+          <div class="col col-10 right">
+            <div class="container">
+              <h1 class="m-3">RESERVATIONS</h1>
+              <div class="search-sort row">
+                <div class="leftt col-lg-6 col-sm-6 mt-3">
+                  <input
+                    type="text"
+                    class="form-control search"
+                    placeholder="Search reservations..."
+                  />
+                </div>
+                <div class="rightt col-lg-6 col-sm-6 mt-3">
+                  <button class="sort">Sort</button>
+                </div>
+              </div>
+
+              <table class="table table-hover mt-5">
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Check In Date</th>
+                    <th>Check Out Date</th>
+                    <th>Adults</th>
+                    <th>Child</th>
+                    <th>Room</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <div id="form" class="reserv mt-5">
+                <h2 class="title">Add Reservation</h2>
+                <form action="" class="">
+                  <div class="row">
+                    <div class="col col-6 leftt">
+                      <div class="check-in-date">
+                        <label
+                          ><i class="fa-regular fa-circle-check"></i> Check In
+                          Date</label
+                        >
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="checkin"
+                          name="date"
+                        />
+                      </div>
+                      <div class="adults">
+                        <label><i class="fa-solid fa-people-line"></i> Adults</label>
+                        <select type="number" name="adults" id="adults">
+                          <option value="adults">Adults</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </div>
+                      <div class="room">
+                        <label><i class="fa-solid fa-bell-concierge"></i> Room</label>
+                        <select name="room" id="room">
+                          <option value="room">Room</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col col-6 rightt">
+                      <div class="check-out-date">
+                        <label
+                          ><i class="fa-regular fa-circle-xmark"></i> Check Out
+                          Date</label
+                        >
+                        <input type="date" class="form-control" id="checkout" />
+                      </div>
+                      <div class="child">
+                        <label><i class="fa-solid fa-child-reaching"></i> Child</label>
+                        <select name="child" id="child">
+                          <option value="child">Child</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </div>
+                      <div class="calendar">
+                        <label><i class="fa-solid fa-calendar-days"></i></label>
+                        <button type="submit" class="check-btn">ADD RESERVATION</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -72,5 +172,6 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/admin-reservation.js"></script>
   </body>
 </html>
