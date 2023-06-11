@@ -1,4 +1,5 @@
 .section-admin {
+  background-image: url(../image/testimonial-bg.png);
   .containerr {
     .row {
       margin: 0;
@@ -66,7 +67,7 @@
       }
       .right {
         margin: 0;
-        padding: 0;
+        padding: 25px;
         .counts {
           h2 {
             font-family: "Jost", sans-serif;
@@ -81,6 +82,7 @@
               align-items: center;
               height: 150px;
               padding: 20px;
+              background-color: #fff;
               border: 1px solid $primary_color;
               box-shadow: 2px 2px 10px $primary_color;
               .image {
@@ -105,6 +107,8 @@
           }
         }
         .charts {
+          background-color: #fff;
+          width: 100%;
           .users,
           .room {
             h1 {

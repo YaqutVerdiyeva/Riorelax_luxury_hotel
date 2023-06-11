@@ -11,6 +11,9 @@
   max-width: 1200px;
 }
 
+.section-admin-user {
+  background-image: url(../image/testimonial-bg.png);
+}
 .section-admin-user .containerr .row {
   margin: 0;
 }
@@ -92,6 +95,7 @@
   text-align: center;
 }
 .section-admin-user .containerr .row .right .container .signup form {
+  background-color: #fff;
   margin-bottom: 50px;
   box-shadow: 0px 20px 60px 0px rgba(21, 21, 21, 0.2);
   padding: 25px;

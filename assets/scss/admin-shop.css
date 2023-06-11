@@ -11,6 +11,9 @@
   max-width: 1200px;
 }
 
+.section-admin-shop {
+  background-image: url(../image/testimonial-bg.png);
+}
 .section-admin-shop .containerr .row {
   margin: 0;
 }

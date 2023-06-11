@@ -1,4 +1,6 @@
 .section-admin-reserv-room {
+  background-image: url(../image/testimonial-bg.png);
+
   .containerr {
     .row {
       margin: 0;
@@ -74,8 +76,148 @@
             letter-spacing: 5px;
           }
           .reserv {
-            box-shadow: 0px 20px 60px 0px rgba(21, 21, 21, 0.2);
-            margin-bottom: 100px;
+            form {
+              box-shadow: 0px 20px 60px 0px rgba(21, 21, 21, 0.2);
+              margin-bottom: 100px;
+              background-color: #fff;
+              padding: 20px;
+              .check-row {
+                .leftt {
+                  .check-in-date {
+                    display: flex;
+                    flex-direction: column;
+                    label {
+                      margin: 20px 0;
+                      font-family: "Jost", sans-serif;
+                      font-size: 16px;
+                      font-weight: 600;
+                      color: $text_dark;
+                      i {
+                        padding-right: 5px;
+                        color: #be9874;
+                      }
+                    }
+                    #checkin[type="date"] {
+                      border-radius: 0;
+                      padding: 10px;
+                      border-color: #64422247;
+                      color: #be9874;
+                    }
+                  }
+
+                  .adults {
+                    display: flex;
+                    flex-direction: column;
+                    label {
+                      margin: 20px 0;
+                      font-family: "Jost", sans-serif;
+                      font-size: 16px;
+                      font-weight: 600;
+                      color: $text_dark;
+                      i {
+                        padding-right: 5px;
+                        color: #be9874;
+                      }
+                    }
+                    #adults[type="number"] {
+                      border-radius: 0;
+                      padding: 10px;
+                      border-color: #64422247;
+                      color: #be9874;
+                    }
+                  }
+                }
+                .rightt {
+                  .check-out-date {
+                    display: flex;
+                    flex-direction: column;
+                    label {
+                      margin: 20px 0;
+                      font-family: "Jost", sans-serif;
+                      font-size: 16px;
+                      font-weight: 600;
+                      color: $text_dark;
+                      i {
+                        padding-right: 5px;
+                        color: #be9874;
+                      }
+                    }
+                    #checkout[type="date"] {
+                      border-radius: 0;
+                      padding: 10px;
+                      border-color: #64422247;
+                      color: #be9874;
+                    }
+                  }
+                  .room {
+                    display: flex;
+                    flex-direction: column;
+                    label {
+                      margin: 20px 0;
+                      font-family: "Jost", sans-serif;
+                      font-size: 16px;
+                      font-weight: 600;
+                      color: $text_dark;
+                      i {
+                        padding-right: 5px;
+                        color: #be9874;
+                      }
+                    }
+                    #room[type="number"] {
+                      border-radius: 0;
+                      padding: 10px;
+                      border-color: #64422247;
+                      color: #be9874;
+                    }
+                  }
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .book-button {
+                  border: none;
+                  width: 100%;
+                  padding: 12px 25px;
+                  font-size: 15px;
+                  color: $secondary-color;
+                  font-family: "Roboto", sans-serif;
+                  font-weight: 400;
+                  background: $primary_color;
+                  position: relative;
+                  cursor: pointer;
+                  transition: 800ms ease all;
+                  outline: none;
+                  text-align: center;
+                  &:hover {
+                    background: $secondary-color;
+                    color: $primary_color;
+                  }
+                  &:before,
+                  &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 2px;
+                    width: 0;
+                    background: $primary_color;
+                    transition: 400ms ease all;
+                  }
+                  &:after {
+                    right: inherit;
+                    top: inherit;
+                    left: 0;
+                    bottom: 0;
+                  }
+                  &:hover:before,
+                  &:hover:after {
+                    width: 100%;
+                    transition: 800ms ease all;
+                  }
+                }
+              }
+            }
+           
 
             h2 {
               font-family: "Jost", sans-serif;
@@ -83,141 +225,6 @@
               font-weight: 600;
               font-size: 48px;
               text-align: center;
-            }
-            .check-row {
-              .leftt {
-                .check-in-date {
-                  display: flex;
-                  flex-direction: column;
-                  label {
-                    margin: 20px 0;
-                    font-family: "Jost", sans-serif;
-                    font-size: 16px;
-                    font-weight: 600;
-                    color: $text_dark;
-                    i {
-                      padding-right: 5px;
-                      color: #be9874;
-                    }
-                  }
-                  #checkin[type="date"] {
-                    border-radius: 0;
-                    padding: 10px;
-                    border-color: #64422247;
-                    color: #be9874;
-                  }
-                }
-
-                .adults {
-                  display: flex;
-                  flex-direction: column;
-                  label {
-                    margin: 20px 0;
-                    font-family: "Jost", sans-serif;
-                    font-size: 16px;
-                    font-weight: 600;
-                    color: $text_dark;
-                    i {
-                      padding-right: 5px;
-                      color: #be9874;
-                    }
-                  }
-                  #adults[type="number"] {
-                    border-radius: 0;
-                    padding: 10px;
-                    border-color: #64422247;
-                    color: #be9874;
-                  }
-                }
-              }
-              .rightt {
-                .check-out-date {
-                  display: flex;
-                  flex-direction: column;
-                  label {
-                    margin: 20px 0;
-                    font-family: "Jost", sans-serif;
-                    font-size: 16px;
-                    font-weight: 600;
-                    color: $text_dark;
-                    i {
-                      padding-right: 5px;
-                      color: #be9874;
-                    }
-                  }
-                  #checkout[type="date"] {
-                    border-radius: 0;
-                    padding: 10px;
-                    border-color: #64422247;
-                    color: #be9874;
-                  }
-                }
-                .room {
-                  display: flex;
-                  flex-direction: column;
-                  label {
-                    margin: 20px 0;
-                    font-family: "Jost", sans-serif;
-                    font-size: 16px;
-                    font-weight: 600;
-                    color: $text_dark;
-                    i {
-                      padding-right: 5px;
-                      color: #be9874;
-                    }
-                  }
-                  #room[type="number"] {
-                    border-radius: 0;
-                    padding: 10px;
-                    border-color: #64422247;
-                    color: #be9874;
-                  }
-                }
-              }
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              .book-button {
-                border: none;
-                width: 100%;
-                padding: 12px 25px;
-                font-size: 15px;
-                color: $secondary-color;
-                font-family: "Roboto", sans-serif;
-                font-weight: 400;
-                background: $primary_color;
-                position: relative;
-                cursor: pointer;
-                transition: 800ms ease all;
-                outline: none;
-                text-align: center;
-                &:hover {
-                  background: $secondary-color;
-                  color: $primary_color;
-                }
-                &:before,
-                &:after {
-                  content: "";
-                  position: absolute;
-                  top: 0;
-                  right: 0;
-                  height: 2px;
-                  width: 0;
-                  background: $primary_color;
-                  transition: 400ms ease all;
-                }
-                &:after {
-                  right: inherit;
-                  top: inherit;
-                  left: 0;
-                  bottom: 0;
-                }
-                &:hover:before,
-                &:hover:after {
-                  width: 100%;
-                  transition: 800ms ease all;
-                }
-              }
             }
           }
           .search-sort {

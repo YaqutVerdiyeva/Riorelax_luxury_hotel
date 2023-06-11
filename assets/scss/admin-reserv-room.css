@@ -11,6 +11,9 @@
   max-width: 1200px;
 }
 
+.section-admin-reserv-room {
+  background-image: url(../image/testimonial-bg.png);
+}
 .section-admin-reserv-room .containerr .row {
   margin: 0;
 }
@@ -81,107 +84,102 @@
   text-align: center;
   letter-spacing: 5px;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv {
+.section-admin-reserv-room .containerr .row .right .container .reserv form {
   box-shadow: 0px 20px 60px 0px rgba(21, 21, 21, 0.2);
   margin-bottom: 100px;
+  background-color: #fff;
+  padding: 20px;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv h2 {
-  font-family: "Jost", sans-serif;
-  color: #101010;
-  font-weight: 600;
-  font-size: 48px;
-  text-align: center;
-}
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .leftt .check-in-date {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .check-in-date {
   display: flex;
   flex-direction: column;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .leftt .check-in-date label {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .check-in-date label {
   margin: 20px 0;
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #101010;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .leftt .check-in-date label i {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .check-in-date label i {
   padding-right: 5px;
   color: #be9874;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .leftt .check-in-date #checkin[type=date] {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .check-in-date #checkin[type=date] {
   border-radius: 0;
   padding: 10px;
   border-color: rgba(100, 66, 34, 0.2784313725);
   color: #be9874;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .leftt .adults {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .adults {
   display: flex;
   flex-direction: column;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .leftt .adults label {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .adults label {
   margin: 20px 0;
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #101010;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .leftt .adults label i {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .adults label i {
   padding-right: 5px;
   color: #be9874;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .leftt .adults #adults[type=number] {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .adults #adults[type=number] {
   border-radius: 0;
   padding: 10px;
   border-color: rgba(100, 66, 34, 0.2784313725);
   color: #be9874;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .rightt .check-out-date {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .check-out-date {
   display: flex;
   flex-direction: column;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .rightt .check-out-date label {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .check-out-date label {
   margin: 20px 0;
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #101010;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .rightt .check-out-date label i {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .check-out-date label i {
   padding-right: 5px;
   color: #be9874;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .rightt .check-out-date #checkout[type=date] {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .check-out-date #checkout[type=date] {
   border-radius: 0;
   padding: 10px;
   border-color: rgba(100, 66, 34, 0.2784313725);
   color: #be9874;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .rightt .room {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .room {
   display: flex;
   flex-direction: column;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .rightt .room label {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .room label {
   margin: 20px 0;
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #101010;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .rightt .room label i {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .room label i {
   padding-right: 5px;
   color: #be9874;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .rightt .room #room[type=number] {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .room #room[type=number] {
   border-radius: 0;
   padding: 10px;
   border-color: rgba(100, 66, 34, 0.2784313725);
   color: #be9874;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .book-button {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button {
   border: none;
   width: 100%;
   padding: 12px 25px;
@@ -196,11 +194,11 @@
   outline: none;
   text-align: center;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .book-button:hover {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:hover {
   background: #ffffff;
   color: #977a5e;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .book-button:before, .section-admin-reserv-room .containerr .row .right .container .reserv .check-row .book-button:after {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:before, .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -210,15 +208,22 @@
   background: #977a5e;
   transition: 400ms ease all;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .book-button:after {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv .check-row .book-button:hover:before, .section-admin-reserv-room .containerr .row .right .container .reserv .check-row .book-button:hover:after {
+.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:hover:before, .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:hover:after {
   width: 100%;
   transition: 800ms ease all;
+}
+.section-admin-reserv-room .containerr .row .right .container .reserv h2 {
+  font-family: "Jost", sans-serif;
+  color: #101010;
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
 }
 .section-admin-reserv-room .containerr .row .right .container .search-sort {
   display: flex;
