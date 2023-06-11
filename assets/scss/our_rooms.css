@@ -540,6 +540,12 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   color: #000;
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
 }
+.section-rooms .container .room-card .room .card i {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 30px;
+}
 .section-rooms .container .room-card .room .card img {
   position: absolute;
   -o-object-fit: cover;
@@ -553,7 +559,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
 }
 .section-rooms .container .room-card .room .card h2 {
   position: absolute;
-  inset: auto auto 30px 30px;
+  inset: auto auto 40px 30px;
   margin: 0;
   transition: inset 0.3s 0.3s ease-out;
   text-transform: uppercase;

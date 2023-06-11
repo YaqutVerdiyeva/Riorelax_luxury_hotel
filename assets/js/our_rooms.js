@@ -2,7 +2,7 @@ let modal = document.getElementById("myModal");
 let btn = document.getElementById("myBtn");
 let span = document.getElementsByClassName("close")[0];
 let BASE_URL = `http://localhost:3000/rooms`;
-let MOCK_API=`http://localhost:3000/reservRoom`
+let MOCK_API = `http://localhost:3000/reservRoom`;
 
 let checkIn = document.querySelector("#checkin");
 let adults = document.querySelector("#adults");
@@ -30,6 +30,7 @@ async function getAllCards() {
     <div class="room">
       <div class="card">
         <img src="${el.photo}" alt="" />
+        <i onclick="addFavBtn(${el.id})" class="fa-solid fa-heart" style="color: #ffffff;"></i>
         <div class="card-content">
           <h2>${el.title}</h2>
           <p>${el.price}$</p>
@@ -73,8 +74,18 @@ loadMore.addEventListener("click", function () {
   getAllCards(filteredArr);
 });
 
-
-
+//addfav
+let favorits = JSON.parse(localStorage.getItem("favroom")) || [];
+async function addFavBtn(id) {
+  let res = await axios(`${BASE_URL}/${id}`);
+  let data = await res.data;
+  console.log(data);
+  favorits.push(data);
+  console.log(favorits);
+  localStorage.setItem("favroom", JSON.stringify(favorits));
+  console.log("Hello");
+  
+}
 
 //post
 bookBtn.addEventListener("click", function () {
