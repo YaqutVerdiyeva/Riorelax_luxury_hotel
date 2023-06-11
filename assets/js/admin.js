@@ -1,3 +1,46 @@
+let BASE_URL_USERS = `http://localhost:3000/users`;
+let BASE_URL_RESERV = `http://localhost:3000/reserv`;
+let BASE_URL_RESERV_ROOM = `http://localhost:3000/reservRoom`;
+let BASE_URL_ROOMS = `http://localhost:3000/rooms`;
+let BASE_URL_SHOP = `http://localhost:3000/shop`;
+let userCount = document.querySelector(".user-count");
+let reservCount = document.querySelector(".reserv-count");
+let roomReservCount = document.querySelector(".room-reserv-count");
+let roomCount = document.querySelector(".room-count");
+let shopCount = document.querySelector(".shop-count");
+
+async function getUsers() {
+  let res = await axios(BASE_URL_USERS);
+  let data = await res.data;
+  userCount.innerHTML = `Users count: ${data.length}`;
+}
+getUsers();
+
+async function getReserv() {
+  let res = await axios(BASE_URL_RESERV);
+  let data = await res.data;
+  reservCount.innerHTML = `Reservations count: ${data.length}`;
+}
+getReserv();
+async function getReservRoom() {
+  let res = await axios(BASE_URL_RESERV_ROOM);
+  let data = await res.data;
+  roomReservCount.innerHTML = `Room Reservations count: ${data.length}`;
+}
+getReservRoom();
+async function getRoom() {
+  let res = await axios(BASE_URL_ROOMS);
+  let data = await res.data;
+  roomCount.innerHTML = `Room count: ${data.length}`;
+}
+getRoom();
+async function getShop() {
+  let res = await axios(BASE_URL_SHOP);
+  let data = await res.data;
+  shopCount.innerHTML = `Shop count: ${data.length}`;
+}
+getShop();
+
 const xValues = [
   "January",
   "February",

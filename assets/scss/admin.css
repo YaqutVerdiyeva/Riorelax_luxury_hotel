@@ -27,7 +27,7 @@
 }
 .section-admin .containerr .row .left ul li a {
   color: #101010;
-  font-size: 18px;
+  font-size: 22px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
@@ -61,7 +61,7 @@
 .section-admin .containerr .row .left ul li .card .text span {
   text-align: center;
   color: #101010;
-  font-size: 20px;
+  font-size: 25px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
@@ -76,11 +76,40 @@
 .section-admin .containerr .row .right {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
 }
-.section-admin .containerr .row .right .row .users h1,
-.section-admin .containerr .row .right .row .room h1 {
+.section-admin .containerr .row .right .counts h2 {
+  font-family: "Jost", sans-serif;
+  color: #977a5e;
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+}
+.section-admin .containerr .row .right .counts .col .cardd {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  padding: 20px;
+  border: 1px solid #977a5e;
+  box-shadow: 2px 2px 10px #977a5e;
+}
+.section-admin .containerr .row .right .counts .col .cardd .image {
+  margin-right: 20px;
+}
+.section-admin .containerr .row .right .counts .col .cardd .image i {
+  font-size: 50px;
+}
+.section-admin .containerr .row .right .counts .col .cardd .text h3 {
+  font-family: "Jost", sans-serif;
+  color: #000;
+  font-weight: 700;
+}
+.section-admin .containerr .row .right .counts .col .cardd .text span {
+  font-family: "Jost", sans-serif;
+  color: #000;
+  font-weight: 600;
+}
+.section-admin .containerr .row .right .charts .users h1,
+.section-admin .containerr .row .right .charts .room h1 {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 600;
