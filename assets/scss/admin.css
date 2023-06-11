@@ -76,4 +76,14 @@
 .section-admin .containerr .row .right {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.section-admin .containerr .row .right .row .users h1,
+.section-admin .containerr .row .right .row .room h1 {
+  font-family: "Jost", sans-serif;
+  color: #977a5e;
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
 }/*# sourceMappingURL=admin.css.map */

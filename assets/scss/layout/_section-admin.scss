@@ -64,9 +64,23 @@
           }
         }
       }
-      .right{
+      .right {
         margin: 0;
-        padding: 0; 
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        .row {
+          .users,
+          .room {
+            h1 {
+              font-family: "Jost", sans-serif;
+              color: $primary_color;
+              font-weight: 600;
+              font-size: 48px;
+              text-align: center;
+            }
+          }
+        }
       }
     }
   }
