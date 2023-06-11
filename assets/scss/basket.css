@@ -431,41 +431,41 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
     display: block;
   }
 }
-.section-shop {
-  background-image: url(../image/otel3.jpg);
+.section-basket {
+  background-image: url(../image/otel2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 70vh;
 }
-.section-shop .container {
+.section-basket .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding-top: 200px;
 }
-.section-shop .container h2 {
+.section-basket .container h2 {
   font-family: "Jost", sans-serif;
   font-weight: 600;
   font-size: 60px;
   margin-bottom: 25px;
   line-height: 1;
   letter-spacing: 1px;
-  color: #101010;
+  color: #ffffff;
 }
-.section-shop .container p {
-  color: #101010;
+.section-basket .container p {
+  color: #ffffff;
 }
-.section-shop .container p a {
+.section-basket .container p a {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color: #101010;
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 767px) {
-  .section-shop .container p {
+  .section-basket .container p {
     display: none;
   }
 }
@@ -542,7 +542,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   color: #b5b5b5;
   text-decoration: line-through !important;
 }
-.section-products .container .product-section .products .product .product-text .price .addbasket {
+.section-products .container .product-section .products .product .product-text .price .basket {
   border: none;
   width: 100%;
   padding: 12px 20px;
@@ -557,11 +557,11 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   outline: none;
   text-align: center;
 }
-.section-products .container .product-section .products .product .product-text .price .addbasket:hover {
+.section-products .container .product-section .products .product .product-text .price .basket:hover {
   background: #ffffff;
   color: #977a5e;
 }
-.section-products .container .product-section .products .product .product-text .price .addbasket:before, .section-products .container .product-section .products .product .product-text .price .addbasket:after {
+.section-products .container .product-section .products .product .product-text .price .basket:before, .section-products .container .product-section .products .product .product-text .price .basket:after {
   content: "";
   position: absolute;
   top: 0;
@@ -571,13 +571,13 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   background: #977a5e;
   transition: 400ms ease all;
 }
-.section-products .container .product-section .products .product .product-text .price .addbasket:after {
+.section-products .container .product-section .products .product .product-text .price .basket:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.section-products .container .product-section .products .product .product-text .price .addbasket:hover:before, .section-products .container .product-section .products .product .product-text .price .addbasket:hover:after {
+.section-products .container .product-section .products .product .product-text .price .basket:hover:before, .section-products .container .product-section .products .product .product-text .price .basket:hover:after {
   width: 100%;
   transition: 800ms ease all;
 }
@@ -750,4 +750,4 @@ footer .bottom-footer .container .row .right .footer-icons a i:hover {
   footer .bottom-footer .container .row .right .footer-icons {
     text-align: center;
   }
-}/*# sourceMappingURL=shop.css.map */
+}/*# sourceMappingURL=basket.css.map */

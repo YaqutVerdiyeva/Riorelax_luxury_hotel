@@ -22,8 +22,10 @@ async function getAllProducts() {
                 <span>${el.title}</span>
                 <h4>${el.about}</h4>
                 <div class="price">
-                  <span class="new-price">$${el.pricenew}.00</span>
-                  <span class="back-price">$${el.priceold}.00</span>
+                 <div>
+                 <span class="new-price">$${el.pricenew}.00</span>
+                 <span class="back-price">$${el.priceold}.00</span></div>
+                  <button onclick="addBasket(${el.id})" class="addbasket mt-3">Add Basket</button>
                 </div>
               </div>
             </div>
@@ -59,3 +61,13 @@ sortBtn.addEventListener("click", function () {
   }
   getAllProducts();
 });
+let productList = JSON.parse(localStorage.getItem("product")) || [];
+async function addBasket(id) {
+  let res = await axios(`${BASE_URL}/${id}`);
+  let data = await res.data;
+  console.log(data);
+  productList.push(data);
+  console.log(productList);
+  localStorage.setItem("product", JSON.stringify(productList));
+  console.log("Hello");
+}
