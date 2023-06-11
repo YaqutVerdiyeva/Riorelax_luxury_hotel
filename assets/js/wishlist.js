@@ -12,7 +12,7 @@ function favoritRoom() {
       <div class="room">
         <div class="card">
         <img src="${el.photo}" alt="" />
-        <i onclick="deleteFavBtn(${el.id})" class="fa-solid fa-heart" style="color: #ffffff;"></i>
+        <i onclick="deleteFavBtn(${el.id})" class="fa-regular fa-heart" style="color: #ffffff;"></i>
           <div class="card-content">
             <h2>${el.title}</h2>
             <p>${el.price}$</p>
