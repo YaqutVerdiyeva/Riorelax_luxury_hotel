@@ -12,6 +12,7 @@ let room = document.querySelector("#room");
 let checkOut = document.querySelector("#checkout");
 let child = document.querySelector("#child");
 let reservBtn = document.querySelector(".check-btn");
+let discoverBtn = document.querySelector(".discover");
 
 //post
 reservBtn.addEventListener("click", function () {
@@ -75,4 +76,7 @@ var swiper = new Swiper(".mySwiperr", {
   pagination: {
     el: ".swiper-pagination",
   },
+});
+discoverBtn.addEventListener("click", function () {
+  window.location = "about.html";
 });
