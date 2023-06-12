@@ -12488,8 +12488,10 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   text-align: center;
 }
 .section-signup .container .row .signup form .row .form-input .form-control {
+  margin-top: 10px;
   border: 1px solid #777777;
   border-radius: 0;
+  box-shadow: none;
 }
 .section-signup .container .row .signup form .row .form-input .form-control::-moz-placeholder {
   color: #9b9595;
@@ -12500,6 +12502,15 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   color: #9b9595;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
+}
+.section-signup .container .row .signup form .row .form-input p {
+  position: absolute;
+  display: none;
+  text-align: start;
+  font-size: 16px;
+  color: brown;
+  padding: 0;
+  margin: 0;
 }
 .section-signup .container .row .signup form .row .form-input .get-submit {
   background: #977a5e;

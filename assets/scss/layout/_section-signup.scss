@@ -14,6 +14,7 @@
           .row {
             .form-input {
               .form-control {
+                margin-top: 10px;
                 border: 1px solid $text_color;
                 border-radius: 0;
                 &::placeholder {
@@ -21,6 +22,18 @@
                   font-family: "Roboto", sans-serif;
                   font-size: 15px;
                 }
+
+                box-shadow: none;
+              }
+              p {
+                position: absolute;
+                display: none;
+                text-align: start;
+                font-size: 16px;
+                color: brown;
+                padding: 0;
+                margin: 0;
+                
               }
               .get-submit {
                 background: $primary_color;

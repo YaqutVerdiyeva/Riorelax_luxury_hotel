@@ -57,20 +57,6 @@
       "id": 10
     },
     {
-      "firstname": "Minus ipsum quo id ",
-      "lastname": "Aliquip omnis placea",
-      "email": "sugaxo@mailinator.com",
-      "password": "78965412",
-      "id": 11
-    },
-    {
-      "firstname": "lilaaa",
-      "lastname": "Cupiditate quia temp",
-      "email": "tuwega@mailinator.com",
-      "password": "546892246",
-      "id": 12
-    },
-    {
       "firstname": "Aliquam est esse ",
       "lastname": "Recusandae Rerum re",
       "email": "kekyfaliwe@mailinator.com",
@@ -83,6 +69,76 @@
       "email": "yaqut22@gmail.com",
       "password": "123789456",
       "id": 14
+    },
+    {
+      "firstname": "luca",
+      "lastname": "Dean",
+      "email": "luca@gmail.com",
+      "password": "12345678",
+      "id": 15
+    },
+    {
+      "firstname": "Illum error et et p",
+      "lastname": "Consequatur Sed aut",
+      "email": "zuqiro@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 16
+    },
+    {
+      "firstname": "Yaqut",
+      "lastname": "Verdiyeva",
+      "email": "yaqutverdiyeva@gmail.com",
+      "password": "12345678",
+      "id": 17
+    },
+    {
+      "firstname": "Sed veniam ut autem",
+      "lastname": "Ut eos non dolor ea",
+      "email": "lesoniwu@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 18
+    },
+    {
+      "firstname": "Ad dolor ut veniam ",
+      "lastname": "Veniam eos volupta",
+      "email": "xyfeginyh@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 19
+    },
+    {
+      "firstname": "Laudantium itaque c",
+      "lastname": "Praesentium eos illo",
+      "email": "fabu@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 20
+    },
+    {
+      "firstname": "Reiciendis et velit ",
+      "lastname": "Enim laboriosam ape",
+      "email": "lywopahi@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 21
+    },
+    {
+      "firstname": "Et quibusdam dolorem",
+      "lastname": "Enim rerum sed aut s",
+      "email": "bagenuhi@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 22
+    },
+    {
+      "firstname": "Qui recusandae Exce",
+      "lastname": "Alias consequatur E",
+      "email": "xepe@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 23
+    },
+    {
+      "firstname": "Tenetur ea libero am",
+      "lastname": "Est eu mollitia ips",
+      "email": "tufywesaf@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 24
     }
   ],
   "rooms": [
@@ -100,9 +156,9 @@
     },
     {
       "id": 3,
-      "photo": "./assets/image/room-img03.png",
-      "title": "Super Balcony Double Room",
-      "price": 100
+      "photo": "./assets/image/feature.png",
+      "title": "Super Balcony Room",
+      "price": "100"
     },
     {
       "id": 4,
