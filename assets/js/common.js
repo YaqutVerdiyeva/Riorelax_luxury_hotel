@@ -45,22 +45,7 @@ menuicon1.addEventListener("click", function () {
   menuicon.style.display = "block";
   menuicon1.style.display = "none";
 });
-document.querySelector(".plus1").addEventListener("click", function () {
-  document.querySelector(".plus1").style.visibility = "hidden";
-  document.querySelector(".minus1").style.visibility = "visible";
-});
-document.querySelector(".minus1").addEventListener("click", function () {
-  document.querySelector(".plus1").style.visibility = "visible";
-  document.querySelector(".minus1").style.visibility = "hidden";
-});
-document.querySelector(".plus2").addEventListener("click", function () {
-  document.querySelector(".plus2").style.visibility = "hidden";
-  document.querySelector(".minus2").style.visibility = "visible";
-});
-document.querySelector(".minus2").addEventListener("click", function () {
-  document.querySelector(".plus2").style.visibility = "visible";
-  document.querySelector(".minus2").style.visibility = "hidden";
-});
+
 document.querySelector(".plus3").addEventListener("click", function () {
   document.querySelector(".plus3").style.visibility = "hidden";
   document.querySelector(".minus3").style.visibility = "visible";
@@ -69,14 +54,7 @@ document.querySelector(".minus3").addEventListener("click", function () {
   document.querySelector(".plus3").style.visibility = "visible";
   document.querySelector(".minus3").style.visibility = "hidden";
 });
-document.querySelector(".plus4").addEventListener("click", function () {
-  document.querySelector(".plus4").style.visibility = "hidden";
-  document.querySelector(".minus4").style.visibility = "visible";
-});
-document.querySelector(".minus4").addEventListener("click", function () {
-  document.querySelector(".plus4").style.visibility = "visible";
-  document.querySelector(".minus4").style.visibility = "hidden";
-});
+
 //scrollUpBtn
 scrollUpBtn.addEventListener("click", function () {
   document.body.scrollTop = 0;
