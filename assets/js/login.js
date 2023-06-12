@@ -6,7 +6,7 @@ login.addEventListener("click", async function () {
   let res = await axios(BASE_URL);
   let data = await res.data;
   console.log(data);
-  if (data.find((item) => item.email == email.value)) {
+  if (data.find((item) => item.email == email.value && item.password == password.value)) {
     window.location = `index.html`;
   } else {
     alert("You are not user");
