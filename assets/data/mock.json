@@ -160,47 +160,96 @@
       "email": "fequj@mailinator.com",
       "password": "Pa$$w0rd!",
       "id": 27
+    },
+    {
+      "firstname": "Proident quia adipi",
+      "lastname": "Quo enim dignissimos",
+      "email": "dedezili@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 28
+    },
+    {
+      "firstname": "Odio eligendi sint d",
+      "lastname": "Maxime facilis ad as",
+      "email": "curytuzi@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 29
+    },
+    {
+      "firstname": "Sed architecto reici",
+      "lastname": "Iure vel ullam amet",
+      "email": "mywowuga@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 30
+    },
+    {
+      "firstname": "Accusantium illo nul",
+      "lastname": "Ratione quia maiores",
+      "email": "logy@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 31
+    },
+    {
+      "firstname": "Qui perferendis dolo",
+      "lastname": "Aut in hic non provi",
+      "email": "pyjosu@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 32
+    },
+    {
+      "firstname": "Quae laboris debitis",
+      "lastname": "Distinctio Natus bl",
+      "email": "qibibaga@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 33
+    },
+    {
+      "firstname": "Ut u",
+      "lastname": "Quisquam qui et et l",
+      "email": "piricy@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 34
     }
   ],
   "rooms": [
     {
       "id": 1,
-      "photo": "./assets/image/room-img01.png",
+      "photo": "../assets/image/room-img01.png",
       "title": "Classic Balcony Room",
       "price": 600
     },
     {
       "id": 2,
-      "photo": "./assets/image/room-img02.png",
+      "photo": "../assets/image/room-img02.png",
       "title": "Superior Double Room",
       "price": 400
     },
     {
       "id": 3,
-      "photo": "./assets/image/feature.png",
+      "photo": "../assets/image/feature.png",
       "title": "Super Balcony Room",
       "price": "100"
     },
     {
       "id": 4,
-      "photo": "./assets/image/room-img04.png",
+      "photo": "../assets/image/room-img04.png",
       "title": "Delux Double Room",
       "price": 300
     },
     {
       "id": 5,
-      "photo": "./assets/image/room-img02.png",
+      "photo": "../assets/image/room-img02.png",
       "title": "Superior Double Room",
       "price": 400
     },
     {
       "id": 6,
-      "photo": "./assets/image/room-img03.png",
+      "photo": "../assets/image/room-img03.png",
       "title": "Super Balcony Double Room",
       "price": 100
     },
     {
-      "photo": "./assets/image/feature.png",
+      "photo": "../assets/image/feature.png",
       "title": "Super Room",
       "price": "386",
       "id": 7
@@ -355,7 +404,7 @@
   "shop": [
     {
       "id": 1,
-      "photo": "./assets/image/img4.jpg",
+      "photo": "../assets/image/img4.jpg",
       "title": "CHAIR",
       "about": "Bakari Product",
       "priceold": 130,
@@ -363,7 +412,7 @@
     },
     {
       "id": 2,
-      "photo": "./assets/image/img5.jpg",
+      "photo": "../assets/image/img5.jpg",
       "title": "CLOTHS",
       "about": "Classic Balcony Room",
       "priceold": 150,
@@ -371,7 +420,7 @@
     },
     {
       "id": 3,
-      "photo": "./assets/image/img6.jpg",
+      "photo": "../assets/image/img6.jpg",
       "title": "LIGHT",
       "about": "Sikkar Product",
       "priceold": 90,
@@ -379,7 +428,7 @@
     },
     {
       "id": 4,
-      "photo": "./assets/image/img7.jpg",
+      "photo": "../assets/image/img7.jpg",
       "title": "HEADPHONE",
       "about": "Minners Product",
       "priceold": 130,
@@ -387,7 +436,7 @@
     },
     {
       "id": 5,
-      "photo": "./assets/image/img8.jpg",
+      "photo": "../assets/image/img8.jpg",
       "title": "TABLE",
       "about": "Dolando Product",
       "priceold": 100,
@@ -395,7 +444,7 @@
     },
     {
       "id": 6,
-      "photo": "./assets/image/img9.jpg",
+      "photo": "../assets/image/img9.jpg",
       "title": "CLOTHS",
       "about": "Romada Product",
       "priceold": 180,
@@ -403,7 +452,7 @@
     },
     {
       "id": 7,
-      "photo": "./assets/image/img2.jpg",
+      "photo": "../assets/image/img2.jpg",
       "title": "CLOTHS",
       "about": "Medidove Product",
       "priceold": 170,
@@ -411,7 +460,7 @@
     },
     {
       "id": 8,
-      "photo": "./assets/image/img1.jpg",
+      "photo": "../assets/image/img1.jpg",
       "title": "CLOTHS",
       "about": "Legend Product",
       "priceold": 900,
@@ -419,7 +468,7 @@
     },
     {
       "id": 9,
-      "photo": "./assets/image/img3.jpg",
+      "photo": "../assets/image/img3.jpg",
       "title": "TABLE",
       "about": "Akari Product",
       "priceold": 10,

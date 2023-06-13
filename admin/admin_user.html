@@ -23,29 +23,27 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./assets/scss/main.css" />
-    <title>Admin Room</title>
+    <link rel="stylesheet" href="./assets/scss/style.css" />
+    <title>Admin User</title>
   </head>
   <body>
     
-    <section class="section-admin-room">
+    <section class="section-admin-user">
       <div class="containerr">
         <div class="row">
           <div class="col col-3 left">
             <ul>
               <li>
                 <div class="card">
-                  <img src="./assets/image/admin.png" alt="" />
+                  <img src="../assets/image/admin.png" alt="" />
                   <div class="text">
                     <h2>Yaqut Verdiyeva</h2>
                     <span>Admin</span>
                     <div class="icons mt-3">
-                      <a href="./admin.html"
-                        ><i class="fa-solid fa-user"></i
-                      ></a>
+                      <a href="./admin.html"><i class="fa-solid fa-user"></i></a>
                       <a href="#"><i class="fa-solid fa-envelope"></i></a>
                       <a href="#"><i class="fa-solid fa-message"></i></a>
-                      <a href="./index.html"
+                      <a href="../index.html"
                         ><i class="fa-solid fa-right-from-bracket"></i
                       ></a>
                     </div>
@@ -61,46 +59,78 @@
           </div>
           <div class="col col-9 right">
             <div class="container">
-              <h1 class="m-3">ROOM RESERVATIONS</h1>
+              <h1 >USERS</h1>
               <div class="search-sort row">
                 <div class="leftt col-lg-6 col-sm-6 mt-3">
                   <input
                     type="text"
                     class="form-control search"
-                    placeholder="Search reservations..."
+                    placeholder="Search user..."
                   />
                 </div>
                 <div class="rightt col-lg-6 col-sm-6 mt-3">
                   <button class="sort">Sort</button>
                 </div>
               </div>
+
               <table class="table table-hover mt-5">
                 <thead>
                   <tr>
                     <th>Id</th>
-                    <th>Image</th>
-                    <th>Room Name</th>
-                    <th>Price</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
                     <th>Action</th>
                   </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody>
+                 
+                </tbody>
               </table>
-              <div id="form" class="reserv mt-5">
-                <h2 class="title">Add Reservation</h2>
-                <form action="" class="">
-                  <label for="">Room name</label>
-                  <input type="text" id="title" class="form-control title" />
-                  <br />
-                  <label for="">Price</label>
-                  <input type="number" class="form-control price" />
-                  <br />
-                  <label for="">Photo</label>
-                  <input type="file" class="form-control photo" />
-                  <br />
-                  <button type="submit" class="add-room button mt-5">
-                    ADD ROOM
-                  </button>
+              <div id="form" class="signup">
+                <h2 class="title">Add User</h2>
+                <form action="">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 mt-3 form-input">
+                      <input
+                        type="text"
+                        class="form-control firstname"
+                        placeholder="First Name"
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-6 mt-3 form-input">
+                      <input
+                        type="text"
+                        class="form-control lastname"
+                        placeholder="Last Name"
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-12 col-md-12 mt-3 form-input">
+                      <input
+                        required
+                        type="email"
+                        class="form-control email"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="col-lg-12 col-md-12 mt-3 form-input">
+                      <input
+                        required
+                        type="password"
+                        class="form-control password"
+                        placeholder="Password"
+                      />
+                    </div>
+
+                    <div class="col-lg-12 mt-3 form-input">
+                      <button type="submit" class="get-submit mt-4">
+                       ADD USER
+                      </button>
+                    </div>
+                  </div>
                 </form>
               </div>
             </div>
@@ -120,7 +150,6 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/js/admin-room.js"></script>
+    <script src="./assets/js/admin-user.js"></script>
   </body>
 </html>
-
