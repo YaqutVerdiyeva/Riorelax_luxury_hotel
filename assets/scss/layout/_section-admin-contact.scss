@@ -1,0 +1,198 @@
+.section-contact {
+  background-image: url(../../../assets/image/testimonial-bg.png);
+  .containerr {
+    .row {
+      margin: 0;
+
+      .left {
+        background-color: $primary_color;
+        box-shadow: 5px 5px 10px $primary_color;
+        ul {
+          margin: 0;
+          padding: 0;
+          li {
+            a {
+              color: $text_dark;
+              font-size: 22px;
+              font-family: "Jost", sans-serif;
+              font-weight: 600;
+            }
+            padding: 10px 20px;
+            .card {
+              border: none;
+              background-color: transparent;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+              }
+              .text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h2 {
+                  margin-top: 10px;
+                  font-family: "Jost", sans-serif;
+                  font-weight: 600;
+                  line-height: 1;
+                  letter-spacing: 1px;
+                  color: $text_dark;
+                }
+                span {
+                  text-align: center;
+                  color: $text_dark;
+                  font-size: 25px;
+                  font-family: "Jost", sans-serif;
+                  font-weight: 600;
+                }
+                .icons {
+                  display: flex;
+                  gap: 30px;
+                  a {
+                    i {
+                      font-size: 20px;
+                      color: $text_dark;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .right {
+        .container {
+          h1 {
+            font-family: "Jost", sans-serif;
+            color: $primary_color;
+            font-weight: 600;
+            font-size: 48px;
+            text-align: center;
+            letter-spacing: 5px;
+          }
+
+          .search-sort {
+            display: flex;
+            justify-content: space-between;
+            .leftt {
+              input {
+                border: 1px solid $primary_color;
+                border-radius: 0;
+                box-shadow: 2px 2px 9px $primary_color;
+                &::placeholder {
+                  color: $primary_color;
+                }
+              }
+            }
+            .rightt {
+              width: 250px;
+              .sort {
+                width: 100%;
+                padding: 8px 35px;
+                font-size: 15px;
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                border: none;
+                flex: 1 auto;
+                text-align: center;
+                transition: all 0.5s ease-out;
+                background: $primary_color;
+                background-position: 1% 50%;
+                background-size: 300% 300%;
+                color: $secondary-color;
+                color: rgba(255, 255, 255, 0.8);
+                background-image: linear-gradient(
+                  270deg,
+                  rgba(255, 255, 255, 0.9),
+                  rgba(255, 255, 255, 0.9),
+                  rgba(255, 255, 255, 0),
+                  rgba(255, 255, 255, 0)
+                );
+                &:hover {
+                  border-color: transparent;
+                  color: $primary_color;
+                  background-position: 99% 50%;
+                }
+              }
+            }
+          }
+          .reserv {
+            background-color: #f7f5f1;
+            padding: 100px;
+            h2 {
+              font-family: "Jost", sans-serif;
+              color: #101010;
+              font-weight: 600;
+              font-size: 48px;
+              text-align: center;
+            }
+            form {
+              .row {
+                .form-input {
+                  .form-control,
+                  textarea {
+                    border: 1px solid $text_color;
+                    border-radius: 0;
+                    &::placeholder {
+                      color: #9b9595;
+                      font-family: "Roboto", sans-serif;
+                      font-size: 15px;
+                    }
+                  }
+                  textarea {
+                    height: 100px;
+                  }
+                  button {
+                    background: $primary_color;
+                    border: none;
+                    padding: 17px 20px;
+                    width: 100%;
+                    font-size: 15px;
+                    color: $secondary-color;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 400;
+                    position: relative;
+                    cursor: pointer;
+                    transition: 800ms ease all;
+                    outline: none;
+                    &:hover {
+                      background: $secondary-color;
+                      color: $primary_color;
+                    }
+                    &:before,
+                    &:after {
+                      content: "";
+                      position: absolute;
+                      top: 0;
+                      right: 0;
+                      height: 2px;
+                      width: 0;
+                      background: $primary_color;
+                      transition: 400ms ease all;
+                    }
+                    &:after {
+                      right: inherit;
+                      top: inherit;
+                      left: 0;
+                      bottom: 0;
+                    }
+                    &:hover:before,
+                    &:hover:after {
+                      width: 100%;
+                      transition: 800ms ease all;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

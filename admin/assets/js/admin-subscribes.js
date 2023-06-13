@@ -84,5 +84,5 @@ function editUser(id) {
     emailInput.value = res.data.email;
   });
   document.querySelector(".title").innerHTML = "Edit Email";
-  addProduct.innerHTML = "EDIT EMAIL";
+  addEmail.innerHTML = "EDIT EMAIL";
 }

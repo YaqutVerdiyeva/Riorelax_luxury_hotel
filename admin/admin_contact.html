@@ -24,11 +24,10 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/scss/style.css" />
-    <title>Admin Room Reservation</title>
+    <title>Admin Contact</title>
   </head>
   <body>
-    
-    <section class="section-admin-reserv-room">
+    <section class="section-contact">
       <div class="containerr">
         <div class="row">
           <div class="col col-3 left">
@@ -63,13 +62,13 @@
           </div>
           <div class="col col-9 right">
             <div class="container">
-              <h1 class="m-3">ROOM RESERVATIONS</h1>
+              <h1 class="m-3">CONTACT</h1>
               <div class="search-sort row">
                 <div class="leftt col-lg-6 col-sm-6 mt-3">
                   <input
                     type="text"
                     class="form-control search"
-                    placeholder="Search reservations..."
+                    placeholder="Search ..."
                   />
                 </div>
                 <div class="rightt col-lg-6 col-sm-6 mt-3">
@@ -81,69 +80,58 @@
                 <thead>
                   <tr>
                     <th>Id</th>
-                    <th>Check In Date</th>
-                    <th>Check Out Date</th>
-                    <th>Adults</th>
-                    <th>Room</th>
-                    <th>Action</th>
+                    <th>First Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Subject</th>
+                    <th>Text</th>
+                    <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody></tbody>
               </table>
               <div id="form" class="reserv mt-5">
-                <h2 class="title">Add Reservation</h2>
-                <form action="" class="">
-                  <div class="row check-row">
-                    <div class="col col-6 leftt">
-                      <div class="check-in-date">
-                        <label
-                          ><i class="fa-regular fa-circle-check"></i> Check In
-                          Date</label
-                        >
+                <h2 class="title">Add Contact</h2>
+                <form action="">
+                    <div class="row contacts">
+                      <div class="col-lg-6 col-md-6 mt-3 form-input ">
                         <input
-                          type="date"
-                          class="form-control"
-                          id="checkin"
-                          name="date"
+                          type="text"
+                          class="form-control firstname"
+                          placeholder="First Name"
                         />
                       </div>
-                      <div class="adults">
-                        <label><i class="fa-solid fa-people-line"></i> Adults</label>
-                        <select type="number" name="adults" id="adults">
-                          <option value="adults">Adults</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select>
+                      <div class="col-lg-6 col-md-6 mt-3 form-input">
+                        <input type="email" class="form-control email" placeholder="Email" />
+                      </div>
+                      <div class="col-lg-6 col-md-6 mt-3 form-input">
+                        <input
+                          type="number"
+                          class="form-control phone"
+                          placeholder="Phone No."
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 mt-3 form-input">
+                        <input
+                          type="text"
+                          class="form-control subject"
+                          placeholder="Subject"
+                        />
+                      </div>
+                      <div class="col-lg-12 mt-3 form-input">
+                        <textarea
+                          name=""
+                          id=""
+                          cols="30"
+                          rows="10"
+                          class="form-control text"
+                          placeholder="Write comments"
+                        ></textarea>
+                        <br />
+                        <button class="get-submit mt-4">ADD CONTACT</button>
                       </div>
                     </div>
-                    <div class="col col-6 rightt">
-                      <div class="check-out-date">
-                        <label
-                          ><i class="fa-regular fa-circle-xmark"></i> Check Out
-                          Date</label
-                        >
-                        <input type="date" class="form-control" id="checkout" />
-                      </div>
-                      <div class="room">
-                        <label><i class="fa-solid fa-bell-concierge"></i> Room</label>
-                        <select type="number" name="room" id="room">
-                          <option value="room">Room</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select>
-                      </div>
-                    </div>
-                    <button type="submit" class="book-button mt-5 m-3">
-                      ADD RESERVATION
-                    </button>
-                  </div>
-                </form>
+                  </form>
               </div>
             </div>
           </div>
@@ -162,6 +150,6 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/js/admin-reserv-room.js"></script>
+    <script src="./assets/js/admin_contact.js"></script>
   </body>
 </html>
