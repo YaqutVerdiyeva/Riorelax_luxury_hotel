@@ -139,6 +139,27 @@
       "email": "tufywesaf@mailinator.com",
       "password": "Pa$$w0rd!",
       "id": 24
+    },
+    {
+      "firstname": "Yaqut",
+      "lastname": "Verdiyeva",
+      "email": "yaqut@gmail.com",
+      "password": "123",
+      "id": 25
+    },
+    {
+      "firstname": "Ab voluptatem nihil ",
+      "lastname": "Dolorem vel suscipit",
+      "email": "xekato@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 26
+    },
+    {
+      "firstname": "At odit consequatur",
+      "lastname": "Et provident qui sa",
+      "email": "fequj@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 27
     }
   ],
   "rooms": [
