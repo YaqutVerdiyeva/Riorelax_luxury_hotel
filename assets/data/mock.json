@@ -237,6 +237,13 @@
       "email": "leho@mailinator.com",
       "password": "Pa$$w0rd!",
       "id": 38
+    },
+    {
+      "firstname": "lila",
+      "lastname": "Martin",
+      "email": "lila@gmail.com",
+      "password": "12347896",
+      "id": 39
     }
   ],
   "rooms": [
