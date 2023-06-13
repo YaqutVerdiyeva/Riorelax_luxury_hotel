@@ -3557,6 +3557,11 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   color: #101010;
   margin-right: 5px;
 }
+.section-blogs .container .row .right .follow .icons i:hover {
+  background-color: #977a5e;
+  transition: 0.5s;
+  color: #ffffff;
+}
 .section-blogs .container .row .right .categories {
   background-color: #f7f5f1;
   padding: 40px;
@@ -3604,6 +3609,10 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   border-bottom: 1px solid rgb(196, 186, 186);
   padding: 10px;
 }
+.section-blogs .container .row .right .posts .list ul li:hover {
+  color: #977a5e;
+  transition: 0.3s;
+}
 .section-blogs .container .row .right .posts .list ul li p {
   margin: 0;
   padding: 0;
@@ -3635,6 +3644,12 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   border: 1px solid #977a5e;
   color: #101010;
   margin-right: 5px;
+}
+.section-blogs .container .row .right .tag .tags p:hover {
+  background-color: #977a5e;
+  transition: 0.5s;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 footer .top-footer {
