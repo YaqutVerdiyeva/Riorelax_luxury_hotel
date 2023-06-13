@@ -69,3 +69,14 @@ subscribeBtn.addEventListener("click", function () {
     email: footerInput.value,
   });
 });
+let userList = JSON.parse(localStorage.getItem("users"));
+let outBtn = document.querySelector(".out-login");
+if (userList == true) {
+  {
+    outBtn.style.display = "block";
+  }
+}
+outBtn.addEventListener("click", function () {
+  localStorage.clear();
+  outBtn.style.display = "none";
+});
