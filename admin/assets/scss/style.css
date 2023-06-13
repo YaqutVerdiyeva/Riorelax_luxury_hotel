@@ -759,7 +759,7 @@
 }
 
 .section-admin {
-  background-image: url(../../../assets/image/testimonial-bg.png);
+  background-color: black;
 }
 .section-admin .containerr .row {
   margin: 0;
@@ -874,7 +874,7 @@
   font-weight: 600;
 }
 .section-admin .containerr .row .right .charts {
-  background-color: #fff;
+  background-color: #000;
   width: 100%;
 }
 .section-admin .containerr .row .right .charts .users h1,

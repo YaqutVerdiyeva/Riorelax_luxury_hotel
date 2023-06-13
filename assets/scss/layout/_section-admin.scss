@@ -1,5 +1,6 @@
 .section-admin {
-  background-image: url(../../../assets/image/testimonial-bg.png);
+  // background-image: url(../../../assets/image/testimonial-bg.png);
+  background-color: black;
   .containerr {
     .row {
       margin: 0;
@@ -129,7 +130,7 @@
           }
         }
         .charts {
-          background-color: #fff;
+          background-color: #000;
           width: 100%;
           .users,
           .room {

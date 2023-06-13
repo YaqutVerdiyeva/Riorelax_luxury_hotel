@@ -14,6 +14,10 @@ login.addEventListener("click", async function () {
     localStorage.setItem("users", JSON.stringify(true));
     window.location = `index.html`;
   }
+  if (email.value == "yaqut@gmail.com" && password.value == 123456) {
+    window.location = `./admin/admin.html`;
+  }
+
   if (data.find((item) => item.email != email.value)) {
     document.querySelector(".email-alert").style.visibility = "visible";
     email.style.border = "1px solid brown";
