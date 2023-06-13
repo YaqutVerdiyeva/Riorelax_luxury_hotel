@@ -209,6 +209,13 @@
       "email": "piricy@mailinator.com",
       "password": "Pa$$w0rd!",
       "id": 34
+    },
+    {
+      "firstname": "Yaqut",
+      "lastname": "Verdiyeva",
+      "email": "yaqut@gmail.com",
+      "password": "123456",
+      "id": 35
     }
   ],
   "rooms": [
@@ -473,6 +480,20 @@
       "about": "Akari Product",
       "priceold": 10,
       "pricenew": 95
+    }
+  ],
+  "subscribes": [
+    {
+      "email": "yaqutverdiyeva@gmail.com",
+      "id": 1
+    },
+    {
+      "email": "chiara@gmail.com",
+      "id": 2
+    },
+    {
+      "email": "lala@gmail.com",
+      "id": 3
     }
   ]
 }

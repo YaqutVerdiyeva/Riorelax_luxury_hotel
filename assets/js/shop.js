@@ -1,4 +1,6 @@
 let BASE_URL = `http://localhost:3000/shop`;
+let users = JSON.parse(localStorage.getItem("users"));
+let productList = JSON.parse(localStorage.getItem("product")) || [];
 let products = document.querySelector(".product-section");
 let searchInput = document.querySelector(".search");
 let sortBtn = document.querySelector(".sort");
@@ -61,13 +63,13 @@ sortBtn.addEventListener("click", function () {
   }
   getAllProducts();
 });
-let productList = JSON.parse(localStorage.getItem("product")) || [];
 async function addBasket(id) {
   let res = await axios(`${BASE_URL}/${id}`);
   let data = await res.data;
-  console.log(data);
-  productList.push(data);
-  console.log(productList);
-  localStorage.setItem("product", JSON.stringify(productList));
-  console.log("Hello");
+  if (users == true) {
+    {
+      productList.push(data);
+      localStorage.setItem("product", JSON.stringify(productList));
+    }
+  }
 }

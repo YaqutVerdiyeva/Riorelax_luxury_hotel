@@ -7,6 +7,7 @@ login.addEventListener("click", async function () {
   let data = await res.data;
   console.log(data);
   if (data.find((item) => item.email == email.value && item.password == password.value)) {
+    localStorage.setItem("users", JSON.stringify(true));
     window.location = `index.html`;
   } else {
     alert("You are not user");

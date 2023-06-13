@@ -1,8 +1,10 @@
+let BASE_URL_SUBSCRIBES = `http://localhost:3000/subscribes`;
 let menuicon = document.querySelector(".menuicon");
 let menuicon1 = document.querySelector(".menuicon1");
 let nav = document.querySelector(".nav-mobile");
 let scrollUpBtn = document.querySelector(".scrollup");
-
+let footerInput = document.querySelector(".email-input");
+let subscribeBtn = document.querySelector(".subscribe-btn");
 //header scroll
 function scrollFunction() {
   if (
@@ -59,4 +61,11 @@ document.querySelector(".minus3").addEventListener("click", function () {
 scrollUpBtn.addEventListener("click", function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+});
+
+//subscribe
+subscribeBtn.addEventListener("click", function () {
+  axios.post(`${BASE_URL_SUBSCRIBES}`, {
+    email: footerInput.value,
+  });
 });

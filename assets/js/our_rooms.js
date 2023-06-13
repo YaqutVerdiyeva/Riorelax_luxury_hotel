@@ -3,6 +3,10 @@ let btn = document.getElementById("myBtn");
 let span = document.getElementsByClassName("close")[0];
 let BASE_URL = `http://localhost:3000/rooms`;
 let MOCK_API = `http://localhost:3000/reservRoom`;
+let users = JSON.parse(localStorage.getItem("users"));
+let favorites = JSON.parse(localStorage.getItem("favroom")) || [];
+
+
 
 let checkIn = document.querySelector("#checkin");
 let adults = document.querySelector("#adults");
@@ -79,11 +83,12 @@ let favorits = JSON.parse(localStorage.getItem("favroom")) || [];
 async function addFavBtn(id) {
   let res = await axios(`${BASE_URL}/${id}`);
   let data = await res.data;
-  console.log(data);
-  favorits.push(data);
-  console.log(favorits);
-  localStorage.setItem("favroom", JSON.stringify(favorits));
-  console.log("Hello");
+  if (users == true) {
+    {
+      favorites.push(data);
+      localStorage.setItem("favroom", JSON.stringify(favorites));
+    }
+  }
 }
 
 //post
