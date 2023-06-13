@@ -6,7 +6,7 @@
         .card-service {
           position: relative;
           background-color: $secondary-color;
-          box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.2);
           padding: 40px;
           h3 {
             font-family: "Jost", sans-serif;
@@ -61,10 +61,7 @@
               font-family: "Roboto", sans-serif;
               font-weight: 400;
               border: none;
-              &:hover {
-                background-color: #614a37;
-                transition: 0.5s;
-              }
+             
             }
           }
           .monthly {
@@ -78,6 +75,27 @@
             color: $text_color;
             font-family: "Roboto", sans-serif;
           }
+          &:hover {
+            background-color: $primary-color;
+            transition: 0.8s;
+            h3,
+            p,
+            h2,
+            ul li,
+            ul li i {
+              color: $secondary-color;
+            }
+            .button-get-started {
+              button {
+                background-color: $secondary-color;
+                color: $primary-color;
+                &:hover {
+                  background-color: #614a37;
+                  transition: 0.5s;
+                }
+              }
+            }
+          }
         }
       }
       .cards-middle {
@@ -85,7 +103,7 @@
           position: relative;
           background-color: $primary-color;
           color: $secondary_color;
-          box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.2);
           padding: 40px;
           h3 {
             font-family: "Jost", sans-serif;
@@ -156,6 +174,30 @@
             transform: rotate(90deg);
             color: $secondary-color;
             font-family: "Roboto", sans-serif;
+          }
+          &:hover {
+            background-color: $secondary-color;
+            transition: 0.8s;
+            h3,
+            p,
+            h2,
+            ul li,
+            ul li i {
+              color: $primary-color;
+            }
+            .monthly{
+              background-color: $primary-color;
+            }
+            .button-get-started {
+              button {
+                background-color: $primary-color;
+                color: $secondary-color;
+                &:hover {
+                  background-color: #614a37;
+                  transition: 0.5s;
+                }
+              }
+            }
           }
         }
       }
