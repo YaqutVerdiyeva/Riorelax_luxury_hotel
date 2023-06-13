@@ -72,10 +72,35 @@ function deleteBtn(id) {
 }
 let editStatus = false;
 let editId;
+let base64;
+const convertBase64 = (file) => {
+  return new Promise((resolve, reject) => {
+    const fileReader = new FileReader();
+    fileReader.readAsDataURL(file);
+
+    fileReader.onload = () => {
+      resolve(fileReader.result);
+    };
+
+    fileReader.onerror = (error) => {
+      reject(error);
+    };
+  });
+};
+const uploadImage = async (event) => {
+  const file = event.target.files[0];
+  base64 = await convertBase64(file);
+  // console.log(file);
+};
+
+photoInput.addEventListener("change", (e) => {
+  //   console.log(e.target.files);
+  uploadImage(e);
+});
 addProduct.addEventListener("click", function () {
   if (!editStatus) {
     axios.post(`${BASE_URL}`, {
-      photo: `./assets/image/${photoInput.value.split("\\")[2]}`,
+      photo: base64,
       title: titleInput.value,
       about: aboutInput.value,
       priceold: oldpriceInput.value,
@@ -83,7 +108,7 @@ addProduct.addEventListener("click", function () {
     });
   } else {
     axios.patch(`${BASE_URL}/${editId}`, {
-      photo: `./assets/image/${photoInput.value.split("\\")[2]}`,
+      photo: base64,
       title: titleInput.value,
       about: aboutInput.value,
       priceold: oldpriceInput.value,

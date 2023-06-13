@@ -16,13 +16,21 @@ let discoverBtn = document.querySelector(".discover");
 
 //post
 reservBtn.addEventListener("click", function () {
-  axios.post(`${BASE_URL}`, {
-    checkin: checkIn.value,
-    checkout: checkOut.value,
-    adults: adults.value,
-    room: room.value,
-    child: child.value,
-  });
+  if (
+    checkIn.value &&
+    adults.value &&
+    room.value &&
+    checkOut.value &&
+    child.value
+  ) {
+    axios.post(`${BASE_URL}`, {
+      checkin: checkIn.value,
+      checkout: checkOut.value,
+      adults: adults.value,
+      room: room.value,
+      child: child.value,
+    });
+  }
 });
 
 //Modal video

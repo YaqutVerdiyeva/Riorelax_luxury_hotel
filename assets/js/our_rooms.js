@@ -84,17 +84,18 @@ async function addFavBtn(id) {
   console.log(favorits);
   localStorage.setItem("favroom", JSON.stringify(favorits));
   console.log("Hello");
-  
 }
 
 //post
 bookBtn.addEventListener("click", function () {
-  axios.post(`${MOCK_API}`, {
-    checkin: checkIn.value,
-    checkout: checkOut.value,
-    adults: adults.value,
-    room: room.value,
-  });
+  if (checkIn.value && adults.value && room.value && checkOut.value) {
+    axios.post(`${MOCK_API}`, {
+      checkin: checkIn.value,
+      checkout: checkOut.value,
+      adults: adults.value,
+      room: room.value,
+    });
+  }
 });
 //Modal video
 btn.onclick = function () {
