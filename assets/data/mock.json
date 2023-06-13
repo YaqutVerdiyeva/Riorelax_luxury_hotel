@@ -216,6 +216,27 @@
       "email": "yaqut@gmail.com",
       "password": "123456",
       "id": 35
+    },
+    {
+      "firstname": "aaa",
+      "lastname": "aa",
+      "email": "aa",
+      "password": "aa",
+      "id": 36
+    },
+    {
+      "firstname": "Qui minima rerum omn",
+      "lastname": "Aut soluta quia labo",
+      "email": "ryvumakusy@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 37
+    },
+    {
+      "firstname": "Dolor aut voluptatum",
+      "lastname": "Et exercitationem a ",
+      "email": "leho@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 38
     }
   ],
   "rooms": [
