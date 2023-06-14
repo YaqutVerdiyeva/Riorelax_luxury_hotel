@@ -9,6 +9,11 @@ btn.onclick = function () {
 
 span.onclick = function () {
   modal.style.display = "none";
+  let video4 = document.getElementById("videoId4");
+  video4.contentWindow.postMessage(
+    '{"event":"command", "func":"stopVideo", "args":""}',
+    "*"
+  );
 };
 
 window.onclick = function (event) {

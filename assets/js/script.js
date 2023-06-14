@@ -42,9 +42,19 @@ btn1.onclick = function () {
 };
 span.onclick = function () {
   modal.style.display = "none";
+  let video = document.getElementById("videoId");
+  video.contentWindow.postMessage(
+    '{"event":"command", "func":"stopVideo", "args":""}',
+    "*"
+  );
 };
 span1.onclick = function () {
   modal1.style.display = "none";
+  let video1 = document.getElementById("videoId1");
+  video1.contentWindow.postMessage(
+    '{"event":"command", "func":"stopVideo", "args":""}',
+    "*"
+  );
 };
 window.onclick = function (event) {
   if (event.target == modal) {

@@ -6,8 +6,6 @@ let MOCK_API = `http://localhost:3000/reservRoom`;
 let users = JSON.parse(localStorage.getItem("users"));
 let favorites = JSON.parse(localStorage.getItem("favroom")) || [];
 
-
-
 let checkIn = document.querySelector("#checkin");
 let adults = document.querySelector("#adults");
 let room = document.querySelector("#room");
@@ -109,6 +107,11 @@ btn.onclick = function () {
 
 span.onclick = function () {
   modal.style.display = "none";
+  let video3 = document.getElementById("videoId3");
+  video3.contentWindow.postMessage(
+    '{"event":"command", "func":"stopVideo", "args":""}',
+    "*"
+  );
 };
 
 window.onclick = function (event) {
