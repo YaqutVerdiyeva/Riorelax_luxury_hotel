@@ -123,6 +123,68 @@
               }
             }
           }
+          .alert {
+            position: fixed;
+            top: 40%;
+            left: 40%;
+            z-index: 55;
+            visibility: hidden;
+            border: 2px solid $primary_color;
+            background-color: #fff;
+            color: $primary_color;
+            width: 25%;
+            height: 150px;
+            padding: 5px 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            div {
+              gap: 20px;
+              display: flex;
+              button {
+                background: $primary_color;
+                border: none;
+                padding: 17px 20px;
+                width: 100px;
+                font-size: 15px;
+                color: $secondary-color;
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                position: relative;
+                cursor: pointer;
+                transition: 100ms ease all;
+                outline: none;
+                &:hover {
+                  background: $secondary-color;
+                  color: $primary_color;
+                }
+                &:before,
+                &:after {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  height: 2px;
+                  width: 0;
+                  background: $primary_color;
+                  transition: 200ms ease all;
+                }
+                &:after {
+                  right: inherit;
+                  top: inherit;
+                  left: 0;
+                  bottom: 0;
+                }
+                &:hover:before,
+                &:hover:after {
+                  width: 100%;
+                  transition: 1x00ms ease all;
+                }
+              }
+            }
+          }
           .reserv {
             background-color: #f7f5f1;
             padding: 100px;

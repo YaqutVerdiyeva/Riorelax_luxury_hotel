@@ -266,6 +266,66 @@
   color: #977a5e;
   background-position: 99% 50%;
 }
+.section-admin-reserv-room .containerr .row .right .container .alert {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  z-index: 55;
+  visibility: hidden;
+  border: 2px solid #977a5e;
+  background-color: #fff;
+  color: #977a5e;
+  width: 25%;
+  height: 150px;
+  padding: 5px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.section-admin-reserv-room .containerr .row .right .container .alert div {
+  gap: 20px;
+  display: flex;
+}
+.section-admin-reserv-room .containerr .row .right .container .alert div button {
+  background: #977a5e;
+  border: none;
+  padding: 17px 20px;
+  width: 100px;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  transition: 100ms ease all;
+  outline: none;
+}
+.section-admin-reserv-room .containerr .row .right .container .alert div button:hover {
+  background: #ffffff;
+  color: #977a5e;
+}
+.section-admin-reserv-room .containerr .row .right .container .alert div button:before, .section-admin-reserv-room .containerr .row .right .container .alert div button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #977a5e;
+  transition: 200ms ease all;
+}
+.section-admin-reserv-room .containerr .row .right .container .alert div button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.section-admin-reserv-room .containerr .row .right .container .alert div button:hover:before, .section-admin-reserv-room .containerr .row .right .container .alert div button:hover:after {
+  width: 100%;
+  transition: 1x00ms ease all;
+}
 
 * {
   margin: 0;
@@ -557,6 +617,66 @@
   color: #977a5e;
   background-position: 99% 50%;
 }
+.section-admin-reserv .containerr .row .right .container .alert {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  z-index: 55;
+  visibility: hidden;
+  border: 2px solid #977a5e;
+  background-color: #fff;
+  color: #977a5e;
+  width: 25%;
+  height: 150px;
+  padding: 5px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.section-admin-reserv .containerr .row .right .container .alert div {
+  gap: 20px;
+  display: flex;
+}
+.section-admin-reserv .containerr .row .right .container .alert div button {
+  background: #977a5e;
+  border: none;
+  padding: 17px 20px;
+  width: 100px;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  transition: 100ms ease all;
+  outline: none;
+}
+.section-admin-reserv .containerr .row .right .container .alert div button:hover {
+  background: #ffffff;
+  color: #977a5e;
+}
+.section-admin-reserv .containerr .row .right .container .alert div button:before, .section-admin-reserv .containerr .row .right .container .alert div button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #977a5e;
+  transition: 200ms ease all;
+}
+.section-admin-reserv .containerr .row .right .container .alert div button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.section-admin-reserv .containerr .row .right .container .alert div button:hover:before, .section-admin-reserv .containerr .row .right .container .alert div button:hover:after {
+  width: 100%;
+  transition: 1x00ms ease all;
+}
 
 * {
   margin: 0;
@@ -746,6 +866,66 @@
   border-color: transparent;
   color: #977a5e;
   background-position: 99% 50%;
+}
+.section-admin-shop .containerr .row .right .container .alert {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  z-index: 55;
+  visibility: hidden;
+  border: 2px solid #977a5e;
+  background-color: #fff;
+  color: #977a5e;
+  width: 25%;
+  height: 150px;
+  padding: 5px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.section-admin-shop .containerr .row .right .container .alert div {
+  gap: 20px;
+  display: flex;
+}
+.section-admin-shop .containerr .row .right .container .alert div button {
+  background: #977a5e;
+  border: none;
+  padding: 17px 20px;
+  width: 100px;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  transition: 100ms ease all;
+  outline: none;
+}
+.section-admin-shop .containerr .row .right .container .alert div button:hover {
+  background: #ffffff;
+  color: #977a5e;
+}
+.section-admin-shop .containerr .row .right .container .alert div button:before, .section-admin-shop .containerr .row .right .container .alert div button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #977a5e;
+  transition: 200ms ease all;
+}
+.section-admin-shop .containerr .row .right .container .alert div button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.section-admin-shop .containerr .row .right .container .alert div button:hover:before, .section-admin-shop .containerr .row .right .container .alert div button:hover:after {
+  width: 100%;
+  transition: 1x00ms ease all;
 }
 
 * {
@@ -1079,6 +1259,66 @@
   color: #977a5e;
   background-position: 99% 50%;
 }
+.section-admin-room .containerr .row .right .container .alert {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  z-index: 55;
+  visibility: hidden;
+  border: 2px solid #977a5e;
+  background-color: #fff;
+  color: #977a5e;
+  width: 25%;
+  height: 150px;
+  padding: 5px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.section-admin-room .containerr .row .right .container .alert div {
+  gap: 20px;
+  display: flex;
+}
+.section-admin-room .containerr .row .right .container .alert div button {
+  background: #977a5e;
+  border: none;
+  padding: 17px 20px;
+  width: 100px;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  transition: 100ms ease all;
+  outline: none;
+}
+.section-admin-room .containerr .row .right .container .alert div button:hover {
+  background: #ffffff;
+  color: #977a5e;
+}
+.section-admin-room .containerr .row .right .container .alert div button:before, .section-admin-room .containerr .row .right .container .alert div button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #977a5e;
+  transition: 200ms ease all;
+}
+.section-admin-room .containerr .row .right .container .alert div button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.section-admin-room .containerr .row .right .container .alert div button:hover:before, .section-admin-room .containerr .row .right .container .alert div button:hover:after {
+  width: 100%;
+  transition: 1x00ms ease all;
+}
 
 * {
   margin: 0;
@@ -1276,6 +1516,66 @@
   color: #977a5e;
   background-position: 99% 50%;
 }
+.section-admin-user .containerr .row .right .container .alert {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  z-index: 55;
+  visibility: hidden;
+  border: 2px solid #977a5e;
+  background-color: #fff;
+  color: #977a5e;
+  width: 25%;
+  height: 150px;
+  padding: 5px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.section-admin-user .containerr .row .right .container .alert div {
+  gap: 20px;
+  display: flex;
+}
+.section-admin-user .containerr .row .right .container .alert div button {
+  background: #977a5e;
+  border: none;
+  padding: 17px 20px;
+  width: 100px;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  transition: 100ms ease all;
+  outline: none;
+}
+.section-admin-user .containerr .row .right .container .alert div button:hover {
+  background: #ffffff;
+  color: #977a5e;
+}
+.section-admin-user .containerr .row .right .container .alert div button:before, .section-admin-user .containerr .row .right .container .alert div button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #977a5e;
+  transition: 200ms ease all;
+}
+.section-admin-user .containerr .row .right .container .alert div button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.section-admin-user .containerr .row .right .container .alert div button:hover:before, .section-admin-user .containerr .row .right .container .alert div button:hover:after {
+  width: 100%;
+  transition: 1x00ms ease all;
+}
 
 * {
   margin: 0;
@@ -1403,6 +1703,66 @@
   border-color: transparent;
   color: #977a5e;
   background-position: 99% 50%;
+}
+.section-subscribes .containerr .row .right .container .alert {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  z-index: 55;
+  visibility: hidden;
+  border: 2px solid #977a5e;
+  background-color: #fff;
+  color: #977a5e;
+  width: 25%;
+  height: 150px;
+  padding: 5px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.section-subscribes .containerr .row .right .container .alert div {
+  gap: 20px;
+  display: flex;
+}
+.section-subscribes .containerr .row .right .container .alert div button {
+  background: #977a5e;
+  border: none;
+  padding: 17px 20px;
+  width: 100px;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  transition: 100ms ease all;
+  outline: none;
+}
+.section-subscribes .containerr .row .right .container .alert div button:hover {
+  background: #ffffff;
+  color: #977a5e;
+}
+.section-subscribes .containerr .row .right .container .alert div button:before, .section-subscribes .containerr .row .right .container .alert div button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #977a5e;
+  transition: 200ms ease all;
+}
+.section-subscribes .containerr .row .right .container .alert div button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.section-subscribes .containerr .row .right .container .alert div button:hover:before, .section-subscribes .containerr .row .right .container .alert div button:hover:after {
+  width: 100%;
+  transition: 1x00ms ease all;
 }
 .section-subscribes .containerr .row .right .container .reserv h2 {
   font-family: "Jost", sans-serif;
@@ -1593,6 +1953,66 @@
   border-color: transparent;
   color: #977a5e;
   background-position: 99% 50%;
+}
+.section-contact .containerr .row .right .container .alert {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  z-index: 55;
+  visibility: hidden;
+  border: 2px solid #977a5e;
+  background-color: #fff;
+  color: #977a5e;
+  width: 25%;
+  height: 150px;
+  padding: 5px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.section-contact .containerr .row .right .container .alert div {
+  gap: 20px;
+  display: flex;
+}
+.section-contact .containerr .row .right .container .alert div button {
+  background: #977a5e;
+  border: none;
+  padding: 17px 20px;
+  width: 100px;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  transition: 100ms ease all;
+  outline: none;
+}
+.section-contact .containerr .row .right .container .alert div button:hover {
+  background: #ffffff;
+  color: #977a5e;
+}
+.section-contact .containerr .row .right .container .alert div button:before, .section-contact .containerr .row .right .container .alert div button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #977a5e;
+  transition: 200ms ease all;
+}
+.section-contact .containerr .row .right .container .alert div button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.section-contact .containerr .row .right .container .alert div button:hover:before, .section-contact .containerr .row .right .container .alert div button:hover:after {
+  width: 100%;
+  transition: 1x00ms ease all;
 }
 .section-contact .containerr .row .right .container .reserv {
   background-color: #f7f5f1;

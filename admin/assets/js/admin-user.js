@@ -19,6 +19,13 @@ async function getAllUsers() {
   filteredArr = filteredArr.length || searchInput.value ? filteredArr : data;
   filteredArr.forEach((el) => {
     users.innerHTML += `
+    <div class="alert mt-3" role="alert">
+    <h4>Are you sure?</h4>
+    <div>
+    <button onclick=deleteUser(${el.id})>Yes</button>
+    <button onclick=keepUser(${el.id})>No</button>
+    </div>
+   </div>
       <tr>
                     <th style="background-color: transparent;">${el.id}</th>
                     <td style="background-color: transparent;">${el.firstname}</td>
@@ -26,7 +33,7 @@ async function getAllUsers() {
                     <td style="background-color: transparent;">${el.email}</td>
                     <td style="background-color: transparent;">${el.password}</td>
                     <td style="background-color: transparent;">
-                    <a onclick=deleteBtn(${el.id}) style="margin-right: 8px"><i class="fa-solid fa-trash" style="color: #c20000;"></i></a>
+                    <a  onclick=deleteBtn(${el.id}) style="margin-right: 8px"><i class="fa-solid fa-trash" style="color: #c20000;"></i></a>
                     <a href="#form" onclick=editUser(${el.id})  ><i class="fa-solid fa-pen-to-square" style="color: #000;"></i></a>
                     </td>
                   </tr>
@@ -38,7 +45,7 @@ getAllUsers();
 searchInput.addEventListener("input", function (e) {
   filteredArr = copyArr;
   filteredArr = filteredArr.filter((el) =>
-  `${el.firstname} ${el.lastname}`
+    `${el.firstname} ${el.lastname}`
       .toLocaleLowerCase()
       .includes(e.target.value.toLocaleLowerCase())
   );
@@ -62,7 +69,16 @@ sortBtn.addEventListener("click", function () {
   getAllUsers();
 });
 function deleteBtn(id) {
+  document.querySelector(".alert").style.visibility = "visible";
+}
+function deleteUser(id) {
   axios.delete(`${BASE_URL}/${id}`);
+}
+function keepUser(id) {
+  setTimeout(
+    (document.querySelector(".alert").style.visibility = "hidden" ),
+    2000
+  );
 }
 let editStatus = false;
 let editId;
@@ -79,12 +95,11 @@ signUpBtn.addEventListener("click", function (id) {
       firstname: firstName.value,
       lastname: lastName.value,
       email: email.value,
-      password: password.value, 
+      password: password.value,
     });
     editStatus = false;
   }
 });
-
 
 function editUser(id) {
   editStatus = true;
@@ -96,6 +111,6 @@ function editUser(id) {
     email.value = res.data.email;
     password.value = res.data.password;
   });
-  document.querySelector(".title").innerHTML="Edit User"
-  signUpBtn.innerHTML="EDIT USER"
+  document.querySelector(".title").innerHTML = "Edit User";
+  signUpBtn.innerHTML = "EDIT USER";
 }

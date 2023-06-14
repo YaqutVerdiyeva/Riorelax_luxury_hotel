@@ -16,6 +16,13 @@ async function getAllProducts() {
   filteredArr = filteredArr.length || searchInput.value ? filteredArr : data;
   filteredArr.forEach((el) => {
     products.innerHTML += `
+    <div class="alert mt-3" role="alert">
+    <h4>Are you sure?</h4>
+    <div>
+    <button onclick=deleteUser(${el.id})>Yes</button>
+    <button onclick=keepUser(${el.id})>No</button>
+    </div>
+   </div>
     <tr>
     <td style="background-color: transparent;">${el.id}</td>
     <td style="background-color: transparent;">${el.email}</td>
@@ -58,7 +65,16 @@ sortBtn.addEventListener("click", function () {
   getAllProducts();
 });
 function deleteBtn(id) {
+  document.querySelector(".alert").style.visibility = "visible";
+}
+function deleteUser(id) {
   axios.delete(`${BASE_URL}/${id}`);
+}
+function keepUser(id) {
+  setTimeout(
+    (document.querySelector(".alert").style.visibility = "hidden" ),
+    2000
+  );
 }
 let editStatus = false;
 let editId;
