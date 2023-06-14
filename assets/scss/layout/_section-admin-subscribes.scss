@@ -1,12 +1,13 @@
 .section-subscribes {
-    background-image: url(../../../assets/image/testimonial-bg.png);
+  background-image: url(../../../assets/image/bgphoto.jpg);
     .containerr {
       .row {
         margin: 0;
   
         .left {
-          background-color: #a8917b;
+          background-color: transparent;
           box-shadow: 5px 5px 10px $primary_color;
+  
           ul {
             margin: 0;
             padding: 0;
@@ -81,6 +82,7 @@
               justify-content: space-between;
               .leftt {
                 input {
+                background-color: transparent;
                   border: 1px solid $primary_color;
                   border-radius: 0;
                   box-shadow: 2px 2px 9px $primary_color;

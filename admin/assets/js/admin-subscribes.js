@@ -17,9 +17,9 @@ async function getAllProducts() {
   filteredArr.forEach((el) => {
     products.innerHTML += `
     <tr>
-    <td>${el.id}</td>
-    <td>${el.email}</td>
-    <td>
+    <td style="background-color: transparent;">${el.id}</td>
+    <td style="background-color: transparent;">${el.email}</td>
+    <td style="background-color: transparent;">
       <a onclick="deleteBtn(${el.id})" style="margin-right: 8px"
         ><i class="fa-solid fa-trash" style="color: #c20000"></i
       ></a>

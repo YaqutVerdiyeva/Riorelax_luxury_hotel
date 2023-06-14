@@ -20,12 +20,12 @@ async function getAllUsers() {
   filteredArr.forEach((el) => {
     users.innerHTML += `
       <tr>
-                    <th>${el.id}</th>
-                    <td>${el.firstname}</td>
-                    <td>${el.lastname}</td>
-                    <td>${el.email}</td>
-                    <td>${el.password}</td>
-                    <td>
+                    <th style="background-color: transparent;">${el.id}</th>
+                    <td style="background-color: transparent;">${el.firstname}</td>
+                    <td style="background-color: transparent;">${el.lastname}</td>
+                    <td style="background-color: transparent;">${el.email}</td>
+                    <td style="background-color: transparent;">${el.password}</td>
+                    <td style="background-color: transparent;">
                     <a onclick=deleteBtn(${el.id}) style="margin-right: 8px"><i class="fa-solid fa-trash" style="color: #c20000;"></i></a>
                     <a href="#form" onclick=editUser(${el.id})  ><i class="fa-solid fa-pen-to-square" style="color: #000;"></i></a>
                     </td>

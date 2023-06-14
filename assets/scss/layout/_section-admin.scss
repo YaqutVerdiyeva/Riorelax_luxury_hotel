@@ -1,12 +1,12 @@
 .section-admin {
-  // background-image: url(../../../assets/image/testimonial-bg.png);
-  background-color: black;
+  background-image: url(../../../assets/image/bgphoto.jpg);
+  background-position: center;
   .containerr {
     .row {
       margin: 0;
 
       .left {
-        background-color: #a8917b;
+        background-color: transparent;
         box-shadow: 5px 5px 10px $primary_color;
 
         ul {
@@ -73,7 +73,7 @@
         .counts {
           h2 {
             font-family: "Jost", sans-serif;
-            color: $primary_color;
+            color: #000;
             font-weight: 600;
             font-size: 48px;
             text-align: center;
@@ -130,7 +130,7 @@
           }
         }
         .charts {
-          background-color: #000;
+          background-color: transparent;
           width: 100%;
           .users,
           .room {

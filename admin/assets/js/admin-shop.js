@@ -21,13 +21,13 @@ async function getAllProducts() {
   filteredArr.forEach((el) => {
     products.innerHTML += `
     <tr>
-    <td>${el.id}</td>
-    <td><img width="60px" src="${el.photo}" alt="" /></td>
-    <td>${el.title}</td>
-    <td>${el.about}</td>
-    <td>${el.priceold}$</td>
-    <td>${el.pricenew}$</td>
-    <td>
+    <td style="background-color: transparent;">${el.id}</td>
+    <td style="background-color: transparent;"><img width="60px" src="${el.photo}" alt="" /></td>
+    <td style="background-color: transparent;">${el.title}</td>
+    <td style="background-color: transparent;">${el.about}</td>
+    <td style="background-color: transparent;">${el.priceold}$</td>
+    <td style="background-color: transparent;">${el.pricenew}$</td>
+    <td style="background-color: transparent;">
       <a onclick="deleteBtn(${el.id})" style="margin-right: 8px"
         ><i class="fa-solid fa-trash" style="color: #c20000"></i
       ></a>

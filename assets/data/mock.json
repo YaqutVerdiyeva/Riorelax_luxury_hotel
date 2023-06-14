@@ -237,6 +237,13 @@
       "email": "leho@mailinator.com",
       "password": "Pa$$w0rd!",
       "id": 38
+    },
+    {
+      "firstname": "Aspernatur ut suscip",
+      "lastname": "Id velit repellendu",
+      "email": "nygyfi@mailinator.com",
+      "password": "123",
+      "id": 39
     }
   ],
   "rooms": [

@@ -21,13 +21,13 @@ async function getAllReservations() {
   filteredArr.forEach((el) => {
     reservations.innerHTML += `
       <tr>
-                    <td>${el.id}</td>
-                    <td>${el.checkin}</td>
-                    <td>${el.checkout}</td>
-                    <td>${el.adults}</td>
-                    <td>${el.room}</td>
-                    <td>${el.child}</td>
-                    <td>
+                    <td style="background-color: transparent;">${el.id}</td>
+                    <td style="background-color: transparent;">${el.checkin}</td>
+                    <td style="background-color: transparent;">${el.checkout}</td>
+                    <td style="background-color: transparent;">${el.adults}</td>
+                    <td style="background-color: transparent;">${el.room}</td>
+                    <td style="background-color: transparent;">${el.child}</td>
+                    <td style="background-color: transparent;">
                     <a onclick=deleteBtn(${el.id}) style="margin-right: 8px"><i class="fa-solid fa-trash" style="color: #c20000;"></i></a>
                     <a href="#form" onclick=editUser(${el.id})  ><i class="fa-solid fa-pen-to-square" style="color: #000;"></i></a>
                     </td>

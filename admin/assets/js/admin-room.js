@@ -19,11 +19,11 @@ async function getAllRooms() {
   filteredArr.forEach((el) => {
     rooms.innerHTML += `
     <tr>
-    <td>${el.id}</td>
-    <td><img width="60px" src="${el.photo}" alt="" /></td>
-    <td>${el.title}</td>
-    <td>${el.price}$</td>
-    <td>
+    <td style="background-color: transparent;">${el.id}</td>
+    <td style="background-color: transparent;"><img width="60px" src="${el.photo}" alt="" /></td>
+    <td style="background-color: transparent;">${el.title}</td>
+    <td style="background-color: transparent;">${el.price}$</td>
+    <td style="background-color: transparent;">
       <a onclick="deleteBtn(${el.id})" style="margin-right: 8px"
         ><i class="fa-solid fa-trash" style="color: #c20000"></i
       ></a>
