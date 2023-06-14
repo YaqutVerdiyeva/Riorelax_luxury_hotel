@@ -252,6 +252,26 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   position: relative;
   transition: all 0.4s ease 0s;
 }
+.sidebar a i {
+  position: relative;
+}
+.sidebar a i p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: -9px;
+  top: -10px;
+  font-size: 9px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 9px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .sidebar a:hover {
   text-shadow: 0px 0px 6px rgb(255, 255, 255);
   -webkit-box-shadow: 0px 5px 0px -10px rgb(255, 255, 255);
@@ -1070,6 +1090,26 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   position: relative;
   transition: all 0.4s ease 0s;
 }
+.sidebar a i {
+  position: relative;
+}
+.sidebar a i p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: -9px;
+  top: -10px;
+  font-size: 9px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 9px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .sidebar a:hover {
   text-shadow: 0px 0px 6px rgb(255, 255, 255);
   -webkit-box-shadow: 0px 5px 0px -10px rgb(255, 255, 255);
@@ -1822,6 +1862,26 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   align-items: center;
   position: relative;
   transition: all 0.4s ease 0s;
+}
+.sidebar a i {
+  position: relative;
+}
+.sidebar a i p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: -9px;
+  top: -10px;
+  font-size: 9px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 9px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .sidebar a:hover {
   text-shadow: 0px 0px 6px rgb(255, 255, 255);
@@ -2756,6 +2816,26 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   position: relative;
   transition: all 0.4s ease 0s;
 }
+.sidebar a i {
+  position: relative;
+}
+.sidebar a i p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: -9px;
+  top: -10px;
+  font-size: 9px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 9px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .sidebar a:hover {
   text-shadow: 0px 0px 6px rgb(255, 255, 255);
   -webkit-box-shadow: 0px 5px 0px -10px rgb(255, 255, 255);
@@ -3571,6 +3651,26 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   position: relative;
   transition: all 0.4s ease 0s;
 }
+.sidebar a i {
+  position: relative;
+}
+.sidebar a i p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: -9px;
+  top: -10px;
+  font-size: 9px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 9px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .sidebar a:hover {
   text-shadow: 0px 0px 6px rgb(255, 255, 255);
   -webkit-box-shadow: 0px 5px 0px -10px rgb(255, 255, 255);
@@ -4247,6 +4347,26 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   align-items: center;
   position: relative;
   transition: all 0.4s ease 0s;
+}
+.sidebar a i {
+  position: relative;
+}
+.sidebar a i p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: -9px;
+  top: -10px;
+  font-size: 9px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 9px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .sidebar a:hover {
   text-shadow: 0px 0px 6px rgb(255, 255, 255);
@@ -5020,6 +5140,26 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   align-items: center;
   position: relative;
   transition: all 0.4s ease 0s;
+}
+.sidebar a i {
+  position: relative;
+}
+.sidebar a i p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: -9px;
+  top: -10px;
+  font-size: 9px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 9px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .sidebar a:hover {
   text-shadow: 0px 0px 6px rgb(255, 255, 255);
@@ -6638,6 +6778,26 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   position: relative;
   transition: all 0.4s ease 0s;
 }
+.sidebar a i {
+  position: relative;
+}
+.sidebar a i p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: -9px;
+  top: -10px;
+  font-size: 9px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 9px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .sidebar a:hover {
   text-shadow: 0px 0px 6px rgb(255, 255, 255);
   -webkit-box-shadow: 0px 5px 0px -10px rgb(255, 255, 255);
@@ -7328,6 +7488,26 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   align-items: center;
   position: relative;
   transition: all 0.4s ease 0s;
+}
+.sidebar a i {
+  position: relative;
+}
+.sidebar a i p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: -9px;
+  top: -10px;
+  font-size: 9px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 9px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .sidebar a:hover {
   text-shadow: 0px 0px 6px rgb(255, 255, 255);
@@ -8484,6 +8664,26 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   position: relative;
   transition: all 0.4s ease 0s;
 }
+.sidebar a i {
+  position: relative;
+}
+.sidebar a i p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: -9px;
+  top: -10px;
+  font-size: 9px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 9px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .sidebar a:hover {
   text-shadow: 0px 0px 6px rgb(255, 255, 255);
   -webkit-box-shadow: 0px 5px 0px -10px rgb(255, 255, 255);
@@ -9410,6 +9610,26 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   position: relative;
   transition: all 0.4s ease 0s;
 }
+.sidebar a i {
+  position: relative;
+}
+.sidebar a i p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: -9px;
+  top: -10px;
+  font-size: 9px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 9px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .sidebar a:hover {
   text-shadow: 0px 0px 6px rgb(255, 255, 255);
   -webkit-box-shadow: 0px 5px 0px -10px rgb(255, 255, 255);
@@ -10240,6 +10460,26 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   position: relative;
   transition: all 0.4s ease 0s;
 }
+.sidebar a i {
+  position: relative;
+}
+.sidebar a i p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: -9px;
+  top: -10px;
+  font-size: 9px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 9px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .sidebar a:hover {
   text-shadow: 0px 0px 6px rgb(255, 255, 255);
   -webkit-box-shadow: 0px 5px 0px -10px rgb(255, 255, 255);
@@ -10993,6 +11233,26 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   position: relative;
   transition: all 0.4s ease 0s;
 }
+.sidebar a i {
+  position: relative;
+}
+.sidebar a i p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: -9px;
+  top: -10px;
+  font-size: 9px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 9px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .sidebar a:hover {
   text-shadow: 0px 0px 6px rgb(255, 255, 255);
   -webkit-box-shadow: 0px 5px 0px -10px rgb(255, 255, 255);
@@ -11685,6 +11945,26 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   align-items: center;
   position: relative;
   transition: all 0.4s ease 0s;
+}
+.sidebar a i {
+  position: relative;
+}
+.sidebar a i p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: -9px;
+  top: -10px;
+  font-size: 9px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 9px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .sidebar a:hover {
   text-shadow: 0px 0px 6px rgb(255, 255, 255);
@@ -12444,6 +12724,26 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   align-items: center;
   position: relative;
   transition: all 0.4s ease 0s;
+}
+.sidebar a i {
+  position: relative;
+}
+.sidebar a i p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: -9px;
+  top: -10px;
+  font-size: 9px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 9px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .sidebar a:hover {
   text-shadow: 0px 0px 6px rgb(255, 255, 255);

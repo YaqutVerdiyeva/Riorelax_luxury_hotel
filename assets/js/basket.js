@@ -3,10 +3,15 @@ let productList = document.querySelector(".product-section");
 let searchInput = document.querySelector(".search");
 let sortBtn = document.querySelector(".sort");
 let sorted = "asc";
+let copyData = [];
+let filteredArr = [];
 
 function getProductList() {
+  copyData = [...products];
   productList.innerHTML = "";
-  products.forEach((el) => {
+  filteredArr =
+    filteredArr.length || searchInput.value ? filteredArr : products;
+  filteredArr.forEach((el) => {
     productList.innerHTML += `
     <div class="col-lg-4 col-md-6 products mt-3">
     <div class="product">
@@ -29,7 +34,8 @@ function getProductList() {
 
 getProductList();
 searchInput.addEventListener("input", function (e) {
-  products = products.filter((el) =>
+  filteredArr = copyData;
+  filteredArr = filteredArr.filter((el) =>
     `${el.title} ${el.about}`
       .toLocaleLowerCase()
       .includes(e.target.value.toLocaleLowerCase())
@@ -39,24 +45,23 @@ searchInput.addEventListener("input", function (e) {
 
 sortBtn.addEventListener("click", function () {
   if (sorted === "asc") {
-    let product = products.sort((a, b) => a.pricenew - b.pricenew);
+    filteredArr.sort((a, b) => a.pricenew - b.pricenew);
     sorted = "dsc";
     sortBtn.innerHTML = "SORT Low to High";
-    getProductList(product);
   } else if (sorted === "dsc") {
-    let product = products.sort((a, b) => b.pricenew - a.pricenew);
+    filteredArr.sort((a, b) => b.pricenew - a.pricenew);
     sorted = "def";
     sortBtn.innerHTML = "SORT High to Low";
-    getProductList(product);
   } else {
-    let product = products;
+    filteredArr = copyData;
     sorted = "asc";
     sortBtn.innerHTML = "SORT";
-    getProductList(product);
   }
+  getProductList();
 });
 function deleteBasket(id) {
-  products = products.filter((el) => el.id != id);
+  products = copyData.filter((el) => el.id != id);
+  filteredArr = products;
   localStorage.setItem("product", JSON.stringify(products));
   getProductList();
 }

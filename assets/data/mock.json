@@ -237,13 +237,6 @@
       "email": "leho@mailinator.com",
       "password": "Pa$$w0rd!",
       "id": 38
-    },
-    {
-      "firstname": "lila",
-      "lastname": "Martin",
-      "email": "lila@gmail.com",
-      "password": "12347896",
-      "id": 39
     }
   ],
   "rooms": [
@@ -322,14 +315,6 @@
       "room": "1",
       "child": "5",
       "id": 5
-    },
-    {
-      "checkin": "1983-02-23",
-      "checkout": "2017-09-09",
-      "adults": "5",
-      "room": "4",
-      "child": "2",
-      "id": 6
     },
     {
       "checkin": "1971-03-21",

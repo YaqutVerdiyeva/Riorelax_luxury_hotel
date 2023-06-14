@@ -1,10 +1,19 @@
 let BASE_URL_SUBSCRIBES = `http://localhost:3000/subscribes`;
+let favrooms = JSON.parse(localStorage.getItem("favroom"));
+let product = JSON.parse(localStorage.getItem("product"));
 let menuicon = document.querySelector(".menuicon");
 let menuicon1 = document.querySelector(".menuicon1");
 let nav = document.querySelector(".nav-mobile");
 let scrollUpBtn = document.querySelector(".scrollup");
 let footerInput = document.querySelector(".email-input");
 let subscribeBtn = document.querySelector(".subscribe-btn");
+let basketCount = document.querySelector(".basket-count");
+let wishlistCount = document.querySelector(".wishlist-count");
+
+
+wishlistCount.innerHTML = favrooms.length;
+basketCount.innerHTML = product.length;
+
 //header scroll
 function scrollFunction() {
   if (

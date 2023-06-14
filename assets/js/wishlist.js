@@ -3,10 +3,13 @@ let roomCard = document.querySelector(".rooms");
 let searchInput = document.querySelector(".search");
 let sortBtn = document.querySelector(".sort");
 let sorted = "asc";
-
+let filteredArr = [];
+let copyData = [];
 function favoritRoom() {
+  copyData = [...favroom];
   roomCard.innerHTML = "";
-  favroom.forEach((el) => {
+  filteredArr = filteredArr.length || searchInput.value ? filteredArr : favroom;
+  filteredArr.forEach((el) => {
     roomCard.innerHTML += `
       <div class="col-lg-4 col-md-6 room-card">
       <div class="room">
@@ -23,10 +26,10 @@ function favoritRoom() {
         `;
   });
 }
-
 favoritRoom();
 searchInput.addEventListener("input", function (e) {
-  favroom = favroom.filter((el) =>
+  filteredArr = copyData;
+  filteredArr = filteredArr.filter((el) =>
     el.title.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
   );
   favoritRoom();
@@ -34,24 +37,23 @@ searchInput.addEventListener("input", function (e) {
 
 sortBtn.addEventListener("click", function () {
   if (sorted === "asc") {
-    let favRoom = favroom.sort((a, b) => a.price - b.price);
+    filteredArr.sort((a, b) => a.price - b.price);
     sorted = "dsc";
     sortBtn.innerHTML = "SORT Low to High";
-    favoritRoom(favRoom);
   } else if (sorted === "dsc") {
-    let favRoom = favroom.sort((a, b) => b.price - a.price);
+    filteredArr.sort((a, b) => b.price - a.price);
     sorted = "def";
     sortBtn.innerHTML = "SORT High to Low";
-    favoritRoom(favRoom);
   } else {
-    let favRoom = favroom;
+    filteredArr = copyData;
     sorted = "asc";
     sortBtn.innerHTML = "SORT";
-    favoritRoom(favRoom);
   }
+  favoritRoom();
 });
 function deleteFavBtn(id) {
-  favroom = favroom.filter((el) => el.id != id);
+  favroom = copyData.filter((el) => el.id != id);
+  filteredArr = favroom;
   localStorage.setItem("favroom", JSON.stringify(favroom));
   favoritRoom();
 }
