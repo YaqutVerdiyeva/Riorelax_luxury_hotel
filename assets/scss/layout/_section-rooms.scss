@@ -53,7 +53,25 @@
         }
       }
     }
-
+    .alert {
+      position: fixed;
+      top: 10%;
+      left: 37.5%;
+      z-index: 55;
+      visibility: hidden;
+      border: 2px solid brown;
+      background-color: #fff;
+      color:brown;
+      width: 25%;
+      height: 70px;
+      font-size: 35px;
+      padding: 5px 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      
+    }
     .room-card {
       position: relative;
       .room {
@@ -64,7 +82,7 @@
         padding: 15px;
         font-family: "Roboto", sans-serif;
         .card {
-          i{
+          i {
             position: absolute;
             bottom: 10px;
             right: 10px;

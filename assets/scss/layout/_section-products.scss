@@ -45,6 +45,25 @@
         }
       }
     }
+    .alert {
+      position: fixed;
+      top: 10%;
+      left: 37.5%;
+      z-index: 55;
+      visibility: hidden;
+      border: 2px solid brown;
+      background-color: #fff;
+      color:brown;
+      width: 25%;
+      height: 70px;
+      font-size: 35px;
+      padding: 5px 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      
+    }
     .product-section {
       .products {
         .product {

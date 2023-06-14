@@ -7739,6 +7739,24 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   color: #977a5e;
   background-position: 99% 50%;
 }
+.section-rooms .container .alert {
+  position: fixed;
+  top: 10%;
+  left: 37.5%;
+  z-index: 55;
+  visibility: hidden;
+  border: 2px solid brown;
+  background-color: #fff;
+  color: brown;
+  width: 25%;
+  height: 70px;
+  font-size: 35px;
+  padding: 5px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .section-rooms .container .room-card {
   position: relative;
 }
@@ -10697,6 +10715,24 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   border-color: transparent;
   color: #977a5e;
   background-position: 99% 50%;
+}
+.section-products .container .alert {
+  position: fixed;
+  top: 10%;
+  left: 37.5%;
+  z-index: 55;
+  visibility: hidden;
+  border: 2px solid brown;
+  background-color: #fff;
+  color: brown;
+  width: 25%;
+  height: 70px;
+  font-size: 35px;
+  padding: 5px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .section-products .container .product-section .products .product .product-text {
   padding: 30px;

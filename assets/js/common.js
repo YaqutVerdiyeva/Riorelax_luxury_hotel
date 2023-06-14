@@ -11,8 +11,8 @@ let basketCount = document.querySelector(".basket-count");
 let wishlistCount = document.querySelector(".wishlist-count");
 
 
-wishlistCount.innerHTML = favrooms.length;
-basketCount.innerHTML = product.length;
+// wishlistCount.innerHTML = favrooms.length;
+// basketCount.innerHTML = product.length;
 
 //header scroll
 function scrollFunction() {

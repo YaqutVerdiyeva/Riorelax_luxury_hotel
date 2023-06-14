@@ -86,6 +86,12 @@ async function addFavBtn(id) {
       favorites.push(data);
       localStorage.setItem("favroom", JSON.stringify(favorites));
     }
+  } else {
+    document.querySelector(".alert").style.visibility = "visible";
+
+    setTimeout(() => {
+      document.querySelector(".alert").style.visibility = "hidden";
+    }, 2000);
   }
 }
 
