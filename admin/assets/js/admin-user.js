@@ -44,7 +44,7 @@ getAllUsers();
 searchInput.addEventListener("input", function (e) {
   filteredArr = copyArr;
   filteredArr = filteredArr.filter((el) =>
-    `${el.firstname} ${el.lastname}`
+    `${el.firstname} ${el.lastname} ${el.email}`
       .toLocaleLowerCase()
       .includes(e.target.value.toLocaleLowerCase())
   );
