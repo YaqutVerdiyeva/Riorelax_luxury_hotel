@@ -119,3 +119,7 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit Contact";
   submitBtn.innerHTML = "EDIT CONTACT";
 }
+function darkLightMode() {
+  let body = document.body;
+  body.classList.toggle("dark-mode");
+}

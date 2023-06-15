@@ -119,3 +119,7 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit Reservations";
   reservBtn.innerHTML = "EDIT RESERVATIONS";
 }
+function darkLightMode() {
+  let body = document.body;
+  body.classList.toggle("dark-mode");
+}

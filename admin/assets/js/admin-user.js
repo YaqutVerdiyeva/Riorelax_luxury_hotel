@@ -114,3 +114,7 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit User";
   signUpBtn.innerHTML = "EDIT USER";
 }
+function darkLightMode() {
+  let body = document.body;
+  body.classList.toggle("dark-mode");
+}

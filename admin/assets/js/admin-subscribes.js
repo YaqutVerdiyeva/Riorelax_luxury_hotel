@@ -102,3 +102,7 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit Email";
   addEmail.innerHTML = "EDIT EMAIL";
 }
+function darkLightMode() {
+  let body = document.body;
+  body.classList.toggle("dark-mode");
+}

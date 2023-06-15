@@ -135,3 +135,7 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit Room";
   addRoom.innerHTML = "EDIT ROOM";
 }
+function darkLightMode() {
+  let body = document.body;
+  body.classList.toggle("dark-mode");
+}

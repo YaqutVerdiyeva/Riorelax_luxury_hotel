@@ -147,3 +147,7 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit Product";
   addProduct.innerHTML = "EDIT PRODUCT";
 }
+function darkLightMode() {
+  let body = document.body;
+  body.classList.toggle("dark-mode");
+}

@@ -11,30 +11,30 @@
   max-width: 1200px;
 }
 
-.section-admin-reserv-room {
+body .section-admin-reserv-room {
   background-image: url(../../../assets/image/bgphoto.jpg);
 }
-.section-admin-reserv-room .containerr .row {
+body .section-admin-reserv-room .containerr .row {
   margin: 0;
 }
-.section-admin-reserv-room .containerr .row .left {
+body .section-admin-reserv-room .containerr .row .left {
   background-color: transparent;
   box-shadow: 5px 5px 10px #977a5e;
 }
-.section-admin-reserv-room .containerr .row .left ul {
+body .section-admin-reserv-room .containerr .row .left ul {
   margin: 0;
   padding: 0;
 }
-.section-admin-reserv-room .containerr .row .left ul li {
+body .section-admin-reserv-room .containerr .row .left ul li {
   padding: 10px 20px;
 }
-.section-admin-reserv-room .containerr .row .left ul li a {
+body .section-admin-reserv-room .containerr .row .left ul li a {
   color: #101010;
   font-size: 22px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-admin-reserv-room .containerr .row .left ul li .card {
+body .section-admin-reserv-room .containerr .row .left ul li .card {
   border: none;
   background-color: transparent;
   display: flex;
@@ -42,18 +42,18 @@
   align-items: center;
   justify-content: center;
 }
-.section-admin-reserv-room .containerr .row .left ul li .card img {
+body .section-admin-reserv-room .containerr .row .left ul li .card img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
-.section-admin-reserv-room .containerr .row .left ul li .card .text {
+body .section-admin-reserv-room .containerr .row .left ul li .card .text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.section-admin-reserv-room .containerr .row .left ul li .card .text h2 {
+body .section-admin-reserv-room .containerr .row .left ul li .card .text h2 {
   margin-top: 10px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
@@ -61,22 +61,22 @@
   letter-spacing: 1px;
   color: #101010;
 }
-.section-admin-reserv-room .containerr .row .left ul li .card .text span {
+body .section-admin-reserv-room .containerr .row .left ul li .card .text span {
   text-align: center;
   color: #101010;
   font-size: 25px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-admin-reserv-room .containerr .row .left ul li .card .text .icons {
+body .section-admin-reserv-room .containerr .row .left ul li .card .text .icons {
   display: flex;
   gap: 30px;
 }
-.section-admin-reserv-room .containerr .row .left ul li .card .text .icons a i {
+body .section-admin-reserv-room .containerr .row .left ul li .card .text .icons a i {
   font-size: 20px;
   color: #101010;
 }
-.section-admin-reserv-room .containerr .row .right .container h1 {
+body .section-admin-reserv-room .containerr .row .right .container h1 {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 600;
@@ -84,102 +84,102 @@
   text-align: center;
   letter-spacing: 5px;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form {
   box-shadow: 0px 20px 60px 0px rgba(21, 21, 21, 0.2);
   margin-bottom: 100px;
   background-color: #fff;
   padding: 20px;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .check-in-date {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .check-in-date {
   display: flex;
   flex-direction: column;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .check-in-date label {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .check-in-date label {
   margin: 20px 0;
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #101010;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .check-in-date label i {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .check-in-date label i {
   padding-right: 5px;
   color: #be9874;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .check-in-date #checkin[type=date] {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .check-in-date #checkin[type=date] {
   border-radius: 0;
   padding: 10px;
   border-color: rgba(100, 66, 34, 0.2784313725);
   color: #be9874;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .adults {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .adults {
   display: flex;
   flex-direction: column;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .adults label {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .adults label {
   margin: 20px 0;
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #101010;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .adults label i {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .adults label i {
   padding-right: 5px;
   color: #be9874;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .adults #adults[type=number] {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .adults #adults[type=number] {
   border-radius: 0;
   padding: 10px;
   border-color: rgba(100, 66, 34, 0.2784313725);
   color: #be9874;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .check-out-date {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .check-out-date {
   display: flex;
   flex-direction: column;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .check-out-date label {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .check-out-date label {
   margin: 20px 0;
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #101010;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .check-out-date label i {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .check-out-date label i {
   padding-right: 5px;
   color: #be9874;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .check-out-date #checkout[type=date] {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .check-out-date #checkout[type=date] {
   border-radius: 0;
   padding: 10px;
   border-color: rgba(100, 66, 34, 0.2784313725);
   color: #be9874;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .room {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .room {
   display: flex;
   flex-direction: column;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .room label {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .room label {
   margin: 20px 0;
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #101010;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .room label i {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .room label i {
   padding-right: 5px;
   color: #be9874;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .room #room[type=number] {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .room #room[type=number] {
   border-radius: 0;
   padding: 10px;
   border-color: rgba(100, 66, 34, 0.2784313725);
   color: #be9874;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button {
   border: none;
   width: 100%;
   padding: 12px 25px;
@@ -194,11 +194,11 @@
   outline: none;
   text-align: center;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:hover {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:hover {
   background: #ffffff;
   color: #977a5e;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:before, .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:after {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:before, body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -208,43 +208,43 @@
   background: #977a5e;
   transition: 400ms ease all;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:after {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:hover:before, .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:hover:after {
+body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:hover:before, body .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .book-button:hover:after {
   width: 100%;
   transition: 800ms ease all;
 }
-.section-admin-reserv-room .containerr .row .right .container .reserv h2 {
+body .section-admin-reserv-room .containerr .row .right .container .reserv h2 {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 600;
   font-size: 48px;
   text-align: center;
 }
-.section-admin-reserv-room .containerr .row .right .container .search-sort {
+body .section-admin-reserv-room .containerr .row .right .container .search-sort {
   display: flex;
   justify-content: space-between;
 }
-.section-admin-reserv-room .containerr .row .right .container .search-sort .leftt input {
+body .section-admin-reserv-room .containerr .row .right .container .search-sort .leftt input {
   background-color: transparent;
   border: 1px solid #977a5e;
   border-radius: 0;
   box-shadow: 2px 2px 9px #977a5e;
 }
-.section-admin-reserv-room .containerr .row .right .container .search-sort .leftt input::-moz-placeholder {
+body .section-admin-reserv-room .containerr .row .right .container .search-sort .leftt input::-moz-placeholder {
   color: #977a5e;
 }
-.section-admin-reserv-room .containerr .row .right .container .search-sort .leftt input::placeholder {
+body .section-admin-reserv-room .containerr .row .right .container .search-sort .leftt input::placeholder {
   color: #977a5e;
 }
-.section-admin-reserv-room .containerr .row .right .container .search-sort .rightt {
+body .section-admin-reserv-room .containerr .row .right .container .search-sort .rightt {
   width: 250px;
 }
-.section-admin-reserv-room .containerr .row .right .container .search-sort .rightt .sort {
+body .section-admin-reserv-room .containerr .row .right .container .search-sort .rightt .sort {
   width: 100%;
   padding: 8px 35px;
   font-size: 15px;
@@ -261,12 +261,12 @@
   color: rgba(255, 255, 255, 0.8);
   background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
-.section-admin-reserv-room .containerr .row .right .container .search-sort .rightt .sort:hover {
+body .section-admin-reserv-room .containerr .row .right .container .search-sort .rightt .sort:hover {
   border-color: transparent;
   color: #977a5e;
   background-position: 99% 50%;
 }
-.section-admin-reserv-room .containerr .row .right .container .alert {
+body .section-admin-reserv-room .containerr .row .right .container .alert {
   position: fixed;
   top: 40%;
   left: 40%;
@@ -284,11 +284,11 @@
   text-align: center;
   flex-direction: column;
 }
-.section-admin-reserv-room .containerr .row .right .container .alert div {
+body .section-admin-reserv-room .containerr .row .right .container .alert div {
   gap: 20px;
   display: flex;
 }
-.section-admin-reserv-room .containerr .row .right .container .alert div button {
+body .section-admin-reserv-room .containerr .row .right .container .alert div button {
   background: #977a5e;
   border: none;
   padding: 17px 20px;
@@ -302,11 +302,11 @@
   transition: 100ms ease all;
   outline: none;
 }
-.section-admin-reserv-room .containerr .row .right .container .alert div button:hover {
+body .section-admin-reserv-room .containerr .row .right .container .alert div button:hover {
   background: #ffffff;
   color: #977a5e;
 }
-.section-admin-reserv-room .containerr .row .right .container .alert div button:before, .section-admin-reserv-room .containerr .row .right .container .alert div button:after {
+body .section-admin-reserv-room .containerr .row .right .container .alert div button:before, body .section-admin-reserv-room .containerr .row .right .container .alert div button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -316,15 +316,95 @@
   background: #977a5e;
   transition: 200ms ease all;
 }
-.section-admin-reserv-room .containerr .row .right .container .alert div button:after {
+body .section-admin-reserv-room .containerr .row .right .container .alert div button:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.section-admin-reserv-room .containerr .row .right .container .alert div button:hover:before, .section-admin-reserv-room .containerr .row .right .container .alert div button:hover:after {
+body .section-admin-reserv-room .containerr .row .right .container .alert div button:hover:before, body .section-admin-reserv-room .containerr .row .right .container .alert div button:hover:after {
   width: 100%;
   transition: 1x00ms ease all;
+}
+body.dark-mode .section-admin-reserv-room {
+  background-color: #000;
+  background-image: none;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row {
+  margin: 0;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .left {
+  box-shadow: 5px 5px 10px #977a5e;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .left ul li a {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .left ul li .card .text h2 {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .left ul li .card .text span {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .left ul li .card .text .icons a i {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .right .container .reserv form {
+  background-color: #000;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .check-in-date label {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .check-in-date label i {
+  color: #fff;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .check-in-date #checkin[type=date] {
+  color: #000;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .adults label {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .adults label i {
+  color: #fff;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .leftt .adults #adults[type=number] {
+  border-color: #fff;
+  color: #000;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .check-out-date label {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .check-out-date label i {
+  color: #fff;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .check-out-date #checkout[type=date] {
+  border-color: #fff;
+  color: #000;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .room label {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .room label i {
+  color: #fff;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .right .container .reserv form .check-row .rightt .room #room[type=number] {
+  border-color: #fff;
+  color: #000;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .right .container .reserv h2 {
+  font-family: "Jost", sans-serif;
+  color: #977a5e;
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .right .container table thead tr th {
+  color: #fff;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .right .container table tbody tr td {
+  color: #fff;
+}
+body.dark-mode .section-admin-reserv-room .containerr .row .right .container table tbody tr td .fa-pen-to-square {
+  color: #fff !important;
 }
 
 * {
@@ -340,30 +420,30 @@
   max-width: 1200px;
 }
 
-.section-admin-reserv {
+body .section-admin-reserv {
   background-image: url(../../../assets/image/bgphoto.jpg);
 }
-.section-admin-reserv .containerr .row {
+body .section-admin-reserv .containerr .row {
   margin: 0;
 }
-.section-admin-reserv .containerr .row .left {
+body .section-admin-reserv .containerr .row .left {
   background-color: transparent;
   box-shadow: 5px 5px 10px #977a5e;
 }
-.section-admin-reserv .containerr .row .left ul {
+body .section-admin-reserv .containerr .row .left ul {
   margin: 0;
   padding: 0;
 }
-.section-admin-reserv .containerr .row .left ul li {
+body .section-admin-reserv .containerr .row .left ul li {
   padding: 10px 20px;
 }
-.section-admin-reserv .containerr .row .left ul li a {
+body .section-admin-reserv .containerr .row .left ul li a {
   color: #101010;
   font-size: 22px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-admin-reserv .containerr .row .left ul li .card {
+body .section-admin-reserv .containerr .row .left ul li .card {
   border: none;
   background-color: transparent;
   display: flex;
@@ -371,18 +451,18 @@
   align-items: center;
   justify-content: center;
 }
-.section-admin-reserv .containerr .row .left ul li .card img {
+body .section-admin-reserv .containerr .row .left ul li .card img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
-.section-admin-reserv .containerr .row .left ul li .card .text {
+body .section-admin-reserv .containerr .row .left ul li .card .text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.section-admin-reserv .containerr .row .left ul li .card .text h2 {
+body .section-admin-reserv .containerr .row .left ul li .card .text h2 {
   margin-top: 10px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
@@ -390,22 +470,22 @@
   letter-spacing: 1px;
   color: #101010;
 }
-.section-admin-reserv .containerr .row .left ul li .card .text span {
+body .section-admin-reserv .containerr .row .left ul li .card .text span {
   text-align: center;
   color: #101010;
   font-size: 25px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-admin-reserv .containerr .row .left ul li .card .text .icons {
+body .section-admin-reserv .containerr .row .left ul li .card .text .icons {
   display: flex;
   gap: 30px;
 }
-.section-admin-reserv .containerr .row .left ul li .card .text .icons a i {
+body .section-admin-reserv .containerr .row .left ul li .card .text .icons a i {
   font-size: 20px;
   color: #101010;
 }
-.section-admin-reserv .containerr .row .right .container h1 {
+body .section-admin-reserv .containerr .row .right .container h1 {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 600;
@@ -413,119 +493,119 @@
   text-align: center;
   letter-spacing: 5px;
 }
-.section-admin-reserv .containerr .row .right .container .reserv h2 {
+body .section-admin-reserv .containerr .row .right .container .reserv h2 {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 600;
   font-size: 48px;
   text-align: center;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form {
+body .section-admin-reserv .containerr .row .right .container .reserv form {
   margin-bottom: 100px;
   background-color: #ffffff;
   padding: 25px;
   box-shadow: 0px 20px 60px 0px rgba(21, 21, 21, 0.2);
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .check-in-date {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .check-in-date {
   display: flex;
   flex-direction: column;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .check-in-date label {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .check-in-date label {
   margin: 20px 0;
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #101010;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .check-in-date label i {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .check-in-date label i {
   padding-right: 5px;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .check-in-date #checkin {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .check-in-date #checkin {
   border-radius: 0;
   padding: 10px;
   border-color: rgba(100, 66, 34, 0.2784313725);
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .adults {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .adults {
   display: flex;
   flex-direction: column;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .adults label {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .adults label {
   margin: 20px 0;
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #101010;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .adults label i {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .adults label i {
   padding-right: 5px;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .adults #adults {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .adults #adults {
   border-radius: 0;
   padding: 10px;
   border-color: rgba(100, 66, 34, 0.2784313725);
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .room {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .room {
   display: flex;
   flex-direction: column;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .room label {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .room label {
   margin: 20px 0;
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #101010;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .room label i {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .room label i {
   padding-right: 5px;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .room #room {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .room #room {
   border-radius: 0;
   padding: 10px;
   border-color: rgba(100, 66, 34, 0.2784313725);
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .check-out-date {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .check-out-date {
   display: flex;
   flex-direction: column;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .check-out-date label {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .check-out-date label {
   margin: 20px 0;
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #101010;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .check-out-date label i {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .check-out-date label i {
   padding-right: 5px;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .check-out-date #checkout {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .check-out-date #checkout {
   border-radius: 0;
   padding: 10px;
   border-color: rgba(100, 66, 34, 0.2784313725);
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .child {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .child {
   display: flex;
   flex-direction: column;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .child label {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .child label {
   margin: 20px 0;
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #101010;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .child label i {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .child label i {
   padding-right: 5px;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .child #child {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .child #child {
   border-radius: 0;
   padding: 10px;
   border-color: rgba(100, 66, 34, 0.2784313725);
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar {
   display: flex;
   flex-direction: column;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar label {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar label {
   margin-top: 20px;
   margin-bottom: 10px;
   font-family: "Jost", sans-serif;
@@ -533,11 +613,11 @@
   font-weight: 600;
   color: #101010;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar label i {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar label i {
   font-size: 30px;
   color: #be9874;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar .check-btn {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar .check-btn {
   border: none;
   width: 200px;
   padding: 12px 25px;
@@ -552,11 +632,11 @@
   outline: none;
   text-align: center;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar .check-btn:hover {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar .check-btn:hover {
   background: #ffffff;
   color: #977a5e;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar .check-btn:before, .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar .check-btn:after {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar .check-btn:before, body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar .check-btn:after {
   content: "";
   position: absolute;
   top: 0;
@@ -566,36 +646,36 @@
   background: #977a5e;
   transition: 400ms ease all;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar .check-btn:after {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar .check-btn:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar .check-btn:hover:before, .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar .check-btn:hover:after {
+body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar .check-btn:hover:before, body .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar .check-btn:hover:after {
   width: 100%;
   transition: 800ms ease all;
 }
-.section-admin-reserv .containerr .row .right .container .search-sort {
+body .section-admin-reserv .containerr .row .right .container .search-sort {
   display: flex;
   justify-content: space-between;
 }
-.section-admin-reserv .containerr .row .right .container .search-sort .leftt input {
+body .section-admin-reserv .containerr .row .right .container .search-sort .leftt input {
   border: 1px solid #977a5e;
   border-radius: 0;
   background-color: transparent;
   box-shadow: 2px 2px 9px #977a5e;
 }
-.section-admin-reserv .containerr .row .right .container .search-sort .leftt input::-moz-placeholder {
+body .section-admin-reserv .containerr .row .right .container .search-sort .leftt input::-moz-placeholder {
   color: #977a5e;
 }
-.section-admin-reserv .containerr .row .right .container .search-sort .leftt input::placeholder {
+body .section-admin-reserv .containerr .row .right .container .search-sort .leftt input::placeholder {
   color: #977a5e;
 }
-.section-admin-reserv .containerr .row .right .container .search-sort .rightt {
+body .section-admin-reserv .containerr .row .right .container .search-sort .rightt {
   width: 250px;
 }
-.section-admin-reserv .containerr .row .right .container .search-sort .rightt .sort {
+body .section-admin-reserv .containerr .row .right .container .search-sort .rightt .sort {
   width: 100%;
   padding: 8px 35px;
   font-size: 15px;
@@ -612,12 +692,12 @@
   color: rgba(255, 255, 255, 0.8);
   background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
-.section-admin-reserv .containerr .row .right .container .search-sort .rightt .sort:hover {
+body .section-admin-reserv .containerr .row .right .container .search-sort .rightt .sort:hover {
   border-color: transparent;
   color: #977a5e;
   background-position: 99% 50%;
 }
-.section-admin-reserv .containerr .row .right .container .alert {
+body .section-admin-reserv .containerr .row .right .container .alert {
   position: fixed;
   top: 40%;
   left: 40%;
@@ -635,11 +715,11 @@
   text-align: center;
   flex-direction: column;
 }
-.section-admin-reserv .containerr .row .right .container .alert div {
+body .section-admin-reserv .containerr .row .right .container .alert div {
   gap: 20px;
   display: flex;
 }
-.section-admin-reserv .containerr .row .right .container .alert div button {
+body .section-admin-reserv .containerr .row .right .container .alert div button {
   background: #977a5e;
   border: none;
   padding: 17px 20px;
@@ -653,11 +733,11 @@
   transition: 100ms ease all;
   outline: none;
 }
-.section-admin-reserv .containerr .row .right .container .alert div button:hover {
+body .section-admin-reserv .containerr .row .right .container .alert div button:hover {
   background: #ffffff;
   color: #977a5e;
 }
-.section-admin-reserv .containerr .row .right .container .alert div button:before, .section-admin-reserv .containerr .row .right .container .alert div button:after {
+body .section-admin-reserv .containerr .row .right .container .alert div button:before, body .section-admin-reserv .containerr .row .right .container .alert div button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -667,15 +747,87 @@
   background: #977a5e;
   transition: 200ms ease all;
 }
-.section-admin-reserv .containerr .row .right .container .alert div button:after {
+body .section-admin-reserv .containerr .row .right .container .alert div button:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.section-admin-reserv .containerr .row .right .container .alert div button:hover:before, .section-admin-reserv .containerr .row .right .container .alert div button:hover:after {
+body .section-admin-reserv .containerr .row .right .container .alert div button:hover:before, body .section-admin-reserv .containerr .row .right .container .alert div button:hover:after {
   width: 100%;
   transition: 1x00ms ease all;
+}
+body.dark-mode .section-admin-reserv {
+  background-color: #000;
+  background-image: none;
+}
+body.dark-mode .section-admin-reserv .containerr .row {
+  margin: 0;
+}
+body.dark-mode .section-admin-reserv .containerr .row .left {
+  box-shadow: 5px 5px 10px #977a5e;
+}
+body.dark-mode .section-admin-reserv .containerr .row .left ul li a {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .left ul li .card .text h2 {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .left ul li .card .text span {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .left ul li .card .text .icons a i {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .right .container .reserv form {
+  background-color: #000;
+  padding: 25px;
+  box-shadow: 0px 20px 60px 0px rgba(21, 21, 21, 0.2);
+}
+body.dark-mode .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .check-in-date label {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .check-in-date #checkin {
+  border-color: #fff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .adults label {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .adults #adults {
+  border-color: #fff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .room label {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .right .container .reserv form .row .leftt .room #room {
+  border-color: #fff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .check-out-date label {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .check-out-date #checkout {
+  border-color: #fff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .child label {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .child #child {
+  border-color: #fff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar label {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .right .container .reserv form .row .rightt .calendar label i {
+  color: #fff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .right .container table thead tr th {
+  color: #fff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .right .container table tbody tr td {
+  color: #fff;
+}
+body.dark-mode .section-admin-reserv .containerr .row .right .container table tbody tr td .fa-pen-to-square {
+  color: #fff !important;
 }
 
 * {
@@ -691,30 +843,30 @@
   max-width: 1200px;
 }
 
-.section-admin-shop {
+body .section-admin-shop {
   background-image: url(../../../assets/image/bgphoto.jpg);
 }
-.section-admin-shop .containerr .row {
+body .section-admin-shop .containerr .row {
   margin: 0;
 }
-.section-admin-shop .containerr .row .left {
+body .section-admin-shop .containerr .row .left {
   background-color: transparent;
   box-shadow: 5px 5px 10px #977a5e;
 }
-.section-admin-shop .containerr .row .left ul {
+body .section-admin-shop .containerr .row .left ul {
   margin: 0;
   padding: 0;
 }
-.section-admin-shop .containerr .row .left ul li {
+body .section-admin-shop .containerr .row .left ul li {
   padding: 10px 20px;
 }
-.section-admin-shop .containerr .row .left ul li a {
+body .section-admin-shop .containerr .row .left ul li a {
   color: #101010;
   font-size: 22px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-admin-shop .containerr .row .left ul li .card {
+body .section-admin-shop .containerr .row .left ul li .card {
   border: none;
   background-color: transparent;
   display: flex;
@@ -722,18 +874,18 @@
   align-items: center;
   justify-content: center;
 }
-.section-admin-shop .containerr .row .left ul li .card img {
+body .section-admin-shop .containerr .row .left ul li .card img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
-.section-admin-shop .containerr .row .left ul li .card .text {
+body .section-admin-shop .containerr .row .left ul li .card .text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.section-admin-shop .containerr .row .left ul li .card .text h2 {
+body .section-admin-shop .containerr .row .left ul li .card .text h2 {
   margin-top: 10px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
@@ -741,22 +893,22 @@
   letter-spacing: 1px;
   color: #101010;
 }
-.section-admin-shop .containerr .row .left ul li .card .text span {
+body .section-admin-shop .containerr .row .left ul li .card .text span {
   text-align: center;
   color: #101010;
   font-size: 25px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-admin-shop .containerr .row .left ul li .card .text .icons {
+body .section-admin-shop .containerr .row .left ul li .card .text .icons {
   display: flex;
   gap: 30px;
 }
-.section-admin-shop .containerr .row .left ul li .card .text .icons a i {
+body .section-admin-shop .containerr .row .left ul li .card .text .icons a i {
   font-size: 20px;
   color: #101010;
 }
-.section-admin-shop .containerr .row .right .container h1 {
+body .section-admin-shop .containerr .row .right .container h1 {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 600;
@@ -764,30 +916,30 @@
   text-align: center;
   letter-spacing: 5px;
 }
-.section-admin-shop .containerr .row .right .container .reserv h2 {
+body .section-admin-shop .containerr .row .right .container .reserv h2 {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 600;
   font-size: 48px;
   text-align: center;
 }
-.section-admin-shop .containerr .row .right .container .reserv form {
+body .section-admin-shop .containerr .row .right .container .reserv form {
   margin-bottom: 100px;
   background-color: #ffffff;
   padding: 25px;
   box-shadow: 0px 20px 60px 0px rgba(21, 21, 21, 0.2);
 }
-.section-admin-shop .containerr .row .right .container .reserv form label {
+body .section-admin-shop .containerr .row .right .container .reserv form label {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 400;
   font-size: 24px;
   text-align: center;
 }
-.section-admin-shop .containerr .row .right .container .reserv form input {
+body .section-admin-shop .containerr .row .right .container .reserv form input {
   border: 1px solid #977a5e;
 }
-.section-admin-shop .containerr .row .right .container .reserv form .add-product {
+body .section-admin-shop .containerr .row .right .container .reserv form .add-product {
   border: none;
   width: 100%;
   padding: 12px 25px;
@@ -802,11 +954,11 @@
   outline: none;
   text-align: center;
 }
-.section-admin-shop .containerr .row .right .container .reserv form .add-product:hover {
+body .section-admin-shop .containerr .row .right .container .reserv form .add-product:hover {
   background: #ffffff;
   color: #977a5e;
 }
-.section-admin-shop .containerr .row .right .container .reserv form .add-product:before, .section-admin-shop .containerr .row .right .container .reserv form .add-product:after {
+body .section-admin-shop .containerr .row .right .container .reserv form .add-product:before, body .section-admin-shop .containerr .row .right .container .reserv form .add-product:after {
   content: "";
   position: absolute;
   top: 0;
@@ -816,36 +968,36 @@
   background: #977a5e;
   transition: 400ms ease all;
 }
-.section-admin-shop .containerr .row .right .container .reserv form .add-product:after {
+body .section-admin-shop .containerr .row .right .container .reserv form .add-product:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.section-admin-shop .containerr .row .right .container .reserv form .add-product:hover:before, .section-admin-shop .containerr .row .right .container .reserv form .add-product:hover:after {
+body .section-admin-shop .containerr .row .right .container .reserv form .add-product:hover:before, body .section-admin-shop .containerr .row .right .container .reserv form .add-product:hover:after {
   width: 100%;
   transition: 800ms ease all;
 }
-.section-admin-shop .containerr .row .right .container .search-sort {
+body .section-admin-shop .containerr .row .right .container .search-sort {
   display: flex;
   justify-content: space-between;
 }
-.section-admin-shop .containerr .row .right .container .search-sort .leftt input {
+body .section-admin-shop .containerr .row .right .container .search-sort .leftt input {
   background-color: transparent;
   border: 1px solid #977a5e;
   border-radius: 0;
   box-shadow: 2px 2px 9px #977a5e;
 }
-.section-admin-shop .containerr .row .right .container .search-sort .leftt input::-moz-placeholder {
+body .section-admin-shop .containerr .row .right .container .search-sort .leftt input::-moz-placeholder {
   color: #977a5e;
 }
-.section-admin-shop .containerr .row .right .container .search-sort .leftt input::placeholder {
+body .section-admin-shop .containerr .row .right .container .search-sort .leftt input::placeholder {
   color: #977a5e;
 }
-.section-admin-shop .containerr .row .right .container .search-sort .rightt {
+body .section-admin-shop .containerr .row .right .container .search-sort .rightt {
   width: 250px;
 }
-.section-admin-shop .containerr .row .right .container .search-sort .rightt .sort {
+body .section-admin-shop .containerr .row .right .container .search-sort .rightt .sort {
   width: 100%;
   padding: 8px 35px;
   font-size: 15px;
@@ -862,12 +1014,12 @@
   color: rgba(255, 255, 255, 0.8);
   background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
-.section-admin-shop .containerr .row .right .container .search-sort .rightt .sort:hover {
+body .section-admin-shop .containerr .row .right .container .search-sort .rightt .sort:hover {
   border-color: transparent;
   color: #977a5e;
   background-position: 99% 50%;
 }
-.section-admin-shop .containerr .row .right .container .alert {
+body .section-admin-shop .containerr .row .right .container .alert {
   position: fixed;
   top: 40%;
   left: 40%;
@@ -885,11 +1037,11 @@
   text-align: center;
   flex-direction: column;
 }
-.section-admin-shop .containerr .row .right .container .alert div {
+body .section-admin-shop .containerr .row .right .container .alert div {
   gap: 20px;
   display: flex;
 }
-.section-admin-shop .containerr .row .right .container .alert div button {
+body .section-admin-shop .containerr .row .right .container .alert div button {
   background: #977a5e;
   border: none;
   padding: 17px 20px;
@@ -903,11 +1055,11 @@
   transition: 100ms ease all;
   outline: none;
 }
-.section-admin-shop .containerr .row .right .container .alert div button:hover {
+body .section-admin-shop .containerr .row .right .container .alert div button:hover {
   background: #ffffff;
   color: #977a5e;
 }
-.section-admin-shop .containerr .row .right .container .alert div button:before, .section-admin-shop .containerr .row .right .container .alert div button:after {
+body .section-admin-shop .containerr .row .right .container .alert div button:before, body .section-admin-shop .containerr .row .right .container .alert div button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -917,15 +1069,53 @@
   background: #977a5e;
   transition: 200ms ease all;
 }
-.section-admin-shop .containerr .row .right .container .alert div button:after {
+body .section-admin-shop .containerr .row .right .container .alert div button:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.section-admin-shop .containerr .row .right .container .alert div button:hover:before, .section-admin-shop .containerr .row .right .container .alert div button:hover:after {
+body .section-admin-shop .containerr .row .right .container .alert div button:hover:before, body .section-admin-shop .containerr .row .right .container .alert div button:hover:after {
   width: 100%;
   transition: 1x00ms ease all;
+}
+body.dark-mode .section-admin-shop {
+  background-color: #000;
+  background-image: none;
+}
+body.dark-mode .section-admin-shop .containerr .row {
+  margin: 0;
+}
+body.dark-mode .section-admin-shop .containerr .row .left {
+  box-shadow: 5px 5px 10px #977a5e;
+}
+body.dark-mode .section-admin-shop .containerr .row .left ul li a {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-shop .containerr .row .left ul li .card .text h2 {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-shop .containerr .row .left ul li .card .text span {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-shop .containerr .row .left ul li .card .text .icons a i {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-shop .containerr .row .right .container .reserv form {
+  background-color: #000;
+}
+body.dark-mode .section-admin-shop .containerr .row .right .container .reserv form input {
+  border: 1px solid #977a5e;
+  background-color: transparent;
+}
+body.dark-mode .section-admin-shop .containerr .row .right .container table thead tr th {
+  color: #fff;
+}
+body.dark-mode .section-admin-shop .containerr .row .right .container table tbody tr td {
+  color: #fff;
+}
+body.dark-mode .section-admin-shop .containerr .row .right .container table tbody tr td .fa-pen-to-square {
+  color: #fff !important;
 }
 
 * {
@@ -1071,131 +1261,23 @@ body .section-admin .containerr .row .right .charts .room h1 {
 }
 body.dark-mode .section-admin {
   background-color: #000;
-  background-position: center;
-}
-body.dark-mode .section-admin .containerr .row {
-  margin: 0;
+  background-image: none;
 }
 body.dark-mode .section-admin .containerr .row .left {
   background-color: transparent;
-  box-shadow: 5px 5px 10px #977a5e;
-}
-body.dark-mode .section-admin .containerr .row .left ul {
-  margin: 0;
-  padding: 0;
-}
-body.dark-mode .section-admin .containerr .row .left ul li {
-  padding: 10px 20px;
+  box-shadow: 5px 5px 14px #977a5e;
 }
 body.dark-mode .section-admin .containerr .row .left ul li a {
-  color: #101010;
-  font-size: 22px;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-}
-body.dark-mode .section-admin .containerr .row .left ul li .card {
-  border: none;
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-body.dark-mode .section-admin .containerr .row .left ul li .card img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-}
-body.dark-mode .section-admin .containerr .row .left ul li .card .text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  color: #977a5e;
 }
 body.dark-mode .section-admin .containerr .row .left ul li .card .text h2 {
-  margin-top: 10px;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: 1px;
-  color: #101010;
+  color: #977a5e;
 }
 body.dark-mode .section-admin .containerr .row .left ul li .card .text span {
-  text-align: center;
-  color: #101010;
-  font-size: 25px;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-}
-body.dark-mode .section-admin .containerr .row .left ul li .card .text .icons {
-  display: flex;
-  gap: 30px;
+  color: #977a5e;
 }
 body.dark-mode .section-admin .containerr .row .left ul li .card .text .icons a i {
-  font-size: 20px;
-  color: #101010;
-}
-body.dark-mode .section-admin .containerr .row .right {
-  margin: 0;
-  padding: 25px;
-}
-body.dark-mode .section-admin .containerr .row .right .counts h2 {
-  font-family: "Jost", sans-serif;
   color: #977a5e;
-  font-weight: 600;
-  font-size: 48px;
-  text-align: center;
-}
-body.dark-mode .section-admin .containerr .row .right .counts .col .cardd {
-  background: linear-gradient(-45deg, #977a5e, #fff, #9e8166, #685340);
-  background-size: 400% 100%;
-  animation: gradient 10s ease infinite;
-  display: flex;
-  align-items: center;
-  height: 150px;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #977a5e;
-  box-shadow: 2px 2px 10px #977a5e;
-}
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-body.dark-mode .section-admin .containerr .row .right .counts .col .cardd .image {
-  margin-right: 20px;
-}
-body.dark-mode .section-admin .containerr .row .right .counts .col .cardd .image i {
-  font-size: 50px;
-}
-body.dark-mode .section-admin .containerr .row .right .counts .col .cardd .text h3 {
-  font-family: "Jost", sans-serif;
-  color: #000;
-  font-weight: 700;
-}
-body.dark-mode .section-admin .containerr .row .right .counts .col .cardd .text span {
-  font-family: "Jost", sans-serif;
-  color: #000;
-  font-weight: 600;
-}
-body.dark-mode .section-admin .containerr .row .right .charts {
-  background-color: transparent;
-  width: 100%;
-}
-body.dark-mode .section-admin .containerr .row .right .charts .users h1,
-body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
-  font-family: "Jost", sans-serif;
-  color: #977a5e;
-  font-weight: 600;
-  font-size: 48px;
-  text-align: center;
 }
 
 * {
@@ -1211,30 +1293,30 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   max-width: 1200px;
 }
 
-.section-admin-room {
+body .section-admin-room {
   background-image: url(../../../assets/image/bgphoto.jpg);
 }
-.section-admin-room .containerr .row {
+body .section-admin-room .containerr .row {
   margin: 0;
 }
-.section-admin-room .containerr .row .left {
+body .section-admin-room .containerr .row .left {
   background-color: transparent;
   box-shadow: 5px 5px 10px #977a5e;
 }
-.section-admin-room .containerr .row .left ul {
+body .section-admin-room .containerr .row .left ul {
   margin: 0;
   padding: 0;
 }
-.section-admin-room .containerr .row .left ul li {
+body .section-admin-room .containerr .row .left ul li {
   padding: 10px 20px;
 }
-.section-admin-room .containerr .row .left ul li a {
+body .section-admin-room .containerr .row .left ul li a {
   color: #101010;
   font-size: 22px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-admin-room .containerr .row .left ul li .card {
+body .section-admin-room .containerr .row .left ul li .card {
   border: none;
   background-color: transparent;
   display: flex;
@@ -1242,18 +1324,18 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   align-items: center;
   justify-content: center;
 }
-.section-admin-room .containerr .row .left ul li .card img {
+body .section-admin-room .containerr .row .left ul li .card img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
-.section-admin-room .containerr .row .left ul li .card .text {
+body .section-admin-room .containerr .row .left ul li .card .text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.section-admin-room .containerr .row .left ul li .card .text h2 {
+body .section-admin-room .containerr .row .left ul li .card .text h2 {
   margin-top: 10px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
@@ -1261,22 +1343,22 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   letter-spacing: 1px;
   color: #101010;
 }
-.section-admin-room .containerr .row .left ul li .card .text span {
+body .section-admin-room .containerr .row .left ul li .card .text span {
   text-align: center;
   color: #101010;
   font-size: 25px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-admin-room .containerr .row .left ul li .card .text .icons {
+body .section-admin-room .containerr .row .left ul li .card .text .icons {
   display: flex;
   gap: 30px;
 }
-.section-admin-room .containerr .row .left ul li .card .text .icons a i {
+body .section-admin-room .containerr .row .left ul li .card .text .icons a i {
   font-size: 20px;
   color: #101010;
 }
-.section-admin-room .containerr .row .right .container h1 {
+body .section-admin-room .containerr .row .right .container h1 {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 600;
@@ -1284,30 +1366,30 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   text-align: center;
   letter-spacing: 5px;
 }
-.section-admin-room .containerr .row .right .container .reserv h2 {
+body .section-admin-room .containerr .row .right .container .reserv h2 {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 600;
   font-size: 48px;
   text-align: center;
 }
-.section-admin-room .containerr .row .right .container .reserv form {
+body .section-admin-room .containerr .row .right .container .reserv form {
   margin-bottom: 100px;
   background-color: #ffffff;
   padding: 25px;
   box-shadow: 0px 20px 60px 0px rgba(21, 21, 21, 0.2);
 }
-.section-admin-room .containerr .row .right .container .reserv form label {
+body .section-admin-room .containerr .row .right .container .reserv form label {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 400;
   font-size: 24px;
   text-align: center;
 }
-.section-admin-room .containerr .row .right .container .reserv form input {
+body .section-admin-room .containerr .row .right .container .reserv form input {
   border: 1px solid #977a5e;
 }
-.section-admin-room .containerr .row .right .container .reserv form .add-room {
+body .section-admin-room .containerr .row .right .container .reserv form .add-room {
   border: none;
   width: 100%;
   padding: 12px 25px;
@@ -1322,11 +1404,11 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   outline: none;
   text-align: center;
 }
-.section-admin-room .containerr .row .right .container .reserv form .add-room:hover {
+body .section-admin-room .containerr .row .right .container .reserv form .add-room:hover {
   background: #ffffff;
   color: #977a5e;
 }
-.section-admin-room .containerr .row .right .container .reserv form .add-room:before, .section-admin-room .containerr .row .right .container .reserv form .add-room:after {
+body .section-admin-room .containerr .row .right .container .reserv form .add-room:before, body .section-admin-room .containerr .row .right .container .reserv form .add-room:after {
   content: "";
   position: absolute;
   top: 0;
@@ -1336,36 +1418,36 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   background: #977a5e;
   transition: 400ms ease all;
 }
-.section-admin-room .containerr .row .right .container .reserv form .add-room:after {
+body .section-admin-room .containerr .row .right .container .reserv form .add-room:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.section-admin-room .containerr .row .right .container .reserv form .add-room:hover:before, .section-admin-room .containerr .row .right .container .reserv form .add-room:hover:after {
+body .section-admin-room .containerr .row .right .container .reserv form .add-room:hover:before, body .section-admin-room .containerr .row .right .container .reserv form .add-room:hover:after {
   width: 100%;
   transition: 800ms ease all;
 }
-.section-admin-room .containerr .row .right .container .search-sort {
+body .section-admin-room .containerr .row .right .container .search-sort {
   display: flex;
   justify-content: space-between;
 }
-.section-admin-room .containerr .row .right .container .search-sort .leftt input {
+body .section-admin-room .containerr .row .right .container .search-sort .leftt input {
   background-color: transparent;
   border: 1px solid #977a5e;
   border-radius: 0;
   box-shadow: 2px 2px 9px #977a5e;
 }
-.section-admin-room .containerr .row .right .container .search-sort .leftt input::-moz-placeholder {
+body .section-admin-room .containerr .row .right .container .search-sort .leftt input::-moz-placeholder {
   color: #977a5e;
 }
-.section-admin-room .containerr .row .right .container .search-sort .leftt input::placeholder {
+body .section-admin-room .containerr .row .right .container .search-sort .leftt input::placeholder {
   color: #977a5e;
 }
-.section-admin-room .containerr .row .right .container .search-sort .rightt {
+body .section-admin-room .containerr .row .right .container .search-sort .rightt {
   width: 250px;
 }
-.section-admin-room .containerr .row .right .container .search-sort .rightt .sort {
+body .section-admin-room .containerr .row .right .container .search-sort .rightt .sort {
   width: 100%;
   padding: 8px 35px;
   font-size: 15px;
@@ -1382,12 +1464,12 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   color: rgba(255, 255, 255, 0.8);
   background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
-.section-admin-room .containerr .row .right .container .search-sort .rightt .sort:hover {
+body .section-admin-room .containerr .row .right .container .search-sort .rightt .sort:hover {
   border-color: transparent;
   color: #977a5e;
   background-position: 99% 50%;
 }
-.section-admin-room .containerr .row .right .container .alert {
+body .section-admin-room .containerr .row .right .container .alert {
   position: fixed;
   top: 40%;
   left: 40%;
@@ -1405,11 +1487,11 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   text-align: center;
   flex-direction: column;
 }
-.section-admin-room .containerr .row .right .container .alert div {
+body .section-admin-room .containerr .row .right .container .alert div {
   gap: 20px;
   display: flex;
 }
-.section-admin-room .containerr .row .right .container .alert div button {
+body .section-admin-room .containerr .row .right .container .alert div button {
   background: #977a5e;
   border: none;
   padding: 17px 20px;
@@ -1423,11 +1505,11 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   transition: 100ms ease all;
   outline: none;
 }
-.section-admin-room .containerr .row .right .container .alert div button:hover {
+body .section-admin-room .containerr .row .right .container .alert div button:hover {
   background: #ffffff;
   color: #977a5e;
 }
-.section-admin-room .containerr .row .right .container .alert div button:before, .section-admin-room .containerr .row .right .container .alert div button:after {
+body .section-admin-room .containerr .row .right .container .alert div button:before, body .section-admin-room .containerr .row .right .container .alert div button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -1437,15 +1519,56 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   background: #977a5e;
   transition: 200ms ease all;
 }
-.section-admin-room .containerr .row .right .container .alert div button:after {
+body .section-admin-room .containerr .row .right .container .alert div button:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.section-admin-room .containerr .row .right .container .alert div button:hover:before, .section-admin-room .containerr .row .right .container .alert div button:hover:after {
+body .section-admin-room .containerr .row .right .container .alert div button:hover:before, body .section-admin-room .containerr .row .right .container .alert div button:hover:after {
   width: 100%;
   transition: 1x00ms ease all;
+}
+body.dark-mode .section-admin-room {
+  background-color: #000;
+  background-image: none;
+}
+body.dark-mode .section-admin-room .containerr .row {
+  margin: 0;
+}
+body.dark-mode .section-admin-room .containerr .row .left {
+  box-shadow: 5px 5px 10px #977a5e;
+}
+body.dark-mode .section-admin-room .containerr .row .left ul li a {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-room .containerr .row .left ul li .card .text h2 {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-room .containerr .row .left ul li .card .text span {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-room .containerr .row .left ul li .card .text .icons a i {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-room .containerr .row .right .container .reserv form {
+  background-color: #000;
+}
+body.dark-mode .section-admin-room .containerr .row .right .container .reserv form label {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-room .containerr .row .right .container .reserv form input {
+  border: 1px solid #977a5e;
+  background-color: transparent;
+}
+body.dark-mode .section-admin-room .containerr .row .right .container table thead tr th {
+  color: #fff;
+}
+body.dark-mode .section-admin-room .containerr .row .right .container table tbody tr td {
+  color: #fff;
+}
+body.dark-mode .section-admin-room .containerr .row .right .container table tbody tr td .fa-pen-to-square {
+  color: #fff !important;
 }
 
 * {
@@ -1461,30 +1584,30 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   max-width: 1200px;
 }
 
-.section-admin-user {
+body .section-admin-user {
   background-image: url(../../../assets/image/bgphoto.jpg);
 }
-.section-admin-user .containerr .row {
+body .section-admin-user .containerr .row {
   margin: 0;
 }
-.section-admin-user .containerr .row .left {
+body .section-admin-user .containerr .row .left {
   background-color: transparent;
   box-shadow: 5px 5px 10px #977a5e;
 }
-.section-admin-user .containerr .row .left ul {
+body .section-admin-user .containerr .row .left ul {
   margin: 0;
   padding: 0;
 }
-.section-admin-user .containerr .row .left ul li {
+body .section-admin-user .containerr .row .left ul li {
   padding: 10px 20px;
 }
-.section-admin-user .containerr .row .left ul li a {
+body .section-admin-user .containerr .row .left ul li a {
   color: #101010;
   font-size: 22px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-admin-user .containerr .row .left ul li .card {
+body .section-admin-user .containerr .row .left ul li .card {
   border: none;
   background-color: transparent;
   display: flex;
@@ -1492,18 +1615,18 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   align-items: center;
   justify-content: center;
 }
-.section-admin-user .containerr .row .left ul li .card img {
+body .section-admin-user .containerr .row .left ul li .card img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
-.section-admin-user .containerr .row .left ul li .card .text {
+body .section-admin-user .containerr .row .left ul li .card .text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.section-admin-user .containerr .row .left ul li .card .text h2 {
+body .section-admin-user .containerr .row .left ul li .card .text h2 {
   margin-top: 10px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
@@ -1511,22 +1634,22 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   letter-spacing: 1px;
   color: #101010;
 }
-.section-admin-user .containerr .row .left ul li .card .text span {
+body .section-admin-user .containerr .row .left ul li .card .text span {
   text-align: center;
   color: #101010;
   font-size: 25px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-admin-user .containerr .row .left ul li .card .text .icons {
+body .section-admin-user .containerr .row .left ul li .card .text .icons {
   display: flex;
   gap: 30px;
 }
-.section-admin-user .containerr .row .left ul li .card .text .icons a i {
+body .section-admin-user .containerr .row .left ul li .card .text .icons a i {
   font-size: 20px;
   color: #101010;
 }
-.section-admin-user .containerr .row .right .container h1 {
+body .section-admin-user .containerr .row .right .container h1 {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 600;
@@ -1534,37 +1657,37 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   text-align: center;
   letter-spacing: 5px;
 }
-.section-admin-user .containerr .row .right .container .signup {
+body .section-admin-user .containerr .row .right .container .signup {
   padding: 50px;
 }
-.section-admin-user .containerr .row .right .container .signup h2 {
+body .section-admin-user .containerr .row .right .container .signup h2 {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 600;
   font-size: 48px;
   text-align: center;
 }
-.section-admin-user .containerr .row .right .container .signup form {
+body .section-admin-user .containerr .row .right .container .signup form {
   background-color: #fff;
   margin-bottom: 50px;
   box-shadow: 0px 20px 60px 0px rgba(21, 21, 21, 0.2);
   padding: 25px;
 }
-.section-admin-user .containerr .row .right .container .signup form .row .form-input .form-control {
+body .section-admin-user .containerr .row .right .container .signup form .row .form-input .form-control {
   border: 1px solid #777777;
   border-radius: 0;
 }
-.section-admin-user .containerr .row .right .container .signup form .row .form-input .form-control::-moz-placeholder {
+body .section-admin-user .containerr .row .right .container .signup form .row .form-input .form-control::-moz-placeholder {
   color: #9b9595;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
 }
-.section-admin-user .containerr .row .right .container .signup form .row .form-input .form-control::placeholder {
+body .section-admin-user .containerr .row .right .container .signup form .row .form-input .form-control::placeholder {
   color: #9b9595;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
 }
-.section-admin-user .containerr .row .right .container .signup form .row .form-input .get-submit {
+body .section-admin-user .containerr .row .right .container .signup form .row .form-input .get-submit {
   border: none;
   width: 100%;
   padding: 12px 25px;
@@ -1579,11 +1702,11 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   outline: none;
   text-align: center;
 }
-.section-admin-user .containerr .row .right .container .signup form .row .form-input .get-submit:hover {
+body .section-admin-user .containerr .row .right .container .signup form .row .form-input .get-submit:hover {
   background: #ffffff;
   color: #977a5e;
 }
-.section-admin-user .containerr .row .right .container .signup form .row .form-input .get-submit:before, .section-admin-user .containerr .row .right .container .signup form .row .form-input .get-submit:after {
+body .section-admin-user .containerr .row .right .container .signup form .row .form-input .get-submit:before, body .section-admin-user .containerr .row .right .container .signup form .row .form-input .get-submit:after {
   content: "";
   position: absolute;
   top: 0;
@@ -1593,36 +1716,36 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   background: #977a5e;
   transition: 400ms ease all;
 }
-.section-admin-user .containerr .row .right .container .signup form .row .form-input .get-submit:after {
+body .section-admin-user .containerr .row .right .container .signup form .row .form-input .get-submit:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.section-admin-user .containerr .row .right .container .signup form .row .form-input .get-submit:hover:before, .section-admin-user .containerr .row .right .container .signup form .row .form-input .get-submit:hover:after {
+body .section-admin-user .containerr .row .right .container .signup form .row .form-input .get-submit:hover:before, body .section-admin-user .containerr .row .right .container .signup form .row .form-input .get-submit:hover:after {
   width: 100%;
   transition: 800ms ease all;
 }
-.section-admin-user .containerr .row .right .container .search-sort {
+body .section-admin-user .containerr .row .right .container .search-sort {
   display: flex;
   justify-content: space-between;
 }
-.section-admin-user .containerr .row .right .container .search-sort .leftt input {
+body .section-admin-user .containerr .row .right .container .search-sort .leftt input {
   background-color: transparent;
   border: 1px solid #977a5e;
   border-radius: 0;
   box-shadow: 2px 2px 9px #977a5e;
 }
-.section-admin-user .containerr .row .right .container .search-sort .leftt input::-moz-placeholder {
+body .section-admin-user .containerr .row .right .container .search-sort .leftt input::-moz-placeholder {
   color: #977a5e;
 }
-.section-admin-user .containerr .row .right .container .search-sort .leftt input::placeholder {
+body .section-admin-user .containerr .row .right .container .search-sort .leftt input::placeholder {
   color: #977a5e;
 }
-.section-admin-user .containerr .row .right .container .search-sort .rightt {
+body .section-admin-user .containerr .row .right .container .search-sort .rightt {
   width: 250px;
 }
-.section-admin-user .containerr .row .right .container .search-sort .rightt .sort {
+body .section-admin-user .containerr .row .right .container .search-sort .rightt .sort {
   width: 100%;
   padding: 8px 35px;
   font-size: 15px;
@@ -1639,12 +1762,12 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   color: rgba(255, 255, 255, 0.8);
   background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
-.section-admin-user .containerr .row .right .container .search-sort .rightt .sort:hover {
+body .section-admin-user .containerr .row .right .container .search-sort .rightt .sort:hover {
   border-color: transparent;
   color: #977a5e;
   background-position: 99% 50%;
 }
-.section-admin-user .containerr .row .right .container .alert {
+body .section-admin-user .containerr .row .right .container .alert {
   position: fixed;
   top: 40%;
   left: 40%;
@@ -1662,11 +1785,11 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   text-align: center;
   flex-direction: column;
 }
-.section-admin-user .containerr .row .right .container .alert div {
+body .section-admin-user .containerr .row .right .container .alert div {
   gap: 20px;
   display: flex;
 }
-.section-admin-user .containerr .row .right .container .alert div button {
+body .section-admin-user .containerr .row .right .container .alert div button {
   background: #977a5e;
   border: none;
   padding: 17px 20px;
@@ -1680,11 +1803,11 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   transition: 100ms ease all;
   outline: none;
 }
-.section-admin-user .containerr .row .right .container .alert div button:hover {
+body .section-admin-user .containerr .row .right .container .alert div button:hover {
   background: #ffffff;
   color: #977a5e;
 }
-.section-admin-user .containerr .row .right .container .alert div button:before, .section-admin-user .containerr .row .right .container .alert div button:after {
+body .section-admin-user .containerr .row .right .container .alert div button:before, body .section-admin-user .containerr .row .right .container .alert div button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -1694,15 +1817,58 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   background: #977a5e;
   transition: 200ms ease all;
 }
-.section-admin-user .containerr .row .right .container .alert div button:after {
+body .section-admin-user .containerr .row .right .container .alert div button:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.section-admin-user .containerr .row .right .container .alert div button:hover:before, .section-admin-user .containerr .row .right .container .alert div button:hover:after {
+body .section-admin-user .containerr .row .right .container .alert div button:hover:before, body .section-admin-user .containerr .row .right .container .alert div button:hover:after {
   width: 100%;
   transition: 1x00ms ease all;
+}
+body.dark-mode .section-admin-user {
+  background-color: #000;
+  background-image: none;
+}
+body.dark-mode .section-admin-user .containerr .row {
+  margin: 0;
+}
+body.dark-mode .section-admin-user .containerr .row .left {
+  box-shadow: 5px 5px 10px #977a5e;
+}
+body.dark-mode .section-admin-user .containerr .row .left ul li a {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-user .containerr .row .left ul li .card .text h2 {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-user .containerr .row .left ul li .card .text span {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-user .containerr .row .left ul li .card .text .icons a i {
+  color: #ffffff;
+}
+body.dark-mode .section-admin-user .containerr .row .right .container .signup form {
+  background-color: #000;
+}
+body.dark-mode .section-admin-user .containerr .row .right .container .signup form .row .form-input .form-control {
+  border: 1px solid #ffffff;
+}
+body.dark-mode .section-admin-user .containerr .row .right .container .signup form .row .form-input .form-control::-moz-placeholder {
+  color: #000;
+}
+body.dark-mode .section-admin-user .containerr .row .right .container .signup form .row .form-input .form-control::placeholder {
+  color: #000;
+}
+body.dark-mode .section-admin-user .containerr .row .right .container table thead tr th {
+  color: #fff;
+}
+body.dark-mode .section-admin-user .containerr .row .right .container table tbody tr td {
+  color: #fff;
+}
+body.dark-mode .section-admin-user .containerr .row .right .container table tbody tr td .fa-pen-to-square {
+  color: #fff !important;
 }
 
 * {
@@ -1718,30 +1884,30 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   max-width: 1200px;
 }
 
-.section-subscribes {
+body .section-subscribes {
   background-image: url(../../../assets/image/bgphoto.jpg);
 }
-.section-subscribes .containerr .row {
+body .section-subscribes .containerr .row {
   margin: 0;
 }
-.section-subscribes .containerr .row .left {
+body .section-subscribes .containerr .row .left {
   background-color: transparent;
   box-shadow: 5px 5px 10px #977a5e;
 }
-.section-subscribes .containerr .row .left ul {
+body .section-subscribes .containerr .row .left ul {
   margin: 0;
   padding: 0;
 }
-.section-subscribes .containerr .row .left ul li {
+body .section-subscribes .containerr .row .left ul li {
   padding: 10px 20px;
 }
-.section-subscribes .containerr .row .left ul li a {
+body .section-subscribes .containerr .row .left ul li a {
   color: #101010;
   font-size: 22px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-subscribes .containerr .row .left ul li .card {
+body .section-subscribes .containerr .row .left ul li .card {
   border: none;
   background-color: transparent;
   display: flex;
@@ -1749,18 +1915,18 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   align-items: center;
   justify-content: center;
 }
-.section-subscribes .containerr .row .left ul li .card img {
+body .section-subscribes .containerr .row .left ul li .card img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
-.section-subscribes .containerr .row .left ul li .card .text {
+body .section-subscribes .containerr .row .left ul li .card .text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.section-subscribes .containerr .row .left ul li .card .text h2 {
+body .section-subscribes .containerr .row .left ul li .card .text h2 {
   margin-top: 10px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
@@ -1768,22 +1934,22 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   letter-spacing: 1px;
   color: #101010;
 }
-.section-subscribes .containerr .row .left ul li .card .text span {
+body .section-subscribes .containerr .row .left ul li .card .text span {
   text-align: center;
   color: #101010;
   font-size: 25px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-subscribes .containerr .row .left ul li .card .text .icons {
+body .section-subscribes .containerr .row .left ul li .card .text .icons {
   display: flex;
   gap: 30px;
 }
-.section-subscribes .containerr .row .left ul li .card .text .icons a i {
+body .section-subscribes .containerr .row .left ul li .card .text .icons a i {
   font-size: 20px;
   color: #101010;
 }
-.section-subscribes .containerr .row .right .container h1 {
+body .section-subscribes .containerr .row .right .container h1 {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 600;
@@ -1791,26 +1957,26 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   text-align: center;
   letter-spacing: 5px;
 }
-.section-subscribes .containerr .row .right .container .search-sort {
+body .section-subscribes .containerr .row .right .container .search-sort {
   display: flex;
   justify-content: space-between;
 }
-.section-subscribes .containerr .row .right .container .search-sort .leftt input {
+body .section-subscribes .containerr .row .right .container .search-sort .leftt input {
   background-color: transparent;
   border: 1px solid #977a5e;
   border-radius: 0;
   box-shadow: 2px 2px 9px #977a5e;
 }
-.section-subscribes .containerr .row .right .container .search-sort .leftt input::-moz-placeholder {
+body .section-subscribes .containerr .row .right .container .search-sort .leftt input::-moz-placeholder {
   color: #977a5e;
 }
-.section-subscribes .containerr .row .right .container .search-sort .leftt input::placeholder {
+body .section-subscribes .containerr .row .right .container .search-sort .leftt input::placeholder {
   color: #977a5e;
 }
-.section-subscribes .containerr .row .right .container .search-sort .rightt {
+body .section-subscribes .containerr .row .right .container .search-sort .rightt {
   width: 250px;
 }
-.section-subscribes .containerr .row .right .container .search-sort .rightt .sort {
+body .section-subscribes .containerr .row .right .container .search-sort .rightt .sort {
   width: 100%;
   padding: 8px 35px;
   font-size: 15px;
@@ -1827,12 +1993,12 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   color: rgba(255, 255, 255, 0.8);
   background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
-.section-subscribes .containerr .row .right .container .search-sort .rightt .sort:hover {
+body .section-subscribes .containerr .row .right .container .search-sort .rightt .sort:hover {
   border-color: transparent;
   color: #977a5e;
   background-position: 99% 50%;
 }
-.section-subscribes .containerr .row .right .container .alert {
+body .section-subscribes .containerr .row .right .container .alert {
   position: fixed;
   top: 40%;
   left: 40%;
@@ -1850,11 +2016,11 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   text-align: center;
   flex-direction: column;
 }
-.section-subscribes .containerr .row .right .container .alert div {
+body .section-subscribes .containerr .row .right .container .alert div {
   gap: 20px;
   display: flex;
 }
-.section-subscribes .containerr .row .right .container .alert div button {
+body .section-subscribes .containerr .row .right .container .alert div button {
   background: #977a5e;
   border: none;
   padding: 17px 20px;
@@ -1868,11 +2034,11 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   transition: 100ms ease all;
   outline: none;
 }
-.section-subscribes .containerr .row .right .container .alert div button:hover {
+body .section-subscribes .containerr .row .right .container .alert div button:hover {
   background: #ffffff;
   color: #977a5e;
 }
-.section-subscribes .containerr .row .right .container .alert div button:before, .section-subscribes .containerr .row .right .container .alert div button:after {
+body .section-subscribes .containerr .row .right .container .alert div button:before, body .section-subscribes .containerr .row .right .container .alert div button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -1882,40 +2048,40 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   background: #977a5e;
   transition: 200ms ease all;
 }
-.section-subscribes .containerr .row .right .container .alert div button:after {
+body .section-subscribes .containerr .row .right .container .alert div button:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.section-subscribes .containerr .row .right .container .alert div button:hover:before, .section-subscribes .containerr .row .right .container .alert div button:hover:after {
+body .section-subscribes .containerr .row .right .container .alert div button:hover:before, body .section-subscribes .containerr .row .right .container .alert div button:hover:after {
   width: 100%;
   transition: 1x00ms ease all;
 }
-.section-subscribes .containerr .row .right .container .reserv h2 {
+body .section-subscribes .containerr .row .right .container .reserv h2 {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 600;
   font-size: 48px;
   text-align: center;
 }
-.section-subscribes .containerr .row .right .container .reserv form {
+body .section-subscribes .containerr .row .right .container .reserv form {
   margin-bottom: 100px;
   background-color: #ffffff;
   padding: 25px;
   box-shadow: 0px 20px 60px 0px rgba(21, 21, 21, 0.2);
 }
-.section-subscribes .containerr .row .right .container .reserv form label {
+body .section-subscribes .containerr .row .right .container .reserv form label {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 400;
   font-size: 24px;
   text-align: center;
 }
-.section-subscribes .containerr .row .right .container .reserv form input {
+body .section-subscribes .containerr .row .right .container .reserv form input {
   border: 1px solid #977a5e;
 }
-.section-subscribes .containerr .row .right .container .reserv form .add-product {
+body .section-subscribes .containerr .row .right .container .reserv form .add-product {
   border: none;
   width: 100%;
   padding: 12px 25px;
@@ -1930,11 +2096,11 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   outline: none;
   text-align: center;
 }
-.section-subscribes .containerr .row .right .container .reserv form .add-product:hover {
+body .section-subscribes .containerr .row .right .container .reserv form .add-product:hover {
   background: #ffffff;
   color: #977a5e;
 }
-.section-subscribes .containerr .row .right .container .reserv form .add-product:before, .section-subscribes .containerr .row .right .container .reserv form .add-product:after {
+body .section-subscribes .containerr .row .right .container .reserv form .add-product:before, body .section-subscribes .containerr .row .right .container .reserv form .add-product:after {
   content: "";
   position: absolute;
   top: 0;
@@ -1944,15 +2110,53 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   background: #977a5e;
   transition: 400ms ease all;
 }
-.section-subscribes .containerr .row .right .container .reserv form .add-product:after {
+body .section-subscribes .containerr .row .right .container .reserv form .add-product:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.section-subscribes .containerr .row .right .container .reserv form .add-product:hover:before, .section-subscribes .containerr .row .right .container .reserv form .add-product:hover:after {
+body .section-subscribes .containerr .row .right .container .reserv form .add-product:hover:before, body .section-subscribes .containerr .row .right .container .reserv form .add-product:hover:after {
   width: 100%;
   transition: 800ms ease all;
+}
+body.dark-mode .section-subscribes {
+  background-color: #000;
+  background-image: none;
+}
+body.dark-mode .section-subscribes .containerr .row {
+  margin: 0;
+}
+body.dark-mode .section-subscribes .containerr .row .left {
+  box-shadow: 5px 5px 10px #977a5e;
+}
+body.dark-mode .section-subscribes .containerr .row .left ul li a {
+  color: #ffffff;
+}
+body.dark-mode .section-subscribes .containerr .row .left ul li .card .text h2 {
+  color: #ffffff;
+}
+body.dark-mode .section-subscribes .containerr .row .left ul li .card .text span {
+  color: #ffffff;
+}
+body.dark-mode .section-subscribes .containerr .row .left ul li .card .text .icons a i {
+  color: #ffffff;
+}
+body.dark-mode .section-subscribes .containerr .row .right .container .reserv form {
+  background-color: #000;
+}
+body.dark-mode .section-subscribes .containerr .row .right .container .reserv form input {
+  border: 1px solid #977a5e;
+  background-color: transparent;
+}
+body.dark-mode .section-subscribes .containerr .row .right .container table thead tr th {
+  color: #fff;
+}
+body.dark-mode .section-subscribes .containerr .row .right .container table tbody tr td {
+  color: #fff;
+}
+body.dark-mode .section-subscribes .containerr .row .right .container table tbody tr td .fa-pen-to-square {
+  color: #fff !important;
 }
 
 * {
@@ -1968,30 +2172,30 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   max-width: 1200px;
 }
 
-.section-contact {
+body .section-contact {
   background-image: url(../../../assets/image/bgphoto.jpg);
 }
-.section-contact .containerr .row {
+body .section-contact .containerr .row {
   margin: 0;
 }
-.section-contact .containerr .row .left {
+body .section-contact .containerr .row .left {
   background-color: transparent;
   box-shadow: 5px 5px 10px #977a5e;
 }
-.section-contact .containerr .row .left ul {
+body .section-contact .containerr .row .left ul {
   margin: 0;
   padding: 0;
 }
-.section-contact .containerr .row .left ul li {
+body .section-contact .containerr .row .left ul li {
   padding: 10px 20px;
 }
-.section-contact .containerr .row .left ul li a {
+body .section-contact .containerr .row .left ul li a {
   color: #101010;
   font-size: 22px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-contact .containerr .row .left ul li .card {
+body .section-contact .containerr .row .left ul li .card {
   border: none;
   background-color: transparent;
   display: flex;
@@ -1999,18 +2203,18 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   align-items: center;
   justify-content: center;
 }
-.section-contact .containerr .row .left ul li .card img {
+body .section-contact .containerr .row .left ul li .card img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
-.section-contact .containerr .row .left ul li .card .text {
+body .section-contact .containerr .row .left ul li .card .text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.section-contact .containerr .row .left ul li .card .text h2 {
+body .section-contact .containerr .row .left ul li .card .text h2 {
   margin-top: 10px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
@@ -2018,22 +2222,22 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   letter-spacing: 1px;
   color: #101010;
 }
-.section-contact .containerr .row .left ul li .card .text span {
+body .section-contact .containerr .row .left ul li .card .text span {
   text-align: center;
   color: #101010;
   font-size: 25px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
-.section-contact .containerr .row .left ul li .card .text .icons {
+body .section-contact .containerr .row .left ul li .card .text .icons {
   display: flex;
   gap: 30px;
 }
-.section-contact .containerr .row .left ul li .card .text .icons a i {
+body .section-contact .containerr .row .left ul li .card .text .icons a i {
   font-size: 20px;
   color: #101010;
 }
-.section-contact .containerr .row .right .container h1 {
+body .section-contact .containerr .row .right .container h1 {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 600;
@@ -2041,26 +2245,26 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   text-align: center;
   letter-spacing: 5px;
 }
-.section-contact .containerr .row .right .container .search-sort {
+body .section-contact .containerr .row .right .container .search-sort {
   display: flex;
   justify-content: space-between;
 }
-.section-contact .containerr .row .right .container .search-sort .leftt input {
+body .section-contact .containerr .row .right .container .search-sort .leftt input {
   background-color: transparent;
   border: 1px solid #977a5e;
   border-radius: 0;
   box-shadow: 2px 2px 9px #977a5e;
 }
-.section-contact .containerr .row .right .container .search-sort .leftt input::-moz-placeholder {
+body .section-contact .containerr .row .right .container .search-sort .leftt input::-moz-placeholder {
   color: #977a5e;
 }
-.section-contact .containerr .row .right .container .search-sort .leftt input::placeholder {
+body .section-contact .containerr .row .right .container .search-sort .leftt input::placeholder {
   color: #977a5e;
 }
-.section-contact .containerr .row .right .container .search-sort .rightt {
+body .section-contact .containerr .row .right .container .search-sort .rightt {
   width: 250px;
 }
-.section-contact .containerr .row .right .container .search-sort .rightt .sort {
+body .section-contact .containerr .row .right .container .search-sort .rightt .sort {
   width: 100%;
   padding: 8px 35px;
   font-size: 15px;
@@ -2077,12 +2281,12 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   color: rgba(255, 255, 255, 0.8);
   background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
-.section-contact .containerr .row .right .container .search-sort .rightt .sort:hover {
+body .section-contact .containerr .row .right .container .search-sort .rightt .sort:hover {
   border-color: transparent;
   color: #977a5e;
   background-position: 99% 50%;
 }
-.section-contact .containerr .row .right .container .alert {
+body .section-contact .containerr .row .right .container .alert {
   position: fixed;
   top: 40%;
   left: 40%;
@@ -2100,11 +2304,11 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   text-align: center;
   flex-direction: column;
 }
-.section-contact .containerr .row .right .container .alert div {
+body .section-contact .containerr .row .right .container .alert div {
   gap: 20px;
   display: flex;
 }
-.section-contact .containerr .row .right .container .alert div button {
+body .section-contact .containerr .row .right .container .alert div button {
   background: #977a5e;
   border: none;
   padding: 17px 20px;
@@ -2118,11 +2322,11 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   transition: 100ms ease all;
   outline: none;
 }
-.section-contact .containerr .row .right .container .alert div button:hover {
+body .section-contact .containerr .row .right .container .alert div button:hover {
   background: #ffffff;
   color: #977a5e;
 }
-.section-contact .containerr .row .right .container .alert div button:before, .section-contact .containerr .row .right .container .alert div button:after {
+body .section-contact .containerr .row .right .container .alert div button:before, body .section-contact .containerr .row .right .container .alert div button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -2132,51 +2336,51 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   background: #977a5e;
   transition: 200ms ease all;
 }
-.section-contact .containerr .row .right .container .alert div button:after {
+body .section-contact .containerr .row .right .container .alert div button:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.section-contact .containerr .row .right .container .alert div button:hover:before, .section-contact .containerr .row .right .container .alert div button:hover:after {
+body .section-contact .containerr .row .right .container .alert div button:hover:before, body .section-contact .containerr .row .right .container .alert div button:hover:after {
   width: 100%;
   transition: 1x00ms ease all;
 }
-.section-contact .containerr .row .right .container .reserv {
+body .section-contact .containerr .row .right .container .reserv {
   background-color: transparent;
   padding-bottom: 30px;
 }
-.section-contact .containerr .row .right .container .reserv h2 {
+body .section-contact .containerr .row .right .container .reserv h2 {
   font-family: "Jost", sans-serif;
   color: #977a5e;
   font-weight: 600;
   font-size: 48px;
   text-align: center;
 }
-.section-contact .containerr .row .right .container .reserv form {
+body .section-contact .containerr .row .right .container .reserv form {
   background-color: #fff;
   padding: 25px;
 }
-.section-contact .containerr .row .right .container .reserv form .row .form-input .form-control,
-.section-contact .containerr .row .right .container .reserv form .row .form-input textarea {
+body .section-contact .containerr .row .right .container .reserv form .row .form-input .form-control,
+body .section-contact .containerr .row .right .container .reserv form .row .form-input textarea {
   border: 1px solid #777777;
   border-radius: 0;
 }
-.section-contact .containerr .row .right .container .reserv form .row .form-input .form-control::-moz-placeholder, .section-contact .containerr .row .right .container .reserv form .row .form-input textarea::-moz-placeholder {
+body .section-contact .containerr .row .right .container .reserv form .row .form-input .form-control::-moz-placeholder, body .section-contact .containerr .row .right .container .reserv form .row .form-input textarea::-moz-placeholder {
   color: #9b9595;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
 }
-.section-contact .containerr .row .right .container .reserv form .row .form-input .form-control::placeholder,
-.section-contact .containerr .row .right .container .reserv form .row .form-input textarea::placeholder {
+body .section-contact .containerr .row .right .container .reserv form .row .form-input .form-control::placeholder,
+body .section-contact .containerr .row .right .container .reserv form .row .form-input textarea::placeholder {
   color: #9b9595;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
 }
-.section-contact .containerr .row .right .container .reserv form .row .form-input textarea {
+body .section-contact .containerr .row .right .container .reserv form .row .form-input textarea {
   height: 100px;
 }
-.section-contact .containerr .row .right .container .reserv form .row .form-input button {
+body .section-contact .containerr .row .right .container .reserv form .row .form-input button {
   background: #977a5e;
   border: none;
   padding: 17px 20px;
@@ -2190,11 +2394,11 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   transition: 800ms ease all;
   outline: none;
 }
-.section-contact .containerr .row .right .container .reserv form .row .form-input button:hover {
+body .section-contact .containerr .row .right .container .reserv form .row .form-input button:hover {
   background: #ffffff;
   color: #977a5e;
 }
-.section-contact .containerr .row .right .container .reserv form .row .form-input button:before, .section-contact .containerr .row .right .container .reserv form .row .form-input button:after {
+body .section-contact .containerr .row .right .container .reserv form .row .form-input button:before, body .section-contact .containerr .row .right .container .reserv form .row .form-input button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -2204,13 +2408,59 @@ body.dark-mode .section-admin .containerr .row .right .charts .room h1 {
   background: #977a5e;
   transition: 400ms ease all;
 }
-.section-contact .containerr .row .right .container .reserv form .row .form-input button:after {
+body .section-contact .containerr .row .right .container .reserv form .row .form-input button:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.section-contact .containerr .row .right .container .reserv form .row .form-input button:hover:before, .section-contact .containerr .row .right .container .reserv form .row .form-input button:hover:after {
+body .section-contact .containerr .row .right .container .reserv form .row .form-input button:hover:before, body .section-contact .containerr .row .right .container .reserv form .row .form-input button:hover:after {
   width: 100%;
   transition: 800ms ease all;
+}
+body.dark-mode .section-contact {
+  background-color: #000;
+  background-image: none;
+}
+body.dark-mode .section-contact .containerr .row {
+  margin: 0;
+}
+body.dark-mode .section-contact .containerr .row .left {
+  box-shadow: 5px 5px 10px #977a5e;
+}
+body.dark-mode .section-contact .containerr .row .left ul li a {
+  color: #ffffff;
+}
+body.dark-mode .section-contact .containerr .row .left ul li .card .text h2 {
+  color: #ffffff;
+}
+body.dark-mode .section-contact .containerr .row .left ul li .card .text span {
+  color: #ffffff;
+}
+body.dark-mode .section-contact .containerr .row .left ul li .card .text .icons a i {
+  color: #ffffff;
+}
+body.dark-mode .section-contact .containerr .row .right .container .reserv form {
+  background-color: #000;
+}
+body.dark-mode .section-contact .containerr .row .right .container .reserv form .row .form-input .form-control,
+body.dark-mode .section-contact .containerr .row .right .container .reserv form .row .form-input textarea {
+  border: 1px solid #977a5e;
+  background-color: transparent;
+}
+body.dark-mode .section-contact .containerr .row .right .container .reserv form .row .form-input .form-control::-moz-placeholder, body.dark-mode .section-contact .containerr .row .right .container .reserv form .row .form-input textarea::-moz-placeholder {
+  color: #ffffff;
+}
+body.dark-mode .section-contact .containerr .row .right .container .reserv form .row .form-input .form-control::placeholder,
+body.dark-mode .section-contact .containerr .row .right .container .reserv form .row .form-input textarea::placeholder {
+  color: #ffffff;
+}
+body.dark-mode .section-contact .containerr .row .right .container table thead tr th {
+  color: #fff;
+}
+body.dark-mode .section-contact .containerr .row .right .container table tbody tr td {
+  color: #fff;
+}
+body.dark-mode .section-contact .containerr .row .right .container table tbody tr td .fa-pen-to-square {
+  color: #fff !important;
 }/*# sourceMappingURL=style.css.map */
