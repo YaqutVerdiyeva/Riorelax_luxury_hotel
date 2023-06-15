@@ -167,6 +167,13 @@
       "email": "qylese@mailinator.com",
       "password": "Pa$$w0rd!",
       "id": 47
+    },
+    {
+      "firstname": "Yaqut",
+      "lastname": "Verdiyeva",
+      "email": "yaqut@gmail.com",
+      "password": "123456",
+      "id": 48
     }
   ],
   "rooms": [
