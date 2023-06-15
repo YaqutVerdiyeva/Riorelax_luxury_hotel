@@ -12986,31 +12986,6 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
 .section-favroom .container .search-sort .left input::placeholder {
   color: #977a5e;
 }
-.section-favroom .container .search-sort .right {
-  width: 300px;
-}
-.section-favroom .container .search-sort .right .sort {
-  width: 100%;
-  padding: 8px 35px;
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  border: none;
-  flex: 1 auto;
-  text-align: center;
-  transition: all 0.5s ease-out;
-  background: #977a5e;
-  background-position: 1% 50%;
-  background-size: 300% 300%;
-  color: #ffffff;
-  color: rgba(255, 255, 255, 0.8);
-  background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
-}
-.section-favroom .container .search-sort .right .sort:hover {
-  border-color: transparent;
-  color: #977a5e;
-  background-position: 99% 50%;
-}
 .section-favroom .container .room-card {
   position: relative;
 }

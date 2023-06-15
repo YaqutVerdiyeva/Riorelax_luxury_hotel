@@ -220,7 +220,7 @@
 }
 .section-admin-reserv-room .containerr .row .right .container .reserv h2 {
   font-family: "Jost", sans-serif;
-  color: #101010;
+  color: #977a5e;
   font-weight: 600;
   font-size: 48px;
   text-align: center;
@@ -415,7 +415,7 @@
 }
 .section-admin-reserv .containerr .row .right .container .reserv h2 {
   font-family: "Jost", sans-serif;
-  color: #101010;
+  color: #977a5e;
   font-weight: 600;
   font-size: 48px;
   text-align: center;
@@ -766,7 +766,7 @@
 }
 .section-admin-shop .containerr .row .right .container .reserv h2 {
   font-family: "Jost", sans-serif;
-  color: #101010;
+  color: #977a5e;
   font-weight: 600;
   font-size: 48px;
   text-align: center;
@@ -1013,7 +1013,7 @@
 }
 .section-admin .containerr .row .right .counts h2 {
   font-family: "Jost", sans-serif;
-  color: #000;
+  color: #977a5e;
   font-weight: 600;
   font-size: 48px;
   text-align: center;
@@ -1158,7 +1158,7 @@
 }
 .section-admin-room .containerr .row .right .container .reserv h2 {
   font-family: "Jost", sans-serif;
-  color: #101010;
+  color: #977a5e;
   font-weight: 600;
   font-size: 48px;
   text-align: center;
@@ -1407,11 +1407,11 @@
   letter-spacing: 5px;
 }
 .section-admin-user .containerr .row .right .container .signup {
-  padding: 100px;
+  padding: 50px;
 }
 .section-admin-user .containerr .row .right .container .signup h2 {
   font-family: "Jost", sans-serif;
-  color: #101010;
+  color: #977a5e;
   font-weight: 600;
   font-size: 48px;
   text-align: center;
@@ -1766,7 +1766,7 @@
 }
 .section-subscribes .containerr .row .right .container .reserv h2 {
   font-family: "Jost", sans-serif;
-  color: #101010;
+  color: #977a5e;
   font-weight: 600;
   font-size: 48px;
   text-align: center;
@@ -2015,15 +2015,19 @@
   transition: 1x00ms ease all;
 }
 .section-contact .containerr .row .right .container .reserv {
-  background-color: #f7f5f1;
-  padding: 100px;
+  background-color: transparent;
+  padding-bottom: 30px;
 }
 .section-contact .containerr .row .right .container .reserv h2 {
   font-family: "Jost", sans-serif;
-  color: #101010;
+  color: #977a5e;
   font-weight: 600;
   font-size: 48px;
   text-align: center;
+}
+.section-contact .containerr .row .right .container .reserv form {
+  background-color: #fff;
+  padding: 25px;
 }
 .section-contact .containerr .row .right .container .reserv form .row .form-input .form-control,
 .section-contact .containerr .row .right .container .reserv form .row .form-input textarea {

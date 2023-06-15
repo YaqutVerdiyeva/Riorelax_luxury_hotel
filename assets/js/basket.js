@@ -1,8 +1,6 @@
 let products = JSON.parse(localStorage.getItem("product"));
 let productList = document.querySelector(".product-section");
 let searchInput = document.querySelector(".search");
-let sortBtn = document.querySelector(".sort");
-let sorted = "asc";
 let copyData = [];
 let filteredArr = [];
 
@@ -43,22 +41,7 @@ searchInput.addEventListener("input", function (e) {
   getProductList();
 });
 
-sortBtn.addEventListener("click", function () {
-  if (sorted === "asc") {
-    filteredArr.sort((a, b) => a.pricenew - b.pricenew);
-    sorted = "dsc";
-    sortBtn.innerHTML = "SORT Low to High";
-  } else if (sorted === "dsc") {
-    filteredArr.sort((a, b) => b.pricenew - a.pricenew);
-    sorted = "def";
-    sortBtn.innerHTML = "SORT High to Low";
-  } else {
-    filteredArr = copyData;
-    sorted = "asc";
-    sortBtn.innerHTML = "SORT";
-  }
-  getProductList();
-});
+
 function deleteBasket(id) {
   products = copyData.filter((el) => el.id != id);
   filteredArr = products;

@@ -1,8 +1,6 @@
 let favroom = JSON.parse(localStorage.getItem("favroom"));
 let roomCard = document.querySelector(".rooms");
 let searchInput = document.querySelector(".search");
-let sortBtn = document.querySelector(".sort");
-let sorted = "asc";
 let filteredArr = [];
 let copyData = [];
 function favoritRoom() {
@@ -35,22 +33,7 @@ searchInput.addEventListener("input", function (e) {
   favoritRoom();
 });
 
-sortBtn.addEventListener("click", function () {
-  if (sorted === "asc") {
-    filteredArr.sort((a, b) => a.price - b.price);
-    sorted = "dsc";
-    sortBtn.innerHTML = "SORT Low to High";
-  } else if (sorted === "dsc") {
-    filteredArr.sort((a, b) => b.price - a.price);
-    sorted = "def";
-    sortBtn.innerHTML = "SORT High to Low";
-  } else {
-    filteredArr = copyData;
-    sorted = "asc";
-    sortBtn.innerHTML = "SORT";
-  }
-  favoritRoom();
-});
+
 function deleteFavBtn(id) {
   favroom = copyData.filter((el) => el.id != id);
   filteredArr = favroom;
