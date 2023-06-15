@@ -68,13 +68,13 @@ sortBtn.addEventListener("click", function () {
   }
   getAllUsers();
 });
-function deleteBtn(id) {
+function deleteBtn() {
   document.querySelector(".alert").style.visibility = "visible";
 }
 function deleteUser(id) {
   axios.delete(`${BASE_URL}/${id}`);
 }
-function keepUser(id) {
+function keepUser() {
   setTimeout(
     (document.querySelector(".alert").style.visibility = "hidden" ),
     2000

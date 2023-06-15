@@ -19,7 +19,7 @@ async function getAllProducts() {
     products.innerHTML += `
     <div class="col-lg-4 col-md-6 products mt-3">
             <div class="product">
-              <img width="100%" src="${el.photo}" alt="" />
+              <img width="100%" src="${el.photo.slice(1)}" alt="" />
               <div class="product-text">
                 <span>${el.title}</span>
                 <h4>${el.about}</h4>
