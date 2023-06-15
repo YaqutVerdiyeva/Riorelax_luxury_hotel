@@ -10,7 +10,6 @@ let signUpBtn = document.querySelector(".get-submit");
 let sorted = "asc";
 let filteredArr = [];
 let copyArr = [];
-
 async function getAllUsers() {
   let res = await axios(BASE_URL);
   let data = res.data;
@@ -23,7 +22,7 @@ async function getAllUsers() {
     <h4>Are you sure?</h4>
     <div>
     <button onclick=deleteUser(${el.id})>Yes</button>
-    <button onclick=keepUser(${el.id})>No</button>
+    <button onclick=keepUser()>No</button>
     </div>
    </div>
       <tr>
@@ -68,11 +67,12 @@ sortBtn.addEventListener("click", function () {
   }
   getAllUsers();
 });
-function deleteBtn() {
+function deleteBtn(id) {
   document.querySelector(".alert").style.visibility = "visible";
 }
 function deleteUser(id) {
   axios.delete(`${BASE_URL}/${id}`);
+  console.log(id);
 }
 function keepUser() {
   setTimeout(

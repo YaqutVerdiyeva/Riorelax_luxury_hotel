@@ -31,8 +31,12 @@ async function getAllCards() {
     <div class="col-lg-4 col-md-6 room-card">
     <div class="room">
       <div class="card">
-        <img src="${el.photo.slice(1)}" alt="" />
-        <i onclick="addFavBtn(${el.id})" class="fa-solid fa-heart" style="color: #ffffff;"></i>
+        <img src="${
+          el.photo.startsWith(".") ? el.photo.slice(1) : el.photo
+        }" alt="" />
+        <i onclick="addFavBtn(${
+          el.id
+        })" class="fa-solid fa-heart" style="color: #ffffff;"></i>
         <div class="card-content">
           <h2>${el.title}</h2>
           <p>${el.price}$</p>

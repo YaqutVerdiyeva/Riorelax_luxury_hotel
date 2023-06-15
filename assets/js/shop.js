@@ -19,7 +19,9 @@ async function getAllProducts() {
     products.innerHTML += `
     <div class="col-lg-4 col-md-6 products mt-3">
             <div class="product">
-              <img width="100%" src="${el.photo.slice(1)}" alt="" />
+              <img width="100%" src="${
+                el.photo.startsWith(".") ? el.photo.slice(1) : el.photo
+              }" alt="" />
               <div class="product-text">
                 <span>${el.title}</span>
                 <h4>${el.about}</h4>
@@ -27,7 +29,9 @@ async function getAllProducts() {
                  <div>
                  <span class="new-price">$${el.pricenew}.00</span>
                  <span class="back-price">$${el.priceold}.00</span></div>
-                  <button onclick="addBasket(${el.id})" class="addbasket mt-3">Add Basket</button>
+                  <button onclick="addBasket(${
+                    el.id
+                  })" class="addbasket mt-3">Add Basket</button>
                 </div>
               </div>
             </div>
