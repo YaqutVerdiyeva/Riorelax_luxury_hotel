@@ -33,7 +33,7 @@ async function getAllUsers() {
                     <td style="background-color: transparent;">${el.email}</td>
                     <td style="background-color: transparent;">${el.password}</td>
                     <td style="background-color: transparent;">
-                    <a  onclick=deleteBtn(${el.id}) style="margin-right: 8px"><i class="fa-solid fa-trash" style="color: #c20000;"></i></a>
+                    <a onclick=deleteBtn(${el.id}) style="margin-right: 8px"><i class="fa-solid fa-trash" style="color: #c20000;"></i></a>
                     <a href="#form" onclick=editUser(${el.id})  ><i class="fa-solid fa-pen-to-square" style="color: #000;"></i></a>
                     </td>
                   </tr>

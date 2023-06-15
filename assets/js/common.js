@@ -10,9 +10,12 @@ let subscribeBtn = document.querySelector(".subscribe-btn");
 let basketCount = document.querySelector(".basket-count");
 let wishlistCount = document.querySelector(".wishlist-count");
 
-
-// wishlistCount.innerHTML = favrooms.length;
-// basketCount.innerHTML = product.length;
+let arrayFromStroage1 = JSON.parse(localStorage.getItem("favroom"));
+let arrayLength1 = arrayFromStroage1.length || 0;
+wishlistCount.innerHTML = arrayLength1;
+let arrayFromStroage2 = JSON.parse(localStorage.getItem("product"));
+let arrayLength2 = arrayFromStroage2.length || 0;
+basketCount.innerHTML = arrayLength2;
 
 //header scroll
 function scrollFunction() {
