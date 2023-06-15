@@ -50,13 +50,13 @@ searchInput.addEventListener("input", function (e) {
 
 sortBtn.addEventListener("click", function () {
   if (sorted === "asc") {
-    filteredArr.sort((a, b) => a.pricenew - b.pricenew);
+    filteredArr.sort((a, b) => a.email.localeCompare(b.email));
     sorted = "dsc";
-    sortBtn.innerHTML = "SORT Low to High";
+    sortBtn.innerHTML = "SORT A-Z";
   } else if (sorted === "dsc") {
-    filteredArr.sort((a, b) => b.pricenew - a.pricenew);
+    filteredArr.sort((a, b) => b.email.localeCompare(a.email));
     sorted = "def";
-    sortBtn.innerHTML = "SORT High to Low";
+    sortBtn.innerHTML = "SORT Z-A";
   } else {
     filteredArr = copyArr;
     sorted = "asc";
@@ -72,7 +72,7 @@ function deleteUser(id) {
 }
 function keepUser(id) {
   setTimeout(
-    (document.querySelector(".alert").style.visibility = "hidden" ),
+    (document.querySelector(".alert").style.visibility = "hidden"),
     2000
   );
 }

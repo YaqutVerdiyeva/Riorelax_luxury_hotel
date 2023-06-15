@@ -1,7 +1,7 @@
 let BASE_URL = `http://localhost:3000/reserv`;
 let reservations = document.querySelector("tbody");
 let searchInput = document.querySelector(".search");
-let sortBtn = document.querySelector(".sort");
+let select = document.querySelector("#select");
 let checkIn = document.querySelector("#checkin");
 let checkout = document.querySelector("#checkout");
 let adults = document.querySelector("#adults");
@@ -32,8 +32,8 @@ async function getAllReservations() {
                     <td style="background-color: transparent;">${el.checkin}</td>
                     <td style="background-color: transparent;">${el.checkout}</td>
                     <td style="background-color: transparent;">${el.adults}</td>
-                    <td style="background-color: transparent;">${el.room}</td>
                     <td style="background-color: transparent;">${el.child}</td>
+                    <td style="background-color: transparent;">${el.room}</td>
                     <td style="background-color: transparent;">
                     <a onclick=deleteBtn(${el.id}) style="margin-right: 8px"><i class="fa-solid fa-trash" style="color: #c20000;"></i></a>
                     <a href="#form" onclick=editUser(${el.id})  ><i class="fa-solid fa-pen-to-square" style="color: #000;"></i></a>
@@ -54,20 +54,12 @@ searchInput.addEventListener("input", function (e) {
   getAllReservations();
 });
 
-sortBtn.addEventListener("click", function () {
-  if (sorted === "asc") {
-    filteredArr.sort((a, b) => a.id - b.id);
-    sorted = "dsc";
-    sortBtn.innerHTML = "SORT Low to High";
-  } else if (sorted === "dsc") {
-    filteredArr.sort((a, b) => b.id - a.id);
-    sorted = "def";
-    sortBtn.innerHTML = "SORT High to Low";
-  } else {
-    filteredArr = copyArr;
-    sorted = "asc";
-    sortBtn.innerHTML = "SORT";
-  }
+select.addEventListener("change", function (e) {
+  console.log(e.target.value);
+  filteredArr = copyArr;
+  filteredArr = filteredArr.filter((el) =>
+    el.room.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
+  );
   getAllReservations();
 });
 function deleteBtn(id) {

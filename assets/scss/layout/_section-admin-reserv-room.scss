@@ -1,14 +1,14 @@
-body{
+body {
   .section-admin-reserv-room {
     background-image: url(../../../assets/image/bgphoto.jpg);
-  
+
     .containerr {
       .row {
         margin: 0;
         .left {
           background-color: transparent;
           box-shadow: 5px 5px 10px $primary_color;
-  
+
           ul {
             margin: 0;
             padding: 0;
@@ -106,7 +106,7 @@ body{
                         color: #be9874;
                       }
                     }
-  
+
                     .adults {
                       display: flex;
                       flex-direction: column;
@@ -219,8 +219,7 @@ body{
                   }
                 }
               }
-             
-  
+
               h2 {
                 font-family: "Jost", sans-serif;
                 color: $primary_color;
@@ -245,32 +244,17 @@ body{
               }
               .rightt {
                 width: 250px;
-                .sort {
-                  width: 100%;
-                  padding: 8px 35px;
-                  font-size: 15px;
-                  font-family: "Roboto", sans-serif;
-                  font-weight: 400;
-                  border: none;
-                  flex: 1 auto;
-                  text-align: center;
-                  transition: all 0.5s ease-out;
-                  background: $primary_color;
-                  background-position: 1% 50%;
-                  background-size: 300% 300%;
-                  color: $secondary-color;
-                  color: rgba(255, 255, 255, 0.8);
-                  background-image: linear-gradient(
-                    270deg,
-                    rgba(255, 255, 255, 0.9),
-                    rgba(255, 255, 255, 0.9),
-                    rgba(255, 255, 255, 0),
-                    rgba(255, 255, 255, 0)
-                  );
-                  &:hover {
-                    border-color: transparent;
+                #select {
+                  background-color: transparent;
+                  border: 1px solid $primary_color;
+                  border-radius: 0;
+                  padding: 7px 10px;
+                  box-shadow: 2px 2px 9px $primary_color;
+                  &::placeholder {
                     color: $primary_color;
-                    background-position: 99% 50%;
+                  }
+                  option{
+                    color: $primary_color;
                   }
                 }
               }
@@ -349,36 +333,26 @@ body{
       .containerr {
         .row {
           margin: 0;
-    
+
           .left {
             box-shadow: 5px 5px 10px $primary_color;
-    
+
             ul {
-            
               li {
                 a {
                   color: $secondary-color;
-                  
                 }
                 .card {
-                  
-                 
                   .text {
-                   
                     h2 {
-                     
-                      color: $secondary-color
+                      color: $secondary-color;
                     }
                     span {
-                      
-                      color: $secondary-color
-                     
+                      color: $secondary-color;
                     }
                     .icons {
-                     
                       a {
                         i {
-                          
                           color: $secondary-color;
                         }
                       }
@@ -390,38 +364,31 @@ body{
           }
           .right {
             .container {
-  
               .reserv {
                 form {
                   background-color: #000;
                   .check-row {
                     .leftt {
                       .check-in-date {
-                      
                         label {
-                          
                           color: $secondary-color;
                           i {
                             color: #fff;
                           }
                         }
                         #checkin[type="date"] {
-                         
                           color: #000;
                         }
                       }
-    
+
                       .adults {
-                      
                         label {
-                        
                           color: $secondary-color;
                           i {
                             color: #fff;
                           }
                         }
                         #adults[type="number"] {
-                         
                           border-color: #fff;
                           color: #000;
                         }
@@ -429,42 +396,33 @@ body{
                     }
                     .rightt {
                       .check-out-date {
-                       
                         label {
-                         
                           color: $secondary-color;
                           i {
                             color: #fff;
                           }
                         }
                         #checkout[type="date"] {
-                         
                           border-color: #fff;
                           color: #000;
                         }
                       }
                       .room {
-                       
                         label {
-                          
                           color: $secondary-color;
                           i {
                             color: #fff;
                           }
                         }
                         #room[type="number"] {
-                          
                           border-color: #fff;
                           color: #000;
                         }
                       }
                     }
-                  
-                  
                   }
                 }
-               
-    
+
                 h2 {
                   font-family: "Jost", sans-serif;
                   color: $primary_color;
@@ -473,19 +431,19 @@ body{
                   text-align: center;
                 }
               }
-              table{
-                thead{
-                  tr{
-                    th{
+              table {
+                thead {
+                  tr {
+                    th {
                       color: #fff;
                     }
                   }
                 }
-                tbody{
-                  tr{
-                    td{
+                tbody {
+                  tr {
+                    td {
                       color: #fff;
-                      .fa-pen-to-square{
+                      .fa-pen-to-square {
                         color: #fff !important;
                       }
                     }

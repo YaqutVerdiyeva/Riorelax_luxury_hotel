@@ -244,27 +244,21 @@ body .section-admin-reserv-room .containerr .row .right .container .search-sort 
 body .section-admin-reserv-room .containerr .row .right .container .search-sort .rightt {
   width: 250px;
 }
-body .section-admin-reserv-room .containerr .row .right .container .search-sort .rightt .sort {
-  width: 100%;
-  padding: 8px 35px;
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  border: none;
-  flex: 1 auto;
-  text-align: center;
-  transition: all 0.5s ease-out;
-  background: #977a5e;
-  background-position: 1% 50%;
-  background-size: 300% 300%;
-  color: #ffffff;
-  color: rgba(255, 255, 255, 0.8);
-  background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+body .section-admin-reserv-room .containerr .row .right .container .search-sort .rightt #select {
+  background-color: transparent;
+  border: 1px solid #977a5e;
+  border-radius: 0;
+  padding: 7px 10px;
+  box-shadow: 2px 2px 9px #977a5e;
 }
-body .section-admin-reserv-room .containerr .row .right .container .search-sort .rightt .sort:hover {
-  border-color: transparent;
+body .section-admin-reserv-room .containerr .row .right .container .search-sort .rightt #select::-moz-placeholder {
   color: #977a5e;
-  background-position: 99% 50%;
+}
+body .section-admin-reserv-room .containerr .row .right .container .search-sort .rightt #select::placeholder {
+  color: #977a5e;
+}
+body .section-admin-reserv-room .containerr .row .right .container .search-sort .rightt #select option {
+  color: #977a5e;
 }
 body .section-admin-reserv-room .containerr .row .right .container .alert {
   position: fixed;
@@ -675,27 +669,21 @@ body .section-admin-reserv .containerr .row .right .container .search-sort .left
 body .section-admin-reserv .containerr .row .right .container .search-sort .rightt {
   width: 250px;
 }
-body .section-admin-reserv .containerr .row .right .container .search-sort .rightt .sort {
-  width: 100%;
-  padding: 8px 35px;
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  border: none;
-  flex: 1 auto;
-  text-align: center;
-  transition: all 0.5s ease-out;
-  background: #977a5e;
-  background-position: 1% 50%;
-  background-size: 300% 300%;
-  color: #ffffff;
-  color: rgba(255, 255, 255, 0.8);
-  background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+body .section-admin-reserv .containerr .row .right .container .search-sort .rightt #select {
+  background-color: transparent;
+  border: 1px solid #977a5e;
+  border-radius: 0;
+  padding: 7px 10px;
+  box-shadow: 2px 2px 9px #977a5e;
 }
-body .section-admin-reserv .containerr .row .right .container .search-sort .rightt .sort:hover {
-  border-color: transparent;
+body .section-admin-reserv .containerr .row .right .container .search-sort .rightt #select::-moz-placeholder {
   color: #977a5e;
-  background-position: 99% 50%;
+}
+body .section-admin-reserv .containerr .row .right .container .search-sort .rightt #select::placeholder {
+  color: #977a5e;
+}
+body .section-admin-reserv .containerr .row .right .container .search-sort .rightt #select option {
+  color: #977a5e;
 }
 body .section-admin-reserv .containerr .row .right .container .alert {
   position: fixed;

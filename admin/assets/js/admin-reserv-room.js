@@ -1,7 +1,7 @@
 let BASE_URL = `http://localhost:3000/reservRoom`;
 let reservations = document.querySelector("tbody");
 let searchInput = document.querySelector(".search");
-let sortBtn = document.querySelector(".sort");
+let select = document.querySelector("#select");
 let checkIn = document.querySelector("#checkin");
 let checkout = document.querySelector("#checkout");
 let adults = document.querySelector("#adults");
@@ -52,22 +52,16 @@ searchInput.addEventListener("input", function (e) {
   getAllReservations();
 });
 
-sortBtn.addEventListener("click", function () {
-  if (sorted === "asc") {
-    filteredArr.sort((a, b) => a.id - b.id);
-    sorted = "dsc";
-    sortBtn.innerHTML = "SORT Low to High";
-  } else if (sorted === "dsc") {
-    filteredArr.sort((a, b) => b.id - a.id);
-    sorted = "def";
-    sortBtn.innerHTML = "SORT High to Low";
-  } else {
-    filteredArr = copyArr;
-    sorted = "asc";
-    sortBtn.innerHTML = "SORT";
-  }
+
+select.addEventListener("change", function (e) {
+  console.log(e.target.value);
+  filteredArr = copyArr;
+  filteredArr = filteredArr.filter((el) =>
+    el.room.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
+  );
   getAllReservations();
 });
+
 function deleteBtn(id) {
   document.querySelector(".alert").style.visibility = "visible";
 }
@@ -76,7 +70,7 @@ function deleteUser(id) {
 }
 function keepUser(id) {
   setTimeout(
-    (document.querySelector(".alert").style.visibility = "hidden" ),
+    (document.querySelector(".alert").style.visibility = "hidden"),
     2000
   );
 }
