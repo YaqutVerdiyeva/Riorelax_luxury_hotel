@@ -58,44 +58,61 @@ async function getContact() {
 getContact();
 
 const xValues = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
+  "Users",
+  "Reservations",
+  "Room Reservations",
+  "Rooms",
+  "Shop",
+  "Subscribes",
+  "Contact",
 ];
-const yValues = [75, 54, 65, 87, 46, 90, 122, 110, 60, 95, 45, 50];
-
-new Chart("myChart", {
-  type: "line",
-  data: {
-    labels: xValues,
-    datasets: [
-      {
-        fill: false,
-        lineTension: 0,
-        pointRadius: 5,
-        backgroundColor: "#977a5e",
-        borderColor: "#977a5e",
-        data: yValues,
-      },
-    ],
-  },
-  options: {
-    legend: { display: false },
-    scales: {
-      yAxes: [{ ticks: { min: 10, max: 150 } }],
+async function datas() {
+  let res1 = await axios(BASE_URL_USERS);
+  let data1 = await res1.data;
+  let count1 = data1.length;
+  let res2 = await axios(BASE_URL_RESERV);
+  let data2 = await res2.data;
+  let count2 = data2.length;
+  let res3 = await axios(BASE_URL_RESERV_ROOM);
+  let data3 = await res3.data;
+  let count3 = data3.length;
+  let res4 = await axios(BASE_URL_ROOMS);
+  let data4 = await res4.data;
+  let count4 = data4.length;
+  let res5 = await axios(BASE_URL_SHOP);
+  let data5 = await res5.data;
+  let count5 = data5.length;
+  let res6 = await axios(BASE_URL_SUBSCRIBES);
+  let data6 = await res6.data;
+  let count6 = data6.length;
+  let res7 = await axios(BASE_URL_CONTACT);
+  let data7 = await res7.data;
+  let count7 = data7.length;
+  const yValues = [count1, count2, count3, count4, count5, count6, count7];
+  new Chart("myChart", {
+    type: "line",
+    data: {
+      labels: xValues,
+      datasets: [
+        {
+          fill: false,
+          lineTension: 0,
+          pointRadius: 5,
+          backgroundColor: "#977a5e",
+          borderColor: "#977a5e",
+          data: yValues,
+        },
+      ],
     },
-  },
-});
-
+    options: {
+      legend: { display: false },
+      scales: {
+        yAxes: [{ ticks: { min: 1, max: 40 } }],
+      },
+    },
+  });
+}
+datas();
 var xxValues = [
   "CLASSIC BALCONY ROOM",
   "SUPERIOR DOUBLE ROOM",
