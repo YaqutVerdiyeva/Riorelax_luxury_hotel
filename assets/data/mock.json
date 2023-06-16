@@ -327,6 +327,20 @@
       "adults": "1",
       "room": "Classic Balcony Room",
       "id": 16
+    },
+    {
+      "checkin": "2008-04-30",
+      "checkout": "1985-08-04",
+      "adults": "3",
+      "room": "Super Balcony Room",
+      "id": 17
+    },
+    {
+      "checkin": "2004-08-28",
+      "checkout": "1986-09-17",
+      "adults": "adults",
+      "room": "Super Room",
+      "id": 18
     }
   ],
   "shop": [

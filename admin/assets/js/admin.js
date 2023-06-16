@@ -85,28 +85,45 @@ var xxValues = [
   "SUPERIOR DOUBLE ROOM",
   "SUPER BALCONY DOUBLE ROOM",
   "DELUX DOUBLE ROOM",
+  "Super Balcony Room",
 ];
-var yyValues = [55, 49, 46, 37];
-var barColors = ["#977a5e", "#755e48", "#a0866e", "#c5b09d"];
 
-new Chart("myChartt", {
-  type: "pie",
-  data: {
-    labels: xxValues,
-    datasets: [
-      {
-        backgroundColor: barColors,
-        data: yyValues,
-      },
-    ],
-  },
-  options: {
-    title: {
-      display: true,
-    },
-  },
-});
+var barColors = ["#634b35", "#6e5740", "#8d745c", "#aa9580", "#d4c1ae"];
+
 function darkLightMode() {
   let body = document.body;
   body.classList.toggle("dark-mode");
 }
+
+async function rooms() {
+  let res = await axios(BASE_URL_RESERV_ROOM);
+  let data = await res.data;
+  console.log(data);
+  data.forEach((elem) => {
+    console.log(elem.title);
+  });
+  let room1 = data.filter((el) => el.room == "Classic Balcony Room").length;
+  let room2 = data.filter((el) => el.room == "Superior Double Room").length;
+  let room3 = data.filter((el) => el.room == "Super Room").length;
+  let room4 = data.filter((el) => el.room == "Delux Double Room").length;
+  let room5 = data.filter((el) => el.room == "Super Balcony Room").length;
+  var yyValues = [room1, room2, room3, room4, room5];
+  new Chart("myChartt", {
+    type: "pie",
+    data: {
+      labels: xxValues,
+      datasets: [
+        {
+          backgroundColor: barColors,
+          data: yyValues,
+        },
+      ],
+    },
+    options: {
+      title: {
+        display: true,
+      },
+    },
+  });
+}
+rooms();
