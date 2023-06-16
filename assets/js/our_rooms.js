@@ -129,3 +129,12 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+document.onreadystatechange = function () {
+  if (document.readyState !== "complete") {
+    document.querySelector("body").style.visibility = "hidden";
+    document.querySelector(".spinner").style.visibility = "visible";
+  } else {
+    document.querySelector("body").style.visibility = "visible";
+    document.querySelector(".spinner").style.display = "none";
+  }
+};
