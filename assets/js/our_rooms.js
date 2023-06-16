@@ -81,14 +81,23 @@ loadMore.addEventListener("click", function () {
 });
 
 //addfav
-let favorits = JSON.parse(localStorage.getItem("favroom")) || [];
+
 async function addFavBtn(id) {
   let res = await axios(`${BASE_URL}/${id}`);
   let data = await res.data;
+  let selectedRoom = favorites.find((item) => item.id == id);
+  favorites.includes(selectedRoom);
+
   if (users == true) {
-    {
-      favorites.push(data);
-      localStorage.setItem("favroom", JSON.stringify(favorites));
+    if (!favorites.includes(selectedRoom)) {
+      {
+        let favoritedRoom = filteredArr.find((obj) => obj.id === id);
+
+        favorites.push(favoritedRoom);
+        localStorage.setItem("favroom", JSON.stringify(favorites));
+      }
+    } else {
+      alert("already added");
     }
   } else {
     document.querySelector(".alert").style.visibility = "visible";

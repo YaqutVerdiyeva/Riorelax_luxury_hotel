@@ -70,10 +70,19 @@ sortBtn.addEventListener("click", function () {
 async function addBasket(id) {
   let res = await axios(`${BASE_URL}/${id}`);
   let data = await res.data;
+  let selectedProduct = productList.find((item) => item.id == id);
+  productList.includes(selectedProduct);
+
   if (users == true) {
-    {
-      productList.push(data);
-      localStorage.setItem("product", JSON.stringify(productList));
+    if (!productList.includes(selectedProduct)) {
+      {
+        let favoritedProduct = filteredArr.find((obj) => obj.id === id);
+
+        productList.push(favoritedProduct);
+        localStorage.setItem("product", JSON.stringify(productList));
+      }
+    } else {
+      alert("already added");
     }
   } else {
     document.querySelector(".alert").style.visibility = "visible";
