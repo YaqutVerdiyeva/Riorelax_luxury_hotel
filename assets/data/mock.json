@@ -338,7 +338,7 @@
     {
       "checkin": "2004-08-28",
       "checkout": "1986-09-17",
-      "adults": "adults",
+      "adults": "3",
       "room": "Super Room",
       "id": 18
     }
@@ -439,7 +439,7 @@
     {
       "firstname": "Ut qui maxime ipsum",
       "email": "luseqop@mailinator.com",
-      "phone": "19",
+      "phone": "994501234567",
       "subject": "Eiusmod quae illum ",
       "text": "Libero eaque non dig",
       "id": 4
@@ -447,7 +447,7 @@
     {
       "firstname": "Harum quas excepturi",
       "email": "qale@mailinator.com",
-      "phone": "86",
+      "phone": "994501236867",
       "subject": "Soluta perspiciatis",
       "text": "Pariatur Rerum dolo",
       "id": 6
@@ -455,7 +455,7 @@
     {
       "firstname": "Corporis eius adipis",
       "email": "kykocywu@mailinator.com",
-      "phone": "32",
+      "phone": "994509872567",
       "subject": "Dolores incidunt am",
       "text": "Molestias pariatur ",
       "id": 7

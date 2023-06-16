@@ -31,7 +31,7 @@ async function getAllReservations() {
                     <td style="background-color: transparent;">${el.id}</td>
                     <td style="background-color: transparent;">${el.firstname}</td>
                     <td style="background-color: transparent;">${el.email}</td>
-                    <td style="background-color: transparent;">${el.phone}</td>
+                    <td style="background-color: transparent;">+${el.phone}</td>
                     <td style="background-color: transparent;">${el.subject}</td>
                     <td style="background-color: transparent;">${el.text}</td>
                     <td style="background-color: transparent;">
