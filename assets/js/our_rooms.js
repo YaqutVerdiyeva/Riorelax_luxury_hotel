@@ -88,17 +88,21 @@ async function addFavBtn(id) {
   let selectedRoom = favorites.find((item) => item.id == id);
   favorites.includes(selectedRoom);
 
+  
   if (users == true) {
     if (!favorites.includes(selectedRoom)) {
       {
         let favoritedRoom = filteredArr.find((obj) => obj.id === id);
-
+  
         favorites.push(favoritedRoom);
         localStorage.setItem("favroom", JSON.stringify(favorites));
       }
     } else {
-      alert("already added");
-    }
+      document.querySelector(".alert-room").style.visibility = "visible";
+
+      setTimeout(() => {
+        document.querySelector(".alert-room").style.visibility = "hidden";
+      }, 2000);    }
   } else {
     document.querySelector(".alert").style.visibility = "visible";
 

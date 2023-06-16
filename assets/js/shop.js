@@ -82,7 +82,11 @@ async function addBasket(id) {
         localStorage.setItem("product", JSON.stringify(productList));
       }
     } else {
-      alert("already added");
+      document.querySelector(".alert-shop").style.visibility = "visible";
+
+      setTimeout(() => {
+        document.querySelector(".alert-shop").style.visibility = "hidden";
+      }, 2000);
     }
   } else {
     document.querySelector(".alert").style.visibility = "visible";

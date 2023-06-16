@@ -42,7 +42,9 @@
                       <a href="./admin.html"
                         ><i class="fa-solid fa-user"></i
                       ></a>
-                      <a href="#" onclick="darkLightMode()"><i class="fa-solid fa-moon" ></i></a>
+                      <a href="#" onclick="darkLightMode()"
+                        ><i class="fa-solid fa-moon"></i
+                      ></a>
                       <a href="#"><i class="fa-solid fa-message"></i></a>
                       <a href="../index.html"
                         ><i class="fa-solid fa-right-from-bracket"></i
@@ -65,45 +67,54 @@
               <div id="form" class="reserv mt-5">
                 <h2 class="title">Add Contact</h2>
                 <form action="">
-                    <div class="row contacts">
-                      <div class="col-lg-6 col-md-6 mt-3 form-input ">
-                        <input
-                          type="text"
-                          class="form-control firstname"
-                          placeholder="First Name"
-                        />
-                      </div>
-                      <div class="col-lg-6 col-md-6 mt-3 form-input">
-                        <input type="email" class="form-control email" placeholder="Email" />
-                      </div>
-                      <div class="col-lg-6 col-md-6 mt-3 form-input">
-                        <input
-                          type="number"
-                          class="form-control phone"
-                          placeholder="Phone No."
-                        />
-                      </div>
-                      <div class="col-lg-6 col-md-6 mt-3 form-input">
-                        <input
-                          type="text"
-                          class="form-control subject"
-                          placeholder="Subject"
-                        />
-                      </div>
-                      <div class="col-lg-12 mt-3 form-input">
-                        <textarea
-                          name=""
-                          id=""
-                          cols="30"
-                          rows="10"
-                          class="form-control textarea"
-                          placeholder="Write comments"
-                        ></textarea>
-                        <br />
-                        <button class="get-submit mt-4">ADD CONTACT</button>
-                      </div>
+                  <div class="row contacts">
+                    <div class="col-lg-6 col-md-6 mt-3 form-input">
+                      <input
+                        type="text"
+                        class="form-control firstname"
+                        placeholder="First Name"
+                        required
+                      />
                     </div>
-                  </form>
+                    <div class="col-lg-6 col-md-6 mt-3 form-input">
+                      <input
+                        required
+                        type="email"
+                        class="form-control email"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-6 mt-3 form-input">
+                      <input
+                        required
+                        type="number"
+                        class="form-control phone"
+                        placeholder="Phone No."
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-6 mt-3 form-input">
+                      <input
+                        required
+                        type="text"
+                        class="form-control subject"
+                        placeholder="Subject"
+                      />
+                    </div>
+                    <div class="col-lg-12 mt-3 form-input">
+                      <textarea
+                        required
+                        name=""
+                        id=""
+                        cols="30"
+                        rows="10"
+                        class="form-control textarea"
+                        placeholder="Write comments"
+                      ></textarea>
+                      <br />
+                      <button class="get-submit mt-4">ADD CONTACT</button>
+                    </div>
+                  </div>
+                </form>
               </div>
               <h1 class="m-3">CONTACT</h1>
               <div class="search-sort row">
@@ -122,18 +133,17 @@
               <table class="table table-bordered border-dark table-hover mt-5">
                 <thead>
                   <tr>
-                    <th style="background-color: transparent;">Id</th>
-                    <th style="background-color: transparent;">First Name</th>
-                    <th style="background-color: transparent;">Email</th>
-                    <th style="background-color: transparent;">Phone</th>
-                    <th style="background-color: transparent;">Subject</th>
-                    <th style="background-color: transparent;">Text</th>
-                    <th style="background-color: transparent;">Actions</th>
+                    <th style="background-color: transparent">Id</th>
+                    <th style="background-color: transparent">First Name</th>
+                    <th style="background-color: transparent">Email</th>
+                    <th style="background-color: transparent">Phone</th>
+                    <th style="background-color: transparent">Subject</th>
+                    <th style="background-color: transparent">Text</th>
+                    <th style="background-color: transparent">Actions</th>
                   </tr>
                 </thead>
                 <tbody></tbody>
               </table>
-             
             </div>
           </div>
         </div>

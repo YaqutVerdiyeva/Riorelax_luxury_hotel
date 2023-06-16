@@ -20,7 +20,7 @@ async function getAllReservations() {
   filteredArr = filteredArr.length || searchInput.value ? filteredArr : data;
   filteredArr.forEach((el) => {
     reservations.innerHTML += `
-    <div class="alert mt-3" role="alert">
+    <div class="alert alert${el.id} mt-3" role="alert">
     <h4>Are you sure?</h4>
     <div>
     <button onclick=deleteUser(${el.id})>Yes</button>
