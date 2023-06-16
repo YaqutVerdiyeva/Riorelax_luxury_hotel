@@ -3,11 +3,15 @@ let BASE_URL_RESERV = `http://localhost:3000/reserv`;
 let BASE_URL_RESERV_ROOM = `http://localhost:3000/reservRoom`;
 let BASE_URL_ROOMS = `http://localhost:3000/rooms`;
 let BASE_URL_SHOP = `http://localhost:3000/shop`;
+let BASE_URL_SUBSCRIBES = `http://localhost:3000/subscribes`;
+let BASE_URL_CONTACT = `http://localhost:3000/contact`;
 let userCount = document.querySelector(".user-count");
 let reservCount = document.querySelector(".reserv-count");
 let roomReservCount = document.querySelector(".room-reserv-count");
 let roomCount = document.querySelector(".room-count");
 let shopCount = document.querySelector(".shop-count");
+let subscribesCount = document.querySelector(".subscribes-count");
+let contactCount = document.querySelector(".contact-count");
 
 async function getUsers() {
   let res = await axios(BASE_URL_USERS);
@@ -40,6 +44,18 @@ async function getShop() {
   shopCount.innerHTML = `Shop count: ${data.length}`;
 }
 getShop();
+async function getSubscribes() {
+  let res = await axios(BASE_URL_SUBSCRIBES);
+  let data = await res.data;
+  subscribesCount.innerHTML = `Subscribes count: ${data.length}`;
+}
+getSubscribes();
+async function getContact() {
+  let res = await axios(BASE_URL_CONTACT);
+  let data = await res.data;
+  contactCount.innerHTML = `Contact count: ${data.length}`;
+}
+getContact();
 
 const xValues = [
   "January",

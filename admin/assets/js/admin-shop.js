@@ -20,7 +20,7 @@ async function getAllProducts() {
   filteredArr = filteredArr.length || searchInput.value ? filteredArr : data;
   filteredArr.forEach((el) => {
     products.innerHTML += `
-    <div class="alert mt-3" role="alert">
+    <div class="alert alert${el.id} mt-3" role="alert">
     <h4>Are you sure?</h4>
     <div>
     <button onclick=deleteUser(${el.id})>Yes</button>
@@ -75,14 +75,15 @@ sortBtn.addEventListener("click", function () {
   getAllProducts();
 });
 function deleteBtn(id) {
-  document.querySelector(".alert").style.visibility = "visible";
+  document.querySelector(`.alert${id}`).style.visibility = "visible";
 }
 function deleteUser(id) {
   axios.delete(`${BASE_URL}/${id}`);
+  console.log(id);
 }
 function keepUser(id) {
   setTimeout(
-    (document.querySelector(".alert").style.visibility = "hidden" ),
+    (document.querySelector(`.alert${id}`).style.visibility = "hidden" ),
     2000
   );
 }
@@ -106,11 +107,9 @@ const convertBase64 = (file) => {
 const uploadImage = async (event) => {
   const file = event.target.files[0];
   base64 = await convertBase64(file);
-  // console.log(file);
 };
 
 photoInput.addEventListener("change", (e) => {
-  //   console.log(e.target.files);
   uploadImage(e);
 });
 addProduct.addEventListener("click", function () {

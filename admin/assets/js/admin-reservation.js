@@ -63,14 +63,15 @@ select.addEventListener("change", function (e) {
   getAllReservations();
 });
 function deleteBtn(id) {
-  document.querySelector(".alert").style.visibility = "visible";
+  document.querySelector(`.alert${id}`).style.visibility = "visible";
 }
 function deleteUser(id) {
   axios.delete(`${BASE_URL}/${id}`);
+  console.log(id);
 }
 function keepUser(id) {
   setTimeout(
-    (document.querySelector(".alert").style.visibility = "hidden" ),
+    (document.querySelector(`.alert${id}`).style.visibility = "hidden" ),
     2000
   );
 }

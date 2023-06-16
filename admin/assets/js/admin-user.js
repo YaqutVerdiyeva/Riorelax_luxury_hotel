@@ -18,11 +18,11 @@ async function getAllUsers() {
   filteredArr = filteredArr.length || searchInput.value ? filteredArr : data;
   filteredArr.forEach((el) => {
     users.innerHTML += `
-    <div class="alert mt-3" role="alert">
+    <div class="alert alert${el.id} mt-3" role="alert">
     <h4>Are you sure?</h4>
     <div>
     <button onclick=deleteUser(${el.id})>Yes</button>
-    <button onclick=keepUser()>No</button>
+    <button onclick=keepUser(${el.id})>No</button>
     </div>
    </div>
       <tr>
@@ -68,15 +68,15 @@ sortBtn.addEventListener("click", function () {
   getAllUsers();
 });
 function deleteBtn(id) {
-  document.querySelector(".alert").style.visibility = "visible";
+  document.querySelector(`.alert${id}`).style.visibility = "visible";
 }
 function deleteUser(id) {
   axios.delete(`${BASE_URL}/${id}`);
   console.log(id);
 }
-function keepUser() {
+function keepUser(id) {
   setTimeout(
-    (document.querySelector(".alert").style.visibility = "hidden" ),
+    (document.querySelector(`.alert${id}`).style.visibility = "hidden" ),
     2000
   );
 }
