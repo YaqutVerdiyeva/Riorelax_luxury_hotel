@@ -16,6 +16,7 @@ login.addEventListener("click", async function () {
   }
   if (email.value == "yaqut@gmail.com" && password.value == 123456) {
     window.location = `./admin/admin.html`;
+    localStorage.setItem("admin", JSON.stringify(true));
   }
 
   if (data.find((item) => item.email != email.value)) {

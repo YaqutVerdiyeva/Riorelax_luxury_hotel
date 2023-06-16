@@ -1,5 +1,4 @@
 let BASE_URL_SUBSCRIBES = `http://localhost:3000/subscribes`;
-
 let menuicon = document.querySelector(".menuicon");
 let menuicon1 = document.querySelector(".menuicon1");
 let nav = document.querySelector(".nav-mobile");
@@ -9,8 +8,16 @@ let subscribeBtn = document.querySelector(".subscribe-btn");
 let basketCount = document.querySelector(".basket-count");
 let wishlistCount = document.querySelector(".wishlist-count");
 
+let admin = JSON.parse(localStorage.getItem("admin"));
 
-
+function adminpage() {
+  console.log("helo");
+  if (admin == true) {
+    window.location = "../admin/admin.html";
+  } else {
+    window.location = "login.html";
+  }
+}
 //header scroll
 function scrollFunction() {
   if (
