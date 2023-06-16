@@ -400,6 +400,7 @@
                     Date</label
                   >
                   <input
+                  required
                     type="date"
                     class="form-control"
                     id="checkin"
@@ -408,7 +409,7 @@
                 </div>
                 <div class="adults">
                   <label><i class="fa-solid fa-people-line"></i> Adults</label>
-                  <select type="number" name="adults" id="adults">
+                  <select type="number" name="adults" id="adults" required>
                     <option value="adults">Adults</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -424,11 +425,11 @@
                     ><i class="fa-regular fa-circle-xmark"></i> Check Out
                     Date</label
                   >
-                  <input type="date" class="form-control" id="checkout" />
+                  <input type="date" class="form-control" id="checkout" required/>
                 </div>
                 <div class="room">
                   <label><i class="fa-solid fa-bell-concierge"></i> Room</label>
-                  <select type="number" name="room" id="room">
+                  <select type="number" name="room" id="room" required>
                     <option value="room">Room</option>
                     <option value="Classic Balcony Room">
                       Classic Balcony Room

@@ -438,11 +438,12 @@
                   class="form-control"
                   id="checkin"
                   name="date"
+                  required
                 />
               </div>
               <div class="adults">
                 <label><i class="fa-solid fa-people-line"></i> Adults</label>
-                <select type="number" name="adults" id="adults">
+                <select type="number" name="adults" id="adults" required>
                   <option value="adults">Adults</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -453,7 +454,7 @@
               </div>
               <div class="room">
                 <label><i class="fa-solid fa-bell-concierge"></i> Room</label>
-                <select name="room" id="room">
+                <select name="room" id="room" required>
                   <option value="room">Room</option>
                   <option value="Classic Balcony Room">Classic Balcony Room</option>
                   <option value="Superior Double Room">Superior Double Room</option>
@@ -469,11 +470,11 @@
                   ><i class="fa-regular fa-circle-xmark"></i> Check Out
                   Date</label
                 >
-                <input type="date" class="form-control" id="checkout" />
+                <input type="date" class="form-control" id="checkout" required />
               </div>
               <div class="child">
                 <label><i class="fa-solid fa-child-reaching"></i> Child</label>
-                <select name="child" id="child">
+                <select name="child" id="child" required>
                   <option value="child">Child</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
