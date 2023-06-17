@@ -11,7 +11,6 @@ let wishlistCount = document.querySelector(".wishlist-count");
 let admin = JSON.parse(localStorage.getItem("admin"));
 
 function adminpage() {
-  console.log("helo");
   if (admin == true) {
     window.location = "../admin/admin.html";
   } else {

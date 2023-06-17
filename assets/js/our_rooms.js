@@ -5,7 +5,6 @@ let BASE_URL = `http://localhost:3000/rooms`;
 let MOCK_API = `http://localhost:3000/reservRoom`;
 let users = JSON.parse(localStorage.getItem("users"));
 let favorites = JSON.parse(localStorage.getItem("favroom")) || [];
-
 let checkIn = document.querySelector("#checkin");
 let adults = document.querySelector("#adults");
 let room = document.querySelector("#room");
@@ -19,7 +18,6 @@ let maxlength = 3;
 let sorted = "asc";
 let filteredArr = [];
 let copyArr = [];
-
 async function getAllCards() {
   let res = await axios(BASE_URL);
   let data = res.data;

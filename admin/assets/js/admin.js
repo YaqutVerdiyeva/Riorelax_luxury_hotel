@@ -131,11 +131,7 @@ function darkLightMode() {
 
 async function rooms() {
   let res = await axios(BASE_URL_RESERV_ROOM);
-  let data = await res.data;
-  console.log(data);
-  data.forEach((elem) => {
-    console.log(elem.title);
-  });
+  let data = await res.data; 
   let room1 = data.filter((el) => el.room == "Classic Balcony Room").length;
   let room2 = data.filter((el) => el.room == "Superior Double Room").length;
   let room3 = data.filter((el) => el.room == "Super Room").length;

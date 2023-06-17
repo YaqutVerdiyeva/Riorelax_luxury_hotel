@@ -5,7 +5,6 @@ let login = document.querySelector(".get-submit");
 login.addEventListener("click", async function () {
   let res = await axios(BASE_URL);
   let data = await res.data;
-  console.log(data);
   if (
     data.find(
       (item) => item.email == email.value && item.password == password.value

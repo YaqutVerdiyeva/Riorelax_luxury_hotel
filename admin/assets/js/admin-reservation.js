@@ -55,7 +55,6 @@ searchInput.addEventListener("input", function (e) {
 });
 
 select.addEventListener("change", function (e) {
-  console.log(e.target.value);
   filteredArr = copyArr;
   filteredArr = filteredArr.filter((el) =>
     el.room.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
@@ -67,7 +66,6 @@ function deleteBtn(id) {
 }
 function deleteUser(id) {
   axios.delete(`${BASE_URL}/${id}`);
-  console.log(id);
 }
 function keepUser(id) {
   setTimeout(

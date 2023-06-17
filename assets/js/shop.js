@@ -11,7 +11,6 @@ let copyArr = [];
 async function getAllProducts() {
   let res = await axios(BASE_URL);
   let data = res.data;
-  console.log(data);
   copyArr = data;
   products.innerHTML = "";
   filteredArr = filteredArr.length || searchInput.value ? filteredArr : data;

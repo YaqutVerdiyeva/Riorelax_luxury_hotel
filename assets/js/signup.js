@@ -1,5 +1,4 @@
 let BASE_URL = `http://localhost:3000/users`;
-
 let firstName = document.querySelector(".firstname");
 let lastName = document.querySelector(".lastname");
 let email = document.querySelector(".email");

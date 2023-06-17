@@ -79,7 +79,6 @@ function deleteBtn(id) {
 }
 function deleteUser(id) {
   axios.delete(`${BASE_URL}/${id}`);
-  console.log(id);
 }
 function keepUser(id) {
   setTimeout(

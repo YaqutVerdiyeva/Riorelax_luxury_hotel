@@ -41,7 +41,6 @@ searchInput.addEventListener("input", function (e) {
   getProductList();
 });
 
-
 function deleteBasket(id) {
   products = copyData.filter((el) => el.id != id);
   filteredArr = products;
