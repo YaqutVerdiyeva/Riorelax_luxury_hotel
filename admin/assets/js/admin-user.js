@@ -91,7 +91,7 @@ signUpBtn.addEventListener("click", function (id) {
         lastname: lastName.value,
         email: email.value,
         password: password.value,
-        isadmin: isAdmin.value,
+        isadmin: Boolean(isAdmin.value) ,
       });
     }
   } else {
@@ -100,7 +100,7 @@ signUpBtn.addEventListener("click", function (id) {
       lastname: lastName.value,
       email: email.value,
       password: password.value,
-      isadmin: isAdmin.value,
+      isadmin:  Boolean(isAdmin.value),
     });
     editStatus = false;
   }
@@ -115,7 +115,7 @@ function editUser(id) {
     lastName.value = res.data.lastname;
     email.value = res.data.email;
     password.value = res.data.password;
-    isadmin.value = res.data.isadmin;
+    isAdmin.value = res.data.isadmin;
   });
   document.querySelector(".title").innerHTML = "Edit User";
   signUpBtn.innerHTML = "EDIT USER";

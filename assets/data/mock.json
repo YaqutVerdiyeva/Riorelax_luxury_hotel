@@ -13,7 +13,7 @@
       "lastname": "Dean",
       "email": "taylor@gmail.com",
       "password": "123987456",
-      "isadmin": false,
+      "isadmin": true,
       "id": 2
     },
     {
@@ -31,14 +31,6 @@
       "password": "546825915",
       "isadmin": false,
       "id": 5
-    },
-    {
-      "firstname": "Co",
-      "lastname": "In et in eos fuga U",
-      "email": "qale@mailinator.com",
-      "password": "Pa$$w0rd!",
-      "isadmin": false,
-      "id": 6
     }
   ],
   "rooms": [

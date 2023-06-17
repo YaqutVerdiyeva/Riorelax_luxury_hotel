@@ -8,15 +8,8 @@ let subscribeBtn = document.querySelector(".subscribe-btn");
 let basketCount = document.querySelector(".basket-count");
 let wishlistCount = document.querySelector(".wishlist-count");
 
-let admin = JSON.parse(localStorage.getItem("admin"));
 
-function adminpage() {
-  if (admin == true) {
-    window.location = "../admin/admin.html";
-  } else {
-    window.location = "login.html";
-  }
-}
+
 //header scroll
 function scrollFunction() {
   if (

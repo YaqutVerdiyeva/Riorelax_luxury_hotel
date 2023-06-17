@@ -22,7 +22,6 @@ login.addEventListener("click", async function () {
     )
   ) {
     window.location = `./admin/admin.html`;
-    localStorage.setItem("admin", JSON.stringify(true));
   }
 
   if (data.find((item) => item.email != email.value)) {
