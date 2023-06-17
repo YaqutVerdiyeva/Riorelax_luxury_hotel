@@ -53,13 +53,13 @@ searchInput.addEventListener("input", function (e) {
 
 sortBtn.addEventListener("click", function () {
   if (sorted === "asc") {
-    filteredArr.sort((a, b) => a.id - b.id);
+    filteredArr.sort((a, b) => a.firstname.localeCompare(b.firstname));
     sorted = "dsc";
-    sortBtn.innerHTML = "SORT Low to High";
+    sortBtn.innerHTML = "SORT A-Z";
   } else if (sorted === "dsc") {
-    filteredArr.sort((a, b) => b.id - a.id);
+    filteredArr.sort((a, b) => b.firstname.localeCompare(a.firstname));
     sorted = "def";
-    sortBtn.innerHTML = "SORT High to Low";
+    sortBtn.innerHTML = "SORT Z-A";
   } else {
     filteredArr = copyArr;
     sorted = "asc";
