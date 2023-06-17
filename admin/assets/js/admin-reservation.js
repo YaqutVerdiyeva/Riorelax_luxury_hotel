@@ -71,7 +71,7 @@ function deleteUser(id) {
 }
 function keepUser(id) {
   setTimeout(
-    (document.querySelector(`.alert${id}`).style.visibility = "hidden" ),
+    (document.querySelector(`.alert${id}`).style.visibility = "hidden"),
     2000
   );
 }
@@ -79,13 +79,21 @@ let editStatus = false;
 let editId;
 reservBtn.addEventListener("click", function () {
   if (!editStatus) {
-    axios.post(`${BASE_URL}`, {
-      checkin: checkIn.value,
-      checkout: checkout.value,
-      adults: adults.value,
-      room: room.value,
-      child: child.value,
-    });
+    if (
+      checkIn.value &&
+      checkout.value &&
+      adults.value &&
+      room.value &&
+      child.value
+    ) {
+      axios.post(`${BASE_URL}`, {
+        checkin: checkIn.value,
+        checkout: checkout.value,
+        adults: adults.value,
+        room: room.value,
+        child: child.value,
+      });
+    }
   } else {
     axios.patch(`${BASE_URL}/${editId}`, {
       checkin: checkIn.value,

@@ -76,7 +76,7 @@ function deleteUser(id) {
 }
 function keepUser(id) {
   setTimeout(
-    (document.querySelector(`.alert${id}`).style.visibility = "hidden" ),
+    (document.querySelector(`.alert${id}`).style.visibility = "hidden"),
     2000
   );
 }
@@ -84,12 +84,14 @@ let editStatus = false;
 let editId;
 signUpBtn.addEventListener("click", function (id) {
   if (!editStatus) {
-    axios.post(`${BASE_URL}`, {
-      firstname: firstName.value,
-      lastname: lastName.value,
-      email: email.value,
-      password: password.value,
-    });
+    if (firstName.value && lastName.value && email.value && password.value) {
+      axios.post(`${BASE_URL}`, {
+        firstname: firstName.value,
+        lastname: lastName.value,
+        email: email.value,
+        password: password.value,
+      });
+    }
   } else {
     axios.patch(`${BASE_URL}/${editId}`, {
       firstname: firstName.value,

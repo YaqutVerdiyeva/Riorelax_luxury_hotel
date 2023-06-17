@@ -73,7 +73,7 @@ function deleteUser(id) {
 }
 function keepUser(id) {
   setTimeout(
-    (document.querySelector(`.alert${id}`).style.visibility = "hidden" ),
+    (document.querySelector(`.alert${id}`).style.visibility = "hidden"),
     2000
   );
 }
@@ -82,9 +82,11 @@ let editId;
 
 addEmail.addEventListener("click", function () {
   if (!editStatus) {
-    axios.post(`${BASE_URL}`, {
-      email: emailInput.value,
-    });
+    if (emailInput.value) {
+      axios.post(`${BASE_URL}`, {
+        email: emailInput.value,
+      });
+    }
   } else {
     axios.patch(`${BASE_URL}/${editId}`, {
       email: emailInput.value,

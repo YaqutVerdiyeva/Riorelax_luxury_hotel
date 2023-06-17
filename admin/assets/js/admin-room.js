@@ -77,7 +77,7 @@ function deleteUser(id) {
 }
 function keepUser(id) {
   setTimeout(
-    (document.querySelector(`.alert${id}`).style.visibility = "hidden" ),
+    (document.querySelector(`.alert${id}`).style.visibility = "hidden"),
     2000
   );
 }
@@ -101,20 +101,20 @@ const convertBase64 = (file) => {
 const uploadImage = async (event) => {
   const file = event.target.files[0];
   base64 = await convertBase64(file);
-  // console.log(file);
 };
 
 photoInput.addEventListener("change", (e) => {
-  //   console.log(e.target.files);
   uploadImage(e);
 });
 addRoom.addEventListener("click", function () {
   if (!editStatus) {
-    axios.post(`${BASE_URL}`, {
-      photo: base64,
-      title: titleInput.value,
-      price: priceInput.value,
-    });
+    if (titleInput.value && priceInput.value) {
+      axios.post(`${BASE_URL}`, {
+        photo: base64,
+        title: titleInput.value,
+        price: priceInput.value,
+      });
+    }
   } else {
     axios.patch(`${BASE_URL}/${editId}`, {
       photo: base64,

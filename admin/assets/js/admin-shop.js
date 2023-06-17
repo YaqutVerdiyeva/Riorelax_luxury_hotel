@@ -83,7 +83,7 @@ function deleteUser(id) {
 }
 function keepUser(id) {
   setTimeout(
-    (document.querySelector(`.alert${id}`).style.visibility = "hidden" ),
+    (document.querySelector(`.alert${id}`).style.visibility = "hidden"),
     2000
   );
 }
@@ -114,13 +114,19 @@ photoInput.addEventListener("change", (e) => {
 });
 addProduct.addEventListener("click", function () {
   if (!editStatus) {
-    axios.post(`${BASE_URL}`, {
-      photo: base64,
-      title: titleInput.value,
-      about: aboutInput.value,
-      priceold: oldpriceInput.value,
-      pricenew: newpriceInput.value,
-    });
+    if (
+      titleInput.value &&
+      aboutInput.value &&
+      oldpriceInput.value &&
+      newpriceInput.value
+    )
+      axios.post(`${BASE_URL}`, {
+        photo: base64,
+        title: titleInput.value,
+        about: aboutInput.value,
+        priceold: oldpriceInput.value,
+        pricenew: newpriceInput.value,
+      });
   } else {
     axios.patch(`${BASE_URL}/${editId}`, {
       photo: base64,

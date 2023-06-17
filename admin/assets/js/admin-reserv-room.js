@@ -52,7 +52,6 @@ searchInput.addEventListener("input", function (e) {
   getAllReservations();
 });
 
-
 select.addEventListener("change", function (e) {
   console.log(e.target.value);
   filteredArr = copyArr;
@@ -71,7 +70,7 @@ function deleteUser(id) {
 }
 function keepUser(id) {
   setTimeout(
-    (document.querySelector(`.alert${id}`).style.visibility = "hidden" ),
+    (document.querySelector(`.alert${id}`).style.visibility = "hidden"),
     2000
   );
 }
@@ -79,12 +78,14 @@ let editStatus = false;
 let editId;
 bookBtn.addEventListener("click", function () {
   if (!editStatus) {
-    axios.post(`${BASE_URL}`, {
-      checkin: checkIn.value,
-      checkout: checkout.value,
-      adults: adults.value,
-      room: room.value,
-    });
+    if (checkIn.value && checkout.value && adults.value && room.value) {
+      axios.post(`${BASE_URL}`, {
+        checkin: checkIn.value,
+        checkout: checkout.value,
+        adults: adults.value,
+        room: room.value,
+      });
+    }
   } else {
     axios.patch(`${BASE_URL}/${editId}`, {
       checkin: checkIn.value,

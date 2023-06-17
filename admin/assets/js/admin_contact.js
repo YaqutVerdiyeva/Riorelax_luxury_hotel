@@ -47,7 +47,7 @@ getAllReservations();
 searchInput.addEventListener("input", function (e) {
   filteredArr = copyArr;
   filteredArr = filteredArr.filter((el) =>
-   el.firstname
+    el.firstname
       .toLocaleLowerCase()
       .includes(e.target.value.toLocaleLowerCase())
   );
@@ -79,7 +79,7 @@ function deleteUser(id) {
 }
 function keepUser(id) {
   setTimeout(
-    (document.querySelector(`.alert${id}`).style.visibility = "hidden" ),
+    (document.querySelector(`.alert${id}`).style.visibility = "hidden"),
     2000
   );
 }
@@ -87,13 +87,20 @@ let editStatus = false;
 let editId;
 submitBtn.addEventListener("click", function () {
   if (!editStatus) {
-    axios.post(`${BASE_URL}`, {
-      firstname: firstnameInput.value,
-      email: emailInput.value,
-      phone: phoneInput.value,
-      subject: subjectInput.value,
-      text: textInput.value,
-    });
+    if (
+      firstnameInput.value &&
+      emailInput.value &&
+      phoneInput.value &&
+      subjectInput.value &&
+      textInput.value
+    )
+      axios.post(`${BASE_URL}`, {
+        firstname: firstnameInput.value,
+        email: emailInput.value,
+        phone: phoneInput.value,
+        subject: subjectInput.value,
+        text: textInput.value,
+      });
   } else {
     axios.patch(`${BASE_URL}/${editId}`, {
       firstname: firstnameInput.value,
