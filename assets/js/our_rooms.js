@@ -34,9 +34,7 @@ async function getAllCards() {
         <img src="${
           el.photo.startsWith(".") ? el.photo.slice(1) : el.photo
         }" alt="" />
-        <i onclick="addFavBtn(${
-          el.id
-        })" class="fa-solid fa-heart" style="color: #ffffff;"></i>
+        <i onclick="addFavBtn(${el.id})" class="fa-solid fa-heart"></i>
         <div class="card-content">
           <h2>${el.title}</h2>
           <p>${el.price}$</p>
@@ -83,8 +81,6 @@ loadMore.addEventListener("click", function () {
 //addfav
 
 async function addFavBtn(id) {
-  let res = await axios(`${BASE_URL}/${id}`);
-  let data = await res.data;
   let selectedRoom = favorites.find((item) => item.id == id);
   favorites.includes(selectedRoom);
 

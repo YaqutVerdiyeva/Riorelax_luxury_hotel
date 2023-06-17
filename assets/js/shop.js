@@ -68,8 +68,7 @@ sortBtn.addEventListener("click", function () {
   getAllProducts();
 });
 async function addBasket(id) {
-  let res = await axios(`${BASE_URL}/${id}`);
-  let data = await res.data;
+  
   let selectedProduct = productList.find((item) => item.id == id);
   productList.includes(selectedProduct);
 

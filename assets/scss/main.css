@@ -8482,6 +8482,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   bottom: 10px;
   right: 10px;
   font-size: 30px;
+  color: #fff;
 }
 .section-rooms .container .room-card .room .card img {
   position: absolute;
@@ -8491,7 +8492,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0.9;
+  opacity: 0.8;
   transition: opacity 0.2s ease-out;
 }
 .section-rooms .container .room-card .room .card h2 {
@@ -14223,7 +14224,7 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0.9;
+  opacity: 0.8;
   transition: opacity 0.2s ease-out;
 }
 .section-favroom .container .room-card .room .card h2 {
