@@ -13,7 +13,9 @@ function getProductList() {
     productList.innerHTML += `
     <div class="col-lg-4 col-md-6 products mt-3">
     <div class="product">
-      <img width="100%" src="${el.photo}" alt="" />
+      <img width="100%" src="${
+        el.photo.startsWith(".") ? el.photo.slice(1) : el.photo
+      }" alt="" />
       <div class="product-text">
         <span>${el.title}</span>
         <h4>${el.about}</h4>
@@ -21,7 +23,9 @@ function getProductList() {
          <div>
          <span class="new-price">$${el.pricenew}.00</span>
          <span class="back-price">$${el.priceold}.00</span></div>
-          <button onclick="deleteBasket(${el.id})" class="basket mt-3">Delete</button>
+          <button onclick="deleteBasket(${
+            el.id
+          })" class="basket mt-3">Delete</button>
         </div>
       </div>
     </div>

@@ -12,8 +12,12 @@ function favoritRoom() {
       <div class="col-lg-4 col-md-6 room-card">
       <div class="room">
         <div class="card">
-        <img src="${el.photo}" alt="" />
-        <i onclick="deleteFavBtn(${el.id})" class="fa-regular fa-heart" style="color: #ffffff;"></i>
+        <img src="${
+          el.photo.startsWith(".") ? el.photo.slice(1) : el.photo
+        }" alt="" />
+        <i onclick="deleteFavBtn(${
+          el.id
+        })" class="fa-regular fa-heart" style="color: #ffffff;"></i>
           <div class="card-content">
             <h2>${el.title}</h2>
             <p>${el.price}$</p>
@@ -32,7 +36,6 @@ searchInput.addEventListener("input", function (e) {
   );
   favoritRoom();
 });
-
 
 function deleteFavBtn(id) {
   favroom = copyData.filter((el) => el.id != id);
