@@ -58,6 +58,7 @@ async function getContact() {
 getContact();
 
 const xValues = [
+  "0",
   "Users",
   "Reservations",
   "Room Reservations",
@@ -88,7 +89,7 @@ async function datas() {
   let res7 = await axios(BASE_URL_CONTACT);
   let data7 = await res7.data;
   let count7 = data7.length;
-  const yValues = [count1, count2, count3, count4, count5, count6, count7];
+  const yValues = [0, count1, count2, count3, count4, count5, count6, count7];
   new Chart("myChart", {
     type: "line",
     data: {
@@ -107,7 +108,7 @@ async function datas() {
     options: {
       legend: { display: false },
       scales: {
-        yAxes: [{ ticks: { min: 1, max: 40 } }],
+        yAxes: [{ ticks: { min: 1, max: 20 } }],
       },
     },
   });
