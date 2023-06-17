@@ -5,6 +5,7 @@
       "lastname": "Verdiyeva",
       "email": "yaqut@gmail.com",
       "password": "123456789",
+      "isadmin": true,
       "id": 1
     },
     {
@@ -12,6 +13,7 @@
       "lastname": "Dean",
       "email": "taylor@gmail.com",
       "password": "123987456",
+      "isadmin": false,
       "id": 2
     },
     {
@@ -19,6 +21,7 @@
       "lastname": "Smith",
       "email": "luca@gmail.com",
       "password": "123852946",
+      "isadmin": false,
       "id": 3
     },
     {
@@ -26,6 +29,7 @@
       "lastname": "Smith",
       "email": "oliver@gmail.com",
       "password": "546825915",
+      "isadmin": false,
       "id": 5
     },
     {
@@ -33,6 +37,7 @@
       "lastname": "In et in eos fuga U",
       "email": "qale@mailinator.com",
       "password": "Pa$$w0rd!",
+      "isadmin": false,
       "id": 6
     }
   ],

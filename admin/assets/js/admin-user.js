@@ -6,6 +6,7 @@ let firstName = document.querySelector(".firstname");
 let lastName = document.querySelector(".lastname");
 let email = document.querySelector(".email");
 let password = document.querySelector(".password");
+let isAdmin = document.querySelector(".isadmin");
 let signUpBtn = document.querySelector(".get-submit");
 let sorted = "asc";
 let filteredArr = [];
@@ -31,6 +32,7 @@ async function getAllUsers() {
                     <td style="background-color: transparent;">${el.lastname}</td>
                     <td style="background-color: transparent;">${el.email}</td>
                     <td style="background-color: transparent;">${el.password}</td>
+                    <td style="background-color: transparent;">${el.isadmin}</td>
                     <td style="background-color: transparent;">
                     <a onclick=deleteBtn(${el.id}) style="margin-right: 8px"><i class="fa-solid fa-trash" style="color: #c20000;"></i></a>
                     <a href="#form" onclick=editUser(${el.id})  ><i class="fa-solid fa-pen-to-square" style="color: #000;"></i></a>
@@ -89,6 +91,7 @@ signUpBtn.addEventListener("click", function (id) {
         lastname: lastName.value,
         email: email.value,
         password: password.value,
+        isadmin: isAdmin.value,
       });
     }
   } else {
@@ -97,6 +100,7 @@ signUpBtn.addEventListener("click", function (id) {
       lastname: lastName.value,
       email: email.value,
       password: password.value,
+      isadmin: isAdmin.value,
     });
     editStatus = false;
   }
@@ -111,6 +115,7 @@ function editUser(id) {
     lastName.value = res.data.lastname;
     email.value = res.data.email;
     password.value = res.data.password;
+    isadmin.value = res.data.isadmin;
   });
   document.querySelector(".title").innerHTML = "Edit User";
   signUpBtn.innerHTML = "EDIT USER";

@@ -33,7 +33,6 @@ footer {
                     color: #fffc;
                     font-style: normal;
                     line-height: 26px;
-
                   }
                 }
               }
@@ -62,7 +61,7 @@ footer {
                   font-weight: normal;
                   color: #fffc;
                   line-height: 26px;
-                  &:hover{
+                  &:hover {
                     color: $primary_color;
                     transition: 0.5s;
                   }
@@ -93,7 +92,7 @@ footer {
                   font-weight: normal;
                   color: #fffc;
                   line-height: 26px;
-                  &:hover{
+                  &:hover {
                     color: $primary_color;
                     transition: 0.5s;
                   }
@@ -122,6 +121,9 @@ footer {
                 border: 1px solid #f8f8f8;
                 background: #f8f8f8;
                 border-radius: 0;
+                &:focus {
+                  outline: none;
+                }
               }
               position: relative;
               .subscribe-btn {

@@ -13,7 +13,14 @@ login.addEventListener("click", async function () {
     localStorage.setItem("users", JSON.stringify(true));
     window.location = `index.html`;
   }
-  if (email.value == "yaqut@gmail.com" && password.value == 123456) {
+  if (
+    data.find(
+      (item) =>
+        item.email == email.value &&
+        item.password == password.value &&
+        item.isadmin == true
+    )
+  ) {
     window.location = `./admin/admin.html`;
     localStorage.setItem("admin", JSON.stringify(true));
   }
