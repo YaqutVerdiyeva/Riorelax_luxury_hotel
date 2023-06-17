@@ -78,9 +78,11 @@ scrollUpBtn.addEventListener("click", function () {
 
 //subscribe
 subscribeBtn.addEventListener("click", function () {
-  axios.post(`${BASE_URL_SUBSCRIBES}`, {
-    email: footerInput.value,
-  });
+  if (footerInput.value) {
+    axios.post(`${BASE_URL_SUBSCRIBES}`, {
+      email: footerInput.value,
+    });
+  }
 });
 let userList = JSON.parse(localStorage.getItem("users"));
 let outBtn = document.querySelector(".out-login");

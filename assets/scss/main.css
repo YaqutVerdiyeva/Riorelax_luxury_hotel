@@ -8843,13 +8843,42 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
 }
 .section-book-room .container .row .left-book .check-row .book-button {
   border: none;
-  width: 97%;
+  width: 100%;
   padding: 12px 25px;
   font-size: 15px;
-  background-color: #977a5e;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  background: #977a5e;
+  position: relative;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  text-align: center;
+}
+.section-book-room .container .row .left-book .check-row .book-button:hover {
+  background: #ffffff;
+  color: #977a5e;
+}
+.section-book-room .container .row .left-book .check-row .book-button:before, .section-book-room .container .row .left-book .check-row .book-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #977a5e;
+  transition: 400ms ease all;
+}
+.section-book-room .container .row .left-book .check-row .book-button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.section-book-room .container .row .left-book .check-row .book-button:hover:before, .section-book-room .container .row .left-book .check-row .book-button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
 }
 .section-book-room .container .row .right-book img {
   width: 100%;
