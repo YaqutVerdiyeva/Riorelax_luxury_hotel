@@ -161,3 +161,30 @@
     }
   }
 }
+@media only screen and (max-width: 992px) {
+  .section-resort {
+    background-color: #f7f5f1;
+    .container {
+      .row {
+        .right-resort {
+          .content-resort {
+            position: relative;
+            margin-bottom: 50px;
+            .discoverr {
+              top: 120%;
+              left: 20%;
+            }
+          }
+          @keyframes wave {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

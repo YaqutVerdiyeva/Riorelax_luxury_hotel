@@ -6501,6 +6501,27 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .section-resort {
+    background-color: #f7f5f1;
+  }
+  .section-resort .container .row .right-resort .content-resort {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .section-resort .container .row .right-resort .content-resort .discoverr {
+    top: 120%;
+    left: 20%;
+  }
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
 .section-extra-services {
   padding: 100px 0;
 }
@@ -8737,6 +8758,27 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .section-resort {
+    background-color: #f7f5f1;
+  }
+  .section-resort .container .row .right-resort .content-resort {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .section-resort .container .row .right-resort .content-resort .discoverr {
+    top: 120%;
+    left: 20%;
+  }
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
 .section-book-room {
   padding: 100px 0;
 }
