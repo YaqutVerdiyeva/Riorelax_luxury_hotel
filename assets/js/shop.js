@@ -67,7 +67,6 @@ sortBtn.addEventListener("click", function () {
   getAllProducts();
 });
 async function addBasket(id) {
-  
   let selectedProduct = productList.find((item) => item.id == id);
   productList.includes(selectedProduct);
 
@@ -87,10 +86,6 @@ async function addBasket(id) {
       }, 2000);
     }
   } else {
-    document.querySelector(".alert").style.visibility = "visible";
-
-    setTimeout(() => {
-      document.querySelector(".alert").style.visibility = "hidden";
-    }, 2000);
+    window.location = "login.html";
   }
 }

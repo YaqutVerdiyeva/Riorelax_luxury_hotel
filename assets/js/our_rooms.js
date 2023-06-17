@@ -98,11 +98,7 @@ async function addFavBtn(id) {
       }, 2000);
     }
   } else {
-    document.querySelector(".alert").style.visibility = "visible";
-
-    setTimeout(() => {
-      document.querySelector(".alert").style.visibility = "hidden";
-    }, 2000);
+    window.location = "login.html";
   }
 }
 
