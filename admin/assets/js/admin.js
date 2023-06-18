@@ -124,14 +124,9 @@ var xxValues = [
 
 var barColors = ["#634b35", "#6e5740", "#8d745c", "#aa9580", "#d4c1ae"];
 
-function darkLightMode() {
-  let body = document.body;
-  body.classList.toggle("dark-mode");
-}
-
 async function rooms() {
   let res = await axios(BASE_URL_RESERV_ROOM);
-  let data = await res.data; 
+  let data = await res.data;
   let room1 = data.filter((el) => el.room == "Classic Balcony Room").length;
   let room2 = data.filter((el) => el.room == "Superior Double Room").length;
   let room3 = data.filter((el) => el.room == "Super Room").length;
@@ -157,3 +152,32 @@ async function rooms() {
   });
 }
 rooms();
+
+let toggleBtn = document.querySelector(".toggle-btn");
+let theme = document.querySelector("body");
+let darkMode = localStorage.getItem("dark-mode");
+
+let enableDarkMode = () => {
+  theme.classList.add("dark-mode");
+  toggleBtn.classList.remove("dark-mode");
+  localStorage.setItem("dark-mode", "enabled");
+};
+
+let disableDarkMode = () => {
+  theme.classList.remove("dark-mode");
+  toggleBtn.classList.add("dark-mode");
+  localStorage.setItem("dark-mode", "disabled");
+};
+
+if (darkMode === "enabled") {
+  enableDarkMode(); 
+}
+
+toggleBtn.addEventListener("click", (e) => {
+  darkMode = localStorage.getItem("dark-mode");
+  if (darkMode === "disabled") {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+});

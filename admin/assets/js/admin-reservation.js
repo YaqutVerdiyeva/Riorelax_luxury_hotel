@@ -118,7 +118,32 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit Reservations";
   reservBtn.innerHTML = "EDIT RESERVATIONS";
 }
-function darkLightMode() {
-  let body = document.body;
-  body.classList.toggle("dark-mode");
+
+let toggleBtn = document.querySelector(".toggle-btn-reservation");
+let theme = document.querySelector("body");
+let darkMode = localStorage.getItem("dark-mode-reservation");
+
+let enableDarkMode = () => {
+  theme.classList.add("dark-mode");
+  toggleBtn.classList.remove("dark-mode");
+  localStorage.setItem("dark-mode-reservation", "enabled");
+};
+
+let disableDarkMode = () => {
+  theme.classList.remove("dark-mode");
+  toggleBtn.classList.add("dark-mode");
+  localStorage.setItem("dark-mode-reservation", "disabled");
+};
+
+if (darkMode === "enabled") {
+  enableDarkMode(); 
 }
+
+toggleBtn.addEventListener("click", (e) => {
+  darkMode = localStorage.getItem("dark-mode-reservation");
+  if (darkMode === "disabled") {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+});

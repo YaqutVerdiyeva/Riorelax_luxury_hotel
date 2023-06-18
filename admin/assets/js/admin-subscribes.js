@@ -104,7 +104,32 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit Email";
   addEmail.innerHTML = "EDIT EMAIL";
 }
-function darkLightMode() {
-  let body = document.body;
-  body.classList.toggle("dark-mode");
+
+let toggleBtn = document.querySelector(".toggle-btn-subscribes");
+let theme = document.querySelector("body");
+let darkMode = localStorage.getItem("dark-mode-subscribes");
+
+let enableDarkMode = () => {
+  theme.classList.add("dark-mode");
+  toggleBtn.classList.remove("dark-mode");
+  localStorage.setItem("dark-mode-subscribes", "enabled");
+};
+
+let disableDarkMode = () => {
+  theme.classList.remove("dark-mode");
+  toggleBtn.classList.add("dark-mode");
+  localStorage.setItem("dark-mode-subscribes", "disabled");
+};
+
+if (darkMode === "enabled") {
+  enableDarkMode(); 
 }
+
+toggleBtn.addEventListener("click", (e) => {
+  darkMode = localStorage.getItem("dark-mode-subscribes");
+  if (darkMode === "disabled") {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+});

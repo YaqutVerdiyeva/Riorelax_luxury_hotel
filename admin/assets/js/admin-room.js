@@ -135,7 +135,32 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit Room";
   addRoom.innerHTML = "EDIT ROOM";
 }
-function darkLightMode() {
-  let body = document.body;
-  body.classList.toggle("dark-mode");
+
+let toggleBtn = document.querySelector(".toggle-btn-room");
+let theme = document.querySelector("body");
+let darkMode = localStorage.getItem("dark-mode-room");
+
+let enableDarkMode = () => {
+  theme.classList.add("dark-mode");
+  toggleBtn.classList.remove("dark-mode");
+  localStorage.setItem("dark-mode-room", "enabled");
+};
+
+let disableDarkMode = () => {
+  theme.classList.remove("dark-mode");
+  toggleBtn.classList.add("dark-mode");
+  localStorage.setItem("dark-mode-room", "disabled");
+};
+
+if (darkMode === "enabled") {
+  enableDarkMode(); 
 }
+
+toggleBtn.addEventListener("click", (e) => {
+  darkMode = localStorage.getItem("dark-mode-room");
+  if (darkMode === "disabled") {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+});

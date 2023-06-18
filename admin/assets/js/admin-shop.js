@@ -151,7 +151,32 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit Product";
   addProduct.innerHTML = "EDIT PRODUCT";
 }
-function darkLightMode() {
-  let body = document.body;
-  body.classList.toggle("dark-mode");
+
+let toggleBtn = document.querySelector(".toggle-btn-shop");
+let theme = document.querySelector("body");
+let darkMode = localStorage.getItem("dark-mode-shop");
+
+let enableDarkMode = () => {
+  theme.classList.add("dark-mode");
+  toggleBtn.classList.remove("dark-mode");
+  localStorage.setItem("dark-mode-shop", "enabled");
+};
+
+let disableDarkMode = () => {
+  theme.classList.remove("dark-mode");
+  toggleBtn.classList.add("dark-mode");
+  localStorage.setItem("dark-mode-shop", "disabled");
+};
+
+if (darkMode === "enabled") {
+  enableDarkMode(); 
 }
+
+toggleBtn.addEventListener("click", (e) => {
+  darkMode = localStorage.getItem("dark-mode-shop");
+  if (darkMode === "disabled") {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+});

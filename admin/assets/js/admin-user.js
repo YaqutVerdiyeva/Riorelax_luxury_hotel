@@ -120,7 +120,32 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit User";
   signUpBtn.innerHTML = "EDIT USER";
 }
-function darkLightMode() {
-  let body = document.body;
-  body.classList.toggle("dark-mode");
+
+let toggleBtn = document.querySelector(".toggle-btn-user");
+let theme = document.querySelector("body");
+let darkMode = localStorage.getItem("dark-mode-user");
+
+let enableDarkMode = () => {
+  theme.classList.add("dark-mode");
+  toggleBtn.classList.remove("dark-mode");
+  localStorage.setItem("dark-mode-user", "enabled");
+};
+
+let disableDarkMode = () => {
+  theme.classList.remove("dark-mode");
+  toggleBtn.classList.add("dark-mode");
+  localStorage.setItem("dark-mode-user", "disabled");
+};
+
+if (darkMode === "enabled") {
+  enableDarkMode(); 
 }
+
+toggleBtn.addEventListener("click", (e) => {
+  darkMode = localStorage.getItem("dark-mode-user");
+  if (darkMode === "disabled") {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+});

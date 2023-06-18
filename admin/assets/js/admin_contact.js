@@ -127,7 +127,32 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit Contact";
   submitBtn.innerHTML = "EDIT CONTACT";
 }
-function darkLightMode() {
-  let body = document.body;
-  body.classList.toggle("dark-mode");
+
+let toggleBtn = document.querySelector(".toggle-btn-contact");
+let theme = document.querySelector("body");
+let darkMode = localStorage.getItem("dark-mode-contac");
+
+let enableDarkMode = () => {
+  theme.classList.add("dark-mode");
+  toggleBtn.classList.remove("dark-mode");
+  localStorage.setItem("dark-mode-contac", "enabled");
+};
+
+let disableDarkMode = () => {
+  theme.classList.remove("dark-mode");
+  toggleBtn.classList.add("dark-mode");
+  localStorage.setItem("dark-mode-contac", "disabled");
+};
+
+if (darkMode === "enabled") {
+  enableDarkMode();
 }
+
+toggleBtn.addEventListener("click", (e) => {
+  darkMode = localStorage.getItem("dark-mode-contac");
+  if (darkMode === "disabled") {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+});
