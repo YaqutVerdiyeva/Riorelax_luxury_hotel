@@ -33,7 +33,7 @@ window.addEventListener("scroll", function () {
 //side page
 function openNav() {
   document.getElementById("mySidebar").style.width = "300px";
-  document.getElementsByClassName("reservation-btn").style.marginLeft = "300px";
+  document.getElementsByClassName("reservation-btn").style = "margin-left: 300px";
 }
 
 function closeNav() {

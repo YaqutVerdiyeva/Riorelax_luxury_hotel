@@ -29,6 +29,15 @@
                 border-bottom: 1px solid $primary_color;
                 font-family: "Jost", sans-serif;
                 font-weight: 600;
+
+                &:not(.collapsed)::after {
+                  background-image: url("../image/minus.jpg");
+                  background-size: cover;
+                }
+                &.collapsed::after {
+                  background-image: url("../image/plus.jpg");
+                  background-size: cover;
+                }
               }
             }
             .collapse {
