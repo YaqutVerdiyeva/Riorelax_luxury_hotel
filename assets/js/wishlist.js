@@ -3,6 +3,7 @@ let roomCard = document.querySelector(".rooms");
 let searchInput = document.querySelector(".search");
 let filteredArr = [];
 let copyData = [];
+
 function favoritRoom() {
   copyData = [...favroom];
   roomCard.innerHTML = "";
@@ -29,6 +30,7 @@ function favoritRoom() {
   });
 }
 favoritRoom();
+
 searchInput.addEventListener("input", function (e) {
   filteredArr = copyData;
   filteredArr = filteredArr.filter((el) =>

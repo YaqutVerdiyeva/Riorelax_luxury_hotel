@@ -7,10 +7,9 @@ let footerInput = document.querySelector(".email-input");
 let subscribeBtn = document.querySelector(".subscribe-btn");
 let basketCount = document.querySelector(".basket-count");
 let wishlistCount = document.querySelector(".wishlist-count");
+let userList = JSON.parse(localStorage.getItem("users"));
+let outBtn = document.querySelector(".out-login");
 
-
-
-//header scroll
 function scrollFunction() {
   if (
     document.body.scrollTop > 100 ||
@@ -27,10 +26,11 @@ function scrollFunction() {
     scrollUpBtn.style.display = "none";
   }
 }
+
 window.addEventListener("scroll", function () {
   scrollFunction();
 });
-//side page
+
 function openNav() {
   document.getElementById("mySidebar").style.width = "300px";
   document.getElementsByClassName("reservation-btn").style = "margin-left: 300px";
@@ -41,12 +41,12 @@ function closeNav() {
   document.getElementsByClassName("reservation-btn").style.marginLeft = "0";
 }
 
-//menu
 menuicon.addEventListener("click", function () {
   nav.classList.toggle("show");
   menuicon.style.display = "none";
   menuicon1.style.display = "block";
 });
+
 menuicon1.addEventListener("click", function () {
   nav.classList.toggle("show");
   menuicon.style.display = "block";
@@ -57,18 +57,17 @@ document.querySelector(".plus3").addEventListener("click", function () {
   document.querySelector(".plus3").style.visibility = "hidden";
   document.querySelector(".minus3").style.visibility = "visible";
 });
+
 document.querySelector(".minus3").addEventListener("click", function () {
   document.querySelector(".plus3").style.visibility = "visible";
   document.querySelector(".minus3").style.visibility = "hidden";
 });
 
-//scrollUpBtn
 scrollUpBtn.addEventListener("click", function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
 
-//subscribe
 subscribeBtn.addEventListener("click", function () {
   if (footerInput.value) {
     axios.post(`${BASE_URL_SUBSCRIBES}`, {
@@ -76,13 +75,13 @@ subscribeBtn.addEventListener("click", function () {
     });
   }
 });
-let userList = JSON.parse(localStorage.getItem("users"));
-let outBtn = document.querySelector(".out-login");
+
 if (userList == true) {
   {
     outBtn.style.display = "block";
   }
 }
+
 outBtn.addEventListener("click", function () {
   localStorage.clear();
   outBtn.style.display = "none";

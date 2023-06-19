@@ -5,7 +5,6 @@ let email = document.querySelector(".email");
 let password = document.querySelector(".password");
 let signUpBtn = document.querySelector(".get-submit");
 
-//post
 signUpBtn.addEventListener("click", function () {
   if (firstName.value && lastName.value && email.value && password.value) {
     axios.post(`${BASE_URL}`, {
@@ -33,18 +32,22 @@ signUpBtn.addEventListener("click", function () {
     password.style.border = "1px solid brown";
   }
 });
+
 firstName.addEventListener("input", function () {
   document.querySelector(".validationname").style.visibility = "hidden";
   firstName.style.border = "";
 });
+
 lastName.addEventListener("input", function () {
   document.querySelector(".validationlastname").style.visibility = "hidden";
   lastName.style.border = "";
 });
+
 email.addEventListener("input", function () {
   document.querySelector(".validationemail").style.visibility = "hidden";
   email.style.border = "";
 });
+
 password.addEventListener("input", function () {
   document.querySelector(".validationpassword").style.visibility = "hidden";
   password.style.border = "";

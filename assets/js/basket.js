@@ -33,8 +33,8 @@ function getProductList() {
         `;
   });
 }
-
 getProductList();
+
 searchInput.addEventListener("input", function (e) {
   filteredArr = copyData;
   filteredArr = filteredArr.filter((el) =>

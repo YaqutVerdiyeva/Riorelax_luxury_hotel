@@ -8,6 +8,7 @@ let phoneInput = document.querySelector(".phone");
 let subjectInput = document.querySelector(".subject");
 let textInput = document.querySelector(".text");
 let submitBtn = document.querySelector(".get-submit");
+
 subscribesBtn.addEventListener("click", function () {
   if (footInput.value !== "") {
     axios.post(`${BASE_URL_SUBSCRIBE}`, {
@@ -15,6 +16,7 @@ subscribesBtn.addEventListener("click", function () {
     });
   }
 });
+
 submitBtn.addEventListener("click", function () {
   if (
     firstnameInput.value &&

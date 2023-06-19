@@ -5,7 +5,6 @@ let btn = document.getElementById("myBtn");
 let btn1 = document.getElementById("myBtn1");
 let span = document.getElementsByClassName("close")[0];
 let span1 = document.getElementsByClassName("close1")[0];
-
 let checkIn = document.querySelector("#checkin");
 let adults = document.querySelector("#adults");
 let room = document.querySelector("#room");
@@ -14,7 +13,6 @@ let child = document.querySelector("#child");
 let reservBtn = document.querySelector(".check-btn");
 let discoverBtn = document.querySelector(".discover");
 
-//post
 reservBtn.addEventListener("click", function () {
   if (
     checkIn.value &&
@@ -33,13 +31,13 @@ reservBtn.addEventListener("click", function () {
   }
 });
 
-//Modal video
 btn.onclick = function () {
   modal.style.display = "block";
 };
 btn1.onclick = function () {
   modal1.style.display = "block";
 };
+
 span.onclick = function () {
   modal.style.display = "none";
   let video = document.getElementById("videoId");
@@ -56,6 +54,7 @@ span1.onclick = function () {
     "*"
   );
 };
+
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -66,8 +65,8 @@ window.onclick = function (event) {
     modal1.style.display = "none";
   }
 };
-//swiper
-var swiper = new Swiper(".mySwiper", {
+
+let swiper1 = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
   freeMode: true,
@@ -76,9 +75,8 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
-//swiper2
 
-var swiper = new Swiper(".mySwiperr", {
+let swiper2 = new Swiper(".mySwiperr", {
   effect: "coverflow",
   grabCursor: true,
   initialSlide: 2,
@@ -95,9 +93,11 @@ var swiper = new Swiper(".mySwiperr", {
     el: ".swiper-pagination",
   },
 });
+
 discoverBtn.addEventListener("click", function () {
   window.location = "about.html";
 });
+
 document.onreadystatechange = function () {
   if (document.readyState !== "complete") {
     document.querySelector("body").style.visibility = "hidden";

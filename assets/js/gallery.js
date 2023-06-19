@@ -59,7 +59,6 @@ let span99 = document.getElementsByClassName("close99")[0];
 let span10 = document.getElementsByClassName("close10")[0];
 let span100 = document.getElementsByClassName("close100")[0];
 
-//modal
 btn.onclick = function () {
   modal.style.display = "block";
 };
@@ -120,6 +119,7 @@ btn10.onclick = function () {
 btn100.onclick = function () {
   modal100.style.display = "block";
 };
+
 span.onclick = function () {
   modal.style.display = "none";
 };
@@ -180,13 +180,13 @@ span3.onclick = function () {
 span33.onclick = function () {
   modal33.style.display = "none";
 };
+
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 };
 
-//tabs
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");

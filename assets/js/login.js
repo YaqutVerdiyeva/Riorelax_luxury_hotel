@@ -2,6 +2,7 @@ let BASE_URL = `http://localhost:3000/users`;
 let email = document.querySelector(".email");
 let password = document.querySelector(".password");
 let login = document.querySelector(".get-submit");
+
 login.addEventListener("click", async function () {
   let res = await axios(BASE_URL);
   let data = await res.data;
@@ -46,6 +47,7 @@ email.addEventListener("input", function () {
   document.querySelector(".email-alert").style.visibility = "hidden";
   email.style.border = "";
 });
+
 password.addEventListener("input", function () {
   document.querySelector(".password-alert").style.visibility = "hidden";
   password.style.border = "";

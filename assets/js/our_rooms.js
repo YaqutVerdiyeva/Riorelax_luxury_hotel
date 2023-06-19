@@ -1,10 +1,10 @@
+let BASE_URL = `http://localhost:3000/rooms`;
+let MOCK_API = `http://localhost:3000/reservRoom`;
+let favorites = JSON.parse(localStorage.getItem("favroom")) || [];
+let users = JSON.parse(localStorage.getItem("users"));
 let modal = document.getElementById("myModal");
 let btn = document.getElementById("myBtn");
 let span = document.getElementsByClassName("close")[0];
-let BASE_URL = `http://localhost:3000/rooms`;
-let MOCK_API = `http://localhost:3000/reservRoom`;
-let users = JSON.parse(localStorage.getItem("users"));
-let favorites = JSON.parse(localStorage.getItem("favroom")) || [];
 let checkIn = document.querySelector("#checkin");
 let adults = document.querySelector("#adults");
 let room = document.querySelector("#room");
@@ -18,6 +18,7 @@ let maxlength = 3;
 let sorted = "asc";
 let filteredArr = [];
 let copyArr = [];
+
 async function getAllCards() {
   let res = await axios(BASE_URL);
   let data = res.data;
@@ -76,8 +77,6 @@ loadMore.addEventListener("click", function () {
   getAllCards(filteredArr);
 });
 
-//addfav
-
 async function addFavBtn(id) {
   let selectedRoom = favorites.find((item) => item.id == id);
   favorites.includes(selectedRoom);
@@ -102,7 +101,6 @@ async function addFavBtn(id) {
 
 }
 
-//post
 bookBtn.addEventListener("click", function () {
   if (checkIn.value && adults.value && room.value && checkOut.value) {
     axios.post(`${MOCK_API}`, {
@@ -113,7 +111,7 @@ bookBtn.addEventListener("click", function () {
     });
   }
 });
-//Modal video
+
 btn.onclick = function () {
   modal.style.display = "block";
 };
@@ -132,6 +130,7 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
 document.onreadystatechange = function () {
   if (document.readyState !== "complete") {
     document.querySelector("body").style.visibility = "hidden";
