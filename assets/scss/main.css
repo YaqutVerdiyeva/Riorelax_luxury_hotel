@@ -18,7 +18,7 @@ header {
 }
 header .top-header {
   padding: 10px;
-  background-color: #977a5e;
+  background-color: rgb(151, 122, 94);
 }
 header .top-header .container {
   display: flex;

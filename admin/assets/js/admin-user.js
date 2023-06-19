@@ -32,7 +32,7 @@ async function getAllUsers() {
                     <td style="background-color: transparent;">${el.lastname}</td>
                     <td style="background-color: transparent;">${el.email}</td>
                     <td style="background-color: transparent;">${el.password}</td>
-                    <td style="background-color: transparent;">${el.isadmin}</td>
+                    <td style="background-color: transparent;"><button onclick=isadminuser(${el.id}) class="btn btn-dark">${el.isadmin}</button></td>
                     <td style="background-color: transparent;">
                     <a onclick=deleteBtn(${el.id}) style="margin-right: 8px"><i class="fa-solid fa-trash" style="color: #c20000;"></i></a>
                     <a href="#form" onclick=editUser(${el.id})  ><i class="fa-solid fa-pen-to-square" style="color: #000;"></i></a>
@@ -91,7 +91,6 @@ signUpBtn.addEventListener("click", function (id) {
         lastname: lastName.value,
         email: email.value,
         password: password.value,
-        isadmin: Boolean(isAdmin.value) ,
       });
     }
   } else {
@@ -100,7 +99,6 @@ signUpBtn.addEventListener("click", function (id) {
       lastname: lastName.value,
       email: email.value,
       password: password.value,
-      isadmin:  Boolean(isAdmin.value),
     });
     editStatus = false;
   }
@@ -115,7 +113,6 @@ function editUser(id) {
     lastName.value = res.data.lastname;
     email.value = res.data.email;
     password.value = res.data.password;
-    isAdmin.value = res.data.isadmin;
   });
   document.querySelector(".title").innerHTML = "Edit User";
   signUpBtn.innerHTML = "EDIT USER";
@@ -138,7 +135,7 @@ let disableDarkMode = () => {
 };
 
 if (darkMode === "enabled") {
-  enableDarkMode(); 
+  enableDarkMode();
 }
 
 toggleBtn.addEventListener("click", (e) => {
@@ -149,3 +146,30 @@ toggleBtn.addEventListener("click", (e) => {
     disableDarkMode();
   }
 });
+async function isadminuser(id) {
+  console.log(id);
+  let res = await axios(BASE_URL);
+  let data = res.data;
+
+  if (data.find((el) => el.isadmin == true)) {
+    axios(`${BASE_URL}/${id}`).then((res) => {
+      axios.patch(`${BASE_URL}/${id}`, {
+        firstname: res.data.firstname,
+        lastname: res.data.lastname,
+        email: res.data.email,
+        password: res.data.password,
+        isadmin: false,
+      });
+    });
+  } else if (data.find((el) => el.isadmin == false)) {
+    axios(`${BASE_URL}/${id}`).then((res) => {
+      axios.patch(`${BASE_URL}/${id}`, {
+        firstname: res.data.firstname,
+        lastname: res.data.lastname,
+        email: res.data.email,
+        password: res.data.password,
+        isadmin: true,
+      });
+    });
+  }
+}

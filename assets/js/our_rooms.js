@@ -32,9 +32,7 @@ async function getAllCards() {
         <img src="${
           el.photo.startsWith(".") ? el.photo.slice(1) : el.photo
         }" alt="" />
-        <i onclick="addFavBtn(${el.id})" class="fa-solid fa-heart added${
-      el.id
-    }"></i>
+        <i onclick="addFavBtn(${el.id})" class="fa-solid fa-heart"></i>
         <div class="card-content">
           <h2>${el.title}</h2>
           <p>${el.price}$</p>
@@ -85,7 +83,6 @@ async function addFavBtn(id) {
   favorites.includes(selectedRoom);
 
   if (users == true) {
-    document.querySelector(`.added${id}`).style.color = "red";
     if (!favorites.includes(selectedRoom)) {
       {
         let favoritedRoom = filteredArr.find((obj) => obj.id === id);
@@ -94,7 +91,6 @@ async function addFavBtn(id) {
       }
     } else {
       document.querySelector(".alert-room").style.visibility = "visible";
-      // document.querySelector(`.added${id}`).style.color = "red";
 
       setTimeout(() => {
         document.querySelector(".alert-room").style.visibility = "hidden";

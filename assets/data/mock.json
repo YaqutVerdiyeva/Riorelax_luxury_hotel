@@ -13,7 +13,7 @@
       "lastname": "Dean",
       "email": "taylor@gmail.com",
       "password": "123987456",
-      "isadmin": true,
+      "isadmin": false,
       "id": 2
     },
     {
