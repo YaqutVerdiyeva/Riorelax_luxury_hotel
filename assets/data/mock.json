@@ -5,7 +5,7 @@
       "lastname": "Verdiyeva",
       "email": "yaqut@gmail.com",
       "password": "123456789",
-      "isadmin": true,
+      "isadmin": false,
       "id": 1
     },
     {
@@ -21,7 +21,7 @@
       "lastname": "Smith",
       "email": "luca@gmail.com",
       "password": "123852946",
-      "isadmin": false,
+      "isadmin": true,
       "id": 3
     },
     {

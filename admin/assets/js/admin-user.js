@@ -90,7 +90,8 @@ signUpBtn.addEventListener("click", function (id) {
         firstname: firstName.value,
         lastname: lastName.value,
         email: email.value,
-        password: password.value,
+        password: password.value, 
+        isadmin: false,
       });
     }
   } else {
@@ -148,28 +149,7 @@ toggleBtn.addEventListener("click", (e) => {
 });
 async function isadminuser(id) {
   console.log(id);
-  let res = await axios(BASE_URL);
-  let data = res.data;
-
-  if (data.find((el) => el.isadmin == true)) {
-    axios(`${BASE_URL}/${id}`).then((res) => {
-      axios.patch(`${BASE_URL}/${id}`, {
-        firstname: res.data.firstname,
-        lastname: res.data.lastname,
-        email: res.data.email,
-        password: res.data.password,
-        isadmin: false,
-      });
-    });
-  } else if (data.find((el) => el.isadmin == false)) {
-    axios(`${BASE_URL}/${id}`).then((res) => {
-      axios.patch(`${BASE_URL}/${id}`, {
-        firstname: res.data.firstname,
-        lastname: res.data.lastname,
-        email: res.data.email,
-        password: res.data.password,
-        isadmin: true,
-      });
-    });
-  }
+  let res = await axios(`${BASE_URL}/${id}`);
+  let isAdminn = res.data.isadmin;
+  await axios.patch(`${BASE_URL}/${id}`, { isadmin: !isAdminn });
 }
