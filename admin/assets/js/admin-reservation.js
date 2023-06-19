@@ -8,9 +8,14 @@ let adults = document.querySelector("#adults");
 let room = document.querySelector("#room");
 let child = document.querySelector("#child");
 let reservBtn = document.querySelector(".check-btn");
+let toggleBtn = document.querySelector(".toggle-btn-reservation");
+let theme = document.querySelector("body");
+let darkMode = localStorage.getItem("dark-mode-reservation");
 let sorted = "asc";
 let filteredArr = [];
 let copyArr = [];
+let editStatus = false;
+let editId;
 
 async function getAllReservations() {
   let res = await axios(BASE_URL);
@@ -61,20 +66,22 @@ select.addEventListener("change", function (e) {
   );
   getAllReservations();
 });
+
 function deleteBtn(id) {
   document.querySelector(`.alert${id}`).style.visibility = "visible";
 }
+
 function deleteUser(id) {
   axios.delete(`${BASE_URL}/${id}`);
 }
+
 function keepUser(id) {
   setTimeout(
     (document.querySelector(`.alert${id}`).style.visibility = "hidden"),
     2000
   );
 }
-let editStatus = false;
-let editId;
+
 reservBtn.addEventListener("click", function () {
   if (!editStatus) {
     if (
@@ -118,10 +125,6 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit Reservations";
   reservBtn.innerHTML = "EDIT RESERVATIONS";
 }
-
-let toggleBtn = document.querySelector(".toggle-btn-reservation");
-let theme = document.querySelector("body");
-let darkMode = localStorage.getItem("dark-mode-reservation");
 
 let enableDarkMode = () => {
   theme.classList.add("dark-mode");

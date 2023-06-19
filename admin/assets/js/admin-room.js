@@ -6,9 +6,15 @@ let titleInput = document.querySelector("#title");
 let priceInput = document.querySelector(".price");
 let photoInput = document.querySelector(".photo");
 let addRoom = document.querySelector(".add-room");
+let toggleBtn = document.querySelector(".toggle-btn-room");
+let theme = document.querySelector("body");
+let darkMode = localStorage.getItem("dark-mode-room");
 let sorted = "asc";
 let filteredArr = [];
 let copyArr = [];
+let editStatus = false;
+let editId;
+let base64;
 
 async function getAllRooms() {
   let res = await axios(BASE_URL);
@@ -68,21 +74,22 @@ sortBtn.addEventListener("click", function () {
   }
   getAllRooms();
 });
+
 function deleteBtn(id) {
   document.querySelector(`.alert${id}`).style.visibility = "visible";
 }
+
 function deleteUser(id) {
   axios.delete(`${BASE_URL}/${id}`);
 }
+
 function keepUser(id) {
   setTimeout(
     (document.querySelector(`.alert${id}`).style.visibility = "hidden"),
     2000
   );
 }
-let editStatus = false;
-let editId;
-let base64;
+
 const convertBase64 = (file) => {
   return new Promise((resolve, reject) => {
     const fileReader = new FileReader();
@@ -97,6 +104,7 @@ const convertBase64 = (file) => {
     };
   });
 };
+
 const uploadImage = async (event) => {
   const file = event.target.files[0];
   base64 = await convertBase64(file);
@@ -105,6 +113,7 @@ const uploadImage = async (event) => {
 photoInput.addEventListener("change", (e) => {
   uploadImage(e);
 });
+
 addRoom.addEventListener("click", function () {
   if (!editStatus) {
     if (titleInput.value && priceInput.value) {
@@ -135,10 +144,6 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit Room";
   addRoom.innerHTML = "EDIT ROOM";
 }
-
-let toggleBtn = document.querySelector(".toggle-btn-room");
-let theme = document.querySelector("body");
-let darkMode = localStorage.getItem("dark-mode-room");
 
 let enableDarkMode = () => {
   theme.classList.add("dark-mode");

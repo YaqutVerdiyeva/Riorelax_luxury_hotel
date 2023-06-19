@@ -8,9 +8,15 @@ let email = document.querySelector(".email");
 let password = document.querySelector(".password");
 let isAdmin = document.querySelector(".isadmin");
 let signUpBtn = document.querySelector(".get-submit");
+let toggleBtn = document.querySelector(".toggle-btn-user");
+let theme = document.querySelector("body");
+let darkMode = localStorage.getItem("dark-mode-user");
 let sorted = "asc";
 let filteredArr = [];
 let copyArr = [];
+let editStatus = false;
+let editId;
+
 async function getAllUsers() {
   let res = await axios(BASE_URL);
   let data = res.data;
@@ -69,20 +75,22 @@ sortBtn.addEventListener("click", function () {
   }
   getAllUsers();
 });
+
 function deleteBtn(id) {
   document.querySelector(`.alert${id}`).style.visibility = "visible";
 }
+
 function deleteUser(id) {
   axios.delete(`${BASE_URL}/${id}`);
 }
+
 function keepUser(id) {
   setTimeout(
     (document.querySelector(`.alert${id}`).style.visibility = "hidden"),
     2000
   );
 }
-let editStatus = false;
-let editId;
+
 signUpBtn.addEventListener("click", function (id) {
   if (!editStatus) {
     if (firstName.value && lastName.value && email.value && password.value) {
@@ -90,7 +98,7 @@ signUpBtn.addEventListener("click", function (id) {
         firstname: firstName.value,
         lastname: lastName.value,
         email: email.value,
-        password: password.value, 
+        password: password.value,
         isadmin: false,
       });
     }
@@ -118,10 +126,6 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit User";
   signUpBtn.innerHTML = "EDIT USER";
 }
-
-let toggleBtn = document.querySelector(".toggle-btn-user");
-let theme = document.querySelector("body");
-let darkMode = localStorage.getItem("dark-mode-user");
 
 let enableDarkMode = () => {
   theme.classList.add("dark-mode");

@@ -12,6 +12,9 @@ let roomCount = document.querySelector(".room-count");
 let shopCount = document.querySelector(".shop-count");
 let subscribesCount = document.querySelector(".subscribes-count");
 let contactCount = document.querySelector(".contact-count");
+let toggleBtn = document.querySelector(".toggle-btn");
+let theme = document.querySelector("body");
+let darkMode = localStorage.getItem("dark-mode");
 
 async function getUsers() {
   let res = await axios(BASE_URL_USERS);
@@ -26,30 +29,35 @@ async function getReserv() {
   reservCount.innerHTML = `Reservations count: ${data.length}`;
 }
 getReserv();
+
 async function getReservRoom() {
   let res = await axios(BASE_URL_RESERV_ROOM);
   let data = await res.data;
   roomReservCount.innerHTML = `Room Reservations count: ${data.length}`;
 }
 getReservRoom();
+
 async function getRoom() {
   let res = await axios(BASE_URL_ROOMS);
   let data = await res.data;
   roomCount.innerHTML = `Room count: ${data.length}`;
 }
 getRoom();
+
 async function getShop() {
   let res = await axios(BASE_URL_SHOP);
   let data = await res.data;
   shopCount.innerHTML = `Shop count: ${data.length}`;
 }
 getShop();
+
 async function getSubscribes() {
   let res = await axios(BASE_URL_SUBSCRIBES);
   let data = await res.data;
   subscribesCount.innerHTML = `Subscribes count: ${data.length}`;
 }
 getSubscribes();
+
 async function getContact() {
   let res = await axios(BASE_URL_CONTACT);
   let data = await res.data;
@@ -89,6 +97,7 @@ async function datas() {
   let res7 = await axios(BASE_URL_CONTACT);
   let data7 = await res7.data;
   let count7 = data7.length;
+
   const yValues = [0, count1, count2, count3, count4, count5, count6, count7];
   new Chart("myChart", {
     type: "line",
@@ -114,6 +123,7 @@ async function datas() {
   });
 }
 datas();
+
 var xxValues = [
   "CLASSIC BALCONY ROOM",
   "SUPERIOR DOUBLE ROOM",
@@ -122,7 +132,7 @@ var xxValues = [
   "Super Balcony Room",
 ];
 
-var barColors = ["#634b35", "#6e5740", "#8d745c", "#aa9580", "#d4c1ae"];
+let barColors = ["#634b35", "#6e5740", "#8d745c", "#aa9580", "#d4c1ae"];
 
 async function rooms() {
   let res = await axios(BASE_URL_RESERV_ROOM);
@@ -153,10 +163,6 @@ async function rooms() {
 }
 rooms();
 
-let toggleBtn = document.querySelector(".toggle-btn");
-let theme = document.querySelector("body");
-let darkMode = localStorage.getItem("dark-mode");
-
 let enableDarkMode = () => {
   theme.classList.add("dark-mode");
   toggleBtn.classList.remove("dark-mode");
@@ -170,7 +176,7 @@ let disableDarkMode = () => {
 };
 
 if (darkMode === "enabled") {
-  enableDarkMode(); 
+  enableDarkMode();
 }
 
 toggleBtn.addEventListener("click", (e) => {

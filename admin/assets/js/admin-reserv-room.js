@@ -7,9 +7,14 @@ let checkout = document.querySelector("#checkout");
 let adults = document.querySelector("#adults");
 let room = document.querySelector("#room");
 let bookBtn = document.querySelector(".book-button");
+let toggleBtn = document.querySelector(".toggle-btn-reserv-room");
+let theme = document.querySelector("body");
+let darkMode = localStorage.getItem("dark-mode-reserv-room");
 let sorted = "asc";
 let filteredArr = [];
 let copyArr = [];
+let editStatus = false;
+let editId;
 
 async function getAllReservations() {
   let res = await axios(BASE_URL);
@@ -63,17 +68,18 @@ select.addEventListener("change", function (e) {
 function deleteBtn(id) {
   document.querySelector(`.alert${id}`).style.visibility = "visible";
 }
+
 function deleteUser(id) {
   axios.delete(`${BASE_URL}/${id}`);
 }
+
 function keepUser(id) {
   setTimeout(
     (document.querySelector(`.alert${id}`).style.visibility = "hidden"),
     2000
   );
 }
-let editStatus = false;
-let editId;
+
 bookBtn.addEventListener("click", function () {
   if (!editStatus) {
     if (checkIn.value && checkout.value && adults.value && room.value) {
@@ -109,10 +115,6 @@ function editUser(id) {
   bookBtn.innerHTML = "EDIT RESERVATIONS";
 }
 
-let toggleBtn = document.querySelector(".toggle-btn-reserv-room");
-let theme = document.querySelector("body");
-let darkMode = localStorage.getItem("dark-mode-reserv-room");
-
 let enableDarkMode = () => {
   theme.classList.add("dark-mode");
   toggleBtn.classList.remove("dark-mode");
@@ -126,7 +128,7 @@ let disableDarkMode = () => {
 };
 
 if (darkMode === "enabled") {
-  enableDarkMode(); 
+  enableDarkMode();
 }
 
 toggleBtn.addEventListener("click", (e) => {

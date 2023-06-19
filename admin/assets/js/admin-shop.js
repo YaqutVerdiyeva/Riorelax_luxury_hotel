@@ -8,9 +8,15 @@ let newpriceInput = document.querySelector(".pricenew");
 let oldpriceInput = document.querySelector(".priceold");
 let photoInput = document.querySelector(".photo");
 let addProduct = document.querySelector(".add-product");
+let toggleBtn = document.querySelector(".toggle-btn-shop");
+let theme = document.querySelector("body");
+let darkMode = localStorage.getItem("dark-mode-shop");
 let sorted = "asc";
 let filteredArr = [];
 let copyArr = [];
+let editStatus = false;
+let editId;
+let base64;
 
 async function getAllProducts() {
   let res = await axios(BASE_URL);
@@ -74,21 +80,22 @@ sortBtn.addEventListener("click", function () {
   }
   getAllProducts();
 });
+
 function deleteBtn(id) {
   document.querySelector(`.alert${id}`).style.visibility = "visible";
 }
+
 function deleteUser(id) {
   axios.delete(`${BASE_URL}/${id}`);
 }
+
 function keepUser(id) {
   setTimeout(
     (document.querySelector(`.alert${id}`).style.visibility = "hidden"),
     2000
   );
 }
-let editStatus = false;
-let editId;
-let base64;
+
 const convertBase64 = (file) => {
   return new Promise((resolve, reject) => {
     const fileReader = new FileReader();
@@ -103,6 +110,7 @@ const convertBase64 = (file) => {
     };
   });
 };
+
 const uploadImage = async (event) => {
   const file = event.target.files[0];
   base64 = await convertBase64(file);
@@ -111,6 +119,7 @@ const uploadImage = async (event) => {
 photoInput.addEventListener("change", (e) => {
   uploadImage(e);
 });
+
 addProduct.addEventListener("click", function () {
   if (!editStatus) {
     if (
@@ -151,10 +160,6 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit Product";
   addProduct.innerHTML = "EDIT PRODUCT";
 }
-
-let toggleBtn = document.querySelector(".toggle-btn-shop");
-let theme = document.querySelector("body");
-let darkMode = localStorage.getItem("dark-mode-shop");
 
 let enableDarkMode = () => {
   theme.classList.add("dark-mode");

@@ -5,7 +5,7 @@
       "lastname": "Verdiyeva",
       "email": "yaqut@gmail.com",
       "password": "123456789",
-      "isadmin": false,
+      "isadmin": true,
       "id": 1
     },
     {

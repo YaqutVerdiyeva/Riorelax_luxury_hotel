@@ -4,9 +4,14 @@ let searchInput = document.querySelector(".search");
 let sortBtn = document.querySelector(".sort");
 let emailInput = document.querySelector("#email");
 let addEmail = document.querySelector(".button");
+let toggleBtn = document.querySelector(".toggle-btn-subscribes");
+let theme = document.querySelector("body");
+let darkMode = localStorage.getItem("dark-mode-subscribes");
 let sorted = "asc";
 let filteredArr = [];
 let copyArr = [];
+let editStatus = false;
+let editId;
 
 async function getAllProducts() {
   let res = await axios(BASE_URL);
@@ -64,20 +69,21 @@ sortBtn.addEventListener("click", function () {
   }
   getAllProducts();
 });
+
 function deleteBtn(id) {
   document.querySelector(`.alert${id}`).style.visibility = "visible";
 }
+
 function deleteUser(id) {
   axios.delete(`${BASE_URL}/${id}`);
 }
+
 function keepUser(id) {
   setTimeout(
     (document.querySelector(`.alert${id}`).style.visibility = "hidden"),
     2000
   );
 }
-let editStatus = false;
-let editId;
 
 addEmail.addEventListener("click", function () {
   if (!editStatus) {
@@ -104,10 +110,6 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit Email";
   addEmail.innerHTML = "EDIT EMAIL";
 }
-
-let toggleBtn = document.querySelector(".toggle-btn-subscribes");
-let theme = document.querySelector("body");
-let darkMode = localStorage.getItem("dark-mode-subscribes");
 
 let enableDarkMode = () => {
   theme.classList.add("dark-mode");

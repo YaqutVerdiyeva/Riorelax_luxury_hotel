@@ -8,9 +8,14 @@ let phoneInput = document.querySelector(".phone");
 let subjectInput = document.querySelector(".subject");
 let textInput = document.querySelector(".textarea");
 let submitBtn = document.querySelector(".get-submit");
+let toggleBtn = document.querySelector(".toggle-btn-contact");
+let theme = document.querySelector("body");
+let darkMode = localStorage.getItem("dark-mode-contac");
 let sorted = "asc";
 let filteredArr = [];
 let copyArr = [];
+let editStatus = false;
+let editId;
 
 async function getAllReservations() {
   let res = await axios(BASE_URL);
@@ -70,21 +75,23 @@ sortBtn.addEventListener("click", function () {
   }
   getAllReservations();
 });
+
 function deleteBtn(id) {
   document.querySelector(`.alert${id}`).style.visibility = "visible";
 }
+
 function deleteUser(id) {
   axios.delete(`${BASE_URL}/${id}`);
   console.log(id);
 }
+
 function keepUser(id) {
   setTimeout(
     (document.querySelector(`.alert${id}`).style.visibility = "hidden"),
     2000
   );
 }
-let editStatus = false;
-let editId;
+
 submitBtn.addEventListener("click", function () {
   if (!editStatus) {
     if (
@@ -127,10 +134,6 @@ function editUser(id) {
   document.querySelector(".title").innerHTML = "Edit Contact";
   submitBtn.innerHTML = "EDIT CONTACT";
 }
-
-let toggleBtn = document.querySelector(".toggle-btn-contact");
-let theme = document.querySelector("body");
-let darkMode = localStorage.getItem("dark-mode-contac");
 
 let enableDarkMode = () => {
   theme.classList.add("dark-mode");
