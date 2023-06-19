@@ -22,6 +22,7 @@
   <h2>About project:</h2>
   <h3>Through this website, people can get to know the RioRelax hotel</h3>
    <h2>Photos:</h2>
+   
  <div style="display:flex;">
    <img width="300px" src="https://vinpearl-hotel-ha-tinh-vietnam-ha-tinh.booked.net/data/Photos/r1011x425/13568/1356847/1356847067/Melia-Vinpearl-Ha-Tinh-Hotel-Exterior.JPEG" alt="" />
  <img width="300px" src="https://vinpearl-hotel-ha-tinh-vietnam-ha-tinh.booked.net/data/Photos/r1011x425/13568/1356848/1356848414/Melia-Vinpearl-Ha-Tinh-Hotel-Exterior.JPEG" alt="" />
