@@ -31,6 +31,13 @@
       "password": "546825915",
       "isadmin": false,
       "id": 5
+    },
+    {
+      "firstname": "Yaqut",
+      "lastname": "Verdiyeva",
+      "email": "yaqut22@gmail.com",
+      "password": "123456",
+      "id": 6
     }
   ],
   "rooms": [
