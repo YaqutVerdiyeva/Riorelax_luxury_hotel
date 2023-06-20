@@ -13,7 +13,7 @@
       "lastname": "Dean",
       "email": "taylor@gmail.com",
       "password": "123987456",
-      "isadmin": false,
+      "isadmin": true,
       "id": 2
     },
     {
@@ -21,7 +21,7 @@
       "lastname": "Smith",
       "email": "luca@gmail.com",
       "password": "123852946",
-      "isadmin": true,
+      "isadmin": false,
       "id": 3
     },
     {
@@ -37,7 +37,8 @@
       "lastname": "Verdiyeva",
       "email": "yaqut22@gmail.com",
       "password": "123456",
-      "id": 6
+      "id": 6,
+      "isadmin": false
     }
   ],
   "rooms": [

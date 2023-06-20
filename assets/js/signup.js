@@ -12,6 +12,7 @@ signUpBtn.addEventListener("click", function () {
       lastname: lastName.value,
       email: email.value,
       password: password.value,
+      isadmin: false
     });
     window.location = "login.html";
   }
