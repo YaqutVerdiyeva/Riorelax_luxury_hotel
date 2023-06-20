@@ -19,8 +19,12 @@
   * jQuery</h3>
   
   <h3>Used swipper for sliders.</h3>
-  <h2>About project:</h2>
+  <h2>Purpose of the site:</h2>
   <h3>Through this website, people can get to know the RioRelax hotel</h3>
+  <h3>Customers can register from the site.</h3>
+  <h3>Customers can book online.</h3>
+  <h3>They can read reviews of customers who have used the hotel.</h3>
+  <h3>They can buy the products in the hotel.</h3>
    <h2>Photos:</h2>
    
  <div style="display:flex;">
