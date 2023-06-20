@@ -35,6 +35,13 @@ header .top-header .container .top-header-left ul {
 header .top-header .container .top-header-left ul li i {
   margin-right: 8px;
   font-size: 14px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .container .top-header-left ul li i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .top-header .container .top-header-left ul li .clock {
   font-family: "Roboto", sans-serif;
@@ -53,6 +60,13 @@ header .top-header .top-header-right .icons {
 header .top-header .top-header-right .icons a i {
   color: #ffffff;
   font-size: 17px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .top-header-right .icons a i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header {
   background-color: rgba(9, 9, 9, 0.5);
@@ -953,6 +967,13 @@ header .top-header .container .top-header-left ul {
 header .top-header .container .top-header-left ul li i {
   margin-right: 8px;
   font-size: 14px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .container .top-header-left ul li i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .top-header .container .top-header-left ul li .clock {
   font-family: "Roboto", sans-serif;
@@ -971,6 +992,13 @@ header .top-header .top-header-right .icons {
 header .top-header .top-header-right .icons a i {
   color: #ffffff;
   font-size: 17px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .top-header-right .icons a i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header {
   background-color: rgba(9, 9, 9, 0.5);
@@ -1806,6 +1834,13 @@ header .top-header .container .top-header-left ul {
 header .top-header .container .top-header-left ul li i {
   margin-right: 8px;
   font-size: 14px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .container .top-header-left ul li i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .top-header .container .top-header-left ul li .clock {
   font-family: "Roboto", sans-serif;
@@ -1824,6 +1859,13 @@ header .top-header .top-header-right .icons {
 header .top-header .top-header-right .icons a i {
   color: #ffffff;
   font-size: 17px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .top-header-right .icons a i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header {
   background-color: rgba(9, 9, 9, 0.5);
@@ -2802,6 +2844,13 @@ header .top-header .container .top-header-left ul {
 header .top-header .container .top-header-left ul li i {
   margin-right: 8px;
   font-size: 14px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .container .top-header-left ul li i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .top-header .container .top-header-left ul li .clock {
   font-family: "Roboto", sans-serif;
@@ -2820,6 +2869,13 @@ header .top-header .top-header-right .icons {
 header .top-header .top-header-right .icons a i {
   color: #ffffff;
   font-size: 17px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .top-header-right .icons a i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header {
   background-color: rgba(9, 9, 9, 0.5);
@@ -3501,6 +3557,14 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   border: none;
   padding: 17px 20px;
   border-radius: 0;
+  display: block;
+  background: linear-gradient(to right, #000 50%, #977a5e 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+.section-newsletter .container .input-letter button:hover {
+  background-position: left bottom;
 }
 
 @media only screen and (max-width: 767px) {
@@ -3720,6 +3784,13 @@ header .top-header .container .top-header-left ul {
 header .top-header .container .top-header-left ul li i {
   margin-right: 8px;
   font-size: 14px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .container .top-header-left ul li i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .top-header .container .top-header-left ul li .clock {
   font-family: "Roboto", sans-serif;
@@ -3738,6 +3809,13 @@ header .top-header .top-header-right .icons {
 header .top-header .top-header-right .icons a i {
   color: #ffffff;
   font-size: 17px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .top-header-right .icons a i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header {
   background-color: rgba(9, 9, 9, 0.5);
@@ -4505,6 +4583,13 @@ header .top-header .container .top-header-left ul {
 header .top-header .container .top-header-left ul li i {
   margin-right: 8px;
   font-size: 14px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .container .top-header-left ul li i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .top-header .container .top-header-left ul li .clock {
   font-family: "Roboto", sans-serif;
@@ -4523,6 +4608,13 @@ header .top-header .top-header-right .icons {
 header .top-header .top-header-right .icons a i {
   color: #ffffff;
   font-size: 17px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .top-header-right .icons a i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header {
   background-color: rgba(9, 9, 9, 0.5);
@@ -5378,6 +5470,13 @@ header .top-header .container .top-header-left ul {
 header .top-header .container .top-header-left ul li i {
   margin-right: 8px;
   font-size: 14px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .container .top-header-left ul li i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .top-header .container .top-header-left ul li .clock {
   font-family: "Roboto", sans-serif;
@@ -5396,6 +5495,13 @@ header .top-header .top-header-right .icons {
 header .top-header .top-header-right .icons a i {
   color: #ffffff;
   font-size: 17px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .top-header-right .icons a i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header {
   background-color: rgba(9, 9, 9, 0.5);
@@ -7116,6 +7222,13 @@ header .top-header .container .top-header-left ul {
 header .top-header .container .top-header-left ul li i {
   margin-right: 8px;
   font-size: 14px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .container .top-header-left ul li i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .top-header .container .top-header-left ul li .clock {
   font-family: "Roboto", sans-serif;
@@ -7134,6 +7247,13 @@ header .top-header .top-header-right .icons {
 header .top-header .top-header-right .icons a i {
   color: #ffffff;
   font-size: 17px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .top-header-right .icons a i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header {
   background-color: rgba(9, 9, 9, 0.5);
@@ -7907,6 +8027,13 @@ header .top-header .container .top-header-left ul {
 header .top-header .container .top-header-left ul li i {
   margin-right: 8px;
   font-size: 14px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .container .top-header-left ul li i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .top-header .container .top-header-left ul li .clock {
   font-family: "Roboto", sans-serif;
@@ -7925,6 +8052,13 @@ header .top-header .top-header-right .icons {
 header .top-header .top-header-right .icons a i {
   color: #ffffff;
   font-size: 17px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .top-header-right .icons a i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header {
   background-color: rgba(9, 9, 9, 0.5);
@@ -9249,6 +9383,13 @@ header .top-header .container .top-header-left ul {
 header .top-header .container .top-header-left ul li i {
   margin-right: 8px;
   font-size: 14px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .container .top-header-left ul li i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .top-header .container .top-header-left ul li .clock {
   font-family: "Roboto", sans-serif;
@@ -9267,6 +9408,13 @@ header .top-header .top-header-right .icons {
 header .top-header .top-header-right .icons a i {
   color: #ffffff;
   font-size: 17px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .top-header-right .icons a i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header {
   background-color: rgba(9, 9, 9, 0.5);
@@ -10275,6 +10423,13 @@ header .top-header .container .top-header-left ul {
 header .top-header .container .top-header-left ul li i {
   margin-right: 8px;
   font-size: 14px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .container .top-header-left ul li i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .top-header .container .top-header-left ul li .clock {
   font-family: "Roboto", sans-serif;
@@ -10293,6 +10448,13 @@ header .top-header .top-header-right .icons {
 header .top-header .top-header-right .icons a i {
   color: #ffffff;
   font-size: 17px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .top-header-right .icons a i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header {
   background-color: rgba(9, 9, 9, 0.5);
@@ -11205,6 +11367,13 @@ header .top-header .container .top-header-left ul {
 header .top-header .container .top-header-left ul li i {
   margin-right: 8px;
   font-size: 14px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .container .top-header-left ul li i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .top-header .container .top-header-left ul li .clock {
   font-family: "Roboto", sans-serif;
@@ -11223,6 +11392,13 @@ header .top-header .top-header-right .icons {
 header .top-header .top-header-right .icons a i {
   color: #ffffff;
   font-size: 17px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .top-header-right .icons a i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header {
   background-color: rgba(9, 9, 9, 0.5);
@@ -12094,6 +12270,13 @@ header .top-header .container .top-header-left ul {
 header .top-header .container .top-header-left ul li i {
   margin-right: 8px;
   font-size: 14px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .container .top-header-left ul li i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .top-header .container .top-header-left ul li .clock {
   font-family: "Roboto", sans-serif;
@@ -12112,6 +12295,13 @@ header .top-header .top-header-right .icons {
 header .top-header .top-header-right .icons a i {
   color: #ffffff;
   font-size: 17px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .top-header-right .icons a i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header {
   background-color: rgba(9, 9, 9, 0.5);
@@ -12887,6 +13077,13 @@ header .top-header .container .top-header-left ul {
 header .top-header .container .top-header-left ul li i {
   margin-right: 8px;
   font-size: 14px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .container .top-header-left ul li i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .top-header .container .top-header-left ul li .clock {
   font-family: "Roboto", sans-serif;
@@ -12905,6 +13102,13 @@ header .top-header .top-header-right .icons {
 header .top-header .top-header-right .icons a i {
   color: #ffffff;
   font-size: 17px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .top-header-right .icons a i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header {
   background-color: rgba(9, 9, 9, 0.5);
@@ -13474,69 +13678,6 @@ header .nav-mobile ul .accordion .accordion-item .accordion-collapse .accordion-
   opacity: 1;
 }
 
-.section-newsletter {
-  padding: 100px 0;
-  background-color: #f7f5f1;
-}
-.section-newsletter .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.section-newsletter .container h5 {
-  text-align: center;
-  color: #977a5e;
-  font-size: 18px;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-}
-.section-newsletter .container h2 {
-  text-align: center;
-  color: #101010;
-  font-size: 60px;
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-}
-.section-newsletter .container .explore-text {
-  text-align: center;
-  color: #777777;
-  font-size: 15px;
-  font-family: "Jost", sans-serif;
-  font-weight: normal;
-  width: 40%;
-}
-.section-newsletter .container .input-letter {
-  position: relative;
-}
-.section-newsletter .container .input-letter input {
-  background: #ffffff;
-  border: 1px solid #ffffff;
-  padding: 15px 20px;
-  border-radius: 10px;
-  width: 500px;
-}
-.section-newsletter .container .input-letter input:focus {
-  outline: none;
-}
-.section-newsletter .container .input-letter button {
-  background: #977a5e;
-  color: #ffffff;
-  text-align: center;
-  font-size: 15px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  border: none;
-  padding: 17px 20px;
-  border-radius: 0;
-}
-
-@media only screen and (max-width: 767px) {
-  .section-newsletter .container .input-letter input {
-    width: 320px;
-  }
-}
 footer {
   color: #d4c1ae;
 }
@@ -13749,6 +13890,13 @@ header .top-header .container .top-header-left ul {
 header .top-header .container .top-header-left ul li i {
   margin-right: 8px;
   font-size: 14px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .container .top-header-left ul li i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .top-header .container .top-header-left ul li .clock {
   font-family: "Roboto", sans-serif;
@@ -13767,6 +13915,13 @@ header .top-header .top-header-right .icons {
 header .top-header .top-header-right .icons a i {
   color: #ffffff;
   font-size: 17px;
+  transition: all 0.4s ease 0s;
+}
+header .top-header .top-header-right .icons a i:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 5px 40px -10px rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
 }
 header .bottom-header {
   background-color: rgba(9, 9, 9, 0.5);

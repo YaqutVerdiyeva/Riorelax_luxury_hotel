@@ -51,6 +51,14 @@
         border: none;
         padding: 17px 20px;
         border-radius: 0;
+        display: block;
+        background: linear-gradient(to right, #000 50%, $primary_color 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all 0.5s ease-out;
+        &:hover {
+          background-position: left bottom;
+        }
       }
     }
   }
